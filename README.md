@@ -2,6 +2,7 @@
 
 Repository for the first VarChAMP publication. Each folder with prefixes 1_ through 5_ correspond to a section in the manuscript, and has the following subfolders:
 
+## Overview of repo structure
 - **1_inputs**: raw input data (ie. unnormalized assay data) or annotations (ie. ClinVar annotations) that has not been used in the analysis before
 - **2_analysis**: any scripts used to process or analyze the input data
 - **3_outputs**: intermediary outputs (ie. normalized assay data) that will be read in by any script in any of the analysis folders
@@ -9,3 +10,20 @@ Repository for the first VarChAMP publication. Each folder with prefixes 1_ thro
 - **5_manuscript_tables**: nicely formatted tables that will go into the main text or the supplementary
 
 All input data is either included in this repository, or is downloaded from public sources using an .sh script. 
+
+## How to contribute
+Fork the repo (click the 'Fork' button in the top right), clone the fork to your local computer, and create a new branch:
+```
+git clone https://github.com/<YOUR-USERNAME>/2025_laval_submitted.git
+cd ./2025_laval_submitted
+git checkout -b branch-name
+```
+
+It is good practice to create a new branch for each task / contribution that you will make to the overall repository. For example, you might create a branch "ppi-data-analysis" to add an input table and processing pipeline for the PPI data. Once you've made the changes in your local repo, commit and push the contributions:
+```
+git add .
+git commit -m "data and analysis of PPI dataset"
+git push
+```
+
+In the Github web interface, navigate to your branch within your repo. Click the "Contribute" dropdown and then the "Open pull request" button. This will make a request to the main parent repository to merge the changes that you've contributed on your branch. It's good practice to have someone review your contributions and request any necessary edits before merging into the parent repository. Tag Jess in the "Request Review" section. Once she's approved the merge, delete your branch.
