@@ -6,3 +6,5 @@ Raw FACS data for DUAL-IPA are stored on Zenodo at (this location)[https://zenod
 cd <local-path-to-repo>/2_individual_assay_results/dual_ipa/1_inputs
 bash download_raw_FACS.sh
 ```
+
+The other files in this folder ...
