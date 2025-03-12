@@ -1,0 +1,140 @@
+---
+title: "append_allele_annotations"
+output: html_notebook
+---
+
+This is a script to append ClinVar annotations and gnomAD allele frequencies to our allele collection.
+
+Load necessary packages
+```{r}
+library(data.table)
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(stringr)
+# install.packages("downloader")  # Install if not already installed
+library(downloader)
+```
+
+Download & format the ClinVar variant summary file
+```{r}
+# Download the latest ClinVar variant summary file
+url <- "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/variant_summary.txt.gz"
+destfile <- "inputs/clinvar_variant_summary.txt.gz"
+download.file(url, destfile, mode = "wb")
+
+# Read in the file
+clinvar = read.delim(gzfile("inputs/clinvar_variant_summary.txt.gz"))
+
+# Filter & format columns
+clinvar = data.table(
+  separate(clinvar, 
+           Name, 
+           into = c("NM", "version", "gene","c","clinvar_nt_change","p","clinvar_aa_change"), 
+           sep = "[().]")) %>%
+  filter(Assembly == "GRCh38") %>%
+  mutate(SPDI = paste0(ChromosomeAccession,":",
+                       PositionVCF,":",
+                       ReferenceAlleleVCF,":",
+                       AlternateAlleleVCF),
+         RefSeq_mRNA = paste0(NM,".", version),
+         across(where(is.character), str_trim),
+         StarStatus = case_when(grepl("single|conflicting", ReviewStatus) ~ 1,
+                                grepl("multiple", ReviewStatus) ~ 2,
+                                grepl("expert", ReviewStatus) ~ 3,
+                                grepl("practice", ReviewStatus) ~ 4)) %>%
+  select(-c(NM, version, gene, c, p, ReferenceAllele, AlternateAllele))
+
+```
+
+Define functions
+```{r}
+# Function to append ClinVar annotations to the allele set according to SPDI
+append_clinvar = function(file) {
+  # read in allele set file
+  dt = fread(file)
+  
+  # append clinvar annotations & rename columns
+  dt = merge(dt, clinvar, by.x = "spdi", by.y = "SPDI", all.x = T) %>%
+    rename(ccsb_nt_change = nt_change,
+           ccsb_aa_change = aa_change)
+  
+  # report how many alleles did not map to clinvar
+  report <<- paste0(nrow(dt[!spdi == "NULL" & is.na(X.AlleleID)][!duplicated(spdi)]),
+                  " alleles out of ",
+                  nrow(dt[!spdi == "NULL"][!duplicated(spdi)]),
+                  " didn't map to ClinVar")
+  
+  # return appended table
+  return(dt)
+}
+
+# Function to write the input file of variants to query in gnomAD
+listVar = function(dt, name) {
+  variants = data.table(CHROM = paste0("chr",dt[grepl(">", ccsb_nt_change)]$chr),
+                        POS = dt[grepl(">", ccsb_nt_change)]$chr_pos_38,
+                        REF = sub(".*([A-Z])>.*", "\\1", 
+                                  dt[grepl(">", ccsb_nt_change)]$ccsb_nt_change),
+                        ALT = sub(".*>([A-Z]).*", "\\1", 
+                                  dt[grepl(">", ccsb_nt_change)]$ccsb_nt_change))
+  write.table(variants, paste0("outputs/", name, "_variants_list.txt"), 
+              row.names=FALSE, sep="\t", quote = F, col.names = F)
+}
+
+# Function to append allele frequencies to data table - processing gnomAD output
+append_gnomAD = function(dt, dir) {
+  # read in variant allele frequencies across all chromosomes
+  af = rbindlist(
+    lapply(list.files(dir, pattern = "chr.*_allele_frequencies.txt", full.names = TRUE), fread)
+    )
+  af[, varid := paste0(gsub("chr","",V1), "-",V2,"-",V3,"-",V4)]
+  setkey(af, varid)
+
+  # append allele frequencies
+  dt[, varid := paste0(chr,"-",
+                       chr_pos_38,"-",
+                       sub(".*([A-Z])>.*", "\\1", ccsb_nt_change),"-",
+                       sub(".*>([A-Z]).*", "\\1", ccsb_nt_change))]
+  dt[!is.na(varid), gnomad_af := af[varid]$V5]
+  return(dt)
+}
+
+```
+
+Execute functions pt.1
+  USER DEFINED VARIABLES - specify pathways
+```{r}
+# Append ClinVar annotations for the One Percent data set
+one = append_clinvar(file = "inputs/VarChamp_1_percent_variants.tsv")
+# Report how many alleles are missing ClinVar annotations
+print(report)
+# Generate input file for querying gnomAD
+listVar(dt = one, name = "onepercent")
+
+# Append ClinVar annotations for the Consolidated data set
+cons = append_clinvar(file = "inputs/VarChamp_Consolidated_allele_collection.tsv")
+# Report how many alleles are missing ClinVar annotations
+print(report)
+# Generate input file for querying gnomAD
+listVar(dt = cons, name = "consolidated") 
+
+```
+
+
+PAUSE HERE: run 'extract_gnomad_af.sh' script using the "name_variants_list.txt" file output from the listVar function. Outputs from 'extract_gnomad_af.sh' are then used to append allele frequencies to your data set.
+
+Execute functions pt.2
+  USER DEFINED VARIABLES - specify pathways
+```{r}
+# Append allele frequencies to One Percent data set
+gnom_one = append_gnomAD(dt = one, dir = "outputs/gnomad_af/onepercent/") 
+# Save final output
+fwrite(gnom_one, "outputs/onepercent_ClinVar_output.csv")
+
+# Append allele frequencies to Consolidated data set
+gnom_cons = append_gnomAD(dt = cons, dir = "outputs/gnomad_af/consolidated/") 
+# Save final output
+fwrite(gnom_cons, "outputs/consolidated_ClinVar_output.csv")
+```
+
+
