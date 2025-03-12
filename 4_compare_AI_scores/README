@@ -1,0 +1,9 @@
+The goal of this section is to understand the abilities of the different AI models to predict different types of residues on the protein.
+
+1. pLDDT score given by alphafold2 (downloaded from https://ftp.ebi.ac.uk/pub/databases/alphafold/latest/UP000005640_9606_HUMAN_v4.tar):
+  The predicted local distance difference test (pLDDT) is a per-residue measure of local confidence. It is scaled from 0 to 100, with higher scores indicating higher confidence and usually a more accurate prediction.
+
+2. Relative solvent accessibility: https://swift.cmbi.umcn.nl/gv/dssp/
+
+3. Conservation Provean
+  
