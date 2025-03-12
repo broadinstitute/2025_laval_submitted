@@ -30,17 +30,21 @@ clinvar = read.delim(gzfile("inputs/clinvar_variant_summary.txt.gz"))
 clinvar = data.table(
   separate(clinvar, 
            Name, 
-           into = c("NM", "version", "gene","c","c.nt_change","p","p.aa_change"), 
+           into = c("NM", "version", "gene","c","clinvar_nt_change","p","clinvar_aa_change"), 
            sep = "[().]")) %>%
   filter(Assembly == "GRCh38") %>%
-  mutate(hgvs_nt = paste0(gene,":n.",c.nt_change),
-         SPDI = paste0(ChromosomeAccession,":",
+  mutate(SPDI = paste0(ChromosomeAccession,":",
                        PositionVCF,":",
                        ReferenceAlleleVCF,":",
                        AlternateAlleleVCF),
-         RefSeq = paste0(NM,".", version),
-         across(where(is.character), str_trim)) %>%
+         RefSeq_mRNA = paste0(NM,".", version),
+         across(where(is.character), str_trim),
+         StarStatus = case_when(grepl("single|conflicting", ReviewStatus) ~ 1,
+                                grepl("multiple", ReviewStatus) ~ 2,
+                                grepl("expert", ReviewStatus) ~ 3,
+                                grepl("practice", ReviewStatus) ~ 4)) %>%
   select(-c(NM, version, gene, c, p, ReferenceAllele, AlternateAllele))
+
 ```
 
 Define functions
@@ -50,8 +54,10 @@ append_clinvar = function(file) {
   # read in allele set file
   dt = fread(file)
   
-  # append clinvar annotations
-  dt = merge(dt, clinvar, by.x = "spdi", by.y = "SPDI", all.x = T)
+  # append clinvar annotations & rename columns
+  dt = merge(dt, clinvar, by.x = "spdi", by.y = "SPDI", all.x = T) %>%
+    rename(ccsb_nt_change = nt_change,
+           ccsb_aa_change = aa_change)
   
   # report how many alleles did not map to clinvar
   report <<- paste0(nrow(dt[!spdi == "NULL" & is.na(X.AlleleID)][!duplicated(spdi)]),
@@ -65,11 +71,13 @@ append_clinvar = function(file) {
 
 # Function to write the input file of variants to query in gnomAD
 listVar = function(dt, name) {
-  variants = data.table(CHROM = paste0("chr",dt[grepl(">", nt_change)]$chr),
-                        POS = dt[grepl(">", nt_change)]$chr_pos_38,
-                        REF = sub(".*([A-Z])>.*", "\\1", dt[grepl(">", nt_change)]$nt_change),
-                        ALT = sub(".*>([A-Z]).*", "\\1", dt[grepl(">", nt_change)]$nt_change))
-  write.table(variants, paste0("outputs/",name, "_variants_list.txt"), 
+  variants = data.table(CHROM = paste0("chr",dt[grepl(">", ccsb_nt_change)]$chr),
+                        POS = dt[grepl(">", ccsb_nt_change)]$chr_pos_38,
+                        REF = sub(".*([A-Z])>.*", "\\1", 
+                                  dt[grepl(">", ccsb_nt_change)]$ccsb_nt_change),
+                        ALT = sub(".*>([A-Z]).*", "\\1", 
+                                  dt[grepl(">", ccsb_nt_change)]$ccsb_nt_change))
+  write.table(variants, paste0("outputs/", name, "_variants_list.txt"), 
               row.names=FALSE, sep="\t", quote = F, col.names = F)
 }
 
@@ -85,8 +93,8 @@ append_gnomAD = function(dt, dir) {
   # append allele frequencies
   dt[, varid := paste0(chr,"-",
                        chr_pos_38,"-",
-                       sub(".*([A-Z])>.*", "\\1", nt_change),"-",
-                       sub(".*>([A-Z]).*", "\\1", nt_change))]
+                       sub(".*([A-Z])>.*", "\\1", ccsb_nt_change),"-",
+                       sub(".*>([A-Z]).*", "\\1", ccsb_nt_change))]
   dt[!is.na(varid), gnomad_af := af[varid]$V5]
   return(dt)
 }
@@ -121,12 +129,12 @@ Execute functions pt.2
 # Append allele frequencies to One Percent data set
 gnom_one = append_gnomAD(dt = one, dir = "outputs/gnomad_af/onepercent/") 
 # Save final output
-fwrite(gnom_one, "outputs/onepercent_appended.csv")
+fwrite(gnom_one, "outputs/onepercent_ClinVar_output.csv")
 
 # Append allele frequencies to Consolidated data set
 gnom_cons = append_gnomAD(dt = cons, dir = "outputs/gnomad_af/consolidated/") 
 # Save final output
-fwrite(gnom_cons, "outputs/consolidated_appended.csv")
+fwrite(gnom_cons, "outputs/consolidated_ClinVar_output.csv")
 ```
 
 
