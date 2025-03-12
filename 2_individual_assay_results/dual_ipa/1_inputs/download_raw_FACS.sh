@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ../1_inputs
+
 curl -O https://zenodo.org/records/15000710/files/raw_FACS.tar.gz
 
 mkdir -p raw_inputs
