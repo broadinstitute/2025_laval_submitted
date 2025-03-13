@@ -10,9 +10,8 @@ There are three types of data: sqY2H (semi-quantitative yeast 2-hybrid; this is 
 ### sqY2H data
 Within this folder:
 - **cp_files**: cherry picking file relating plates and wells to allele metadata
-- **plate_images**: images of the assay, processed in two different ways depending on the software used to analyze them.
 - **mapping_384_to_96.rtf**: a text file mapping source (n = 96) well to desitination (4 reps * 96 source wells = 384 desitination) spots.
-- **VarChAMP_1percent_Y2H_scores.tsv**: these are the manual scores attributed to the Y2H images using iScore software. There are 6 conditions (media; 1-6) that yeast grow on. Three different people score, so there are 18 different numbers (r01-r18). There are also 4 batches of experimental data VUSAPWT1B1, VUSAPWT1B2, VUSAPWT2B1, and VUSAPWT6B1. Flo scored the first two (r07-r12), Georges scored the last two (r13-r18). Should add another column (Scorer) and convert all numerical scores to 1-6 to reflect comparable media conditions. 
+- **VarChAMP_1percent_Y2H_scores.tsv**: these are the manual scores attributed to the Y2H images using iScore software. Raw images are available on (Zenodo)[https://zenodo.org/records/15020115]. There are 6 conditions (media; 1-6) that yeast grow on. Three different people score, so there are 18 different numbers (r01-r18). There are also 4 batches of experimental data VUSAPWT1B1, VUSAPWT1B2, VUSAPWT2B1, and VUSAPWT6B1. Flo scored the first two (r07-r12), Georges scored the last two (r13-r18). Should add another column (Scorer) and convert all numerical scores to 1-6 to reflect comparable media conditions. 
 
 
 ### N2H_validation data
