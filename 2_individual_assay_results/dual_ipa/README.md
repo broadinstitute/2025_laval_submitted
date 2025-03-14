@@ -9,6 +9,12 @@ There are two types of data inputs:
 
 The analysis additionally takes as inputs the allele collection metadata from the **1_allele_collection** directory.
 
+## Using 2_analysis
+```
+mamba create --name dual-ipa --file env-reqs.txt
+mamba activate dual-ipa
+```
+
 
 ## Files in 3_outputs
 The analysis scripts create four files:
