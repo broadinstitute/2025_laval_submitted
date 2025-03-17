@@ -10,10 +10,11 @@ Here we collect and process all of the allele metadata that will be used through
 
 ## 2_analysis
 The following files are used to process the raw data:
-- **1_process_clinvar_gnomad.ipynb**: 
-- **2_filter_allele_collection.ipynb**: this script 
+- **1_process_clinvar_gnomad.ipynb**: clean up ClinVar annotations and extract metadata for the VarChamp alleles
+- **2_filter_allele_collection.ipynb**: create slim versions of the metadata for all alleles and for reference wild types only
 
 
 ## Files in 3_outputs
-- processed data is a symbolic link (intermediate files)
-- clinvar_gnomad is all columns merged to Tong's data
+- **processed data** is a symbolic link where large, intermediate outputs from the ClinVar and gnomAD annotation processing are stored
+- **varchamp_consolidated_alleles_clinvar_gnomad.tsv**: all of the ClinVar and gnomad metadata merged with the allele metadata
+- **orf_info.csv**: gene-level metadata for all alleles in the VarChamp data
