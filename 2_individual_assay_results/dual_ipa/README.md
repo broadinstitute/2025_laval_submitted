@@ -10,10 +10,14 @@ There are two types of data inputs:
 The analysis additionally takes as inputs the allele collection metadata from the **1_allele_collection** directory.
 
 ## Using 2_analysis
+Navigate into the `2_analysis` directory and create the dual-ipa Python virtual environment with all dependencies:
 ```
 mamba create --name dual-ipa --file env-reqs.txt
 mamba activate dual-ipa
 ```
+
+Python notebooks and scripts are numbered in the order that they should be run to reproduce all of the output files. Python scripts without numeric prefixes contain functions that are imported by the numbered files. Each notebook starts with a description of the analysis tasks that it performs, and contains extensive comments throughoupt.
+
 
 
 ## Files in 3_outputs
