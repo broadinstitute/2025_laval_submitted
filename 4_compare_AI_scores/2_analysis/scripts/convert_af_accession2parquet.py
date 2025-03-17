@@ -1,6 +1,7 @@
 import polars as pl
 import re
 from typing import Optional, Tuple
+import time
 
 
 def process_accession_file(input_csv: str, output_parquet: str):
@@ -8,6 +9,8 @@ def process_accession_file(input_csv: str, output_parquet: str):
     Process large accession CSV into optimized Parquet format with interval indexing
     [Uses Polars' streaming and chunk processing for memory efficiency]
     """
+    start_time = time.time()
+
     # Read with schema optimization and streaming mode
     df = pl.scan_csv(
         input_csv,
@@ -35,6 +38,9 @@ def process_accession_file(input_csv: str, output_parquet: str):
         compression="zstd"
     )
 
+    end_time = time.time()
+    print(f"Processing completed in {end_time - start_time:.2f} seconds")
 
-process_accession_file("../../1_inputs/raw_data/alphafold/accession_ids.csv",
+
+process_accession_file("../../1_inputs/raw_inputs/alphafold/accession_ids.csv",
                        "../../3_outputs/processed_data/af_id_mapping/af_mapping.parquet")
