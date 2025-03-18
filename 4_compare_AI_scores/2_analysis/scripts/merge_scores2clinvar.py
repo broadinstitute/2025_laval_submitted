@@ -16,11 +16,9 @@ import calculate_rsa_scores as get_rsa
 
 
 # Define all paths and settings directly in the script
-INPUT_FILE = f"../../3_outputs/processed_data/dbnsfp/dbNSFP5.0a_variant.clin_var_re-annot_dedup_variants.parquet"
-OUTPUT_FILE = "../../3_outputs/processed_data/dbnsfp/dbNSFP5.0a_variant.clin_var_dedup_plddt_rsa.parquet"
 PLDDT_DIR = "../../3_outputs/processed_data/plddt_scores"
 RSA_DIR = "../../3_outputs/processed_data/rsa_scores"
-CHUNK_SIZE = 10000
+CHUNK_SIZE = 100
 NUM_WORKERS = max(256, os.cpu_count())  # Use a reasonable default for parallelism
 
 
@@ -160,6 +158,10 @@ def main():
 if __name__ == "__main__":
     # Simple argparse just to allow basic customization without editing script
     parser = argparse.ArgumentParser(description="Process ClinVar variants with pLDDT and RSA scores in parallel")
+    parser.add_argument("--input_file", type=str, 
+                        help=f"Input file")
+    parser.add_argument("--output_file", type=str,
+                        help=f"Output file")
     parser.add_argument("--workers", type=int, default=NUM_WORKERS,
                         help=f"Number of parallel workers (default: {NUM_WORKERS})")
     parser.add_argument("--chunk-size", type=int, default=CHUNK_SIZE,
@@ -167,6 +169,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Override defaults with command line args if provided
+    INPUT_FILE = args.input_file #f"../../3_outputs/processed_data/dbnsfp/dbNSFP5.0a_variant.clin_var_re-annot_dedup_variants_100k.parquet"
+    OUTPUT_FILE = args.output_file #"../../3_outputs/processed_data/dbnsfp/dbNSFP5.0a_variant.clin_var_dedup_plddt_rsa_100k.parquet"
     NUM_WORKERS = args.workers
     CHUNK_SIZE = args.chunk_size
 

@@ -1,24 +1,5 @@
 #!/bin/bash
 
-## Downloading the necessary data files:
-## ========================================================================================================
-# cd ../../1_inputs/raw_inputs
-
-## Downloading the AI-predicted scores for nsSNPs from the https://www.dbnsfp.org/download database
-## It is located on G-drive in the below link: (gdown could be installed using conda/pip)
-# gdown --fuzzy https://drive.google.com/file/d/1QoVE-o8YBiXyp2wQjrmIvplBEdC5QYUE/view?usp=sharing
-
-# mkdir -p alphafold
-# cd alphafold
-## Downloading the Alphafold2 predictions for UP000005640_9606_HUMAN_v4 from EBI ftp
-# wget https://ftp.ebi.ac.uk/pub/databases/alphafold/latest/UP000005640_9606_HUMAN_v4.tar
-# mkdir -p UP000005640_9606_HUMAN_v4/ && tar -xvf UP000005640_9606_HUMAN_v4.tar -C UP000005640_9606_HUMAN_v4/
-# wget https://ftp.ebi.ac.uk/pub/databases/alphafold/accession_ids.csv
-
-## Downloading the PROVEAN scores: link doesn't seem to work anymore, downloaded by Georges
-# ftp://ftp.jcvi.org/pub/data/provean/precomputed_scores/PROVEAN_scores_ensembl66_human.tsv ##
-## ========================================================================================================
-
 ## Processing the data files to get the per-residue scores
 ## ========================================================================================================
 
@@ -33,4 +14,12 @@
 ## ========================================================================================================
 
 ## Adding scores to them
-python merge_scores2clinvar.py > add_plddt_rsa_scores.log
+# python merge_scores2clinvar.py \
+#     --input_file "../../3_outputs/processed_data/dbnsfp/dbNSFP5.0a_variant.clin_var_re-annot_dedup_variants_10k.parquet" \
+#     --output_file "../../3_outputs/processed_data/dbnsfp/dbNSFP5.0a_variant.clin_var_re-annot_dedup_variants_10k_scores.parquet" \
+#     > add_plddt_rsa_scores_100k.log
+
+python merge_scores2clinvar.py \
+    --input_file "../../3_outputs/processed_data/dbnsfp/dbNSFP5.0a_variant.clin_var_re-annot_pdb_variants.parquet" \
+    --output_file "../../3_outputs/processed_data/dbnsfp/dbNSFP5.0a_variant.clin_var_re-annot_pdb_variants_plddt_rsa.parquet" \
+    > pdb_prioritized_variants_add_plddt_rsa_scores.log
