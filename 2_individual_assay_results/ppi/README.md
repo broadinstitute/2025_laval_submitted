@@ -13,15 +13,14 @@ Within this folder:
 - **mapping_384_to_96.rtf**: a text file mapping source (n = 96) well to desitination (4 reps * 96 source wells = 384 desitination) spots.
 - **VarChAMP_1percent_Y2H_scores.tsv**: these are the manual scores attributed to the Y2H images using iScore software. Raw images are available on (Zenodo)[https://zenodo.org/records/15020115]. There are 6 conditions (media; 1-6) that yeast grow on.
 - **media_control_score_thresholds.csv**: there are six different controls on each mega-plate (6*384) and each has media-specific thresholds. This file outlines the control-media-specific control thresholds and are used for QA/QC.
-- **prsrrsv2.csv**: these are positive (PRS) and negative (RRS, randomly sampled) pairs of proteins with high-quality validation. Recovery rates of these PPIs are an additional positive control. 
 - **swimseq_confirmation**: both the activation-domain and dna-binding-domain proteins were sequenced. This folder contains binary labels for whether each protein was successfully sequence confirmed.
 
 
 ### N2H_validation input data
 Within this folder:
-- **mammalian_N2H**: raw protein-protein interactions for both the reference alleles (mN2H_WTPWT) and the variant alleles (mN2H_APWT). CHECK TO SEE IF INDIVIDUAL FILES CAN BE REMOVED IF ALSO COMPILED.
-- **N2H sequencing confirmation**: 
-- **yeast_N2H**: 
+- **mammalian_N2H**: raw protein-protein interactions for the reference alleles (mN2H_WTPWT) and variant alleles (mN2H_APWT), along with a file that maps the plate and wells from the raw data to allele metadata.
+- **yeast_N2H**: raw protein-protein interactions for the reference alleles (WT_PWT) and variant alleles (APWT), along with a file that maps the plate and wells from the raw data to allele metadata and a file denoting the empty wells.
+- **N2H sequencing confirmation**: these files contain binary scores denoting whether the expected allele was confirmed by the sequencing results.
 
 
 ## Using 2_analysis
@@ -30,9 +29,20 @@ Navigate into the `2_analysis` directory and create the ppi Python virtual envir
 mamba create --name ppi --file env-reqs.txt
 mamba activate ppi
 ```
-Python notebooks are numbered in the order that they should be run to reproduce all of the output files. Python scripts without numeric prefixes contain functions that are imported by the numbered files. Each notebook starts with a description of the analysis tasks that it performs, and contains extensive comments throughoupt. 
-
+Python notebooks are numbered in the order that they should be run to reproduce all of the output files. Each notebook starts with a description of the analysis tasks that it performs, and contains extensive comments throughoupt. 
 
 ## Files in 3_outputs
 
 ### sqY2H outputs
+The sqY2H analysis produces:
+- **raw_individual_scores.csv**: manual scores from 0-4 for each spot. Each biological sample (ie. allele) is represented as 4 technical replicate spots.
+- **raw_consensus_scores.csv**: aggregated manual scores from 0-4 for each biological sample representing the consensus of the 4 technical replicates. 
+- **normalized_consensus_scores.csv**: aggregated scores that have been QA/QCed, adjusted for autoactivation, and normalized between 0 and 1.
+- **edgotype_profiles**: matrix of normalized scores (interactors X alleles) for each profiled gene. 
+
+### N2H_validation outputs
+The N2H validation produces a final titration plot that shows that the overall sqY2H results are reproduced in an orthogonal assay. The same outputs are produced for both yeast N2H and mammalian N2H:
+- **wtpwt_raw.csv**: normalized luminenscence ratios from the wild type pairwise test
+- **wtpwt_counts.csv**: number of sqY2H wild types that can be detected in the N2H assay at different thresholds
+- **wtpwt_positive_PPIs.csv**: normalized luminenscence ratios from the wild type pairwise test for all wild types that passed the threshold selected based on the _counts results
+- **apwt_allele_df.csv**: normalized luminenscence ratios for both wild types and alleles for the positive_PPI wild type genes, along with perturbation z-scores and labels. 
