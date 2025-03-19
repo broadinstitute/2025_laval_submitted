@@ -40,8 +40,8 @@ def get_plddt_score(pdb_id, aapos, aaref, parquet_files_plddt):
         return np.nan
 
     try:
-        if int(aapos) in df.index and df.loc[int(aapos), "residue_name"] == aaref:
-            return df.loc[int(aapos), "plddt"]
+        if int(aapos)-1 in df.index and df.loc[int(aapos)-1, "residue_name"] == aaref:
+            return df.loc[int(aapos)-1, "plddt"]
     except:
         pass
     return np.nan
@@ -54,8 +54,8 @@ def get_rsa_score(pdb_id, aapos, aaref, parquet_files_rsa):
         return np.nan
 
     try:
-        if int(aapos) in df.index and df.loc[int(aapos), "residue_name"] == aaref:
-            return df.loc[int(aapos), "rsa"]
+        if int(aapos)-1 in df.index and df.loc[int(aapos)-1, "residue_name"] == aaref:
+            return df.loc[int(aapos)-1, "rsa"]
     except:
         pass
     return np.nan
@@ -178,8 +178,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Override defaults with command line args if provided
-    INPUT_FILE = args.input_file #f"../../3_outputs/processed_data/dbnsfp/dbNSFP5.0a_variant.clin_var_re-annot_dedup_variants_100k.parquet"
-    OUTPUT_FILE = args.output_file #"../../3_outputs/processed_data/dbnsfp/dbNSFP5.0a_variant.clin_var_dedup_plddt_rsa_100k.parquet"
+    INPUT_FILE = args.input_file
+    OUTPUT_FILE = args.output_file
     NUM_WORKERS = args.workers
     CHUNK_SIZE = args.chunk_size
 
