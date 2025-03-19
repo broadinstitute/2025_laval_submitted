@@ -9,6 +9,8 @@ import concurrent.futures
 import argparse
 from tqdm import tqdm
 import time
+import signal
+
 
 # Import custom modules
 import extract_plddt_scores as get_plddt
@@ -18,8 +20,8 @@ import calculate_rsa_scores as get_rsa
 # Define all paths and settings directly in the script
 PLDDT_DIR = "../../3_outputs/processed_data/plddt_scores"
 RSA_DIR = "../../3_outputs/processed_data/rsa_scores"
-CHUNK_SIZE = 100
-NUM_WORKERS = max(256, os.cpu_count())  # Use a reasonable default for parallelism
+CHUNK_SIZE = 10000
+NUM_WORKERS = min(256, os.cpu_count())  # Use a reasonable default for parallelism
 
 
 # Define amino acid conversion dictionary
@@ -109,6 +111,13 @@ def process_chunk_range(args):
 
 
 def main():
+    # Set up signal handler for graceful shutdown
+    def signal_handler(sig, frame):
+        print('\nYou pressed Ctrl+C! Saving progress...')
+        sys.exit(0)
+    
+    signal.signal(signal.SIGINT, signal_handler)
+
     start_time = time.time()
     print(f"Starting processing with {NUM_WORKERS} workers and chunk size of {CHUNK_SIZE}")
 
