@@ -19,7 +19,7 @@ def main() -> None:
     This function uses the cpg index to locate all DNA and GFP images and Image.csv files for batch 7.
 
     """
-    index_dir = Path("/dgx1nas1/storage/data/jess/cpg_index")
+    index_dir = Path("../cp_gallery_index_files")
     index_files = list(index_dir.glob("*.parquet"))
 
     # Download images
@@ -37,7 +37,7 @@ def main() -> None:
 
     download_keys = list(index_df.to_dict()["key"])
     parallel(download_keys, download_s3_files, ["cellpainting-gallery",
-                                                Path("/dgx1nas1/storage/data/jess/cytoself/varchamp_data/tiff_images")],
+                                                Path("../cellpainting_gallery/tiff_images")],
                                                 jobs=20)
 
 
@@ -56,7 +56,7 @@ def main() -> None:
 
     download_keys = list(index_df.to_dict()["key"])
     parallel(download_keys, download_s3_files, ["cellpainting-gallery",
-                                                Path("/dgx1nas1/storage/data/jess/cytoself/varchamp_data/image_csv")],
+                                                Path("../cellpainting_gallery/image_csv")],
                                                 jobs=20)
 
 if __name__ == "__main__":

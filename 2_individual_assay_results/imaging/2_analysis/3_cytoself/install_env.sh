@@ -9,3 +9,7 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 ## Install cytoself dependencies
 pip install -e .
 
+## Install tools for easy downloading and process data from CellPainting Gallery
+## https://github.com/broadinstitute/cpg/tree/main/cpgdata
+pip install cpgdata
+cpg index sync -o "cp_gallery_index_files" ## cp_gallery_index_files here is a symbolic link to the directory in which the CP gallery index files are stored
