@@ -15,7 +15,7 @@ mkdir -p $DATAPATH/metadata/platemaps
 
 for batch_id in $batches;
 do
-    aws s3 sync --no-sign-request --exclude "*.csv" "$BASEPATH/backend/$batch_id" $DATAPATH/single_cell_profiles/$batch_id
+    # aws s3 sync --no-sign-request --exclude "*.csv" "$BASEPATH/backend/$batch_id" $DATAPATH/single_cell_profiles/$batch_id
     aws s3 sync --no-sign-request "$BASEPATH/metadata/platemaps/$batch_id" $DATAPATH/metadata/platemaps/$batch_id
 
     ## (Optional) If you want to download the data channel by channel, you can also try: 
