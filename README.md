@@ -25,5 +25,8 @@ git add .
 git commit -m "data and analysis of PPI dataset"
 git push
 ```
+Note that the first time that you try and push, you will get an error. Git will suggest a slightly different command - follow their suggestions. After this is run once, you can use plain `git push` in the future. 
 
-In the Github web interface, navigate to your branch within your repo. Click the "Contribute" dropdown and then the "Open pull request" button. This will make a request to the main parent repository to merge the changes that you've contributed on your branch. It's good practice to have someone review your contributions and request any necessary edits before merging into the parent repository. Tag Jess in the "Request Review" section. Once she's approved the merge, delete your branch.
+In the Github web interface, navigate to your branch within your repo. Click the "Contribute" dropdown and then the "Open pull request" button. This will make a request to the main parent repository to merge the changes that you've contributed on your branch. It's good practice to have someone review your contributions and request any necessary edits before merging into the parent repository. Tag another repository contributor in the "Request Review" section. Once they've approved the merge, delete your branch.
+
+If you'd like to learn more about how git and github work, Jess suggests [this lecture](https://missing.csail.mit.edu/2020/version-control/) or [this online game](https://learngitbranching.js.org/). 
