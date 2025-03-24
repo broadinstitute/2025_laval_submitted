@@ -9,13 +9,15 @@ For each image:
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any, Callable
-
 import numpy as np
 import polars as pl
 import tifffile as tiff
 import zarr
 from skimage import exposure
 from tqdm import tqdm
+
+CP_GALLERY_DIR = "../cellpainting_gallery"
+N_THREAD = 128
 
 
 def get_img_paths(imagecsv_dir: str) -> pl.DataFrame:
@@ -52,7 +54,7 @@ def get_img_paths(imagecsv_dir: str) -> pl.DataFrame:
     return pl.concat(image_dat).rename({"ImageNumber": "Metadata_ImageNumber"})
 
 
-def tiff2zarr(tiffpath: str) -> None:
+def tiff2zarr(tiffpath: str, cpg_dir: str=CP_GALLERY_DIR) -> None:
     """Rescales and converts tiff.
 
     Parameters
@@ -61,7 +63,7 @@ def tiff2zarr(tiffpath: str) -> None:
         Path to the tiff file to rescale and convert.
 
     """
-    tiffpath = f"/dgx1nas1/storage/data/jess/cytoself/varchamp_data/tiff_images/cpg0020-varchamp/{tiffpath}"
+    tiffpath = f"{CP_GALLERY_DIR}/tiff_images/cpg0020-varchamp/{tiffpath}"
     # Read in image
     img = tiff.imread(tiffpath)
 
@@ -75,6 +77,7 @@ def tiff2zarr(tiffpath: str) -> None:
     zarrpath = zarrpath.replace("tiff_images", "zarr_images")
     zarr_array = zarr.array(img)
     zarr.save(zarrpath, zarr_array)
+
 
 def run_in_parallel(function: Callable[[Any], None], args_list: list, max_workers: int) -> None:
     """Run function in parallel.
@@ -102,10 +105,8 @@ def main() -> None:
     This function reads in all tiff files, rescales from 0 to 99th percentils, and saves as zarr.
 
     """
-    varchamp_dir = "/dgx1nas1/storage/data/jess/cytoself/varchamp_data"
-    imagecsv_dir = f"{varchamp_dir}/image_csv/cpg0020-varchamp/broad/workspace/assaydev/2024_01_23_Batch_7"
-
-    n_thread = 40
+    
+    imagecsv_dir = f"{CP_GALLERY_DIR}/image_csv/cpg0020-varchamp/broad/workspace/assaydev/2024_01_23_Batch_7"
 
     image_dat = get_img_paths(imagecsv_dir=imagecsv_dir)
 
@@ -128,8 +129,7 @@ def main() -> None:
     dna_path = image_dat.select("DNA_imgpath").to_series().unique().to_list()
     gfp_path = image_dat.select("GFP_imgpath").to_series().unique().to_list()
     img_paths = dna_path + gfp_path
-
-    run_in_parallel(tiff2zarr, img_paths, max_workers=n_thread)
+    run_in_parallel(tiff2zarr, img_paths, max_workers=N_THREAD)
 
 
 if __name__ == "__main__":

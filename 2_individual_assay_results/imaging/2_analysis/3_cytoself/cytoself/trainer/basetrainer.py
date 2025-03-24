@@ -547,7 +547,7 @@ class BaseTrainer:
             Loading by weights is safer in case some logic has been changed from when the model was saved.
 
         """
-        _model = torch.load(path)
+        _model = torch.load(path, weights_only=False) ## added ```weights_only=False``` manually
         if isinstance(_model, dict):
             self.model.load_state_dict(_model)
         elif by_weights:

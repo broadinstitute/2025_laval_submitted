@@ -8,7 +8,6 @@ For each allele:
 """  # noqa: INP001
 
 import os
-
 import numpy as np
 import polars as pl
 import zarr
@@ -76,12 +75,12 @@ def main() -> None:
 
     """
     # Paths
-    varchamp_dir = "/dgx1nas1/storage/data/jess/cytoself/varchamp_data"
-    imagecsv_dir = f"{varchamp_dir}/image_csv/cpg0020-varchamp/broad/workspace/assaydev/2024_01_23_Batch_7"
-    repo_dir = "/dgx1nas1/storage/data/jess/repos/2021_09_01_VarChAMP"
-    prof_path = f"{repo_dir}/6.downstream_analysis_snakemake/outputs/batch_profiles/2024_01_23_Batch_7/profiles.parquet"
-    img_dir = f"{varchamp_dir}/zarr_images/cpg0020-varchamp"
-    out_dir = "/dgx1nas1/storage/data/jess/cytoself/varchamp_data/model_input"
+    CP_GALLERY_DIR = "../cellpainting_gallery"
+
+    imagecsv_dir = f"{CP_GALLERY_DIR}/image_csv/cpg0020-varchamp/broad/workspace/assaydev/2024_01_23_Batch_7"
+    img_dir = f"{CP_GALLERY_DIR}/zarr_images/cpg0020-varchamp"
+    prof_path = f"../../1_snakemake_pipeline/2025_varchamp_snakemake/snakemake_pipeline/outputs/batch_profiles/2024_01_23_Batch_7/profiles.parquet"
+    out_dir = "../model_inputs"
 
     # Filter thresholds
     min_area_ratio = 0.15
