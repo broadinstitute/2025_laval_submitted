@@ -12,4 +12,13 @@ pip install -e .
 ## Install tools for easy downloading and process data from CellPainting Gallery
 ## https://github.com/broadinstitute/cpg/tree/main/cpgdata
 pip install cpgdata
+
+## Sync pre-generated index files
 cpg index sync -o "cp_gallery_index_files" ## cp_gallery_index_files here is a symbolic link to the directory in which the CP gallery index files are stored
+
+
+## Some other extra dependencies
+conda install tifffile
+conda install zarr
+conda install scikit-image
+pip install adjustText

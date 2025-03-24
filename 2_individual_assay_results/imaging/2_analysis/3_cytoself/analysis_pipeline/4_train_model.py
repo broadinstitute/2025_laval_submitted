@@ -11,8 +11,8 @@ from cytoself.trainer.utils.plot_history import plot_history_cytoself
 
 # 1. Prepare Data
 data_ch = ["pro", "nuc"]
-datapath = "/dgx1nas1/storage/data/jess/cytoself/varchamp_data/model_input"
-outputpath = "/dgx1nas1/storage/data/jess/cytoself/trained_models"
+datapath = "../model_inputs"
+outputpath = "../trained_models"
 model_nm = "varchamp_v1"
 
 # Define datamanager

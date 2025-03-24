@@ -4,8 +4,9 @@ The process involves:
 1. Querying the cpg index
 2. Downloading files
 
-"""  # noqa: INP001
+"""  
 
+# noqa: INP001
 # Imports
 from pathlib import Path
 
