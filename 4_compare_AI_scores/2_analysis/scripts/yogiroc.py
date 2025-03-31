@@ -4,6 +4,7 @@ from scipy.stats import binom, beta
 import matplotlib.pyplot as plt
 from math import ceil, log10
 from tqdm import tqdm
+from sklearn.metrics import precision_recall_curve, roc_curve
 
 # -----------------------------------------------------------------------------
 # Helper functions
@@ -425,27 +426,56 @@ class YogiROC2:
             # Compute sample prior as the fraction of true cases.
             prior = truth_valid.mean()
             # Use unique sorted thresholds including -inf and +inf.
-            thresholds = np.concatenate(([-np.inf], np.sort(col_scores.unique()), [np.inf]))
-            rows = []
-            for t in thresholds:
-                # Determine which calls (scores) are above threshold.
-                calls = col_scores >= t
-                # Calculate confusion matrix components.
-                tp = np.sum(calls & self.truth)
-                tn = np.sum((~calls) & (~self.truth))
-                fp = np.sum(calls & (~self.truth))
-                fn = np.sum((~calls) & self.truth)
-                # Calculate precision (PPV), sensitivity (TPR), and fallout (FPR).
-                ppv_prec = tp / (tp + fp) if (tp + fp) > 0 else np.nan
-                tpr_sens = tp / (tp + fn) if (tp + fn) > 0 else np.nan
-                fpr_fall = fp / (tn + fp) if (tn + fp) > 0 else np.nan
-                rows.append([t, tp, tn, fp, fn, ppv_prec, tpr_sens, fpr_fall])
-            df = pd.DataFrame(rows, columns=["thresh", "tp", "tn", "fp", "fn",
-                                               "ppv_prec", "tpr_sens", "fpr_fall"])
+            # thresholds = np.concatenate(([-np.inf], np.sort(col_scores.unique()), [np.inf]))
+            # rows = []
+            # for t in thresholds:
+            #     # Determine which calls (scores) are above threshold.
+            #     calls = col_scores >= t
+            #     # Calculate confusion matrix components.
+            #     tp = np.sum(calls & self.truth)
+            #     tn = np.sum((~calls) & (~self.truth))
+            #     fp = np.sum(calls & (~self.truth))
+            #     fn = np.sum((~calls) & self.truth)
+            #     # Calculate precision (PPV), sensitivity (TPR), and fallout (FPR).
+            #     ppv_prec = tp / (tp + fp) if (tp + fp) > 0 else np.nan
+            #     tpr_sens = tp / (tp + fn) if (tp + fn) > 0 else np.nan
+            #     fpr_fall = fp / (tn + fp) if (tn + fp) > 0 else np.nan
+            #     rows.append([t, tp, tn, fp, fn, ppv_prec, tpr_sens, fpr_fall])
+
+            # Assume truth_valid and col_scores are your ground truth and scores arrays.
+            precision, recall, pr_thresholds = precision_recall_curve(truth_valid, col_scores)
+            df_prc = pd.DataFrame({
+                "thresh_prc": np.concatenate(([-np.inf], pr_thresholds)),
+                "ppv_prec": precision, 
+                "tpr_sens": recall, 
+                
+            })
+            # derive confusion matrix counts:
+            fpr, tpr, roc_thresholds = roc_curve(truth_valid, col_scores)
+            P = np.sum(truth_valid)                # total positives
+            N = len(truth_valid) - P               # total negatives
+            # Derive counts for each threshold from the ROC metrics:
+            tp = tpr * P                         # True Positives
+            fp = fpr * N                         # False Positives
+            fn = P - tp                          # False Negatives
+            tn = N - fp                          # True Negatives
+
+            df_roc = pd.DataFrame(
+                {
+                    "thresh_roc": roc_thresholds,
+                    "tp": tp, 
+                    "tn": tn, 
+                    "fp": fp, 
+                    "fn": fn, 
+                    "fpr_fall": fpr
+                }
+            )
+            df = df_prc.merge(df_roc, left_on="thresh_prc", right_on="thresh_roc", how="outer")
             # Adjust the last row's precision to equal the penultimate row's value.
-            if len(df) >= 2:
-                df.loc[df.index[-1], "ppv_prec"] = df.loc[df.index[-2], "ppv_prec"]
+            # if len(df) >= 2:
+            #     df.loc[df.index[-1], "ppv_prec"] = df.loc[df.index[-2], "ppv_prec"]
             self.tables[col] = df
+
 
     def __str__(self):
         # Use the first table to get the reference set size (excluding the -inf and +inf rows).
