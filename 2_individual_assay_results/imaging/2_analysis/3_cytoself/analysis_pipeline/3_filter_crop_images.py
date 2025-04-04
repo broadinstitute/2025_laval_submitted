@@ -8,10 +8,16 @@ For each allele:
 """  # noqa: INP001
 
 import os
+import argparse
+import logging
+import time
 import numpy as np
 import polars as pl
 import zarr
 from tqdm import tqdm
+
+## Constants
+CP_GALLERY_DIR = "../cellpainting_gallery"
 
 
 def crop_allele(allele: str, profile_df: pl.DataFrame, img_dir: str, out_dir: str) -> None:
@@ -27,7 +33,6 @@ def crop_allele(allele: str, profile_df: pl.DataFrame, img_dir: str, out_dir: st
         Directory where all images are stored
     out_dir : String
         Directory where numpy arrays should be saved
-
     """
     allele_df = profile_df.filter(pl.col("Protein_label") == allele)
     sites = allele_df.select("Metadata_SiteID").to_series().unique().to_list()
@@ -35,7 +40,6 @@ def crop_allele(allele: str, profile_df: pl.DataFrame, img_dir: str, out_dir: st
     meta = []
     gfp = []
     dna = []
-
     for site in sites:
         site_df = allele_df.filter(pl.col("Metadata_SiteID") == site)
 
@@ -63,6 +67,8 @@ def crop_allele(allele: str, profile_df: pl.DataFrame, img_dir: str, out_dir: st
     dna_array = np.stack(dna)
     meta_array = pl.concat(meta).to_numpy()
 
+    print(meta_array)
+
     np.save(f"{out_dir}/{allele}_label.npy", meta_array)
     np.save(f"{out_dir}/{allele}_pro.npy", gfp_array)
     np.save(f"{out_dir}/{allele}_nuc.npy", dna_array)
@@ -75,12 +81,31 @@ def main() -> None:
 
     """
     # Paths
-    CP_GALLERY_DIR = "../cellpainting_gallery"
 
-    imagecsv_dir = f"{CP_GALLERY_DIR}/image_csv/cpg0020-varchamp/broad/workspace/assaydev/2024_01_23_Batch_7"
+    parser = argparse.ArgumentParser(description="Image batch to download")
+    parser.add_argument("--batch_id", type=str, 
+                        help=f"Batch ID")
+    parser.add_argument("--exclude_plate", type=str, default="",
+                        help=f"Plate to exclude")
+    args = parser.parse_args()
+
+    # Override defaults with command line args if provided
+    batch_id = args.batch_id
+    plate2exclude = args.exclude_plate
+
+    logging.basicConfig(
+        filename=f"3_filter_crop_images_{batch_id}.log",
+        filemode="w",
+        level=logging.DEBUG,
+        format="%(asctime)s - %(levelname)s - %(message)s"
+    )
+    overall_start = time.time()
+    logging.info("Cropping images of cells started")
+
+    imagecsv_dir = f"{CP_GALLERY_DIR}/image_csv/cpg0020-varchamp/broad/workspace/assaydev/{batch_id}"
     img_dir = f"{CP_GALLERY_DIR}/zarr_images/cpg0020-varchamp"
-    prof_path = f"../../1_snakemake_pipeline/2025_varchamp_snakemake/snakemake_pipeline/outputs/batch_profiles/2024_01_23_Batch_7/profiles.parquet"
-    out_dir = "../model_inputs"
+    prof_path = f"../../1_snakemake_pipeline/2025_varchamp_snakemake/snakemake_pipeline/outputs/batch_profiles/{batch_id}/profiles.parquet"
+    out_dir = f"../model_inputs/{batch_id}"
 
     # Filter thresholds
     min_area_ratio = 0.15
@@ -141,7 +166,14 @@ def main() -> None:
     )
 
     # Filter out allele set 5 (mismatched metadata)
-    profiles = profiles.filter(pl.col("Metadata_plate_map_name") != "B7A2R1_P1")
+    if plate2exclude:
+        original_plates = profiles.select(pl.col("Metadata_plate_map_name")).unique()
+        logging.info(f"Original plate maps: {original_plates}")
+        logging.info(f"Excluding {plate2exclude} for downstream cell cropping:")
+        profiles = profiles.filter(pl.col("Metadata_plate_map_name") != plate2exclude)
+
+        filtered_plates = profiles.select(pl.col("Metadata_plate_map_name")).unique()
+        logging.info(f"Filtered plate maps: {filtered_plates}")
 
     # Filter out alleles with fewer than 250 cells
     keep_alleles = profiles.group_by("Metadata_gene_allele").count().filter(
@@ -207,8 +239,14 @@ def main() -> None:
     profiles = profiles.sort(["Protein_label", "Metadata_SiteID"])
     alleles = profiles.select("Protein_label").to_series().unique().to_list()
 
+    logging.info(f"Cropping images of cells per variant allele to {out_dir}")
     for allele in tqdm(alleles):
         crop_allele(allele, profiles, img_dir, out_dir)
+        break
+
+    overall_end = time.time()
+    elapsed = overall_end - overall_start
+    logging.info("Cropping images of cells finished in %.2f seconds", elapsed)
 
 
 if __name__ == "__main__":
