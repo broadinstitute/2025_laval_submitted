@@ -7,6 +7,9 @@ For each image:
 """  # noqa: INP001
 
 import os
+import argparse
+import logging
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any, Callable
 import numpy as np
@@ -38,7 +41,6 @@ def get_img_paths(imagecsv_dir: str) -> pl.DataFrame:
     icf = os.listdir(imagecsv_dir)
     for fp in tqdm(icf):
         plate, well = fp.split("-")
-
         image_dat.append(pl.read_csv(f"{imagecsv_dir}/{fp}/Image.csv").select(
             [
                 "ImageNumber",
@@ -105,8 +107,25 @@ def main() -> None:
     This function reads in all tiff files, rescales from 0 to 99th percentils, and saves as zarr.
 
     """
-    
-    imagecsv_dir = f"{CP_GALLERY_DIR}/image_csv/cpg0020-varchamp/broad/workspace/assaydev/2024_01_23_Batch_7"
+    parser = argparse.ArgumentParser(description="Image batch to download")
+    parser.add_argument("--batch_id", type=str, 
+                        help=f"Batch ID")
+    args = parser.parse_args()
+
+    # Override defaults with command line args if provided
+    batch_id = args.batch_id
+
+    # Configure logging to output to a file
+    logging.basicConfig(
+        filename=f"2_convert_tiff_zarr_{batch_id}.log",
+        filemode="w",
+        level=logging.DEBUG,
+        format="%(asctime)s - %(levelname)s - %(message)s"
+    )
+    overall_start = time.time()
+    logging.info("Image compression started")
+
+    imagecsv_dir = f"{CP_GALLERY_DIR}/image_csv/cpg0020-varchamp/broad/workspace/assaydev/{batch_id}"
 
     image_dat = get_img_paths(imagecsv_dir=imagecsv_dir)
 
@@ -129,8 +148,14 @@ def main() -> None:
     dna_path = image_dat.select("DNA_imgpath").to_series().unique().to_list()
     gfp_path = image_dat.select("GFP_imgpath").to_series().unique().to_list()
     img_paths = dna_path + gfp_path
+    logging.info(f"tiff images compressed to ../cellpainting_gallery/zarr_images.")
     run_in_parallel(tiff2zarr, img_paths, max_workers=N_THREAD)
+
+    overall_end = time.time()
+    elapsed = overall_end - overall_start
+    logging.info("compression finished in %.2f seconds", elapsed)
 
 
 if __name__ == "__main__":
     main()
+    
