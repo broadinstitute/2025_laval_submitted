@@ -66,8 +66,7 @@ def crop_allele(allele: str, profile_df: pl.DataFrame, img_dir: str, out_dir: st
     gfp_array = np.stack(gfp)
     dna_array = np.stack(dna)
     meta_array = pl.concat(meta).to_numpy()
-
-    print(meta_array)
+    # print(meta_array)
 
     np.save(f"{out_dir}/{allele}_label.npy", meta_array)
     np.save(f"{out_dir}/{allele}_pro.npy", gfp_array)
@@ -106,6 +105,8 @@ def main() -> None:
     img_dir = f"{CP_GALLERY_DIR}/zarr_images/cpg0020-varchamp"
     prof_path = f"../../1_snakemake_pipeline/2025_varchamp_snakemake/snakemake_pipeline/outputs/batch_profiles/{batch_id}/profiles.parquet"
     out_dir = f"../model_inputs/{batch_id}"
+    if not os.path.exists(out_dir):
+        os.makedirs(out_dir, exist_ok=True)
 
     # Filter thresholds
     min_area_ratio = 0.15
@@ -120,7 +121,7 @@ def main() -> None:
         ["Metadata_well_position", "Metadata_plate_map_name", "Metadata_ImageNumber", "Metadata_ObjectNumber",
          "Metadata_symbol", "Metadata_gene_allele", "Metadata_control_type", "Metadata_Plate",
          "Nuclei_AreaShape_Area", "Cells_AreaShape_Area", "Nuclei_AreaShape_Center_X", "Nuclei_AreaShape_Center_Y",
-         "Cells_Intensity_MedianIntensity_GFP", "Cells_Intensity_IntegratedIntensity_GFP"],
+         "Cells_Intensity_MeanIntensity_GFP", "Cells_Intensity_MedianIntensity_GFP", "Cells_Intensity_IntegratedIntensity_GFP"],
     ).collect()
 
     # Filter based on cell to nucleus area
@@ -137,13 +138,18 @@ def main() -> None:
         (pl.col("Nuclei_AreaShape_Center_Y") > min_center) & (pl.col("Nuclei_AreaShape_Center_Y") < max_center)),
     )
 
-    # Calculate median and mad of gfp intensity for each allele
+    # Calculate mean, median and mad of gfp intensity for each allele
+    ## mean
+    means = profiles.group_by(["Metadata_Plate", "Metadata_well_position"]).agg(
+        pl.col("Cells_Intensity_MeanIntensity_GFP").mean().alias("WellIntensityMean"),
+    )
+    profiles = profiles.join(means, on=["Metadata_Plate", "Metadata_well_position"])
+    ## median
     medians = profiles.group_by(["Metadata_Plate", "Metadata_well_position"]).agg(
         pl.col("Cells_Intensity_MedianIntensity_GFP").median().alias("WellIntensityMedian"),
     )
-
     profiles = profiles.join(medians, on=["Metadata_Plate", "Metadata_well_position"])
-
+    ## mad
     profiles = profiles.with_columns(
         (pl.col("Cells_Intensity_MedianIntensity_GFP") - pl.col("WellIntensityMedian")).abs().alias("Abs_dev"),
     )
@@ -153,16 +159,17 @@ def main() -> None:
     profiles = profiles.join(mad, on=["Metadata_Plate", "Metadata_well_position"])
 
     # Threshold is 5X
+    ## Used to be median well intensity + 5*mad implemented by Jess
+    ## Switching to mean well intensity + 5*mad implemented by Runxi
     profiles = profiles.with_columns(
-        (pl.col("WellIntensityMedian") + num_mad*pl.col("Intensity_MAD")).alias("Intensity_upper_threshold"),
-        (pl.col("WellIntensityMedian") - num_mad*pl.col("Intensity_MAD")).alias("Intensity_lower_threshold"),
+        (pl.col("WellIntensityMean") + num_mad*pl.col("Intensity_MAD")).alias("Intensity_upper_threshold"), ## pl.col("WellIntensityMedian")
+        (pl.col("WellIntensityMean") - num_mad*pl.col("Intensity_MAD")).alias("Intensity_lower_threshold"), ## pl.col("WellIntensityMedian")
     )
-
-    # Filter by intensity MAD
+    ## Filter by intensity MAD
     profiles = profiles.filter(
-        pl.col("Cells_Intensity_MedianIntensity_GFP") <= pl.col("Intensity_upper_threshold"),
+        pl.col("Cells_Intensity_MeanIntensity_GFP") <= pl.col("Intensity_upper_threshold"),
     ).filter(
-        pl.col("Cells_Intensity_MedianIntensity_GFP") >= pl.col("Intensity_lower_threshold"),
+        pl.col("Cells_Intensity_MeanIntensity_GFP") >= pl.col("Intensity_lower_threshold"),
     )
 
     # Filter out allele set 5 (mismatched metadata)
@@ -238,11 +245,10 @@ def main() -> None:
     )
     profiles = profiles.sort(["Protein_label", "Metadata_SiteID"])
     alleles = profiles.select("Protein_label").to_series().unique().to_list()
-
+    
     logging.info(f"Cropping images of cells per variant allele to {out_dir}")
     for allele in tqdm(alleles):
         crop_allele(allele, profiles, img_dir, out_dir)
-        break
 
     overall_end = time.time()
     elapsed = overall_end - overall_start
