@@ -47,7 +47,6 @@ def main() -> None:
 
     # Download images
     index_df = pl.scan_parquet(index_files)
-
     index_df = (
         index_df
         .filter(pl.col("dataset_id").eq("cpg0020-varchamp"))
@@ -82,6 +81,22 @@ def main() -> None:
                                                 Path("../cellpainting_gallery/image_csv")],
                                                 jobs=20)
     logging.info(f"cellprofiler csv features downloaded to ../cellpainting_gallery/image_csv.")
+
+    # index_df = (
+    #     index_df
+    #     .filter(pl.col("dataset_id").eq("cpg0020-varchamp"))
+    #     .filter(pl.col("batch_id") == batch_id) ## "2024_01_23_Batch_7"
+    #     .filter(pl.col("leaf_node").str.contains("Cells.csv"))
+    #     .filter(pl.col("key").str.contains("assaydev"))
+    #     .select("key")
+    #     .collect()
+    # )
+
+    # download_keys = list(index_df.to_dict()["key"])
+    # parallel(download_keys, download_s3_files, ["cellpainting-gallery",
+    #                                             Path("../cellpainting_gallery/cells_csv")],
+    #                                             jobs=20)
+    # logging.info(f"cellprofiler csv features downloaded to ../cellpainting_gallery/cells_csv.")
 
 
     overall_end = time.time()
