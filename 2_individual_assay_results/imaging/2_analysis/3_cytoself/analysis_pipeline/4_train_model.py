@@ -2,17 +2,16 @@
     Re-train the cytoself model on the Cell Painting dataset.
 """
 
+import logging
+import argparse
 import numpy as np
 import torch
 import time
 from pathlib import Path  # noqa: D100, INP001
-import matplotlib.pyplot as plt
 from cytoself.analysis.analysis_opencell import AnalysisOpenCell
 from cytoself.datamanager.opencell import DataManagerOpenCell
 from cytoself.trainer.cytoselflite_trainer import CytoselfFullTrainer
 from cytoself.trainer.utils.plot_history import plot_history_cytoself
-import argparse
-import logging
 
 
 def train_cytoself_model(datapath, outputpath, model_nm, data_ch):
@@ -46,6 +45,8 @@ def train_cytoself_model(datapath, outputpath, model_nm, data_ch):
     img = next(iter(datamanager.test_loader))["image"].detach().cpu().numpy()
     torch.cuda.empty_cache()
     reconstructed = trainer.infer_reconstruction(img)
+
+    import matplotlib.pyplot as plt
     fig, ax = plt.subplots(2, len(data_ch), figsize=(5 * len(data_ch), 5), squeeze=False)
     for ii, ch in enumerate(data_ch):
         t0 = np.zeros((2 * 100, 5 * 100))
@@ -91,7 +92,7 @@ def train_cytoself_model(datapath, outputpath, model_nm, data_ch):
     fig.savefig(Path(analysis.savepath_dict["feature_spectra_figures"]) / "feature_spectrum.png", dpi=300)
 
 
-def main():
+def main() -> None:
     data_ch = ["pro", "nuc"]
 
     # 1. Prepare Data
@@ -125,6 +126,7 @@ def main():
     overall_end = time.time()
     elapsed = overall_end - overall_start
     logging.info("Cytoself model training finished in %.2f seconds", elapsed)
+
 
 if __name__ == "__main__":
     main()
