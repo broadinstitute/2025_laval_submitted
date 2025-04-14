@@ -11,6 +11,7 @@ import os
 import argparse
 import logging
 import time
+from datetime import datetime
 import numpy as np
 import polars as pl
 import zarr
@@ -42,19 +43,21 @@ def crop_allele(allele: str, profile_df: pl.DataFrame, img_dir: str, out_dir: st
     dna = []
     for site in sites:
         site_df = allele_df.filter(pl.col("Metadata_SiteID") == site)
+        dna_zarr = site_df[["DNA_zarrpath"]][0].item()
+        gfp_zarr = site_df[["GFP_zarrpath"]][0].item()
+        gfp_path = f"{img_dir}/{gfp_zarr}"
+        dna_path = f"{img_dir}/{dna_zarr}"
+        gfp_img = zarr.open(gfp_path)
+        dna_img = zarr.open(dna_path)
+        
+        if (np.percentile(gfp_img, 99) / np.percentile(gfp_img, 25) < 2):
+            logging.info(f"Allele {allele} site {site} is discarded due to low contrast.\n")
+            continue
 
         meta.append(site_df.select([
             "Protein_label",
             "Metadata_CellID",
         ]))
-
-        dna_zarr = site_df[["DNA_zarrpath"]][0].item()
-        gfp_zarr = site_df[["GFP_zarrpath"]][0].item()
-        gfp_path = f"{img_dir}/{gfp_zarr}"
-        dna_path = f"{img_dir}/{dna_zarr}"
-
-        gfp_img = zarr.open(gfp_path)
-        dna_img = zarr.open(dna_path)
         for row in site_df.iter_rows(named=True):
             x1, x2 = row["x_low"], row["x_high"]
             y1, y2 = row["y_low"], row["y_high"]
@@ -62,15 +65,18 @@ def crop_allele(allele: str, profile_df: pl.DataFrame, img_dir: str, out_dir: st
             gfp.append(gfp_img[y1:y2, x1:x2])
             dna.append(dna_img[y1:y2, x1:x2])
 
-    # Stack and save arrays
-    gfp_array = np.stack(gfp)
-    dna_array = np.stack(dna)
-    meta_array = pl.concat(meta).to_numpy()
-    # print(meta_array)
-
-    np.save(f"{out_dir}/{allele}_label.npy", meta_array)
-    np.save(f"{out_dir}/{allele}_pro.npy", gfp_array)
-    np.save(f"{out_dir}/{allele}_nuc.npy", dna_array)
+    if meta:
+        # Stack and save arrays
+        gfp_array = np.stack(gfp)
+        dna_array = np.stack(dna)
+        meta_array = pl.concat(meta).to_numpy()
+        assert meta_array.shape[0] == gfp_array.shape[0] and meta_array.shape[0] == dna_array.shape[0]
+        np.save(f"{out_dir}/{allele}_label.npy", meta_array)
+        np.save(f"{out_dir}/{allele}_pro.npy", gfp_array)
+        np.save(f"{out_dir}/{allele}_nuc.npy", dna_array)
+        return allele
+    else:
+        return None
 
 
 def main() -> None:
@@ -93,7 +99,7 @@ def main() -> None:
     plate2exclude = args.exclude_plate
 
     logging.basicConfig(
-        filename=f"3_filter_crop_images_{batch_id}.log",
+        filename=f"../analysis_logs/3_filter_crop_images_{batch_id}_{datetime.today().strftime('%m%d%Y')}.log",
         filemode="w",
         level=logging.DEBUG,
         format="%(asctime)s - %(levelname)s - %(message)s"
@@ -160,10 +166,10 @@ def main() -> None:
 
     # Threshold is 5X
     ## Used to be median well intensity + 5*mad implemented by Jess
-    ## Switching to mean well intensity + 5*mad implemented by Runxi
+    ## Proposing to mean well intensity + 5*mad implemented by Runxi, still testing
     profiles = profiles.with_columns(
-        (pl.col("WellIntensityMean") + num_mad*pl.col("Intensity_MAD")).alias("Intensity_upper_threshold"), ## pl.col("WellIntensityMedian")
-        (pl.col("WellIntensityMean") - num_mad*pl.col("Intensity_MAD")).alias("Intensity_lower_threshold"), ## pl.col("WellIntensityMedian")
+        (pl.col("WellIntensityMedian") + num_mad*pl.col("Intensity_MAD")).alias("Intensity_upper_threshold"), ## pl.col("WellIntensityMedian"), pl.col("WellIntensityMean")
+        (pl.col("WellIntensityMedian") - num_mad*pl.col("Intensity_MAD")).alias("Intensity_lower_threshold"), ## pl.col("WellIntensityMedian"), pl.col("WellIntensityMean")
     )
     ## Filter by intensity MAD
     profiles = profiles.filter(
@@ -245,7 +251,10 @@ def main() -> None:
     )
     profiles = profiles.sort(["Protein_label", "Metadata_SiteID"])
     alleles = profiles.select("Protein_label").to_series().unique().to_list()
-    
+
+    logging.info(f"Number of profiles {profiles.unique().shape} passed the QC threshold.")
+    logging.info(f"Number of alleles {len(alleles)} passed the QC threshold.")
+
     logging.info(f"Cropping images of cells per variant allele to {out_dir}")
     for allele in tqdm(alleles):
         crop_allele(allele, profiles, img_dir, out_dir)

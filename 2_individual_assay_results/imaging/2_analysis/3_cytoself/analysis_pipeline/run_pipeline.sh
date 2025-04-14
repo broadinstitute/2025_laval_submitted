@@ -23,4 +23,6 @@ conda activate cytoself
 
 ulimit -n 1000000  # Set to a higher number
 ## Re-train the cytoself model on the variant painting images
-python 4_train_model.py --datapath "../model_inputs/2024_01_Batch_7-8" --outputpath "../trained_models" --model_nm "varchamp_v2" > 4_train_model_varchamp_v2.log
+python 4_train_model.py --datapath "../model_inputs/2024_01-02_Batch_7-8" --outputpath "../trained_models" --model_nm "varchamp_b78" > 4_train_model_varchamp_b78_041325.log
+# python 4_train_model.py --datapath "../model_inputs/2024_01_23_Batch_7" --outputpath "../trained_models" --model_nm "varchamp_b7" > 4_train_model_varchamp_b7.log
+# python 4_train_model.py --datapath "../model_inputs/2024_02_06_Batch_8" --outputpath "../trained_models" --model_nm "varchamp_b8" > 4_train_model_varchamp_b8.log

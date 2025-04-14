@@ -7,6 +7,7 @@ import argparse
 import numpy as np
 import torch
 import time
+from datetime import datetime
 from pathlib import Path  # noqa: D100, INP001
 from cytoself.analysis.analysis_opencell import AnalysisOpenCell
 from cytoself.datamanager.opencell import DataManagerOpenCell
@@ -18,6 +19,9 @@ def train_cytoself_model(datapath, outputpath, model_nm, data_ch):
     # Define datamanager
     datamanager = DataManagerOpenCell(datapath, data_ch, fov_col=None)
     datamanager.const_dataloader(batch_size=32, label_name_position=1)
+
+    print(f"Training size: {datamanager.train_loader.dataset.label.shape}")
+    print(f"Test size: {datamanager.test_loader.dataset.label.shape}")
 
     model_args = {
         "input_shape": (2, 100, 100),
@@ -112,7 +116,7 @@ def main() -> None:
     model_nm = args.model_nm
 
     logging.basicConfig(
-        filename=f"4_train_cytoself_model_{model_nm}.log",
+        filename=f"../analysis_logs/4_train_cytoself_model_{model_nm}_{datetime.today().strftime('%m%d%Y')}.log",
         filemode="w",
         level=logging.DEBUG,
         format="%(asctime)s - %(levelname)s - %(message)s"
