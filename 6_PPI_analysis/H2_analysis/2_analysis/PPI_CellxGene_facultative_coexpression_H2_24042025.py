@@ -386,28 +386,3 @@ for file in h2_files:
     sorted_df.to_excel(sorted_file_path, index=False, engine="openpyxl")
 
     print(f"✅ Saved sorted file (Only PPI + Cell Count, Self-Interactions Removed): {sorted_file_path}\n")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
