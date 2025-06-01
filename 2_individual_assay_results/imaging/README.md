@@ -9,9 +9,14 @@ All raw imaging data and metadata is publicly available on the Cell Painting Gal
 
 ## Using 2_analysis
 The analysis is split into three parts:
--**1_snakemake_pipeline**: pipeline for detecting protein mislocalization between reference and variant alleles based on single-cell CellProfiler features
--**2_abundance**: flagging changes in abundance between reference and variant alleles based on single-cell CellProfiler features
--**3_cytoself**: using a VQ-VAE to learn a cell representation that has a higher subcellular localization signal
+
+- **1_snakemake_pipeline**: pipeline for detecting protein mislocalization between reference and variant alleles based on single-cell CellProfiler features
+   - 1.1 **image_process_qc**: the first QC step to examine if the image from each field of view (FOV) in each imaging well has good quality. A QC_flag is tagged to each well as a quality metric.
+   - 1.2 **snakemake_pipeline**: 
+   - 1.3 **downstream_analyses**: 
+
+- **2_abundance**: flagging changes in abundance between reference and variant alleles based on single-cell CellProfiler features
+- **3_cytoself**: using a VQ-VAE to learn a cell representation that has a higher subcellular localization signal
 
 
 ## Files in 3_outputs
