@@ -172,6 +172,12 @@ cython_debug/
 
 .DS_Store
 
+
 # Large files - anything stored in raw_inputs folder
 **/raw_inputs/
 facs_single_cell.parquet
+
+# OMIM api key file
+OMIM_api_key.txt
+
+.vscode
