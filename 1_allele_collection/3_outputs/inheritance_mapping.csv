@@ -1,8 +1,8 @@
 orf_id,symbol,nt_change,aa_change,inheritance_clean
 2,GBA,160G>C,Val54Leu,
 2,GBA,670C>T,Leu224Phe,
-2,GBA,887G>A,Arg296Gln,conflicting
-2,GBA,1448T>C,Leu483Pro,conflicting
+2,GBA,887G>A,Arg296Gln,multiple
+2,GBA,1448T>C,Leu483Pro,multiple
 25,SLC9A3R1,328C>G,Leu110Val,autosomal dominant
 25,SLC9A3R1,458G>A,Arg153Gln,autosomal dominant
 138,MYD88,278T>C,Leu93Pro,autosomal recessive
@@ -47,7 +47,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 369,SERPING1,161T>A,Leu54Gln,
 369,SERPING1,653T>A,Val218Asp,
 369,SERPING1,764G>C,Ser255Thr,
-369,SERPING1,1396C>T,Arg466Cys,conflicting
+369,SERPING1,1396C>T,Arg466Cys,multiple
 386,STAR,431T>G,Met144Arg,
 386,STAR,505G>A,Glu169Lys,autosomal recessive
 386,STAR,653C>T,Ala218Val,autosomal recessive
@@ -119,7 +119,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 992,TPP1,617G>A,Arg206His,autosomal recessive
 992,TPP1,1630C>T,Pro544Ser,autosomal recessive
 996,YARS1,121G>A,Gly41Arg,autosomal dominant
-996,YARS1,586G>A,Glu196Lys,conflicting
+996,YARS1,586G>A,Glu196Lys,multiple
 1008,CDK5R1,323C>T,Ala108Val,
 1008,CDK5R1,904C>A,Leu302Ile,
 1026,BMP4,272C>G,Ser91Cys,autosomal dominant
@@ -168,7 +168,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 1383,TMEM67,1508A>G,Tyr503Cys,autosomal recessive
 1383,TMEM67,2867T>C,Leu956Pro,autosomal recessive
 1392,PRKN,34G>C,Gly12Arg,
-1392,PRKN,458C>G,Pro153Arg,conflicting
+1392,PRKN,458C>G,Pro153Arg,multiple
 1447,MTM1,145G>T,Val49Phe,x-linked recessive
 1447,MTM1,566A>G,Asn189Ser,x-linked recessive
 1447,MTM1,1406A>G,His469Arg,x-linked recessive
@@ -257,7 +257,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 2448,GRN,26C>A,Ala9Asp,autosomal dominant
 2448,GRN,743C>T,Pro248Leu,autosomal dominant
 2448,GRN,1294C>T,Arg432Cys,autosomal dominant
-2448,GRN,1352C>T,Pro451Leu,association
+2448,GRN,1352C>T,Pro451Leu,multiple
 2450,NOD1,796G>A,Glu266Lys,
 2455,PRKAR1A,220C>T,Arg74Cys,autosomal dominant
 2455,PRKAR1A,439A>G,Ser147Gly,
@@ -279,12 +279,12 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 2498,SERPINA3,798G>A,Leu266Leu,
 2498,SERPINA3,1240A>G,Met414Val,
 2512,ATCAY,903C>G,Ser301Arg,
-2521,DNM1L,1184C>A,Ala395Asp,conflicting
+2521,DNM1L,1184C>A,Ala395Asp,multiple
 2555,LTA,179C>A,Thr60Asn,
 2560,GDAP1,143T>C,Met48Thr,autosomal recessive
 2560,GDAP1,278G>A,Arg93His,autosomal recessive
-2560,GDAP1,511C>T,Leu171Phe,conflicting
-2560,GDAP1,725G>A,Arg242Gln,conflicting
+2560,GDAP1,511C>T,Leu171Phe,multiple
+2560,GDAP1,725G>A,Arg242Gln,multiple
 2566,MCFD2,241G>T,Asp81Tyr,autosomal recessive
 2566,MCFD2,266A>C,Asp89Ala,
 2566,MCFD2,387C>G,Asp129Glu,autosomal recessive
@@ -310,7 +310,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 2665,GJB3,34G>C,Gly12Arg,autosomal dominant
 2665,GJB3,298G>A,Glu100Lys,
 2665,GJB3,580G>A,Ala194Thr,autosomal recessive
-2704,PPARG,254C>A,Pro85Gln,conflicting
+2704,PPARG,254C>A,Pro85Gln,multiple
 2704,PPARG,486T>G,Cys162Trp,
 2704,PPARG,868G>A,Val290Met,autosomal dominant
 2704,PPARG,1186G>A,Asp396Asn,
@@ -390,7 +390,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 3027,SLC19A2,152C>T,Pro51Leu,autosomal recessive
 3042,CHRNB1,754G>T,Val252Phe,autosomal dominant
 3042,CHRNB1,853C>A,Leu285Met,autosomal dominant
-3042,CHRNB1,865G>A,Val289Met,conflicting
+3042,CHRNB1,865G>A,Val289Met,multiple
 3047,SLC47A1,191G>A,Gly64Asp,
 3047,SLC47A1,929C>T,Ala310Val,
 3047,SLC47A1,983A>C,Asp328Ala,
@@ -563,7 +563,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 3844,ACY1,699A>C,Glu233Asp,autosomal recessive
 3844,ACY1,1057C>T,Arg353Cys,autosomal recessive
 3844,ACY1,1178G>A,Arg393His,autosomal recessive
-3856,UCHL1,53C>A,Ser18Tyr,association
+3856,UCHL1,53C>A,Ser18Tyr,multiple
 3856,UCHL1,279C>G,Ile93Met,autosomal dominant
 3865,APEX1,153G>C,Gln51His,
 3865,APEX1,311T>G,Leu104Arg,
@@ -599,9 +599,9 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 4043,COQ8A,1541A>G,Tyr514Cys,autosomal recessive
 4043,COQ8A,1651G>A,Glu551Lys,autosomal recessive
 4046,RLBP1,437G>A,Gly146Asp,
-4046,RLBP1,452G>A,Arg151Gln,conflicting
-4046,RLBP1,602T>C,Ile201Thr,conflicting
-4046,RLBP1,677T>A,Met226Lys,conflicting
+4046,RLBP1,452G>A,Arg151Gln,multiple
+4046,RLBP1,602T>C,Ile201Thr,multiple
+4046,RLBP1,677T>A,Met226Lys,multiple
 4062,PLP1,44C>T,Pro15Leu,x-linked recessive
 4062,PLP1,260T>C,Leu87Pro,x-linked recessive
 4062,PLP1,383G>T,Trp128Leu,
@@ -673,7 +673,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 4634,BCS1L,431G>A,Arg144Gln,autosomal recessive
 4634,BCS1L,904C>G,Gln302Glu,
 4634,BCS1L,980T>C,Val327Ala,autosomal recessive
-4637,CFB,26T>A,Leu9His,association
+4637,CFB,26T>A,Leu9His,multiple
 4637,CFB,858C>G,Phe286Leu,autosomal dominant
 4637,CFB,967A>G,Lys323Glu,autosomal dominant
 4669,ACAT2,761T>C,Ile254Thr,
@@ -722,14 +722,14 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 4870,KRT6A,1387G>C,Ala463Pro,
 4882,EPHX2,164A>G,Lys55Arg,
 4882,EPHX2,461G>A,Cys154Tyr,
-4882,EPHX2,860G>A,Arg287Gln,association
+4882,EPHX2,860G>A,Arg287Gln,multiple
 4882,EPHX2,1409A>G,Glu470Gly,
 4888,WNT7A,325G>A,Ala109Thr,autosomal recessive
 4888,WNT7A,610G>A,Gly204Ser,autosomal recessive
 4888,WNT7A,874C>T,Arg292Cys,autosomal recessive
 4938,CHRNA1,280G>T,Gly94Cys,autosomal recessive
-4938,CHRNA1,517G>A,Gly173Ser,conflicting
-4938,CHRNA1,526G>A,Val176Met,conflicting
+4938,CHRNA1,517G>A,Gly173Ser,multiple
+4938,CHRNA1,526G>A,Val176Met,multiple
 4938,CHRNA1,686G>T,Arg229Leu,autosomal recessive
 4942,INHA,127C>G,Pro43Ala,
 4942,INHA,545C>A,Ala182Asp,
@@ -815,7 +815,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 5442,SIX1,328C>T,Arg110Trp,autosomal dominant
 5442,SIX1,334C>T,Arg112Cys,autosomal dominant
 5442,SIX1,679G>T,Asp227Tyr,autosomal dominant
-5446,FGG,323C>G,Ala108Gly,conflicting
+5446,FGG,323C>G,Ala108Gly,multiple
 5446,FGG,494G>A,Cys165Tyr,
 5446,FGG,953G>T,Gly318Val,
 5446,FGG,1067A>T,Asp356Val,
@@ -855,13 +855,13 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 5597,IFNGR1,260T>C,Ile87Thr,autosomal recessive
 5597,IFNGR1,1400T>C,Leu467Pro,autosomal recessive
 5606,CYCS,124G>A,Gly42Ser,autosomal dominant
-5613,APOA1,101G>T,Arg34Leu,conflicting
+5613,APOA1,101G>T,Arg34Leu,multiple
 5613,APOA1,432G>T,Glu144Asp,
 5619,TIMM8A,198C>G,Cys66Trp,x-linked recessive
 5628,INS,144C>G,Phe48Leu,
-5628,INS,163C>T,Arg55Cys,autosomal dominant
-5628,INS,250G>A,Gly84Arg,conflicting
-5628,INS,268G>T,Gly90Cys,conflicting
+5628,INS,163C>T,Arg55Cys,multiple
+5628,INS,250G>A,Gly84Arg,multiple
+5628,INS,268G>T,Gly90Cys,multiple
 5630,HIBCH,350A>G,Tyr117Cys,autosomal recessive
 5645,GYPA,148C>T,Arg50Trp,
 5651,MYOZ2,142T>C,Ser48Pro,autosomal dominant
@@ -1017,7 +1017,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 6341,HBG2,238G>C,Asp80His,
 6341,HBG2,353A>G,His118Arg,
 6356,TCAP,53G>A,Arg18Gln,autosomal dominant
-6356,TCAP,208C>T,Arg70Trp,association
+6356,TCAP,208C>T,Arg70Trp,multiple
 6356,TCAP,260G>A,Arg87Gln,autosomal dominant
 6356,TCAP,394G>C,Glu132Gln,autosomal dominant
 6406,LDB3,349G>A,Asp117Asn,autosomal dominant
@@ -1258,10 +1258,10 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 7828,PORCN,407C>T,Ser136Phe,
 7828,PORCN,1007A>T,His336Leu,
 7828,PORCN,1300T>C,Trp434Arg,
-7830,SCN1B,154C>T,Arg52Cys,conflicting
-7830,SCN1B,155G>A,Arg52His,conflicting
+7830,SCN1B,154C>T,Arg52Cys,multiple
+7830,SCN1B,155G>A,Arg52His,multiple
 7830,SCN1B,160G>C,Glu54Gln,autosomal recessive
-7830,SCN1B,264C>G,Cys88Trp,conflicting
+7830,SCN1B,264C>G,Cys88Trp,multiple
 7866,EFHC1,229C>A,Pro77Thr,autosomal dominant
 7866,EFHC1,662G>A,Arg221His,autosomal dominant
 7866,EFHC1,1180G>T,Ala394Ser,
@@ -1280,10 +1280,10 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 7918,MSH2,1168C>T,Leu390Phe,autosomal dominant
 7918,MSH2,1865C>T,Pro622Leu,autosomal dominant
 7918,MSH2,2500G>A,Ala834Thr,autosomal dominant
-7931,SOD1,112G>A,Gly38Arg,conflicting
-7931,SOD1,124G>A,Gly42Ser,conflicting
+7931,SOD1,112G>A,Gly38Arg,multiple
+7931,SOD1,124G>A,Gly42Ser,multiple
 7931,SOD1,350C>G,Thr117Arg,
-7931,SOD1,380T>C,Leu127Ser,conflicting
+7931,SOD1,380T>C,Leu127Ser,multiple
 7938,GCDH,150G>C,Trp50Cys,autosomal recessive
 7938,GCDH,541G>C,Glu181Gln,autosomal recessive
 7938,GCDH,883T>C,Tyr295His,autosomal recessive
@@ -1393,7 +1393,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 8483,SURF1,370G>A,Gly124Arg,
 8483,SURF1,608T>C,Leu203Pro,
 8483,SURF1,820T>G,Tyr274Asp,autosomal recessive
-8500,PROC,340G>C,Gly114Arg,conflicting
+8500,PROC,340G>C,Gly114Arg,multiple
 8500,PROC,526C>A,His176Asn,
 8500,PROC,995A>T,Gln332Leu,
 8500,PROC,1332G>C,Trp444Cys,autosomal dominant
@@ -1414,7 +1414,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 8686,DMD,415T>C,Cys139Arg,
 8686,DMD,799G>C,Asp267His,
 8686,DMD,1058C>T,Ala353Val,x-linked recessive
-8701,CFH,232A>G,Arg78Gly,conflicting
+8701,CFH,232A>G,Arg78Gly,multiple
 8701,CFH,380G>T,Arg127Leu,autosomal recessive
 8701,CFH,921C>A,Ala307Ala,
 8701,CFH,1198C>A,Gln400Lys,autosomal recessive
@@ -1426,7 +1426,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 8836,KCNQ2,587C>T,Ala196Val,autosomal dominant
 8836,KCNQ2,851A>G,Tyr284Cys,autosomal dominant
 8876,CAPN3,581C>A,Thr194Lys,autosomal dominant
-8876,CAPN3,857C>A,Ala286Glu,conflicting
+8876,CAPN3,857C>A,Ala286Glu,multiple
 8965,COL2A1,169C>T,Arg57Cys,
 8965,COL2A1,235T>A,Tyr79Asn,
 8965,COL2A1,512C>A,Thr171Asn,
@@ -1450,12 +1450,12 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 9073,ACAT1,395C>G,Ala132Gly,autosomal recessive
 9083,PANK2,31G>A,Asp11Asn,
 9083,PANK2,104G>A,Ser35Asn,autosomal recessive
-9083,PANK2,253G>A,Gly85Arg,conflicting
+9083,PANK2,253G>A,Gly85Arg,multiple
 9083,PANK2,340T>C,Phe114Leu,autosomal recessive
 9125,NDUFS1,148C>A,Gln50Lys,
 9170,ATF6,433G>C,Ala145Pro,
 9170,ATF6,469C>T,Pro157Ser,
-9183,CLCN2,302G>A,Arg101Gln,conflicting
+9183,CLCN2,302G>A,Arg101Gln,multiple
 9183,CLCN2,716G>A,Gly239Glu,autosomal recessive
 9183,CLCN2,745C>T,Arg249Trp,autosomal recessive
 9186,KIF1B,869G>A,Ser290Asn,
@@ -1533,8 +1533,8 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 9835,GJB6,119C>T,Ala40Val,autosomal dominant
 9835,GJB6,263C>T,Ala88Val,autosomal dominant
 9849,GABRD,530A>C,Glu177Ala,
-9849,GABRD,658C>T,Arg220Cys,
-9849,GABRD,659G>A,Arg220His,
+9849,GABRD,658C>T,Arg220Cys,autosomal dominant
+9849,GABRD,659G>A,Arg220His,autosomal dominant
 9898,SLC7A10,336G>C,Glu112Asp,
 9912,TLR2,1232C>T,Thr411Ile,
 9912,TLR2,1892C>A,Pro631His,
@@ -1542,7 +1542,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 9912,TLR2,2258G>A,Arg753Gln,
 9919,EGR2,803T>A,Ile268Asn,unclear phenotype
 9919,EGR2,1211G>A,Arg404His,autosomal dominant
-9919,EGR2,1303G>A,Glu435Lys,conflicting
+9919,EGR2,1303G>A,Glu435Lys,multiple
 9930,CDH23,1745G>A,Arg582Gln,autosomal recessive
 9938,GNMT,149T>C,Leu50Pro,autosomal recessive
 9938,GNMT,422A>G,Asn141Ser,autosomal recessive
@@ -1559,7 +1559,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 9958,OTX2,698A>G,Asn233Ser,autosomal dominant
 9962,MINPP1,809A>G,Gln270Arg,autosomal dominant
 9984,SETX,380T>G,Leu127Arg,autosomal recessive
-9984,SETX,382C>T,Leu128Phe,conflicting
+9984,SETX,382C>T,Leu128Phe,multiple
 9984,SETX,860G>A,Arg287His,autosomal dominant
 9984,SETX,1784G>A,Arg595His,
 9997,KERA,391A>G,Asn131Asp,autosomal recessive
@@ -1676,8 +1676,8 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 11101,ACVRL1,643G>A,Glu215Lys,autosomal dominant
 11101,ACVRL1,1127T>G,Met376Arg,autosomal dominant
 11101,ACVRL1,1346C>T,Pro449Leu,autosomal dominant
-11102,SCNN1B,245C>G,Ser82Cys,conflicting
-11102,SCNN1B,863A>G,Asn288Ser,conflicting
+11102,SCNN1B,245C>G,Ser82Cys,multiple
+11102,SCNN1B,863A>G,Asn288Ser,multiple
 11102,SCNN1B,1853C>T,Pro618Leu,
 11103,CASP10,853C>T,Leu285Phe,autosomal dominant
 11103,CASP10,1228G>A,Val410Ile,autosomal dominant
@@ -1758,8 +1758,8 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 11822,TNFRSF1B,587T>G,Met196Arg,
 11829,UGT1A10,605C>T,Thr202Ile,
 11829,UGT1A10,632T>C,Ile211Thr,
-11829,UGT1A1,983A>G,Gln328Arg,conflicting
-11829,UGT1A1,1198C>T,Arg400Cys,conflicting
+11829,UGT1A1,983A>G,Gln328Arg,multiple
+11829,UGT1A1,1198C>T,Arg400Cys,multiple
 11831,PHF8,836T>C,Phe279Ser,x-linked recessive
 11832,BCL10,13G>T,Ala5Ser,autosomal recessive
 11832,BCL10,24C>G,Leu8Leu,autosomal recessive
@@ -1794,7 +1794,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 12157,ATP6V1B1,521T>G,Met174Arg,
 12157,ATP6V1B1,1037C>G,Pro346Arg,autosomal recessive
 12157,ATP6V1B1,1394G>A,Arg465His,autosomal recessive
-12167,PNPLA3,1358G>T,Ser453Ile,
+12167,PNPLA3,1358G>T,Ser453Ile,multifactorial
 12222,SLC45A2,172C>G,Pro58Ala,
 12222,SLC45A2,593G>A,Gly198Asp,
 12222,SLC45A2,904A>T,Thr302Ser,
@@ -1828,9 +1828,9 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 12523,RNASEH2C,205C>T,Arg69Trp,autosomal recessive
 12523,RNASEH2C,227C>T,Pro76Leu,autosomal recessive
 12523,RNASEH2C,413C>T,Pro138Leu,
-12535,TREX1,506G>A,Arg169His,conflicting
-12535,TREX1,638C>T,Ala213Val,conflicting
-12535,TREX1,1082G>C,Gly361Ala,conflicting
+12535,TREX1,506G>A,Arg169His,multiple
+12535,TREX1,638C>T,Ala213Val,multiple
+12535,TREX1,1082G>C,Gly361Ala,multiple
 12554,C1QA,276G>A,Gly92Gly,
 12568,ATPAF2,280T>A,Trp94Arg,autosomal recessive
 12569,TAC3,269T>C,Met90Thr,
@@ -1863,8 +1863,8 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 12857,DCLRE1C,103C>G,His35Asp,autosomal recessive
 12857,DCLRE1C,353G>T,Gly118Val,autosomal recessive
 12857,DCLRE1C,404G>A,Gly135Glu,
-12865,PIK3R1,168G>A,Met56Ile,conflicting
-12865,PIK3R1,416G>A,Arg139Gln,conflicting
+12865,PIK3R1,168G>A,Met56Ile,multiple
+12865,PIK3R1,416G>A,Arg139Gln,multiple
 12873,HJV,67G>C,Asp23His,
 12873,HJV,71G>T,Gly24Val,
 12873,HJV,164T>C,Ile55Thr,autosomal recessive
@@ -1915,8 +1915,8 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 13059,OLR1,501G>C,Lys167Asn,
 13065,CFI,269G>A,Ser90Asn,
 13065,CFI,485G>A,Gly162Asp,
-13065,CFI,719C>G,Ala240Gly,conflicting
-13065,CFI,1019T>C,Ile340Thr,conflicting
+13065,CFI,719C>G,Ala240Gly,multiple
+13065,CFI,1019T>C,Ile340Thr,multiple
 13070,AQP4,383T>C,Ile128Thr,
 13070,AQP4,552T>A,Asp184Glu,
 13070,AQP4,671T>C,Met224Thr,
@@ -1927,9 +1927,9 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 13080,RBP4,176T>A,Ile59Asn,autosomal recessive
 13080,RBP4,278G>A,Gly93Asp,autosomal recessive
 13081,SERPINC1,143C>A,Pro48His,
-13081,SERPINC1,235C>T,Arg79Cys,conflicting
-13081,SERPINC1,473T>C,Leu158Pro,conflicting
-13081,SERPINC1,696C>G,Asn232Lys,conflicting
+13081,SERPINC1,235C>T,Arg79Cys,multiple
+13081,SERPINC1,473T>C,Leu158Pro,multiple
+13081,SERPINC1,696C>G,Asn232Lys,multiple
 13082,AKR1C4,931C>G,Leu311Val,
 13091,HNMT,314C>T,Thr105Ile,autosomal dominant
 13103,PAH,175G>T,Asp59Tyr,autosomal recessive
@@ -1970,10 +1970,10 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 13328,ANG,191A>T,Lys64Ile,autosomal dominant
 13328,ANG,330T>G,Gly110Gly,autosomal dominant
 13328,ANG,407C>T,Pro136Leu,autosomal dominant
-13340,SERPINA6,344T>A,Leu115His,conflicting
+13340,SERPINA6,344T>A,Leu115His,multiple
 13340,SERPINA6,736G>T,Ala246Ser,
-13340,SERPINA6,1165G>A,Asp389Asn,conflicting
-13366,SLC2A2,70G>A,Val24Ile,conflicting
+13340,SERPINA6,1165G>A,Asp389Asn,multiple
+13366,SLC2A2,70G>A,Val24Ile,multiple
 13366,SLC2A2,433G>A,Gly145Arg,autosomal recessive
 13366,SLC2A2,749T>A,Val250Glu,autosomal recessive
 13366,SLC2A2,811T>C,Trp271Arg,autosomal recessive
@@ -2021,7 +2021,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 13843,CFC1,433G>A,Ala145Thr,autosomal dominant
 13843,CFC1,650C>G,Pro217Arg,
 13872,AANAT,385G>A,Ala129Thr,autosomal dominant
-13874,MBL2,154C>T,Arg52Cys,association
+13874,MBL2,154C>T,Arg52Cys,multiple
 13874,MBL2,161G>A,Gly54Asp,autosomal dominant
 13874,MBL2,170G>A,Gly57Glu,autosomal dominant
 13902,CRYGS,53G>T,Gly18Val,autosomal dominant
@@ -2093,9 +2093,9 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 14396,NT5C3A,604G>C,Gly202Arg,
 14396,NT5C3A,823G>C,Gly275Arg,autosomal recessive
 14413,DCTN1,1310T>C,Met437Thr,autosomal dominant
-14413,DCTN1,1951C>T,Arg651Trp,conflicting
-14413,DCTN1,2587C>T,Arg863Trp,conflicting
-14413,DCTN1,3329C>T,Thr1110Ile,conflicting
+14413,DCTN1,1951C>T,Arg651Trp,multiple
+14413,DCTN1,2587C>T,Arg863Trp,multiple
+14413,DCTN1,3329C>T,Thr1110Ile,multiple
 14458,KLHL10,647A>C,Gln216Pro,autosomal dominant
 14458,KLHL10,937G>A,Ala313Thr,autosomal dominant
 14484,AGTR1,133G>A,Gly45Arg,
@@ -2121,8 +2121,8 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 14611,CYP2E1,227G>A,Arg76His,
 14613,BRCA1,32T>C,Val11Ala,autosomal dominant
 14613,BRCA1,536A>G,Tyr179Cys,autosomal dominant
-14613,BRCA1,1172G>T,Arg391Met,conflicting
-14613,BRCA1,2005A>T,Thr669Ser,conflicting
+14613,BRCA1,1172G>T,Arg391Met,multiple
+14613,BRCA1,2005A>T,Thr669Ser,multiple
 14640,GJA4,955C>T,Pro319Ser,
 14673,DLD,214A>G,Lys72Glu,autosomal recessive
 14673,DLD,685G>T,Gly229Cys,autosomal recessive
@@ -2150,7 +2150,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 15052,FANCD2,692T>G,Leu231Arg,autosomal recessive
 52565,IFNA17,551T>G,Ile184Arg,
 52569,GHRH,223C>T,Leu75Phe,
-52611,AGRP,199G>A,Ala67Thr,association
+52611,AGRP,199G>A,Ala67Thr,multiple
 52669,UCP1,190G>A,Ala64Thr,
 52669,UCP1,409G>A,Val137Met,
 52669,UCP1,685A>T,Met229Leu,
@@ -2164,7 +2164,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 52699,ERMAP,169G>A,Gly57Arg,
 52699,ERMAP,178C>G,Pro60Ala,
 52751,FGF14,449T>C,Phe150Ser,autosomal dominant
-52764,SLC36A2,260G>T,Gly87Val,association
+52764,SLC36A2,260G>T,Gly87Val,multiple
 52765,MMAA,266T>C,Leu89Pro,autosomal recessive
 52765,MMAA,562G>C,Gly188Arg,autosomal recessive
 52765,MMAA,653G>A,Gly218Glu,autosomal recessive
@@ -2231,9 +2231,9 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 53076,TSSK4,451G>A,Val151Ile,
 53076,TSSK4,537C>A,Val179Val,
 53082,TMPRSS11A,869G>A,Arg290Gln,
-53089,TNFRSF13B,172T>C,Cys58Arg,conflicting
+53089,TNFRSF13B,172T>C,Cys58Arg,multiple
 53089,TNFRSF13B,307G>A,Ala103Thr,
-53089,TNFRSF13B,374T>G,Leu125Arg,conflicting
+53089,TNFRSF13B,374T>G,Leu125Arg,multiple
 53089,TNFRSF13B,598G>T,Val200Phe,
 53111,CFHR5,136C>T,Pro46Ser,
 53111,CFHR5,432A>T,Lys144Asn,
@@ -2268,7 +2268,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 53711,PGK1,946T>C,Cys316Arg,x-linked recessive
 53721,GHSR,401T>C,Ile134Thr,
 53721,GHSR,478G>A,Val160Met,
-53721,GHSR,611C>A,Ala204Glu,association
+53721,GHSR,611C>A,Ala204Glu,multiple
 53721,GHSR,837C>A,Phe279Leu,
 53722,GNRHR,31C>A,Gln11Lys,autosomal recessive
 53722,GNRHR,317A>G,Gln106Arg,autosomal recessive
@@ -2328,9 +2328,9 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 54262,FOXP2,1382G>A,Arg461His,autosomal dominant
 54280,NGF,104T>C,Val35Ala,
 54280,NGF,661C>T,Arg221Trp,autosomal recessive
-54289,ALPL,299C>T,Thr100Met,conflicting
-54289,ALPL,535G>A,Ala179Thr,conflicting
-54289,ALPL,1130C>T,Ala377Val,conflicting
+54289,ALPL,299C>T,Thr100Met,multiple
+54289,ALPL,535G>A,Ala179Thr,multiple
+54289,ALPL,1130C>T,Ala377Val,multiple
 54292,BCO1,509C>T,Thr170Met,autosomal dominant
 54292,BCO1,1136C>T,Ala379Val,
 54296,KRT13,341G>A,Arg114His,
@@ -2403,9 +2403,9 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 55074,LIPC,175A>C,Asn59His,
 55074,LIPC,644A>G,Asn215Ser,autosomal recessive
 55074,LIPC,1068A>C,Leu356Phe,
-55074,LIPC,1214C>T,Thr405Met,conflicting
+55074,LIPC,1214C>T,Thr405Met,multiple
 55128,BRIP1,139C>G,Pro47Ala,autosomal dominant
-55128,BRIP1,584T>C,Leu195Pro,association
+55128,BRIP1,584T>C,Leu195Pro,autosomal dominant
 55128,BRIP1,1045G>C,Ala349Pro,autosomal recessive
 55128,BRIP1,1941G>C,Trp647Cys,autosomal recessive
 55150,MLH3,1939C>T,Arg647Cys,autosomal dominant
@@ -2432,7 +2432,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 55728,EPB42,839G>A,Arg280Gln,autosomal recessive
 55728,EPB42,859C>T,Arg287Cys,autosomal recessive
 55729,HAL,617G>C,Arg206Thr,autosomal recessive
-55729,HAL,623G>T,Arg208Leu,conflicting
+55729,HAL,623G>T,Arg208Leu,multiple
 55729,HAL,965G>C,Arg322Pro,autosomal recessive
 55732,NELL1,245A>G,Gln82Arg,
 55732,NELL1,1060C>T,Arg354Trp,
@@ -2464,8 +2464,8 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 55851,CYP11B1,383T>C,Leu128Ser,
 55851,CYP11B1,509A>G,His170Arg,autosomal recessive
 55851,CYP11B1,1165A>C,Thr389Pro,
-55851,CYP11B1,1556G>A,Arg519His,conflicting
-55853,FGA,104G>A,Arg35His,conflicting
+55851,CYP11B1,1556G>A,Arg519His,multiple
+55853,FGA,104G>A,Arg35His,multiple
 55853,FGA,1358G>A,Ser453Asn,
 55853,FGA,1676A>T,Glu559Val,
 55854,CHRNA4,839C>T,Ser280Phe,autosomal dominant
@@ -2498,7 +2498,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 55885,PMS1,1501G>A,Gly501Arg,
 55886,TLR3,851A>T,Asn284Ile,autosomal recessive
 55886,TLR3,908T>C,Phe303Ser,
-55886,TLR3,1234C>T,Leu412Phe,association
+55886,TLR3,1234C>T,Leu412Phe,multiple
 55886,TLR3,1660C>T,Pro554Ser,autosomal dominant
 55922,ALOXE3,842G>T,Gly281Val,autosomal recessive
 55922,ALOXE3,1186C>A,Arg396Ser,autosomal recessive
@@ -2585,9 +2585,9 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 56397,SLC5A2,346G>A,Val116Met,
 56397,SLC5A2,932A>G,Lys311Arg,
 56397,SLC5A2,1102C>T,Arg368Trp,autosomal recessive
-56414,PRODH,176C>T,Ala59Val,conflicting
+56414,PRODH,176C>T,Ala59Val,multiple
 56414,PRODH,229C>T,Arg77Trp,
-56414,PRODH,541T>A,Leu181Met,conflicting
+56414,PRODH,541T>A,Leu181Met,multiple
 56414,PRODH,952G>A,Asp318Asn,
 56458,DRD3,25A>G,Ser9Gly,
 56515,FFAR1,523G>A,Asp175Asn,
@@ -2652,7 +2652,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 70172,FGF8,503C>G,Pro168Arg,
 70265,ADCY9,2316A>G,Ile772Met,
 70357,TSFM,934C>T,Arg312Trp,autosomal recessive
-70370,SNCAIP,2002C>T,Arg668Cys,conflicting
+70370,SNCAIP,2002C>T,Arg668Cys,multiple
 70414,OPA1,239A>G,Tyr80Cys,autosomal dominant
 70414,OPA1,1635C>G,Ser545Arg,autosomal dominant
 70414,OPA1,2729T>A,Val910Asp,autosomal dominant
@@ -2693,14 +2693,14 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 70824,SPRED1,446G>A,Ser149Asn,autosomal dominant
 70844,HNF4A,306C>G,Cys102Trp,
 70844,HNF4A,998G>A,Arg333His,autosomal dominant
-70872,ZFP57,743G>A,Arg248His,autosomal recessive
-70872,ZFP57,829C>A,His277Asn,autosomal recessive
+70872,ZFP57,743G>A,Arg248His,multiple
+70872,ZFP57,829C>A,His277Asn,multiple
 70922,FBLN5,178G>C,Val60Leu,autosomal dominant
 70922,FBLN5,371A>C,Gln124Pro,
 70922,FBLN5,679T>C,Ser227Pro,autosomal recessive
 70922,FBLN5,1235G>A,Gly412Glu,autosomal dominant
 70925,APOC4,287T>G,Leu96Arg,
-70930,PLG,112A>G,Lys38Glu,conflicting
+70930,PLG,112A>G,Lys38Glu,multiple
 70930,PLG,1120G>T,Val374Phe,
 70930,PLG,2350T>G,Cys784Gly,
 70994,PYY,185A>C,Gln62Pro,
@@ -2820,7 +2820,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 71633,RPE65,1370C>A,Thr457Asn,
 71636,KCNK9,706G>A,Gly236Arg,autosomal dominant
 71642,CACNB4,311G>T,Cys104Phe,autosomal dominant
-71642,CACNB4,1403G>A,Arg468Gln,
+71642,CACNB4,1403G>A,Arg468Gln,autosomal dominant
 71675,SLC28A2,1064T>C,Phe355Ser,
 71675,SLC28A2,1153G>A,Glu385Lys,
 71724,CHRND,188T>C,Leu63Pro,autosomal recessive
@@ -2832,7 +2832,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 71726,ETFB,490C>T,Arg164Trp,autosomal recessive
 71751,AVPR2,163A>G,Asn55Asp,
 71751,AVPR2,821T>C,Leu274Pro,
-71771,AXIN2,1615G>A,Val539Met,association
+71771,AXIN2,1615G>A,Val539Met,autosomal dominant
 71807,KCNA1,520G>T,Val174Phe,autosomal dominant
 71807,KCNA1,1241T>G,Phe414Cys,
 71809,HUS1B,802T>G,Tyr268Asp,
@@ -2956,7 +2956,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 53077,ZEB1,2522A>C,Gln841Pro,autosomal dominant
 8409,PDGFRB,1973T>C,Leu658Pro,autosomal dominant
 8409,PDGFRB,1978C>A,Pro660Thr,autosomal dominant
-7871,BUB1B,119C>T,Thr40Met,conflicting
+7871,BUB1B,119C>T,Thr40Met,multiple
 70500,PIK3CD,1002C>A,Asn334Lys,autosomal dominant
 55100,DSG4,800C>G,Pro267Arg,autosomal recessive
 11786,BMPR2,545G>A,Gly182Asp,autosomal dominant
@@ -2977,7 +2977,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 6246,ATP1A3,2318A>G,Asn773Ser,autosomal dominant
 6246,ATP1A3,2401G>T,Asp801Tyr,autosomal dominant
 6246,ATP1A3,2417T>G,Met806Arg,autosomal dominant
-56286,STRC,1852C>G,Arg618Gly,autosomal recessive
+56286,STRC,1852C>G,Arg618Gly,multiple
 71952,IGHMBP2,1540G>A,Glu514Lys,autosomal recessive
 1383,TMEM67,131A>G,Tyr44Cys,autosomal recessive
 4666,EFTUD2,623A>G,His208Arg,autosomal dominant
@@ -3001,7 +3001,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 70516,WDR36,1973A>G,Asp658Gly,unknown
 6726,PRPF6,2185C>T,Arg729Trp,autosomal dominant
 7918,MSH2,118G>A,Gly40Ser,autosomal dominant
-7918,MSH2,274C>G,Leu92Val,conflicting
+7918,MSH2,274C>G,Leu92Val,multiple
 7918,MSH2,319G>C,Ala107Pro,autosomal dominant
 7918,MSH2,913G>A,Ala305Thr,
 7918,MSH2,1004C>T,Thr335Ile,
@@ -3026,13 +3026,13 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 70513,AR,2105T>G,Leu702Arg,x-linked recessive
 70513,AR,2503C>T,Arg835Cys,x-linked recessive
 70513,AR,2504G>A,Arg835His,x-linked recessive
-70010,SLC4A1,1462G>A,Val488Met,conflicting
+70010,SLC4A1,1462G>A,Val488Met,multiple
 70010,SLC4A1,1669G>A,Val557Met,
 70010,SLC4A1,1765C>T,Arg589Cys,autosomal dominant
 70010,SLC4A1,1765C>A,Arg589Ser,autosomal dominant
 70010,SLC4A1,1766G>A,Arg589His,autosomal dominant
 70010,SLC4A1,1972G>A,Glu658Lys,autosomal dominant
-70010,SLC4A1,2102G>A,Gly701Asp,conflicting
+70010,SLC4A1,2102G>A,Gly701Asp,multiple
 70010,SLC4A1,2509A>G,Thr837Ala,autosomal dominant
 11563,ACTN2,343G>A,Val115Met,autosomal dominant
 11563,ACTN2,355G>A,Ala119Thr,autosomal dominant
@@ -3054,19 +3054,19 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 71311,OCRL,1572C>G,His524Gln,x-linked recessive
 71311,OCRL,2648T>G,Leu883Arg,x-linked recessive
 12455,WFS1,449C>T,Ala150Val,autosomal dominant
-12455,WFS1,1511C>T,Pro504Leu,conflicting
+12455,WFS1,1511C>T,Pro504Leu,multiple
 12455,WFS1,1901A>C,Lys634Thr,autosomal dominant
-12455,WFS1,1957C>T,Arg653Cys,conflicting
-12455,WFS1,2051C>T,Ala684Val,conflicting
+12455,WFS1,1957C>T,Arg653Cys,multiple
+12455,WFS1,2051C>T,Ala684Val,multiple
 12455,WFS1,2054G>C,Arg685Pro,
-12455,WFS1,2084G>T,Gly695Val,conflicting
+12455,WFS1,2084G>T,Gly695Val,multiple
 12455,WFS1,2096C>T,Thr699Met,autosomal dominant
 12455,WFS1,2171C>T,Pro724Leu,autosomal recessive
-12455,WFS1,2209G>A,Glu737Lys,conflicting
+12455,WFS1,2209G>A,Glu737Lys,multiple
 12455,WFS1,2327A>T,Glu776Val,autosomal dominant
-12455,WFS1,2335G>A,Val779Met,conflicting
+12455,WFS1,2335G>A,Val779Met,multiple
 12455,WFS1,2338G>A,Gly780Ser,autosomal dominant
-12455,WFS1,2452C>T,Arg818Cys,conflicting
+12455,WFS1,2452C>T,Arg818Cys,multiple
 14117,DNM2,1565G>A,Arg522His,autosomal dominant
 14117,DNM2,1567A>G,Arg523Gly,autosomal dominant
 14117,DNM2,1609G>T,Gly537Cys,autosomal dominant
@@ -3111,14 +3111,14 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 56379,PRICKLE1,431G>A,Arg144His,autosomal recessive
 56379,PRICKLE1,1414T>C,Tyr472His,autosomal recessive
 70072,KIF7,356C>T,Pro119Leu,autosomal recessive
-70072,KIF7,1806C>G,His602Gln,autosomal recessive
-2483,FGFR1,296A>G,Tyr99Cys,conflicting
+70072,KIF7,1806C>G,His602Gln,multiple
+2483,FGFR1,296A>G,Tyr99Cys,multiple
 2483,FGFR1,494T>C,Leu165Ser,autosomal dominant
 2483,FGFR1,989A>T,Asn330Ile,autosomal dominant
 2483,FGFR1,1025T>C,Leu342Ser,autosomal dominant
-2483,FGFR1,1097C>T,Pro366Leu,conflicting
+2483,FGFR1,1097C>T,Pro366Leu,multiple
 2483,FGFR1,1121A>G,Tyr374Cys,autosomal dominant
-2483,FGFR1,1910T>C,Ile637Thr,conflicting
+2483,FGFR1,1910T>C,Ile637Thr,multiple
 2483,FGFR1,2002G>A,Glu668Lys,autosomal dominant
 2483,FGFR1,2158C>T,Pro720Ser,
 2483,FGFR1,2296G>T,Asp766Tyr,autosomal dominant
@@ -3132,7 +3132,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 72051,TFR2,1469T>G,Leu490Arg,autosomal recessive
 72051,TFR2,2374G>A,Gly792Arg,autosomal recessive
 4910,AMPD2,2091G>C,Glu697Asp,autosomal recessive
-54232,IMPG1,461T>C,Leu154Pro,conflicting
+54232,IMPG1,461T>C,Leu154Pro,multiple
 55269,CDH3,965A>T,Asn322Ile,autosomal recessive
 53052,MUSK,1922C>T,Ala641Val,autosomal recessive
 11853,PNPT1,1160A>G,Gln387Arg,autosomal recessive
@@ -3145,12 +3145,12 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 4765,ITGB2,382G>T,Asp128Tyr,autosomal recessive
 4765,ITGB2,899A>T,Asp300Val,
 4765,ITGB2,1777C>T,Arg593Cys,autosomal recessive
-11305,CUL3,1376A>G,Lys459Arg,
+11305,CUL3,1376A>G,Lys459Arg,autosomal dominant
 2719,SEC23B,742G>A,Glu248Lys,
-2719,SEC23B,1276G>A,Val426Ile,conflicting
-2719,SEC23B,1489C>T,Arg497Cys,conflicting
-2719,SEC23B,1571C>T,Ala524Val,conflicting
-2719,SEC23B,1588C>T,Arg530Trp,conflicting
+2719,SEC23B,1276G>A,Val426Ile,multiple
+2719,SEC23B,1489C>T,Arg497Cys,multiple
+2719,SEC23B,1571C>T,Ala524Val,multiple
+2719,SEC23B,1588C>T,Arg530Trp,multiple
 71969,BRAF,722C>T,Thr241Met,autosomal dominant
 71969,BRAF,722C>G,Thr241Arg,autosomal dominant
 71969,BRAF,735A>T,Leu245Phe,
@@ -3161,7 +3161,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 71969,BRAF,1406G>A,Gly469Glu,autosomal dominant
 71969,BRAF,1411G>T,Val471Phe,autosomal recessive
 71969,BRAF,1454T>C,Leu485Ser,
-71969,BRAF,1455G>C,Leu485Phe,conflicting
+71969,BRAF,1455G>C,Leu485Phe,multiple
 71969,BRAF,1460T>G,Val487Gly,
 71969,BRAF,1495A>G,Lys499Glu,autosomal dominant
 71969,BRAF,1497A>C,Lys499Asn,
@@ -3192,7 +3192,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 2713,MLH1,112A>G,Asn38Asp,
 2713,MLH1,121G>C,Asp41His,autosomal dominant
 2713,MLH1,218T>C,Leu73Pro,autosomal dominant
-2713,MLH1,218T>G,Leu73Arg,conflicting
+2713,MLH1,218T>G,Leu73Arg,multiple
 2713,MLH1,277A>G,Ser93Gly,autosomal dominant
 2713,MLH1,318C>G,Ser106Arg,
 2713,MLH1,376T>A,Tyr126Asn,autosomal dominant
@@ -3207,7 +3207,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 2713,MLH1,1455T>A,Asp485Glu,
 2713,MLH1,1702T>A,Phe568Ile,
 2713,MLH1,1918C>T,Pro640Ser,autosomal dominant
-2713,MLH1,2252A>G,Lys751Arg,conflicting
+2713,MLH1,2252A>G,Lys751Arg,multiple
 54254,LARGE1,1483T>C,Trp495Arg,autosomal recessive
 4959,ABCB7,627A>T,Glu209Asp,x-linked
 4959,ABCB7,1203T>G,Ile401Met,x-linked
@@ -3218,7 +3218,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 143,EZH2,2050C>T,Arg684Cys,autosomal dominant
 143,EZH2,2080C>T,His694Tyr,autosomal dominant
 71938,PHEX,1664T>C,Leu555Pro,x-linked dominant
-7110,JUP,56C>T,Thr19Ile,conflicting
+7110,JUP,56C>T,Thr19Ile,multiple
 2468,TRIM2,680A>T,Glu227Val,autosomal recessive
 55861,RPS6KA3,343A>T,Thr115Ser,x-linked dominant
 55861,RPS6KA3,679T>G,Ser227Ala,x-linked dominant
@@ -3260,12 +3260,12 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 70142,TGM5,1335G>C,Lys445Asn,autosomal recessive
 4126,STAT1,508T>A,Tyr170Asn,autosomal dominant
 4126,STAT1,537C>A,Asn179Lys,autosomal dominant
-4126,STAT1,604A>G,Met202Val,conflicting
+4126,STAT1,604A>G,Met202Val,multiple
 4126,STAT1,812A>C,Gln271Pro,autosomal dominant
-4126,STAT1,820C>T,Arg274Trp,conflicting
-4126,STAT1,820C>G,Arg274Gly,conflicting
-4126,STAT1,821G>A,Arg274Gln,conflicting
-4126,STAT1,1154C>T,Thr385Met,conflicting
+4126,STAT1,820C>T,Arg274Trp,multiple
+4126,STAT1,820C>G,Arg274Gly,multiple
+4126,STAT1,821G>A,Arg274Gln,multiple
+4126,STAT1,1154C>T,Thr385Met,multiple
 4126,STAT1,1909A>G,Lys637Glu,autosomal dominant
 1378,USP44,213G>T,Glu71Asp,
 10628,BBS12,1381A>C,Asn461His,autosomal recessive
@@ -3279,7 +3279,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 71073,FGFR2,679T>C,Cys227Arg,autosomal dominant
 71073,FGFR2,680G>C,Cys227Ser,autosomal dominant
 71073,FGFR2,681C>G,Cys227Trp,autosomal dominant
-71073,FGFR2,695C>G,Ser232Cys,conflicting
+71073,FGFR2,695C>G,Ser232Cys,multiple
 71073,FGFR2,716C>G,Ser239Cys,autosomal dominant
 71073,FGFR2,779A>G,Tyr260Cys,autosomal dominant
 71073,FGFR2,827T>G,Met276Arg,autosomal dominant
@@ -3292,22 +3292,22 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 888,PCCA,787A>G,Arg263Gly,autosomal recessive
 888,PCCA,1043T>A,Met348Lys,autosomal recessive
 888,PCCA,1348A>G,Ile450Val,autosomal recessive
-14613,BRCA1,2T>C,Met1Thr,conflicting
-14613,BRCA1,3G>T,Met1Ile,conflicting
-14613,BRCA1,131G>A,Cys44Tyr,conflicting
-14613,BRCA1,212G>A,Arg71Lys,conflicting
+14613,BRCA1,2T>C,Met1Thr,multiple
+14613,BRCA1,3G>T,Met1Ile,multiple
+14613,BRCA1,131G>A,Cys44Tyr,multiple
+14613,BRCA1,212G>A,Arg71Lys,multiple
 14613,BRCA1,346G>A,Glu116Lys,autosomal dominant
 14613,BRCA1,1159C>G,Pro387Ala,autosomal dominant
-14613,BRCA1,1253A>G,Tyr418Cys,conflicting
-14613,BRCA1,1504A>G,Lys502Glu,conflicting
-14613,BRCA1,1684T>C,Tyr562His,conflicting
-14613,BRCA1,1742C>T,Thr581Ile,conflicting
-14613,BRCA1,1760C>G,Thr587Arg,conflicting
-14613,BRCA1,1773T>A,Phe591Leu,conflicting
-14613,BRCA1,1784G>A,Arg595Gln,conflicting
-14613,BRCA1,1891G>A,Glu631Lys,conflicting
-14613,BRCA1,1942G>C,Ala648Pro,conflicting
-14613,BRCA1,1979T>C,Leu660Pro,conflicting
+14613,BRCA1,1253A>G,Tyr418Cys,multiple
+14613,BRCA1,1504A>G,Lys502Glu,multiple
+14613,BRCA1,1684T>C,Tyr562His,multiple
+14613,BRCA1,1742C>T,Thr581Ile,multiple
+14613,BRCA1,1760C>G,Thr587Arg,multiple
+14613,BRCA1,1773T>A,Phe591Leu,multiple
+14613,BRCA1,1784G>A,Arg595Gln,multiple
+14613,BRCA1,1891G>A,Glu631Lys,multiple
+14613,BRCA1,1942G>C,Ala648Pro,multiple
+14613,BRCA1,1979T>C,Leu660Pro,multiple
 3640,MAN1B1,1189G>A,Glu397Lys,autosomal recessive
 10935,TF,229G>A,Asp77Asn,autosomal recessive
 10935,TF,1180G>A,Glu394Lys,autosomal recessive
@@ -3333,11 +3333,11 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 53456,NEK8,1273C>T,His425Tyr,autosomal recessive
 55728,EPB42,1609G>A,Ala537Thr,autosomal recessive
 11895,CLCNKA,240G>C,Trp80Cys,digenic recessive
-12957,SLC3A1,542G>A,Arg181Gln,conflicting
-12957,SLC3A1,1085G>A,Arg362His,conflicting
-12957,SLC3A1,1400T>A,Met467Lys,conflicting
-12957,SLC3A1,1400T>C,Met467Thr,conflicting
-12957,SLC3A1,1597T>A,Tyr533Asn,conflicting
+12957,SLC3A1,542G>A,Arg181Gln,multiple
+12957,SLC3A1,1085G>A,Arg362His,multiple
+12957,SLC3A1,1400T>A,Met467Lys,multiple
+12957,SLC3A1,1400T>C,Met467Thr,multiple
+12957,SLC3A1,1597T>A,Tyr533Asn,multiple
 3912,TGFBI,371G>T,Arg124Leu,autosomal dominant
 3912,TGFBI,1501C>A,Pro501Thr,autosomal dominant
 3912,TGFBI,1637C>A,Ala546Asp,
@@ -3389,9 +3389,9 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 3669,KIF22,442C>T,Pro148Ser,autosomal dominant
 3669,KIF22,446G>A,Arg149Gln,autosomal dominant
 3669,KIF22,446G>T,Arg149Leu,autosomal dominant
-7436,SDHA,1664G>A,Gly555Glu,conflicting
-7436,SDHA,1753C>T,Arg585Trp,conflicting
-7436,SDHA,1765C>T,Arg589Trp,conflicting
+7436,SDHA,1664G>A,Gly555Glu,multiple
+7436,SDHA,1753C>T,Arg585Trp,multiple
+7436,SDHA,1765C>T,Arg589Trp,multiple
 70681,CACNB2,1604C>T,Ser535Leu,autosomal dominant
 7468,POMGNT1,526A>C,Thr176Pro,
 7468,POMGNT1,594C>G,Ser198Arg,
@@ -3406,14 +3406,14 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 53007,BTK,862C>T,Arg288Trp,x-linked recessive
 53007,BTK,1001A>C,Tyr334Ser,x-linked recessive
 53007,BTK,1082A>G,Tyr361Cys,x-linked recessive
-53007,BTK,1574G>A,Arg525Gln,conflicting
+53007,BTK,1574G>A,Arg525Gln,multiple
 53007,BTK,1625T>C,Leu542Pro,x-linked recessive
 53007,BTK,1741T>C,Trp581Arg,x-linked recessive
-4042,CPT2,359A>G,Tyr120Cys,conflicting
-4042,CPT2,520G>A,Glu174Lys,conflicting
-4042,CPT2,680C>T,Pro227Leu,conflicting
-4042,CPT2,1055T>G,Phe352Cys,conflicting
-4042,CPT2,1657G>A,Asp553Asn,conflicting
+4042,CPT2,359A>G,Tyr120Cys,multiple
+4042,CPT2,520G>A,Glu174Lys,multiple
+4042,CPT2,680C>T,Pro227Leu,multiple
+4042,CPT2,1055T>G,Phe352Cys,multiple
+4042,CPT2,1657G>A,Asp553Asn,multiple
 71099,COG6,1646G>T,Gly549Val,autosomal recessive
 1757,SLC20A2,1723G>A,Glu575Lys,autosomal dominant
 1757,SLC20A2,1784C>T,Thr595Met,autosomal dominant
@@ -3438,11 +3438,11 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 13652,SLCO2A1,764G>A,Gly255Glu,autosomal recessive
 13652,SLCO2A1,1259G>T,Cys420Phe,autosomal recessive
 749,CAPN5,728G>T,Arg243Leu,autosomal dominant
-11102,SCNN1B,800C>T,Pro267Leu,conflicting
+11102,SCNN1B,800C>T,Pro267Leu,multiple
 11102,SCNN1B,880G>A,Gly294Ser,autosomal dominant
-11102,SCNN1B,1105C>A,Pro369Thr,conflicting
+11102,SCNN1B,1105C>A,Pro369Thr,multiple
 11102,SCNN1B,1615G>A,Glu539Lys,autosomal dominant
-11102,SCNN1B,1849C>T,Pro617Ser,conflicting
+11102,SCNN1B,1849C>T,Pro617Ser,multiple
 11102,SCNN1B,1858T>C,Tyr620His,autosomal dominant
 7866,EFHC1,520A>G,Ile174Val,
 7866,EFHC1,628G>A,Asp210Asn,autosomal dominant
@@ -3465,10 +3465,10 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 54886,CHAT,1325G>A,Arg442His,autosomal recessive
 13266,ALB,71G>C,Arg24Pro,
 13266,ALB,259G>A,Asp87Asn,
-13266,ALB,725G>A,Arg242His,conflicting
-13266,ALB,725G>C,Arg242Pro,conflicting
+13266,ALB,725G>A,Arg242His,multiple
+13266,ALB,725G>C,Arg242Pro,multiple
 13266,ALB,1013A>G,Asp338Gly,
-13266,ALB,1552G>A,Asp518Asn,conflicting
+13266,ALB,1552G>A,Asp518Asn,multiple
 13266,ALB,1669G>A,Val557Met,autosomal recessive
 13266,ALB,1780G>A,Glu594Lys,
 1657,SAMHD1,368A>C,His123Pro,autosomal recessive
@@ -3505,8 +3505,8 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 71001,UBQLN2,1516C>A,Pro506Thr,x-linked dominant
 71001,UBQLN2,1525C>T,Pro509Ser,x-linked dominant
 71001,UBQLN2,1573C>T,Pro525Ser,x-linked dominant
-55736,EPB41,2T>G,Met1Arg,conflicting
-55736,EPB41,2T>C,Met1Thr,conflicting
+55736,EPB41,2T>G,Met1Arg,multiple
+55736,EPB41,2T>C,Met1Thr,multiple
 6605,ACAD9,797G>A,Arg266Gln,autosomal recessive
 6605,ACAD9,976G>C,Ala326Pro,autosomal recessive
 6605,ACAD9,1249C>T,Arg417Cys,autosomal recessive
@@ -3515,7 +3515,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 7047,ETFDH,380T>A,Leu127His,autosomal recessive
 329,VPS33B,89T>C,Leu30Pro,autosomal recessive
 861,LBR,356C>T,Pro119Leu,autosomal dominant
-861,LBR,1114C>T,Arg372Cys,conflicting
+861,LBR,1114C>T,Arg372Cys,multiple
 861,LBR,1748G>A,Arg583Gln,autosomal recessive
 56387,AIFM1,1478A>T,Glu493Val,x-linked recessive
 2114,DIS3L2,1445G>A,Cys482Tyr,autosomal recessive
@@ -3570,7 +3570,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 54814,ARSL,1442C>T,Thr481Met,x-linked recessive
 54814,ARSL,1475G>A,Cys492Tyr,x-linked recessive
 12016,MMP14,50C>G,Thr17Arg,autosomal recessive
-11602,SHOC2,4A>G,Ser2Gly,conflicting
+11602,SHOC2,4A>G,Ser2Gly,multiple
 70938,MTPAP,1432A>G,Asn478Asp,autosomal recessive
 3581,MCOLN1,1207C>T,Arg403Cys,autosomal recessive
 9496,IL10RA,421G>A,Gly141Arg,autosomal recessive
@@ -3587,13 +3587,13 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 5066,BAG3,1385T>C,Leu462Pro,autosomal dominant
 5066,BAG3,1430G>A,Arg477His,autosomal dominant
 55851,CYP11B1,399G>A,Met133Ile,
-55851,CYP11B1,416C>T,Pro139Leu,conflicting
+55851,CYP11B1,416C>T,Pro139Leu,multiple
 55851,CYP11B1,610A>C,Asn204His,autosomal recessive
-55851,CYP11B1,640C>T,Arg214Trp,conflicting
-55851,CYP11B1,1109T>C,Leu370Pro,conflicting
+55851,CYP11B1,640C>T,Arg214Trp,multiple
+55851,CYP11B1,1109T>C,Leu370Pro,multiple
 55851,CYP11B1,1130C>T,Ala377Val,autosomal recessive
-55851,CYP11B1,1166C>T,Thr389Met,conflicting
-55851,CYP11B1,1169C>T,Thr390Met,conflicting
+55851,CYP11B1,1166C>T,Thr389Met,multiple
+55851,CYP11B1,1169C>T,Thr390Met,multiple
 55851,CYP11B1,1316C>A,Ala439Asp,autosomal recessive
 55851,CYP11B1,1334G>A,Arg445Gln,autosomal recessive
 8313,PKLR,110G>A,Gly37Glu,autosomal dominant
@@ -3601,7 +3601,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 8313,PKLR,1151C>T,Thr384Met,autosomal recessive
 8313,PKLR,1261C>A,Gln421Lys,autosomal recessive
 8313,PKLR,1436G>A,Arg479His,autosomal recessive
-8313,PKLR,1456C>T,Arg486Trp,conflicting
+8313,PKLR,1456C>T,Arg486Trp,multiple
 8313,PKLR,1529G>A,Arg510Gln,autosomal recessive
 54383,AMHR2,1217G>A,Arg406Gln,
 3903,LMNA,127G>A,Ala43Thr,
@@ -3613,7 +3613,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 3903,LMNA,448A>C,Thr150Pro,
 3903,LMNA,556G>A,Glu186Lys,
 3903,LMNA,643C>G,Leu215Val,
-3903,LMNA,674G>A,Arg225Gln,conflicting
+3903,LMNA,674G>A,Arg225Gln,multiple
 3903,LMNA,695G>A,Gly232Glu,autosomal dominant
 3903,LMNA,881A>C,Gln294Pro,
 3903,LMNA,905T>C,Leu302Pro,
@@ -3728,7 +3728,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 12025,PRF1,1034C>T,Pro345Leu,autosomal recessive
 12025,PRF1,1304C>T,Thr435Met,autosomal recessive
 5991,ATP5F1A,962A>G,Tyr321Cys,autosomal recessive
-5991,ATP5F1A,985C>T,Arg329Cys,conflicting
+5991,ATP5F1A,985C>T,Arg329Cys,multiple
 6035,SCARB1,335C>T,Ser112Phe,
 6035,SCARB1,523A>G,Thr175Ala,
 4687,SMAD4,38A>G,Asn13Ser,autosomal dominant
@@ -3775,7 +3775,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 53723,KCNQ1,77C>T,Thr26Met,
 53723,KCNQ1,103G>A,Val35Met,
 53723,KCNQ1,169T>C,Tyr57His,
-53723,KCNQ1,202C>T,Arg68Trp,conflicting
+53723,KCNQ1,202C>T,Arg68Trp,multiple
 53723,KCNQ1,227T>C,Leu76Pro,autosomal dominant
 53723,KCNQ1,343G>T,Asp115Tyr,
 53723,KCNQ1,361T>C,Trp121Arg,
@@ -3785,7 +3785,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 53723,KCNQ1,524C>A,Ala175Glu,
 53723,KCNQ1,646C>T,Pro216Ser,
 53723,KCNQ1,647C>T,Pro216Leu,
-53723,KCNQ1,715C>T,Arg239Trp,conflicting
+53723,KCNQ1,715C>T,Arg239Trp,multiple
 53723,KCNQ1,1288A>G,Lys430Glu,
 53723,KCNQ1,1367G>A,Arg456His,autosomal dominant
 7235,SLC33A1,328G>C,Ala110Pro,autosomal recessive
@@ -3821,12 +3821,12 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 7114,BTD,1610G>A,Gly537Glu,autosomal recessive
 13227,NEFL,19G>A,Glu7Lys,autosomal dominant
 13227,NEFL,23C>G,Pro8Arg,autosomal dominant
-13227,NEFL,64C>A,Pro22Thr,conflicting
-13227,NEFL,64C>T,Pro22Ser,conflicting
+13227,NEFL,64C>A,Pro22Thr,multiple
+13227,NEFL,64C>T,Pro22Ser,multiple
 13227,NEFL,268G>A,Glu90Lys,autosomal dominant
 13227,NEFL,281T>C,Leu94Pro,autosomal dominant
-13227,NEFL,293A>G,Asn98Ser,conflicting
-13227,NEFL,446C>T,Ala149Val,conflicting
+13227,NEFL,293A>G,Asn98Ser,multiple
+13227,NEFL,446C>T,Ala149Val,multiple
 13227,NEFL,803T>C,Leu268Pro,
 13227,NEFL,995A>C,Gln332Pro,autosomal dominant
 13227,NEFL,1186G>A,Glu396Lys,autosomal dominant
@@ -3867,14 +3867,14 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 835,PCCB,1534C>T,Arg512Cys,autosomal recessive
 835,PCCB,1556T>C,Leu519Pro,autosomal recessive
 835,PCCB,1606A>G,Asn536Asp,autosomal recessive
-2,GBA,259C>T,Arg87Trp,conflicting
+2,GBA,259C>T,Arg87Trp,multiple
 2,GBA,476G>A,Arg159Gln,autosomal recessive
 2,GBA,586A>C,Lys196Gln,autosomal recessive
 2,GBA,605G>A,Arg202Gln,
 2,GBA,625C>T,Arg209Cys,autosomal recessive
 2,GBA,667T>C,Trp223Arg,autosomal recessive
 2,GBA,680A>G,Asn227Ser,autosomal recessive
-2,GBA,754T>A,Phe252Ile,conflicting
+2,GBA,754T>A,Phe252Ile,multiple
 2,GBA,763T>G,Phe255Val,autosomal recessive
 2,GBA,870C>A,Phe290Leu,autosomal recessive
 2,GBA,882T>G,His294Gln,autosomal recessive
@@ -3882,15 +3882,15 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 2,GBA,1049A>G,His350Arg,autosomal recessive
 2,GBA,1060G>C,Asp354His,
 2,GBA,1085C>T,Thr362Ile,autosomal recessive
-2,GBA,1226A>G,Asn409Ser,conflicting
+2,GBA,1226A>G,Asn409Ser,multiple
 2,GBA,1240G>T,Val414Leu,autosomal recessive
 2,GBA,1343A>T,Asp448Val,autosomal recessive
-2,GBA,1444G>A,Asp482Asn,conflicting
+2,GBA,1444G>A,Asp482Asn,multiple
 2,GBA,1448T>G,Leu483Arg,autosomal recessive
 2,GBA,1483G>C,Ala495Pro,
 2,GBA,1549G>A,Gly517Ser,autosomal recessive
-2,GBA,1604G>A,Arg535His,conflicting
-70872,ZFP57,1372C>G,His458Asp,autosomal recessive
+2,GBA,1604G>A,Arg535His,multiple
+70872,ZFP57,1372C>G,His458Asp,multiple
 13592,KRT4,1345G>A,Glu449Lys,autosomal dominant
 11262,TBXAS1,1444G>T,Gly482Trp,autosomal recessive
 11262,TBXAS1,1463T>C,Leu488Pro,autosomal recessive
@@ -3898,21 +3898,21 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 71633,RPE65,202C>T,His68Tyr,autosomal recessive
 71633,RPE65,235T>C,Tyr79His,autosomal recessive
 71633,RPE65,272G>C,Arg91Pro,autosomal recessive
-71633,RPE65,304G>A,Glu102Lys,conflicting
+71633,RPE65,304G>A,Glu102Lys,multiple
 71633,RPE65,614A>G,Asn205Ser,autosomal recessive
 71633,RPE65,644A>G,Asp215Gly,
 71633,RPE65,715T>G,Tyr239Asp,autosomal recessive
-71633,RPE65,881A>C,Lys294Thr,conflicting
+71633,RPE65,881A>C,Lys294Thr,multiple
 71633,RPE65,963T>G,Asn321Lys,autosomal recessive
 71633,RPE65,989G>A,Cys330Tyr,autosomal recessive
-71633,RPE65,1022T>C,Leu341Ser,conflicting
-71633,RPE65,1102T>C,Tyr368His,conflicting
+71633,RPE65,1022T>C,Leu341Ser,multiple
+71633,RPE65,1102T>C,Tyr368His,multiple
 71633,RPE65,1103A>G,Tyr368Cys,
 71633,RPE65,1292A>G,Tyr431Cys,autosomal recessive
-71633,RPE65,1301C>T,Ala434Val,conflicting
+71633,RPE65,1301C>T,Ala434Val,multiple
 71633,RPE65,1307G>T,Gly436Val,
 71633,RPE65,1418T>A,Val473Asp,autosomal recessive
-71633,RPE65,1451G>A,Gly484Asp,conflicting
+71633,RPE65,1451G>A,Gly484Asp,multiple
 71633,RPE65,1543C>T,Arg515Trp,autosomal recessive
 7696,USH1C,308G>A,Arg103His,autosomal recessive
 7696,USH1C,388G>A,Val130Ile,autosomal recessive
@@ -3970,28 +3970,28 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 14444,PRKAG2,1384G>C,Glu462Gln,autosomal dominant
 14444,PRKAG2,1457A>G,His486Arg,autosomal dominant
 14444,PRKAG2,1510T>C,Ser504Pro,autosomal dominant
-54289,ALPL,98C>T,Ala33Val,conflicting
-54289,ALPL,212G>C,Arg71Pro,conflicting
+54289,ALPL,98C>T,Ala33Val,multiple
+54289,ALPL,212G>C,Arg71Pro,multiple
 54289,ALPL,323C>T,Pro108Leu,
-54289,ALPL,346G>A,Ala116Thr,conflicting
-54289,ALPL,407G>A,Arg136His,conflicting
+54289,ALPL,346G>A,Ala116Thr,multiple
+54289,ALPL,407G>A,Arg136His,multiple
 54289,ALPL,485G>T,Gly162Val,autosomal recessive
-54289,ALPL,526G>A,Ala176Thr,conflicting
-54289,ALPL,571G>A,Glu191Lys,conflicting
+54289,ALPL,526G>A,Ala176Thr,multiple
+54289,ALPL,571G>A,Glu191Lys,multiple
 54289,ALPL,620A>C,Gln207Pro,autosomal recessive
-54289,ALPL,746G>T,Gly249Val,conflicting
-54289,ALPL,814C>T,Arg272Cys,conflicting
-54289,ALPL,881A>C,Asp294Ala,conflicting
-54289,ALPL,892G>A,Glu298Lys,conflicting
-54289,ALPL,979T>C,Phe327Leu,conflicting
-54289,ALPL,1001G>A,Gly334Asp,conflicting
-54289,ALPL,1133A>T,Asp378Val,conflicting
-54289,ALPL,1250A>G,Asn417Ser,conflicting
+54289,ALPL,746G>T,Gly249Val,multiple
+54289,ALPL,814C>T,Arg272Cys,multiple
+54289,ALPL,881A>C,Asp294Ala,multiple
+54289,ALPL,892G>A,Glu298Lys,multiple
+54289,ALPL,979T>C,Phe327Leu,multiple
+54289,ALPL,1001G>A,Gly334Asp,multiple
+54289,ALPL,1133A>T,Asp378Val,multiple
+54289,ALPL,1250A>G,Asn417Ser,multiple
 54289,ALPL,1306T>C,Tyr436His,autosomal recessive
-54289,ALPL,1366G>A,Gly456Arg,conflicting
+54289,ALPL,1366G>A,Gly456Arg,multiple
 4252,PSAP,643A>C,Asn215His,autosomal recessive
-4252,PSAP,650C>T,Thr217Ile,conflicting
-4252,PSAP,722G>C,Cys241Ser,conflicting
+4252,PSAP,650C>T,Thr217Ile,multiple
+4252,PSAP,722G>C,Cys241Ser,multiple
 13554,GLYCTK,1478T>G,Phe493Cys,autosomal recessive
 11713,GALNS,178G>A,Asp60Asn,autosomal recessive
 11713,GALNS,205T>G,Phe69Val,autosomal recessive
@@ -4019,7 +4019,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 2073,MFSD8,1102G>C,Asp368His,autosomal recessive
 71724,CHRND,238G>A,Glu80Lys,autosomal recessive
 71724,CHRND,283T>C,Phe95Leu,autosomal recessive
-71724,CHRND,866C>T,Ser289Phe,conflicting
+71724,CHRND,866C>T,Ser289Phe,multiple
 4300,DHCR24,307C>T,Arg103Cys,autosomal recessive
 71258,CTNNA3,281T>A,Val94Asp,autosomal dominant
 4006,G6PD,1192G>A,Glu398Lys,x-linked
@@ -4045,14 +4045,14 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 3467,SLC7A7,998G>T,Arg333Met,autosomal recessive
 3467,SLC7A7,1158C>A,Ser386Arg,autosomal recessive
 3408,FH,302G>C,Arg101Pro,autosomal dominant
-3408,FH,521C>G,Pro174Arg,conflicting
+3408,FH,521C>G,Pro174Arg,multiple
 3408,FH,697C>T,Arg233Cys,autosomal recessive
 3408,FH,698G>T,Arg233Leu,autosomal dominant
 3408,FH,908T>C,Leu303Ser,autosomal recessive
-3408,FH,952C>T,His318Tyr,conflicting
+3408,FH,952C>T,His318Tyr,multiple
 3408,FH,1002T>G,Ser334Arg,autosomal dominant
-3408,FH,1020T>A,Asn340Lys,conflicting
-3408,FH,1127A>C,Gln376Pro,conflicting
+3408,FH,1020T>A,Asn340Lys,multiple
+3408,FH,1127A>C,Gln376Pro,multiple
 3408,FH,1255T>C,Ser419Pro,autosomal dominant
 6514,NECTIN4,554C>T,Thr185Met,autosomal recessive
 6514,NECTIN4,635C>G,Pro212Arg,autosomal recessive
@@ -4115,8 +4115,8 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 70545,CYP7B1,1250G>A,Arg417His,autosomal recessive
 70545,CYP7B1,1408T>A,Phe470Ile,autosomal recessive
 4784,HARS2,598C>G,Leu200Val,autosomal recessive
-9791,TWNK,421A>G,Lys141Glu,conflicting
-9791,TWNK,467G>A,Arg156Gln,conflicting
+9791,TWNK,421A>G,Lys141Glu,multiple
+9791,TWNK,467G>A,Arg156Gln,multiple
 9791,TWNK,527G>C,Arg176Pro,autosomal dominant
 9791,TWNK,572C>A,Ser191Tyr,autosomal dominant
 9791,TWNK,608T>C,Leu203Pro,autosomal dominant
@@ -4146,13 +4146,13 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 8000,DARS1,1459C>T,Arg487Cys,autosomal recessive
 8000,DARS1,1480C>G,Arg494Gly,autosomal recessive
 7580,ABAT,275G>A,Arg92Gln,autosomal recessive
-369,SERPING1,461A>G,Tyr154Cys,conflicting
+369,SERPING1,461A>G,Tyr154Cys,multiple
 369,SERPING1,1322T>C,Met441Thr,
 369,SERPING1,1361T>A,Val454Glu,
 369,SERPING1,1372G>A,Ala458Thr,
 369,SERPING1,1397G>T,Arg466Leu,
-369,SERPING1,1490A>G,Asp497Gly,conflicting
-9919,EGR2,1216G>T,Asp406Tyr,conflicting
+369,SERPING1,1490A>G,Asp497Gly,multiple
+9919,EGR2,1216G>T,Asp406Tyr,multiple
 55074,LIPC,866C>T,Ser289Phe,autosomal recessive
 54082,PRPF31,581C>A,Ala194Glu,autosomal dominant
 2492,BEST1,37A>C,Ile13Leu,
@@ -4204,23 +4204,23 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 3098,PIGV,1022C>A,Ala341Glu,autosomal recessive
 3098,PIGV,1022C>T,Ala341Val,autosomal recessive
 3098,PIGV,1154A>C,His385Pro,autosomal recessive
-56414,PRODH,968G>A,Arg323His,conflicting
-56414,PRODH,998T>C,Leu333Pro,conflicting
-56414,PRODH,1039G>T,Ala347Ser,conflicting
-56414,PRODH,1073C>T,Thr358Met,conflicting
-70149,SLC2A1,272G>A,Gly91Asp,conflicting
-70149,SLC2A1,277C>T,Arg93Trp,conflicting
-70149,SLC2A1,376C>T,Arg126Cys,conflicting
-70149,SLC2A1,377G>T,Arg126Leu,conflicting
-70149,SLC2A1,377G>A,Arg126His,conflicting
-70149,SLC2A1,634C>T,Arg212Cys,conflicting
+56414,PRODH,968G>A,Arg323His,multiple
+56414,PRODH,998T>C,Leu333Pro,multiple
+56414,PRODH,1039G>T,Ala347Ser,multiple
+56414,PRODH,1073C>T,Thr358Met,multiple
+70149,SLC2A1,272G>A,Gly91Asp,multiple
+70149,SLC2A1,277C>T,Arg93Trp,multiple
+70149,SLC2A1,376C>T,Arg126Cys,multiple
+70149,SLC2A1,377G>T,Arg126Leu,multiple
+70149,SLC2A1,377G>A,Arg126His,multiple
+70149,SLC2A1,634C>T,Arg212Cys,multiple
 70149,SLC2A1,668G>C,Arg223Pro,autosomal dominant
-70149,SLC2A1,694C>T,Arg232Cys,conflicting
-70149,SLC2A1,823G>A,Ala275Thr,conflicting
-70149,SLC2A1,940G>A,Gly314Ser,conflicting
+70149,SLC2A1,694C>T,Arg232Cys,multiple
+70149,SLC2A1,823G>A,Ala275Thr,multiple
+70149,SLC2A1,940G>A,Gly314Ser,multiple
 70149,SLC2A1,1232A>G,Asn411Ser,autosomal dominant
-70149,SLC2A1,1372C>T,Arg458Trp,conflicting
-70149,SLC2A1,1402C>T,Arg468Trp,conflicting
+70149,SLC2A1,1372C>T,Arg458Trp,multiple
+70149,SLC2A1,1402C>T,Arg468Trp,multiple
 70419,CYP2B6,329G>T,Gly110Val,
 70419,CYP2B6,341T>C,Ile114Thr,
 70419,CYP2B6,548T>G,Val183Gly,
@@ -4234,17 +4234,17 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 5597,IFNGR1,2T>A,Met1Lys,autosomal recessive
 10065,TULP1,380G>A,Arg127His,
 10065,TULP1,943G>T,Gly315Trp,autosomal recessive
-10065,TULP1,1039C>T,Arg347Trp,conflicting
+10065,TULP1,1039C>T,Arg347Trp,multiple
 10065,TULP1,1217T>A,Ile406Lys,autosomal recessive
 10065,TULP1,1307A>G,Lys436Arg,autosomal recessive
 3315,ALG12,301G>A,Gly101Arg,autosomal recessive
 3315,ALG12,473T>C,Leu158Pro,autosomal recessive
-12936,SLC7A9,131T>C,Ile44Thr,conflicting
-12936,SLC7A9,368C>T,Thr123Met,conflicting
-12936,SLC7A9,544G>A,Ala182Thr,conflicting
-12936,SLC7A9,695A>G,Tyr232Cys,conflicting
-12936,SLC7A9,782C>T,Pro261Leu,conflicting
-12936,SLC7A9,997C>T,Arg333Trp,conflicting
+12936,SLC7A9,131T>C,Ile44Thr,multiple
+12936,SLC7A9,368C>T,Thr123Met,multiple
+12936,SLC7A9,544G>A,Ala182Thr,multiple
+12936,SLC7A9,695A>G,Tyr232Cys,multiple
+12936,SLC7A9,782C>T,Pro261Leu,multiple
+12936,SLC7A9,997C>T,Arg333Trp,multiple
 6191,MECP2,602C>T,Ala201Val,x-linked
 6191,MECP2,719C>G,Thr240Ser,
 6191,MECP2,917G>C,Arg306Pro,x-linked recessive
@@ -4277,10 +4277,10 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 8021,CTSA,1214T>C,Met405Thr,
 8021,CTSA,1354A>G,Lys452Glu,
 71905,GCGR,118G>A,Gly40Ser,autosomal dominant
-3986,PPOX,35T>C,Ile12Thr,conflicting
-3986,PPOX,175C>T,Arg59Trp,conflicting
-3986,PPOX,502C>T,Arg168Cys,conflicting
-3986,PPOX,767C>G,Pro256Arg,conflicting
+3986,PPOX,35T>C,Ile12Thr,multiple
+3986,PPOX,175C>T,Arg59Trp,multiple
+3986,PPOX,502C>T,Arg168Cys,multiple
+3986,PPOX,767C>G,Pro256Arg,multiple
 3986,PPOX,1046A>C,Asp349Ala,autosomal recessive
 5871,HADHB,743G>A,Arg248His,autosomal recessive
 5871,HADHB,791A>G,Asp264Gly,autosomal recessive
@@ -4291,24 +4291,24 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 2891,LPL,548A>G,Asp183Gly,autosomal recessive
 2891,LPL,596C>G,Ser199Cys,autosomal recessive
 2891,LPL,621C>G,Asp207Glu,autosomal recessive
-2891,LPL,644G>A,Gly215Glu,conflicting
-2891,LPL,662T>C,Ile221Thr,conflicting
+2891,LPL,644G>A,Gly215Glu,multiple
+2891,LPL,662T>C,Ile221Thr,multiple
 2891,LPL,665G>A,Gly222Glu,autosomal recessive
 2891,LPL,693C>G,Asp231Glu,autosomal recessive
-2891,LPL,701C>T,Pro234Leu,conflicting
-2891,LPL,755T>C,Ile252Thr,conflicting
+2891,LPL,701C>T,Pro234Leu,multiple
+2891,LPL,755T>C,Ile252Thr,multiple
 2891,LPL,798C>G,Cys266Trp,autosomal recessive
-2891,LPL,808C>T,Arg270Cys,conflicting
+2891,LPL,808C>T,Arg270Cys,multiple
 2891,LPL,811T>A,Ser271Thr,autosomal recessive
-2891,LPL,829G>A,Asp277Asn,conflicting
-2891,LPL,1081G>A,Ala361Thr,conflicting
+2891,LPL,829G>A,Asp277Asn,multiple
+2891,LPL,1081G>A,Ala361Thr,multiple
 2891,LPL,1174C>G,Leu392Val,autosomal recessive
 2891,LPL,1334G>A,Cys445Tyr,autosomal recessive
 56583,SLC29A3,607T>C,Ser203Pro,autosomal recessive
 56583,SLC29A3,1088G>A,Arg363Gln,autosomal recessive
 56583,SLC29A3,1157G>A,Arg386Gln,autosomal recessive
 52833,SLC26A5,390A>C,Arg130Ser,autosomal recessive
-14592,MMP13,272T>C,Met91Thr,conflicting
+14592,MMP13,272T>C,Met91Thr,multiple
 71286,FGD4,581G>A,Arg194His,autosomal recessive
 12228,ANKS6,122A>G,Gln41Arg,autosomal recessive
 7637,CFP,1240T>G,Tyr414Asp,
@@ -4399,42 +4399,42 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 70488,FKTN,509C>A,Ala170Glu,autosomal recessive
 70488,FKTN,527T>C,Phe176Ser,autosomal recessive
 70488,FKTN,1073A>C,Gln358Pro,autosomal recessive
-8500,PROC,52G>A,Gly18Ser,conflicting
+8500,PROC,52G>A,Gly18Ser,multiple
 8500,PROC,125G>A,Arg42His,autosomal dominant
-8500,PROC,160A>T,Ser54Cys,conflicting
+8500,PROC,160A>T,Ser54Cys,multiple
 8500,PROC,185A>C,Glu62Ala,autosomal recessive
 8500,PROC,226G>A,Val76Met,autosomal recessive
-8500,PROC,322C>A,His108Asn,conflicting
+8500,PROC,322C>A,His108Asn,multiple
 8500,PROC,446A>C,His149Pro,autosomal dominant
 8500,PROC,565C>T,Arg189Trp,autosomal dominant
-8500,PROC,580C>T,Arg194Cys,conflicting
-8500,PROC,629C>T,Pro210Leu,conflicting
-8500,PROC,631C>T,Arg211Trp,conflicting
+8500,PROC,580C>T,Arg194Cys,multiple
+8500,PROC,629C>T,Pro210Leu,multiple
+8500,PROC,631C>T,Arg211Trp,multiple
 8500,PROC,658C>T,Arg220Trp,autosomal dominant
-8500,PROC,659G>A,Arg220Gln,conflicting
+8500,PROC,659G>A,Arg220Gln,multiple
 8500,PROC,866C>T,Pro289Leu,autosomal recessive
 8500,PROC,902C>T,Ala301Val,autosomal recessive
-8500,PROC,925G>A,Ala309Thr,conflicting
+8500,PROC,925G>A,Ala309Thr,multiple
 8500,PROC,935C>T,Ser312Leu,autosomal dominant
-8500,PROC,1000G>A,Gly334Ser,conflicting
+8500,PROC,1000G>A,Gly334Ser,multiple
 8500,PROC,1010C>T,Thr337Ile,autosomal dominant
 8500,PROC,1015G>A,Val339Met,autosomal dominant
 8500,PROC,1027G>A,Gly343Ser,autosomal recessive
 8500,PROC,1201G>A,Asp401Asn,autosomal dominant
-8500,PROC,1234G>A,Gly412Ser,conflicting
+8500,PROC,1234G>A,Gly412Ser,multiple
 52996,THRB,700G>A,Ala234Thr,autosomal dominant
 52996,THRB,727C>T,Arg243Trp,autosomal dominant
-52996,THRB,728G>A,Arg243Gln,conflicting
+52996,THRB,728G>A,Arg243Gln,multiple
 52996,THRB,929T>C,Met310Thr,
 52996,THRB,947G>A,Arg316His,autosomal dominant
 52996,THRB,949G>A,Ala317Thr,autosomal dominant
-52996,THRB,958C>T,Arg320Cys,conflicting
+52996,THRB,958C>T,Arg320Cys,multiple
 52996,THRB,959G>A,Arg320His,autosomal dominant
 52996,THRB,959G>T,Arg320Leu,autosomal dominant
 52996,THRB,964G>C,Asp322His,
 52996,THRB,994G>A,Gly332Arg,autosomal dominant
 52996,THRB,1009A>G,Thr337Ala,autosomal dominant
-52996,THRB,1012C>T,Arg338Trp,conflicting
+52996,THRB,1012C>T,Arg338Trp,multiple
 52996,THRB,1020G>C,Gln340His,autosomal dominant
 52996,THRB,1033G>A,Gly345Ser,autosomal dominant
 52996,THRB,1033G>C,Gly345Arg,autosomal dominant
@@ -4461,8 +4461,8 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 54296,KRT13,332T>C,Leu111Pro,autosomal dominant
 54296,KRT13,335A>G,Asn112Ser,
 54296,KRT13,356T>C,Leu119Pro,autosomal dominant
-56397,SLC5A2,294C>A,Phe98Leu,conflicting
-56397,SLC5A2,395G>A,Arg132His,conflicting
+56397,SLC5A2,294C>A,Phe98Leu,multiple
+56397,SLC5A2,395G>A,Arg132His,multiple
 3595,HTRA2,427C>G,Pro143Ala,
 10316,MAK,37G>A,Gly13Ser,autosomal recessive
 10316,MAK,388A>C,Asn130His,autosomal recessive
@@ -4470,7 +4470,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 7828,PORCN,1079G>A,Arg360Gln,x-linked dominant
 4417,CHRDL1,779G>T,Cys260Phe,
 12865,PIK3R1,655G>A,Glu219Lys,autosomal dominant
-12865,PIK3R1,1135C>T,Arg379Trp,conflicting
+12865,PIK3R1,1135C>T,Arg379Trp,multiple
 9111,PIGO,964C>T,Leu322Phe,autosomal recessive
 3132,UQCRC2,547C>T,Arg183Trp,autosomal recessive
 12590,AP4M1,577G>A,Glu193Lys,autosomal recessive
@@ -4638,15 +4638,15 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 7938,GCDH,1204C>T,Arg402Trp,autosomal recessive
 7938,GCDH,1240G>A,Glu414Lys,autosomal recessive
 3980,GRN,313T>C,Cys105Arg,
-3980,GRN,359C>A,Ser120Tyr,conflicting
-3980,GRN,545C>T,Thr182Met,conflicting
-3980,GRN,970G>A,Ala324Thr,conflicting
+3980,GRN,359C>A,Ser120Tyr,multiple
+3980,GRN,545C>T,Thr182Met,multiple
+3980,GRN,970G>A,Ala324Thr,multiple
 5446,FGG,901C>T,Arg301Cys,autosomal dominant
 5446,FGG,1001A>T,Asn334Ile,
 5446,FGG,1064A>G,Gln355Arg,
 5446,FGG,1066G>T,Asp356Tyr,
 5446,FGG,1210T>C,Ser404Pro,
-9812,CPA6,809C>T,Ala270Val,conflicting
+9812,CPA6,809C>T,Ala270Val,multiple
 2391,ORC4,521A>G,Tyr174Cys,autosomal recessive
 7819,ENO3,467G>A,Gly156Asp,autosomal recessive
 7819,ENO3,1121G>A,Gly374Glu,autosomal recessive
@@ -4763,7 +4763,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 2722,ACAD8,512C>G,Ser171Cys,autosomal recessive
 2722,ACAD8,905G>A,Arg302Gln,autosomal recessive
 2722,ACAD8,988C>T,Arg330Trp,autosomal recessive
-9352,MITF,934G>A,Glu312Lys,conflicting
+9352,MITF,934G>A,Glu312Lys,multiple
 12674,ACADS,164C>T,Pro55Leu,autosomal recessive
 12674,ACADS,319C>T,Arg107Cys,autosomal recessive
 12674,ACADS,323G>A,Gly108Asp,autosomal recessive
@@ -4805,7 +4805,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 3987,DPAGT1,791T>G,Val264Gly,autosomal recessive
 11549,REN,47T>G,Leu16Arg,autosomal dominant
 55658,CDH23,1096G>A,Ala366Thr,autosomal recessive
-3108,SERPINE1,43G>A,Ala15Thr,conflicting
+3108,SERPINE1,43G>A,Ala15Thr,multiple
 117,CANT1,375G>C,Trp125Cys,autosomal recessive
 117,CANT1,676G>A,Val226Met,autosomal recessive
 117,CANT1,896C>T,Pro299Leu,autosomal recessive
@@ -4818,7 +4818,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 6666,MAP2K2,383C>A,Pro128Gln,autosomal dominant
 6666,MAP2K2,395G>A,Gly132Asp,autosomal dominant
 6666,MAP2K2,401A>G,Tyr134Cys,autosomal dominant
-5933,TFG,854C>T,Pro285Leu,conflicting
+5933,TFG,854C>T,Pro285Leu,multiple
 3438,TMEM43,82C>T,Arg28Trp,autosomal dominant
 3438,TMEM43,253G>A,Glu85Lys,autosomal dominant
 3438,TMEM43,271A>G,Ile91Val,autosomal dominant
@@ -4828,49 +4828,49 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 3438,TMEM43,1111T>C,Tyr371His,autosomal dominant
 14879,SS18L1,378T>G,Ile126Met,
 71080,PDSS2,1145C>T,Ser382Leu,autosomal recessive
-8446,TICAM1,557C>T,Ser186Leu,conflicting
+8446,TICAM1,557C>T,Ser186Leu,multiple
 53820,APOA4,748G>A,Glu250Lys,
 281,MVK,357C>G,Ile119Met,autosomal recessive
 281,MVK,404C>T,Ser135Leu,autosomal recessive
-281,MVK,442G>A,Ala148Thr,conflicting
+281,MVK,442G>A,Ala148Thr,multiple
 281,MVK,625A>G,Thr209Ala,autosomal recessive
 281,MVK,632G>C,Gly211Ala,autosomal recessive
 281,MVK,701T>C,Leu234Pro,autosomal recessive
 281,MVK,728C>T,Thr243Ile,autosomal recessive
-281,MVK,748G>A,Val250Ile,conflicting
+281,MVK,748G>A,Val250Ile,multiple
 281,MVK,794T>C,Leu265Pro,autosomal recessive
-281,MVK,829C>T,Arg277Cys,conflicting
-281,MVK,863C>T,Pro288Leu,conflicting
-281,MVK,877G>A,Val293Met,conflicting
+281,MVK,829C>T,Arg277Cys,multiple
+281,MVK,863C>T,Pro288Leu,multiple
+281,MVK,877G>A,Val293Met,multiple
 281,MVK,965C>G,Thr322Ser,autosomal recessive
-281,MVK,986G>A,Ser329Asn,conflicting
-281,MVK,1006G>A,Gly336Ser,conflicting
+281,MVK,986G>A,Ser329Asn,multiple
+281,MVK,1006G>A,Gly336Ser,multiple
 281,MVK,1100G>C,Cys367Ser,autosomal recessive
 281,MVK,1132T>C,Ser378Pro,autosomal recessive
 8993,GNAS,1A>G,Met1Val,
-879,MAT1A,790C>T,Arg264Cys,conflicting
-879,MAT1A,914T>C,Leu305Pro,conflicting
-879,MAT1A,1070C>T,Pro357Leu,conflicting
+879,MAT1A,790C>T,Arg264Cys,multiple
+879,MAT1A,914T>C,Leu305Pro,multiple
+879,MAT1A,1070C>T,Pro357Leu,multiple
 3774,TP53,31G>C,Glu11Gln,autosomal dominant
 3774,TP53,398T>C,Met133Thr,autosomal dominant
 3774,TP53,427G>A,Val143Met,autosomal dominant
 3774,TP53,451C>T,Pro151Ser,autosomal dominant
-3774,TP53,467G>A,Arg156His,conflicting
+3774,TP53,467G>A,Arg156His,multiple
 3774,TP53,535C>T,His179Tyr,autosomal dominant
 3774,TP53,541C>T,Arg181Cys,autosomal dominant
 3774,TP53,566C>T,Ala189Val,autosomal dominant
 3774,TP53,580C>T,Leu194Phe,autosomal dominant
-3774,TP53,659A>G,Tyr220Cys,conflicting
-3774,TP53,704A>G,Asn235Ser,conflicting
+3774,TP53,659A>G,Tyr220Cys,multiple
+3774,TP53,704A>G,Asn235Ser,multiple
 3774,TP53,711G>A,Met237Ile,autosomal dominant
 3774,TP53,734G>A,Gly245Asp,autosomal dominant
 3774,TP53,742C>T,Arg248Trp,autosomal dominant
 3774,TP53,770T>A,Leu257Gln,
 3774,TP53,799C>T,Arg267Trp,autosomal dominant
 3774,TP53,800G>A,Arg267Gln,autosomal dominant
-3774,TP53,818G>A,Arg273His,conflicting
+3774,TP53,818G>A,Arg273His,multiple
 3774,TP53,842A>G,Asp281Gly,autosomal dominant
-3774,TP53,844C>T,Arg282Trp,conflicting
+3774,TP53,844C>T,Arg282Trp,multiple
 3774,TP53,848G>A,Arg283His,autosomal dominant
 3774,TP53,854A>T,Glu285Val,
 3774,TP53,869G>A,Arg290His,autosomal dominant
@@ -4898,7 +4898,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 56145,KCNJ11,149G>C,Arg50Pro,autosomal dominant
 56145,KCNJ11,155A>G,Gln52Arg,
 56145,KCNJ11,158G>A,Gly53Asp,autosomal dominant
-56145,KCNJ11,161G>A,Arg54His,conflicting
+56145,KCNJ11,161G>A,Arg54His,multiple
 56145,KCNJ11,175G>A,Val59Met,autosomal dominant
 56145,KCNJ11,176T>G,Val59Gly,autosomal dominant
 56145,KCNJ11,179T>A,Phe60Tyr,autosomal dominant
@@ -4912,11 +4912,11 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 56145,KCNJ11,601C>T,Arg201Cys,autosomal dominant
 56145,KCNJ11,602G>T,Arg201Leu,
 56145,KCNJ11,685G>A,Glu229Lys,autosomal dominant
-56145,KCNJ11,761C>T,Pro254Leu,conflicting
-56145,KCNJ11,776A>G,His259Arg,conflicting
-56145,KCNJ11,844G>A,Glu282Lys,conflicting
+56145,KCNJ11,761C>T,Pro254Leu,multiple
+56145,KCNJ11,776A>G,His259Arg,multiple
+56145,KCNJ11,844G>A,Glu282Lys,multiple
 56145,KCNJ11,886A>C,Ile296Leu,
-56145,KCNJ11,902G>A,Arg301His,conflicting
+56145,KCNJ11,902G>A,Arg301His,multiple
 56145,KCNJ11,964G>A,Glu322Lys,
 56145,KCNJ11,997T>A,Phe333Ile,
 4683,PDHA1,615C>A,Phe205Leu,
@@ -4930,21 +4930,21 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 9183,CLCN2,71C>T,Ala24Val,autosomal recessive
 1392,PRKN,167T>A,Val56Glu,autosomal recessive
 1392,PRKN,245C>A,Ala82Glu,autosomal recessive
-1392,PRKN,633A>T,Lys211Asn,conflicting
+1392,PRKN,633A>T,Lys211Asn,multiple
 1392,PRKN,635G>A,Cys212Tyr,autosomal recessive
 1392,PRKN,719C>T,Thr240Met,autosomal recessive
 1392,PRKN,719C>G,Thr240Arg,autosomal recessive
-1392,PRKN,823C>T,Arg275Trp,conflicting
+1392,PRKN,823C>T,Arg275Trp,multiple
 338,DDHD2,1000G>C,Asp334His,autosomal recessive
-1326,CD46,104G>A,Cys35Tyr,conflicting
-7167,AIPL1,244C>T,His82Tyr,conflicting
-7167,AIPL1,286G>A,Val96Ile,conflicting
-7167,AIPL1,589G>C,Ala197Pro,conflicting
-7167,AIPL1,617T>A,Ile206Asn,conflicting
-7167,AIPL1,715T>C,Cys239Arg,conflicting
-7167,AIPL1,784G>A,Gly262Ser,conflicting
-7167,AIPL1,937G>T,Ala313Ser,conflicting
-7167,AIPL1,1126C>T,Pro376Ser,conflicting
+1326,CD46,104G>A,Cys35Tyr,multiple
+7167,AIPL1,244C>T,His82Tyr,multiple
+7167,AIPL1,286G>A,Val96Ile,multiple
+7167,AIPL1,589G>C,Ala197Pro,multiple
+7167,AIPL1,617T>A,Ile206Asn,multiple
+7167,AIPL1,715T>C,Cys239Arg,multiple
+7167,AIPL1,784G>A,Gly262Ser,multiple
+7167,AIPL1,937G>T,Ala313Ser,multiple
+7167,AIPL1,1126C>T,Pro376Ser,multiple
 56786,UPB1,209G>C,Arg70Pro,autosomal recessive
 56786,UPB1,254C>A,Ala85Glu,autosomal recessive
 55860,MAPT,14G>A,Arg5His,autosomal dominant
@@ -4952,15 +4952,15 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 1142,GJA1,32T>C,Leu11Pro,autosomal dominant
 1142,GJA1,50A>C,Tyr17Ser,autosomal dominant
 1142,GJA1,61G>A,Gly21Arg,autosomal dominant
-1142,GJA1,65G>A,Gly22Glu,conflicting
-1142,GJA1,226C>A,Arg76Ser,conflicting
+1142,GJA1,65G>A,Gly22Glu,multiple
+1142,GJA1,226C>A,Arg76Ser,multiple
 1142,GJA1,227G>A,Arg76His,autosomal recessive
-1142,GJA1,286G>A,Val96Met,conflicting
+1142,GJA1,286G>A,Val96Met,multiple
 1142,GJA1,427G>A,Gly143Ser,autosomal dominant
 1142,GJA1,581A>C,His194Pro,autosomal dominant
 1142,GJA1,617A>G,Lys206Arg,autosomal dominant
 1142,GJA1,1085G>A,Arg362Gln,autosomal recessive
-1142,GJA1,1127G>A,Arg376Gln,conflicting
+1142,GJA1,1127G>A,Arg376Gln,multiple
 5095,DUSP6,229T>A,Phe77Ile,autosomal dominant
 5095,DUSP6,545C>T,Ser182Phe,autosomal dominant
 5095,DUSP6,566A>G,Asn189Ser,autosomal dominant
@@ -4999,7 +4999,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 300,GALT,970C>T,Pro324Ser,autosomal recessive
 300,GALT,989C>T,Ala330Val,
 300,GALT,998G>A,Arg333Gln,autosomal recessive
-1240,KCNJ10,53G>A,Arg18Gln,autosomal recessive
+1240,KCNJ10,53G>A,Arg18Gln,multiple
 1240,KCNJ10,193C>T,Arg65Cys,autosomal recessive
 1240,KCNJ10,418T>C,Cys140Arg,autosomal recessive
 1240,KCNJ10,491C>T,Thr164Ile,autosomal recessive
@@ -5016,25 +5016,25 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 2572,TYR,57T>A,His19Gln,
 2572,TYR,107G>A,Cys36Tyr,
 2572,TYR,125A>G,Asp42Gly,autosomal recessive
-2572,TYR,140G>A,Gly47Asp,conflicting
+2572,TYR,140G>A,Gly47Asp,multiple
 2572,TYR,155G>T,Arg52Ile,autosomal dominant
-2572,TYR,229C>T,Arg77Trp,conflicting
+2572,TYR,229C>T,Arg77Trp,multiple
 2572,TYR,238T>C,Trp80Arg,
-2572,TYR,242C>T,Pro81Leu,conflicting
+2572,TYR,242C>T,Pro81Leu,multiple
 2572,TYR,265T>C,Cys89Arg,autosomal recessive
-2572,TYR,272G>A,Cys91Tyr,conflicting
+2572,TYR,272G>A,Cys91Tyr,multiple
 2572,TYR,289G>A,Gly97Arg,
-2572,TYR,325G>A,Gly109Arg,conflicting
+2572,TYR,325G>A,Gly109Arg,multiple
 2572,TYR,526T>A,Phe176Ile,
-2572,TYR,616G>A,Ala206Thr,conflicting
+2572,TYR,616G>A,Ala206Thr,multiple
 2572,TYR,646T>A,Leu216Met,autosomal recessive
-2572,TYR,649C>T,Arg217Trp,conflicting
+2572,TYR,649C>T,Arg217Trp,multiple
 2572,TYR,707G>C,Trp236Ser,
-2572,TYR,757G>A,Gly253Arg,conflicting
+2572,TYR,757G>A,Gly253Arg,multiple
 2572,TYR,766C>T,His256Tyr,
 2572,TYR,816G>T,Trp272Cys,
-2572,TYR,823G>T,Val275Phe,conflicting
-2572,TYR,895C>A,Arg299Ser,conflicting
+2572,TYR,823G>T,Val275Phe,multiple
+2572,TYR,895C>A,Arg299Ser,multiple
 2572,TYR,934C>G,Leu312Val,
 2572,TYR,938C>G,Pro313Arg,
 2572,TYR,973A>G,Thr325Ala,
@@ -5103,12 +5103,12 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 53137,NAGS,791T>C,Leu264Pro,autosomal recessive
 53137,NAGS,801G>C,Glu267Asp,autosomal recessive
 53137,NAGS,952T>C,Trp318Arg,autosomal recessive
-3732,UROD,494T>G,Met165Arg,conflicting
+3732,UROD,494T>G,Met165Arg,multiple
 3732,UROD,499G>A,Glu167Lys,
-3732,UROD,842G>T,Gly281Val,conflicting
-3732,UROD,912C>A,Asn304Lys,conflicting
+3732,UROD,842G>T,Gly281Val,multiple
+3732,UROD,912C>A,Asn304Lys,multiple
 3732,UROD,932A>G,Tyr311Cys,
-3732,UROD,995G>A,Arg332His,conflicting
+3732,UROD,995G>A,Arg332His,multiple
 14153,TSC1,149T>C,Leu50Pro,autosomal dominant
 14153,TSC1,182T>C,Leu61Pro,autosomal dominant
 14153,TSC1,182T>G,Leu61Arg,autosomal dominant
@@ -5160,15 +5160,15 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 2803,HMBS,331G>A,Gly111Arg,autosomal dominant
 2803,HMBS,346C>T,Arg116Trp,autosomal dominant
 2803,HMBS,446G>A,Arg149Gln,autosomal dominant
-2803,HMBS,499C>T,Arg167Trp,conflicting
-2803,HMBS,500G>A,Arg167Gln,conflicting
-2803,HMBS,518G>A,Arg173Gln,conflicting
+2803,HMBS,499C>T,Arg167Trp,multiple
+2803,HMBS,500G>A,Arg167Gln,multiple
+2803,HMBS,518G>A,Arg173Gln,multiple
 2803,HMBS,530T>G,Leu177Arg,autosomal dominant
 2803,HMBS,583C>T,Arg195Cys,autosomal dominant
-2803,HMBS,601C>T,Arg201Trp,conflicting
+2803,HMBS,601C>T,Arg201Trp,multiple
 2803,HMBS,647G>A,Gly216Asp,autosomal dominant
 2803,HMBS,667G>A,Glu223Lys,autosomal dominant
-2803,HMBS,674G>A,Arg225Gln,conflicting
+2803,HMBS,674G>A,Arg225Gln,multiple
 2803,HMBS,739T>C,Cys247Arg,autosomal dominant
 2803,HMBS,748G>A,Glu250Lys,autosomal dominant
 2803,HMBS,754G>A,Ala252Thr,autosomal dominant
@@ -5316,18 +5316,18 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 2472,EFNB1,472A>G,Met158Val,x-linked dominant
 2472,EFNB1,474G>T,Met158Ile,x-linked dominant
 71584,PRPH2,2T>C,Met1Thr,autosomal dominant
-71584,PRPH2,133C>T,Leu45Phe,conflicting
+71584,PRPH2,133C>T,Leu45Phe,multiple
 71584,PRPH2,202G>C,Gly68Arg,
 71584,PRPH2,421T>C,Tyr141His,
 71584,PRPH2,424C>T,Arg142Trp,autosomal dominant
 71584,PRPH2,458A>G,Lys153Arg,
-71584,PRPH2,469G>A,Asp157Asn,conflicting
+71584,PRPH2,469G>A,Asp157Asn,multiple
 71584,PRPH2,494G>A,Cys165Tyr,
 71584,PRPH2,499G>A,Gly167Ser,
 71584,PRPH2,500G>A,Gly167Asp,autosomal dominant
-71584,PRPH2,514C>T,Arg172Trp,conflicting
+71584,PRPH2,514C>T,Arg172Trp,multiple
 71584,PRPH2,515G>A,Arg172Gln,autosomal dominant
-71584,PRPH2,518A>T,Asp173Val,conflicting
+71584,PRPH2,518A>T,Asp173Val,multiple
 71584,PRPH2,533A>G,Gln178Arg,
 71584,PRPH2,589A>G,Lys197Glu,
 71584,PRPH2,599T>A,Val200Glu,
@@ -5343,7 +5343,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 71584,PRPH2,730A>C,Asn244His,
 71584,PRPH2,732C>G,Asn244Lys,
 71584,PRPH2,736T>C,Trp246Arg,autosomal dominant
-71584,PRPH2,797G>A,Gly266Asp,conflicting
+71584,PRPH2,797G>A,Gly266Asp,multiple
 5431,POLR1C,835C>T,Arg279Trp,autosomal recessive
 5431,POLR1C,836G>A,Arg279Gln,autosomal recessive
 7899,G6PC3,346A>G,Met116Val,autosomal recessive
@@ -5369,7 +5369,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 4381,UBIAD1,530G>A,Gly177Glu,autosomal dominant
 4381,UBIAD1,556G>A,Gly186Arg,autosomal dominant
 4381,UBIAD1,708C>G,Asp236Glu,autosomal dominant
-6313,GATA1,646C>T,Arg216Trp,conflicting
+6313,GATA1,646C>T,Arg216Trp,multiple
 6313,GATA1,652G>T,Asp218Tyr,x-linked recessive
 5179,B3GAT3,830G>A,Arg277Gln,autosomal recessive
 4692,LDHB,19A>G,Lys7Glu,
@@ -5417,8 +5417,8 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 6983,PITX2,421A>G,Lys141Glu,autosomal dominant
 6983,PITX2,431G>C,Arg144Pro,autosomal dominant
 5448,AKR1C2,235A>G,Ile79Val,autosomal recessive
-11340,NR2E3,97G>A,Glu33Lys,conflicting
-11340,NR2E3,668G>A,Arg223Gln,conflicting
+11340,NR2E3,97G>A,Glu33Lys,multiple
+11340,NR2E3,668G>A,Arg223Gln,multiple
 55694,RHD,329T>C,Leu110Pro,
 55694,RHD,809T>G,Val270Gly,
 55804,BSND,1A>T,Met1Leu,autosomal recessive
@@ -5443,7 +5443,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 3350,APOE,478C>T,Arg160Cys,autosomal recessive
 3350,APOE,487C>T,Arg163Cys,autosomal recessive
 3350,APOE,488G>C,Arg163Pro,autosomal dominant
-3350,APOE,488G>A,Arg163His,conflicting
+3350,APOE,488G>A,Arg163His,multiple
 3350,APOE,490A>G,Lys164Glu,autosomal recessive
 3350,APOE,490A>C,Lys164Gln,
 3350,APOE,526C>T,Arg176Cys,autosomal dominant
@@ -5458,18 +5458,18 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 4046,RLBP1,700C>T,Arg234Trp,autosomal recessive
 13198,ALDOB,524C>A,Ala175Asp,autosomal recessive
 8348,PDLIM3,317A>C,Glu106Ala,
-8245,RDH12,152T>A,Ile51Asn,conflicting
-8245,RDH12,377C>T,Ala126Val,conflicting
-8245,RDH12,451C>A,His151Asn,conflicting
-8245,RDH12,451C>G,His151Asp,conflicting
-8245,RDH12,464C>T,Thr155Ile,conflicting
-8245,RDH12,523T>C,Ser175Pro,conflicting
+8245,RDH12,152T>A,Ile51Asn,multiple
+8245,RDH12,377C>T,Ala126Val,multiple
+8245,RDH12,451C>A,His151Asn,multiple
+8245,RDH12,451C>G,His151Asp,multiple
+8245,RDH12,464C>T,Thr155Ile,multiple
+8245,RDH12,523T>C,Ser175Pro,multiple
 10783,CA4,700G>A,Val234Ile,
 5088,IDS,253G>A,Ala85Thr,x-linked recessive
 5088,IDS,262C>T,Arg88Cys,x-linked recessive
 5088,IDS,479C>G,Pro160Arg,x-linked recessive
 5088,IDS,587T>C,Leu196Ser,x-linked recessive
-5788,PHF6,2T>C,Met1Thr,conflicting
+5788,PHF6,2T>C,Met1Thr,multiple
 5788,PHF6,134G>A,Cys45Tyr,x-linked recessive
 5788,PHF6,296G>T,Cys99Phe,x-linked recessive
 5788,PHF6,689A>G,His230Arg,x-linked recessive
@@ -5490,11 +5490,11 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 9418,HSD17B3,803G>A,Cys268Tyr,autosomal recessive
 70992,JAM3,2T>G,Met1Arg,autosomal recessive
 70992,JAM3,346G>A,Glu116Lys,autosomal recessive
-8876,CAPN3,86G>A,Arg29Gln,conflicting
-8876,CAPN3,163G>T,Gly55Trp,conflicting
-8876,CAPN3,179G>A,Arg60Gln,conflicting
-8876,CAPN3,707G>A,Arg236Gln,conflicting
-8876,CAPN3,770G>A,Arg257Gln,conflicting
+8876,CAPN3,86G>A,Arg29Gln,multiple
+8876,CAPN3,163G>T,Gly55Trp,multiple
+8876,CAPN3,179G>A,Arg60Gln,multiple
+8876,CAPN3,707G>A,Arg236Gln,multiple
+8876,CAPN3,770G>A,Arg257Gln,multiple
 5155,TECR,545C>T,Pro182Leu,autosomal recessive
 5732,PPT1,3G>A,Met1Ile,autosomal recessive
 5732,PPT1,114G>T,Trp38Cys,autosomal recessive
@@ -5551,10 +5551,10 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 4108,SLC25A15,815C>T,Thr272Ile,autosomal recessive
 4108,SLC25A15,824G>A,Arg275Gln,autosomal recessive
 4108,SLC25A15,847C>T,Leu283Phe,autosomal recessive
-1256,KLHL3,230C>A,Ala77Glu,
-1256,KLHL3,232A>G,Met78Val,
-1256,KLHL3,254A>C,Glu85Ala,
-1256,KLHL3,491G>T,Cys164Phe,
+1256,KLHL3,230C>A,Ala77Glu,autosomal dominant
+1256,KLHL3,232A>G,Met78Val,autosomal dominant
+1256,KLHL3,254A>C,Glu85Ala,autosomal dominant
+1256,KLHL3,491G>T,Cys164Phe,autosomal dominant
 56664,SPRY4,461A>G,Lys154Arg,autosomal dominant
 56664,SPRY4,653C>A,Ser218Tyr,autosomal dominant
 2862,SLC25A4,293T>C,Leu98Pro,autosomal dominant
@@ -5582,17 +5582,17 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 6399,HSD11B1,409C>T,Arg137Cys,autosomal dominant
 14019,CA8,710G>A,Arg237Gln,autosomal recessive
 13017,SGCD,451T>G,Ser151Ala,autosomal recessive
-2560,GDAP1,154C>T,Arg52Trp,conflicting
-2560,GDAP1,164A>G,His55Arg,conflicting
-2560,GDAP1,263C>G,Ala88Gly,conflicting
-2560,GDAP1,265A>C,Thr89Pro,conflicting
-2560,GDAP1,448C>G,Gln150Glu,conflicting
-2560,GDAP1,474A>T,Arg158Ser,conflicting
-2560,GDAP1,488C>T,Pro163Leu,conflicting
-2560,GDAP1,515G>A,Cys172Tyr,conflicting
-2560,GDAP1,617C>T,Pro206Leu,conflicting
-2560,GDAP1,640C>T,Arg214Cys,conflicting
-2560,GDAP1,776G>A,Gly259Asp,conflicting
+2560,GDAP1,154C>T,Arg52Trp,multiple
+2560,GDAP1,164A>G,His55Arg,multiple
+2560,GDAP1,263C>G,Ala88Gly,multiple
+2560,GDAP1,265A>C,Thr89Pro,multiple
+2560,GDAP1,448C>G,Gln150Glu,multiple
+2560,GDAP1,474A>T,Arg158Ser,multiple
+2560,GDAP1,488C>T,Pro163Leu,multiple
+2560,GDAP1,515G>A,Cys172Tyr,multiple
+2560,GDAP1,617C>T,Pro206Leu,multiple
+2560,GDAP1,640C>T,Arg214Cys,multiple
+2560,GDAP1,776G>A,Gly259Asp,multiple
 5218,AMT,383A>G,Tyr128Cys,
 5218,AMT,535G>C,Asp179His,autosomal recessive
 4867,DLX5,533A>C,Gln178Pro,autosomal recessive
@@ -5614,11 +5614,11 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 4981,CLN8,610C>T,Arg204Cys,autosomal recessive
 4981,CLN8,611G>T,Arg204Leu,autosomal recessive
 4981,CLN8,661G>A,Gly221Ser,autosomal recessive
-4981,CLN8,685C>G,Pro229Ala,conflicting
+4981,CLN8,685C>G,Pro229Ala,multiple
 4981,CLN8,789G>C,Trp263Cys,autosomal recessive
 386,STAR,545G>A,Arg182His,autosomal recessive
 386,STAR,545G>T,Arg182Leu,autosomal recessive
-386,STAR,559G>A,Val187Met,conflicting
+386,STAR,559G>A,Val187Met,multiple
 386,STAR,562C>T,Arg188Cys,autosomal recessive
 5712,TPM3,11C>T,Ala4Val,autosomal recessive
 5442,SIX1,317T>G,Val106Gly,autosomal dominant
@@ -5654,7 +5654,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 4201,GJB1,172C>T,Pro58Ser,x-linked dominant
 4201,GJB1,187G>A,Val63Ile,x-linked dominant
 4201,GJB1,259C>G,Pro87Ala,x-linked dominant
-4201,GJB1,407T>C,Val136Ala,conflicting
+4201,GJB1,407T>C,Val136Ala,multiple
 4201,GJB1,415G>A,Val139Met,x-linked dominant
 4201,GJB1,424C>T,Arg142Trp,x-linked dominant
 4201,GJB1,467T>G,Leu156Arg,x-linked dominant
@@ -5668,23 +5668,23 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 6672,FHL1,449G>A,Cys150Tyr,x-linked
 6672,FHL1,457T>C,Cys153Arg,x-linked
 6672,FHL1,625T>C,Cys209Arg,x-linked recessive
-5147,SDHB,8C>G,Ala3Gly,conflicting
-5147,SDHB,32G>A,Arg11His,conflicting
+5147,SDHB,8C>G,Ala3Gly,multiple
+5147,SDHB,32G>A,Arg11His,multiple
 5147,SDHB,79C>G,Arg27Gly,autosomal dominant
 5147,SDHB,136C>G,Arg46Gly,autosomal dominant
-5147,SDHB,143A>T,Asp48Val,conflicting
+5147,SDHB,143A>T,Asp48Val,multiple
 5147,SDHB,170A>G,His57Arg,autosomal dominant
 5147,SDHB,203G>A,Cys68Tyr,autosomal dominant
 5147,SDHB,277T>C,Cys93Arg,autosomal dominant
 5147,SDHB,286G>A,Gly96Ser,autosomal dominant
 5147,SDHB,302G>A,Cys101Tyr,autosomal dominant
 5147,SDHB,395A>C,His132Pro,autosomal dominant
-5147,SDHB,418G>T,Val140Phe,conflicting
+5147,SDHB,418G>T,Val140Phe,multiple
 5147,SDHB,487T>C,Ser163Pro,autosomal dominant
 5147,SDHB,590C>G,Pro197Arg,autosomal dominant
-5147,SDHB,689G>A,Arg230His,conflicting
+5147,SDHB,689G>A,Arg230His,multiple
 5147,SDHB,716C>G,Ser239Cys,autosomal dominant
-5147,SDHB,725G>A,Arg242His,conflicting
+5147,SDHB,725G>A,Arg242His,multiple
 13571,XRCC2,808T>G,Phe270Val,autosomal recessive
 513,FA2H,184C>T,Arg62Cys,autosomal recessive
 513,FA2H,427C>T,Arg143Cys,autosomal recessive
@@ -5714,21 +5714,21 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 12891,VWF,560T>C,Leu187Pro,autosomal recessive
 12891,VWF,608A>T,Asn203Ile,
 9145,GALNT12,545C>T,Thr182Met,autosomal dominant
-11089,AQP2,299G>T,Gly100Val,conflicting
-11089,AQP2,374C>T,Thr125Met,conflicting
-11089,AQP2,523G>A,Gly175Arg,conflicting
-11089,AQP2,543C>G,Cys181Trp,conflicting
-11089,AQP2,568G>A,Ala190Thr,conflicting
+11089,AQP2,299G>T,Gly100Val,multiple
+11089,AQP2,374C>T,Thr125Met,multiple
+11089,AQP2,523G>A,Gly175Arg,multiple
+11089,AQP2,543C>G,Cys181Trp,multiple
+11089,AQP2,568G>A,Ala190Thr,multiple
 11089,AQP2,647C>T,Ser216Phe,
 3576,COLEC11,505T>C,Ser169Pro,autosomal recessive
-2665,GJB3,35G>A,Gly12Asp,conflicting
-2665,GJB3,94C>T,Arg32Trp,conflicting
-2665,GJB3,101T>C,Leu34Pro,conflicting
-2665,GJB3,125G>C,Arg42Pro,conflicting
+2665,GJB3,35G>A,Gly12Asp,multiple
+2665,GJB3,94C>T,Arg32Trp,multiple
+2665,GJB3,101T>C,Leu34Pro,multiple
+2665,GJB3,125G>C,Arg42Pro,multiple
 2665,GJB3,421A>G,Ile141Val,
 2665,GJB3,497A>G,Asn166Ser,
-2665,GJB3,529T>G,Tyr177Asp,conflicting
-2665,GJB3,547G>A,Glu183Lys,conflicting
+2665,GJB3,529T>G,Tyr177Asp,multiple
+2665,GJB3,547G>A,Glu183Lys,multiple
 6268,GATAD1,304T>C,Ser102Pro,autosomal recessive
 13479,FUZ,115C>T,Pro39Ser,autosomal dominant
 8965,COL2A1,257G>A,Gly86Asp,autosomal dominant
@@ -5761,29 +5761,29 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 14894,CD40LG,703G>C,Ala235Pro,x-linked recessive
 14894,CD40LG,761C>T,Thr254Met,x-linked recessive
 9835,GJB6,31G>C,Gly11Arg,
-9835,GJB6,607A>G,Met203Val,conflicting
+9835,GJB6,607A>G,Met203Val,multiple
 5961,TARDBP,506A>G,Asp169Gly,autosomal dominant
-13081,SERPINC1,68T>C,Leu23Pro,conflicting
-13081,SERPINC1,166C>T,Arg56Cys,conflicting
-13081,SERPINC1,218C>T,Pro73Leu,conflicting
-13081,SERPINC1,235C>A,Arg79Ser,conflicting
-13081,SERPINC1,236G>A,Arg79His,conflicting
-13081,SERPINC1,379T>C,Cys127Arg,conflicting
-13081,SERPINC1,500A>C,Asn167Thr,conflicting
-13081,SERPINC1,625G>A,Ala209Thr,conflicting
-13081,SERPINC1,631G>C,Ala211Pro,conflicting
-13081,SERPINC1,631G>T,Ala211Ser,conflicting
-13081,SERPINC1,641C>T,Ala214Val,conflicting
-13081,SERPINC1,656G>A,Gly219Asp,conflicting
-13081,SERPINC1,658C>T,Arg220Cys,conflicting
-13081,SERPINC1,659G>C,Arg220Pro,conflicting
-13081,SERPINC1,659G>A,Arg220His,conflicting
-13081,SERPINC1,662C>T,Ser221Leu,conflicting
-13081,SERPINC1,691G>A,Ala231Thr,conflicting
-13081,SERPINC1,701C>T,Pro234Leu,conflicting
-13081,SERPINC1,767C>T,Pro256Leu,conflicting
-4817,MPZ,119T>C,Ile40Thr,conflicting
-4817,MPZ,218C>G,Ser73Cys,conflicting
+13081,SERPINC1,68T>C,Leu23Pro,multiple
+13081,SERPINC1,166C>T,Arg56Cys,multiple
+13081,SERPINC1,218C>T,Pro73Leu,multiple
+13081,SERPINC1,235C>A,Arg79Ser,multiple
+13081,SERPINC1,236G>A,Arg79His,multiple
+13081,SERPINC1,379T>C,Cys127Arg,multiple
+13081,SERPINC1,500A>C,Asn167Thr,multiple
+13081,SERPINC1,625G>A,Ala209Thr,multiple
+13081,SERPINC1,631G>C,Ala211Pro,multiple
+13081,SERPINC1,631G>T,Ala211Ser,multiple
+13081,SERPINC1,641C>T,Ala214Val,multiple
+13081,SERPINC1,656G>A,Gly219Asp,multiple
+13081,SERPINC1,658C>T,Arg220Cys,multiple
+13081,SERPINC1,659G>C,Arg220Pro,multiple
+13081,SERPINC1,659G>A,Arg220His,multiple
+13081,SERPINC1,662C>T,Ser221Leu,multiple
+13081,SERPINC1,691G>A,Ala231Thr,multiple
+13081,SERPINC1,701C>T,Pro234Leu,multiple
+13081,SERPINC1,767C>T,Pro256Leu,multiple
+4817,MPZ,119T>C,Ile40Thr,multiple
+4817,MPZ,218C>G,Ser73Cys,multiple
 4817,MPZ,263C>T,Ser88Leu,
 4817,MPZ,271C>T,His91Tyr,autosomal dominant
 4817,MPZ,316A>G,Lys106Glu,autosomal dominant
@@ -5792,7 +5792,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 4817,MPZ,367G>T,Val123Phe,autosomal dominant
 4817,MPZ,371T>C,Ile124Thr,
 4817,MPZ,377A>G,Asn126Ser,autosomal dominant
-4817,MPZ,434T>C,Ile145Thr,conflicting
+4817,MPZ,434T>C,Ile145Thr,multiple
 4817,MPZ,516C>G,Ile172Met,
 4817,MPZ,517G>C,Gly173Arg,autosomal dominant
 4817,MPZ,679C>T,Pro227Ser,autosomal dominant
@@ -5830,7 +5830,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 611,PRNP,633G>C,Glu211Asp,autosomal dominant
 611,PRNP,650A>G,Gln217Arg,autosomal dominant
 611,PRNP,695T>G,Met232Arg,autosomal dominant
-9031,TSHR,122G>C,Cys41Ser,conflicting
+9031,TSHR,122G>C,Cys41Ser,multiple
 5254,HSD17B10,257A>G,Asp86Gly,x-linked dominant
 14853,PIGL,500T>C,Leu167Pro,autosomal recessive
 6070,SPINT2,1A>T,Met1Leu,autosomal recessive
@@ -5842,7 +5842,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 14309,SBDS,635T>C,Ile212Thr,autosomal recessive
 7048,MMAB,556C>T,Arg186Trp,autosomal recessive
 1276,TSPAN7,515C>A,Pro172His,x-linked recessive
-12895,CLIC2,303C>G,His101Gln,unknown
+12895,CLIC2,303C>G,His101Gln,x-linked recessive
 3680,MPDU1,2T>C,Met1Thr,autosomal recessive
 4572,AGPAT2,587T>C,Leu196Pro,autosomal recessive
 5517,TPMT,500C>G,Ala167Gly,autosomal recessive
@@ -5867,8 +5867,8 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 9318,PDGFB,3G>A,Met1Ile,autosomal dominant
 9318,PDGFB,356T>C,Leu119Pro,autosomal dominant
 7038,DIABLO,377C>T,Ser126Leu,autosomal dominant
-5440,EDN3,277C>G,Arg93Gly,conflicting
-5440,EDN3,335A>G,His112Arg,conflicting
+5440,EDN3,277C>G,Arg93Gly,multiple
+5440,EDN3,335A>G,His112Arg,multiple
 9104,SLC27A4,530G>A,Arg177His,autosomal recessive
 8559,ABCD3,50G>A,Gly17Asp,
 3180,NAA10,346C>T,Arg116Trp,x-linked
@@ -5877,12 +5877,12 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 2088,LRAT,74T>A,Phe25Tyr,autosomal recessive
 2416,EBP,141G>T,Trp47Cys,x-linked
 2416,EBP,440G>A,Arg147His,x-linked
-504,GJB2,11G>A,Gly4Asp,conflicting
+504,GJB2,11G>A,Gly4Asp,multiple
 504,GJB2,50C>T,Ser17Phe,autosomal dominant
 504,GJB2,101T>G,Met34Arg,
-504,GJB2,109G>A,Val37Ile,conflicting
+504,GJB2,109G>A,Val37Ile,multiple
 504,GJB2,119C>A,Ala40Glu,
-504,GJB2,134G>A,Gly45Glu,conflicting
+504,GJB2,134G>A,Gly45Glu,multiple
 504,GJB2,148G>T,Asp50Tyr,autosomal dominant
 504,GJB2,175G>A,Gly59Ser,autosomal dominant
 504,GJB2,187G>A,Val63Met,
@@ -5890,23 +5890,23 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 504,GJB2,203A>G,Tyr68Cys,
 504,GJB2,218A>G,His73Arg,autosomal dominant
 504,GJB2,239A>C,Gln80Pro,autosomal recessive
-504,GJB2,249C>G,Phe83Leu,conflicting
+504,GJB2,249C>G,Phe83Leu,multiple
 504,GJB2,250G>T,Val84Leu,autosomal recessive
-504,GJB2,269T>C,Leu90Pro,conflicting
+504,GJB2,269T>C,Leu90Pro,multiple
 504,GJB2,279G>A,Met93Ile,autosomal recessive
 504,GJB2,298C>T,His100Tyr,autosomal recessive
 504,GJB2,339T>G,Ser113Arg,autosomal recessive
-504,GJB2,365A>T,Lys122Ile,conflicting
-504,GJB2,368C>A,Thr123Asn,conflicting
-504,GJB2,380G>A,Arg127His,conflicting
+504,GJB2,365A>T,Lys122Ile,multiple
+504,GJB2,368C>A,Thr123Asn,multiple
+504,GJB2,380G>A,Arg127His,multiple
 504,GJB2,385G>A,Glu129Lys,autosomal recessive
 504,GJB2,412A>G,Ser138Gly,autosomal recessive
-504,GJB2,416G>A,Ser139Asn,conflicting
-504,GJB2,427C>T,Arg143Trp,conflicting
-504,GJB2,428G>A,Arg143Gln,conflicting
+504,GJB2,416G>A,Ser139Asn,multiple
+504,GJB2,427C>T,Arg143Trp,multiple
+504,GJB2,428G>A,Arg143Gln,multiple
 504,GJB2,445G>A,Ala149Thr,autosomal recessive
 504,GJB2,476A>T,Asp159Val,autosomal recessive
-504,GJB2,487A>G,Met163Val,conflicting
+504,GJB2,487A>G,Met163Val,multiple
 504,GJB2,499G>A,Val167Met,autosomal recessive
 504,GJB2,617A>G,Asn206Ser,autosomal recessive
 5052,MMACHC,293G>A,Gly98Glu,autosomal recessive
@@ -5991,23 +5991,23 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 1668,THAP1,266A>G,Lys89Arg,autosomal dominant
 6520,IFT43,1A>G,Met1Val,autosomal recessive
 3086,GOSR2,430G>T,Gly144Trp,autosomal recessive
-56096,CRYBB3,493G>C,Gly165Arg,conflicting
-56096,CRYBB3,581T>A,Val194Glu,conflicting
+56096,CRYBB3,493G>C,Gly165Arg,multiple
+56096,CRYBB3,581T>A,Val194Glu,multiple
 9634,CLDN19,169C>G,Gln57Glu,autosomal recessive
 636,NTF4,263C>T,Ala88Val,x-linked recessive
 636,NTF4,616C>T,Arg206Trp,
 636,NTF4,617G>A,Arg206Gln,
 55769,TNNI3,61C>T,Arg21Cys,autosomal dominant
 55769,TNNI3,106A>C,Lys36Gln,autosomal dominant
-55769,TNNI3,422G>A,Arg141Gln,conflicting
+55769,TNNI3,422G>A,Arg141Gln,multiple
 55769,TNNI3,428C>A,Thr143Asn,
 55769,TNNI3,431T>A,Leu144Gln,autosomal dominant
 55769,TNNI3,431T>C,Leu144Pro,
 55769,TNNI3,433C>G,Arg145Gly,autosomal dominant
 55769,TNNI3,470C>T,Ala157Val,autosomal dominant
-55769,TNNI3,484C>T,Arg162Trp,conflicting
+55769,TNNI3,484C>T,Arg162Trp,multiple
 55769,TNNI3,485G>C,Arg162Pro,autosomal dominant
-55769,TNNI3,485G>A,Arg162Gln,conflicting
+55769,TNNI3,485G>A,Arg162Gln,multiple
 55769,TNNI3,497C>T,Ser166Phe,autosomal dominant
 55769,TNNI3,509G>A,Arg170Gln,
 55769,TNNI3,511G>A,Ala171Thr,autosomal dominant
@@ -6016,9 +6016,9 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 55769,TNNI3,555C>G,Asn185Lys,autosomal dominant
 55769,TNNI3,557G>A,Arg186Gln,autosomal dominant
 55769,TNNI3,569A>G,Asp190Gly,autosomal dominant
-55769,TNNI3,574C>T,Arg192Cys,conflicting
-55769,TNNI3,575G>A,Arg192His,conflicting
-55769,TNNI3,586G>A,Asp196Asn,conflicting
+55769,TNNI3,574C>T,Arg192Cys,multiple
+55769,TNNI3,575G>A,Arg192His,multiple
+55769,TNNI3,586G>A,Asp196Asn,multiple
 55769,TNNI3,592C>G,Leu198Val,autosomal dominant
 55769,TNNI3,602T>C,Met201Thr,
 55769,TNNI3,607G>A,Gly203Ser,autosomal dominant
@@ -6027,19 +6027,19 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 55769,TNNI3,616A>C,Lys206Gln,autosomal dominant
 13369,ABCA3,302T>C,Leu101Pro,autosomal recessive
 13369,ABCA3,367G>A,Asp123Asn,autosomal recessive
-5729,UCP3,208C>T,Arg70Trp,conflicting
+5729,UCP3,208C>T,Arg70Trp,multiple
 5729,UCP3,304G>A,Val102Ile,autosomal recessive
 14035,FGF9,296G>A,Ser99Asn,autosomal dominant
 9611,NNT,293T>C,Leu98Pro,autosomal recessive
 9611,NNT,385G>C,Ala129Pro,autosomal recessive
 9007,MRE11,604A>G,Arg202Gly,
-14217,PAX3,139A>C,Asn47His,conflicting
+14217,PAX3,139A>C,Asn47His,multiple
 14217,PAX3,141C>G,Asn47Lys,autosomal dominant
 14217,PAX3,167G>T,Arg56Leu,autosomal dominant
 14217,PAX3,238C>G,His80Asp,autosomal dominant
 14217,PAX3,242G>C,Gly81Ala,autosomal dominant
-14217,PAX3,251C>T,Ser84Phe,conflicting
-14217,PAX3,268T>C,Tyr90His,conflicting
+14217,PAX3,251C>T,Ser84Phe,multiple
+14217,PAX3,268T>C,Tyr90His,multiple
 297,RAB18,71T>A,Leu24Gln,autosomal recessive
 297,RAB18,284C>G,Thr95Arg,autosomal recessive
 4245,TMEM165,19C>T,Arg7Cys,autosomal recessive
@@ -6060,16 +6060,16 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 5723,SFTPC,563T>A,Leu188Gln,autosomal dominant
 5723,SFTPC,581T>C,Leu194Pro,autosomal dominant
 6426,MYL3,167A>G,Glu56Gly,
-6426,MYL3,235G>A,Val79Ile,conflicting
+6426,MYL3,235G>A,Val79Ile,multiple
 6426,MYL3,382G>T,Gly128Cys,
-6426,MYL3,446T>C,Met149Thr,conflicting
+6426,MYL3,446T>C,Met149Thr,multiple
 6426,MYL3,454G>A,Glu152Lys,
-6426,MYL3,460C>T,Arg154Cys,conflicting
-6426,MYL3,461G>A,Arg154His,conflicting
-6426,MYL3,463C>G,His155Asp,conflicting
-6426,MYL3,466G>A,Val156Met,conflicting
-6426,MYL3,517A>G,Met173Val,conflicting
-6426,MYL3,530A>G,Glu177Gly,conflicting
+6426,MYL3,460C>T,Arg154Cys,multiple
+6426,MYL3,461G>A,Arg154His,multiple
+6426,MYL3,463C>G,His155Asp,multiple
+6426,MYL3,466G>A,Val156Met,multiple
+6426,MYL3,517A>G,Met173Val,multiple
+6426,MYL3,530A>G,Glu177Gly,multiple
 6727,AK1,118G>A,Gly40Arg,autosomal recessive
 6727,AK1,190G>A,Gly64Arg,autosomal recessive
 6727,AK1,382C>T,Arg128Trp,autosomal recessive
@@ -6086,7 +6086,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 3084,KRAS,34G>A,Gly12Ser,somatic
 3084,KRAS,35G>T,Gly12Val,autosomal dominant
 3084,KRAS,35G>A,Gly12Asp,somatic
-3084,KRAS,38G>A,Gly13Asp,autosomal dominant
+3084,KRAS,38G>A,Gly13Asp,multiple
 3084,KRAS,65A>G,Gln22Arg,autosomal dominant
 3084,KRAS,101C>T,Pro34Leu,autosomal dominant
 3084,KRAS,101C>G,Pro34Arg,autosomal dominant
@@ -6101,7 +6101,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 3084,KRAS,468C>G,Phe156Leu,autosomal dominant
 3306,DHFR,238C>T,Leu80Phe,autosomal recessive
 1857,ARL6,266C>T,Ala89Val,autosomal recessive
-7830,SCN1B,358G>A,Asp120Asn,conflicting
+7830,SCN1B,358G>A,Asp120Asn,multiple
 11435,MSRB3,244T>G,Cys82Gly,autosomal recessive
 14321,GPIHBP1,194G>A,Cys65Tyr,autosomal recessive
 14321,GPIHBP1,194G>C,Cys65Ser,autosomal recessive
@@ -6117,29 +6117,29 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 6096,MPV17,485C>A,Ala162Asp,
 6096,MPV17,509C>T,Ser170Phe,autosomal recessive
 5585,CRYAB,325G>C,Asp109His,autosomal dominant
-5585,CRYAB,460G>A,Gly154Ser,conflicting
-5585,CRYAB,470G>A,Arg157His,conflicting
-4251,FTL,1A>G,Met1Val,conflicting
+5585,CRYAB,460G>A,Gly154Ser,multiple
+5585,CRYAB,470G>A,Arg157His,multiple
+4251,FTL,1A>G,Met1Val,multiple
 5698,PTHLH,131T>C,Leu44Pro,autosomal dominant
 5698,PTHLH,179T>C,Leu60Pro,autosomal dominant
 14842,MRAP,3G>A,Met1Ile,autosomal recessive
 4453,HRAS,34G>A,Gly12Ser,autosomal dominant
-4453,HRAS,35G>A,Gly12Asp,autosomal dominant
+4453,HRAS,35G>A,Gly12Asp,somatic
 4453,HRAS,35G>T,Gly12Val,autosomal dominant
 4453,HRAS,35G>C,Gly12Ala,autosomal dominant
 4453,HRAS,37G>T,Gly13Cys,autosomal dominant
-4453,HRAS,38G>A,Gly13Asp,autosomal dominant
+4453,HRAS,38G>A,Gly13Asp,multiple
 4453,HRAS,64C>A,Gln22Lys,autosomal dominant
 4453,HRAS,436G>A,Ala146Thr,autosomal dominant
 6356,TCAP,269C>T,Pro90Leu,autosomal dominant
-6336,MYL2,141C>A,Asn47Lys,conflicting
+6336,MYL2,141C>A,Asn47Lys,multiple
 6336,MYL2,193G>A,Glu65Lys,autosomal dominant
 6336,MYL2,283C>G,Pro95Ala,autosomal dominant
-6336,MYL2,401A>C,Glu134Ala,conflicting
+6336,MYL2,401A>C,Glu134Ala,multiple
 4027,SDHAF2,232G>C,Gly78Arg,autosomal dominant
 12523,RNASEH2C,428A>T,Lys143Ile,autosomal recessive
 3431,ARL2BP,134T>G,Met45Arg,autosomal recessive
-4421,VKORC1,106G>T,Asp36Tyr,conflicting
+4421,VKORC1,106G>T,Asp36Tyr,multiple
 4421,VKORC1,172A>G,Arg58Gly,autosomal dominant
 9073,ACAT1,433C>G,Gln145Glu,autosomal recessive
 9485,TNNC1,91G>T,Ala31Ser,autosomal dominant
@@ -6153,12 +6153,12 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 5678,SDHD,1A>G,Met1Val,autosomal dominant
 5678,SDHD,149A>G,His50Arg,autosomal dominant
 5678,SDHD,158C>T,Pro53Leu,autosomal dominant
-5678,SDHD,242C>T,Pro81Leu,conflicting
+5678,SDHD,242C>T,Pro81Leu,multiple
 5678,SDHD,284T>C,Leu95Pro,
 5678,SDHD,305A>T,His102Leu,autosomal dominant
 5678,SDHD,341A>G,Tyr114Cys,autosomal dominant
 5678,SDHD,416T>C,Leu139Pro,autosomal dominant
-5678,SDHD,433C>A,His145Asn,conflicting
+5678,SDHD,433C>A,His145Asn,multiple
 8151,IL36RN,80T>C,Leu27Pro,autosomal recessive
 8151,IL36RN,104A>G,Lys35Arg,autosomal recessive
 8151,IL36RN,304C>T,Arg102Trp,autosomal recessive
@@ -6167,33 +6167,33 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 54406,TMIE,241C>T,Arg81Cys,autosomal recessive
 54406,TMIE,250C>T,Arg84Trp,autosomal recessive
 54406,TMIE,274C>T,Arg92Trp,autosomal recessive
-7931,SOD1,13G>A,Ala5Thr,conflicting
-7931,SOD1,14C>T,Ala5Val,conflicting
-7931,SOD1,20G>T,Cys7Phe,conflicting
-7931,SOD1,37G>C,Gly13Arg,conflicting
-7931,SOD1,49G>A,Gly17Ser,conflicting
-7931,SOD1,64G>A,Glu22Lys,conflicting
-7931,SOD1,115C>G,Leu39Val,conflicting
-7931,SOD1,125G>A,Gly42Asp,conflicting
-7931,SOD1,131A>G,His44Arg,conflicting
-7931,SOD1,137T>G,Phe46Cys,conflicting
-7931,SOD1,140A>G,His47Arg,conflicting
-7931,SOD1,217G>A,Gly73Ser,conflicting
-7931,SOD1,242A>G,His81Arg,conflicting
-7931,SOD1,253T>G,Leu85Val,conflicting
-7931,SOD1,256G>C,Gly86Arg,conflicting
-7931,SOD1,272A>C,Asp91Ala,conflicting
-7931,SOD1,280G>C,Gly94Arg,conflicting
-7931,SOD1,280G>T,Gly94Cys,conflicting
-7931,SOD1,281G>C,Gly94Ala,conflicting
+7931,SOD1,13G>A,Ala5Thr,multiple
+7931,SOD1,14C>T,Ala5Val,multiple
+7931,SOD1,20G>T,Cys7Phe,multiple
+7931,SOD1,37G>C,Gly13Arg,multiple
+7931,SOD1,49G>A,Gly17Ser,multiple
+7931,SOD1,64G>A,Glu22Lys,multiple
+7931,SOD1,115C>G,Leu39Val,multiple
+7931,SOD1,125G>A,Gly42Asp,multiple
+7931,SOD1,131A>G,His44Arg,multiple
+7931,SOD1,137T>G,Phe46Cys,multiple
+7931,SOD1,140A>G,His47Arg,multiple
+7931,SOD1,217G>A,Gly73Ser,multiple
+7931,SOD1,242A>G,His81Arg,multiple
+7931,SOD1,253T>G,Leu85Val,multiple
+7931,SOD1,256G>C,Gly86Arg,multiple
+7931,SOD1,272A>C,Asp91Ala,multiple
+7931,SOD1,280G>C,Gly94Arg,multiple
+7931,SOD1,280G>T,Gly94Cys,multiple
+7931,SOD1,281G>C,Gly94Ala,multiple
 7931,SOD1,289G>A,Asp97Asn,
-7931,SOD1,302A>G,Glu101Gly,conflicting
-7931,SOD1,319C>G,Leu107Val,conflicting
-7931,SOD1,338T>C,Ile113Thr,conflicting
-7931,SOD1,404G>A,Ser135Asn,conflicting
-7931,SOD1,434T>C,Leu145Ser,conflicting
-7931,SOD1,436G>A,Ala146Thr,conflicting
-7931,SOD1,455T>C,Ile152Thr,conflicting
+7931,SOD1,302A>G,Glu101Gly,multiple
+7931,SOD1,319C>G,Leu107Val,multiple
+7931,SOD1,338T>C,Ile113Thr,multiple
+7931,SOD1,404G>A,Ser135Asn,multiple
+7931,SOD1,434T>C,Leu145Ser,multiple
+7931,SOD1,436G>A,Ala146Thr,multiple
+7931,SOD1,455T>C,Ile152Thr,multiple
 5728,UBE2B,23G>C,Arg8Thr,
 56148,CAV3,131T>A,Val44Glu,
 56148,CAV3,140A>C,Glu47Ala,
@@ -6326,18 +6326,18 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 330,TYROBP,2T>C,Met1Thr,autosomal recessive
 1800,MPC1,236T>A,Leu79His,autosomal recessive
 1800,MPC1,289C>T,Arg97Trp,autosomal recessive
-12020,C19orf12,172G>A,Gly58Arg,conflicting
+12020,C19orf12,172G>A,Gly58Arg,multiple
 14711,SIGMAR1,304G>C,Glu102Gln,autosomal recessive
-2013,KCNE1,29C>T,Thr10Met,conflicting
+2013,KCNE1,29C>T,Thr10Met,multiple
 2013,KCNE1B,59C>T,Thr20Ile,autosomal dominant
 2013,KCNE1B,139G>T,Val47Phe,autosomal dominant
-2013,KCNE1,163G>A,Gly55Ser,conflicting
+2013,KCNE1,163G>A,Gly55Ser,multiple
 2013,KCNE1,176T>C,Leu59Pro,autosomal dominant
-2013,KCNE1,200G>A,Arg67His,conflicting
+2013,KCNE1,200G>A,Arg67His,multiple
 2013,KCNE1B,210G>C,Lys70Asn,autosomal dominant
-2013,KCNE1,221C>T,Ser74Leu,conflicting
+2013,KCNE1,221C>T,Ser74Leu,multiple
 2013,KCNE1,242A>G,Tyr81Cys,autosomal dominant
-2013,KCNE1,247G>A,Glu83Lys,conflicting
+2013,KCNE1,247G>A,Glu83Lys,multiple
 4960,PCBD1,263G>A,Arg88Gln,autosomal recessive
 14076,SLURP1,1A>C,Met1Leu,autosomal recessive
 14076,SLURP1,256G>C,Gly86Arg,autosomal recessive
@@ -6356,7 +6356,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 8380,SPINK1,41T>G,Leu14Arg,autosomal dominant
 8380,SPINK1,150T>G,Asp50Glu,autosomal dominant
 8380,SPINK1,160T>C,Tyr54His,autosomal dominant
-8380,SPINK1,199C>T,Arg67Cys,conflicting
+8380,SPINK1,199C>T,Arg67Cys,multiple
 8380,SPINK1,200G>A,Arg67His,autosomal dominant
 4122,GNPTAB,44C>A,Ser15Tyr,autosomal recessive
 3298,NDUFA1,22G>C,Gly8Arg,x-linked recessive
@@ -6402,16 +6402,16 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 54459,RNF135,857G>A,Arg286His,
 54791,MPO,1495C>T,Arg499Cys,autosomal recessive
 54791,MPO,1715T>G,Leu572Trp,autosomal recessive
-54791,MPO,1705C>T,Arg569Trp,conflicting
-54903,HOXA2,556C>A,Gln186Lys,conflicting
+54791,MPO,1705C>T,Arg569Trp,multiple
+54903,HOXA2,556C>A,Gln186Lys,multiple
 55789,MESP2,373C>G,Leu125Val,autosomal recessive
 55834,KRT83,1219G>A,Glu407Lys,autosomal dominant
 55854,CHRNA4,1007G>A,Arg336His,autosomal dominant
-55877,SLC6A5,1274C>T,Thr425Met,conflicting
-55877,SLC6A5,1444T>C,Trp482Arg,conflicting
-55877,SLC6A5,1472A>G,Tyr491Cys,conflicting
-55877,SLC6A5,1526A>G,Asn509Ser,conflicting
-55877,SLC6A5,1530T>G,Ser510Arg,conflicting
+55877,SLC6A5,1274C>T,Thr425Met,multiple
+55877,SLC6A5,1444T>C,Trp482Arg,multiple
+55877,SLC6A5,1472A>G,Tyr491Cys,multiple
+55877,SLC6A5,1526A>G,Asn509Ser,multiple
+55877,SLC6A5,1530T>G,Ser510Arg,multiple
 55915,KCNA5,143A>G,Glu48Gly,autosomal dominant
 55915,KCNA5,913G>A,Ala305Thr,autosomal dominant
 56330,FZD4,205C>T,His69Tyr,autosomal dominant
@@ -6495,16 +6495,16 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 12500,CPOX,883C>G,His295Asp,
 12500,CPOX,982C>T,Arg328Cys,
 12500,CPOX,980A>G,His327Arg,autosomal recessive
-12500,CPOX,991C>T,Arg331Trp,conflicting
-12500,CPOX,1210A>G,Lys404Glu,conflicting
+12500,CPOX,991C>T,Arg331Trp,multiple
+12500,CPOX,1210A>G,Lys404Glu,multiple
 12573,DES,137C>A,Ser46Tyr,
-12573,DES,893C>T,Ser298Leu,conflicting
-12573,DES,821T>C,Leu274Pro,conflicting
-12573,DES,934G>A,Asp312Asn,conflicting
-12573,DES,1009G>C,Ala337Pro,conflicting
-12573,DES,1216C>T,Arg406Trp,conflicting
-12573,DES,1255C>T,Pro419Ser,conflicting
-12573,DES,1333A>G,Thr445Ala,conflicting
+12573,DES,893C>T,Ser298Leu,multiple
+12573,DES,821T>C,Leu274Pro,multiple
+12573,DES,934G>A,Asp312Asn,multiple
+12573,DES,1009G>C,Ala337Pro,multiple
+12573,DES,1216C>T,Arg406Trp,multiple
+12573,DES,1255C>T,Pro419Ser,multiple
+12573,DES,1333A>G,Thr445Ala,multiple
 12573,DES,1405G>A,Val469Met,
 12924,AUH,563G>A,Gly188Asp,autosomal recessive
 13092,NOG,551G>A,Cys184Tyr,autosomal dominant
@@ -6531,24 +6531,24 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 13295,TTPA,548T>C,Leu183Pro,autosomal recessive
 13295,TTPA,575G>A,Arg192His,autosomal recessive
 13295,TTPA,736G>C,Gly246Arg,autosomal recessive
-13320,VHL,154G>A,Glu52Lys,conflicting
-13320,VHL,241C>T,Pro81Ser,conflicting
-13320,VHL,334T>C,Tyr112His,conflicting
-13320,VHL,74C>T,Pro25Leu,conflicting
-13320,VHL,208G>A,Glu70Lys,conflicting
-13320,VHL,344A>G,Tyr115Cys,conflicting
-13320,VHL,448C>G,His150Asp,conflicting
-13320,VHL,401A>G,Tyr134Cys,conflicting
+13320,VHL,154G>A,Glu52Lys,multiple
+13320,VHL,241C>T,Pro81Ser,multiple
+13320,VHL,334T>C,Tyr112His,multiple
+13320,VHL,74C>T,Pro25Leu,multiple
+13320,VHL,208G>A,Glu70Lys,multiple
+13320,VHL,344A>G,Tyr115Cys,multiple
+13320,VHL,448C>G,His150Asp,multiple
+13320,VHL,401A>G,Tyr134Cys,multiple
 13320,VHL,374T>C,Val125Ala,autosomal dominant
-13320,VHL,365T>C,Leu122Pro,conflicting
-13320,VHL,376C>G,Arg126Gly,conflicting
-13320,VHL,376C>T,Arg126Trp,conflicting
-13320,VHL,362G>T,Cys121Phe,conflicting
-13320,VHL,368A>G,Gln123Arg,conflicting
-13320,VHL,433G>A,Glu145Lys,conflicting
-13320,VHL,439C>G,Leu147Val,conflicting
-13320,VHL,475C>T,Arg159Trp,conflicting
-13782,FOXL2,772T>A,Tyr258Asn,conflicting
+13320,VHL,365T>C,Leu122Pro,multiple
+13320,VHL,376C>G,Arg126Gly,multiple
+13320,VHL,376C>T,Arg126Trp,multiple
+13320,VHL,362G>T,Cys121Phe,multiple
+13320,VHL,368A>G,Gln123Arg,multiple
+13320,VHL,433G>A,Glu145Lys,multiple
+13320,VHL,439C>G,Leu147Val,multiple
+13320,VHL,475C>T,Arg159Trp,multiple
+13782,FOXL2,772T>A,Tyr258Asn,multiple
 13782,FOXL2,251T>G,Ile84Ser,
 13796,HBD,39T>A,Asn13Lys,
 13796,HBD,77G>A,Gly26Asp,
@@ -6604,7 +6604,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 571,SERPINA1,863A>T,Glu288Val,autosomal recessive
 571,SERPINA1,739C>T,Arg247Cys,autosomal recessive
 571,SERPINA1,1159G>A,Glu387Lys,autosomal recessive
-571,SERPINA1,1096G>A,Glu366Lys,conflicting
+571,SERPINA1,1096G>A,Glu366Lys,multiple
 571,SERPINA1,1178C>T,Pro393Leu,autosomal recessive
 571,SERPINA1,1078G>A,Ala360Thr,autosomal recessive
 571,SERPINA1,1093G>A,Asp365Asn,autosomal recessive
@@ -6702,8 +6702,8 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 3896,SLC25A1,844C>G,Arg282Gly,autosomal recessive
 3896,SLC25A1,844C>T,Arg282Cys,autosomal recessive
 3901,MUTYH,53C>T,Pro18Leu,autosomal recessive
-3901,MUTYH,494A>G,Tyr165Cys,conflicting
-3901,MUTYH,625A>G,Ile209Val,conflicting
+3901,MUTYH,494A>G,Tyr165Cys,multiple
+3901,MUTYH,625A>G,Ile209Val,multiple
 3901,MUTYH,691C>T,Arg231Cys,autosomal recessive
 3901,MUTYH,971A>G,Gln324Arg,autosomal recessive
 3901,MUTYH,1076C>T,Ala359Val,autosomal recessive
@@ -6725,7 +6725,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 4619,ELAC2,1267C>T,Leu423Phe,autosomal recessive
 4619,ELAC2,1559C>T,Thr520Met,autosomal recessive
 4619,ELAC2,1865A>T,Glu622Val,autosomal recessive
-4832,SPG7,1045G>A,Gly349Ser,conflicting
+4832,SPG7,1045G>A,Gly349Ser,multiple
 4941,MGAT2,785A>G,His262Arg,autosomal recessive
 5108,INF2,125T>C,Leu42Pro,autosomal dominant
 5108,INF2,310T>C,Cys104Arg,autosomal dominant
@@ -6753,7 +6753,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 5335,PMM2,653A>T,His218Leu,autosomal recessive
 5335,PMM2,722G>C,Cys241Ser,autosomal recessive
 5424,BLK,211G>A,Ala71Thr,autosomal dominant
-5613,APOA1,148G>C,Gly50Arg,conflicting
+5613,APOA1,148G>C,Gly50Arg,multiple
 5613,APOA1,595G>C,Ala199Pro,
 5613,APOA1,589C>T,Arg197Cys,
 5613,APOA1,251T>G,Leu84Arg,
@@ -6817,10 +6817,10 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 7215,NR0B1,1319A>T,Asn440Ile,x-linked recessive
 7250,SIL1,1370T>C,Leu457Pro,autosomal recessive
 7267,CYP1B1,2T>C,Met1Thr,autosomal recessive
-7267,CYP1B1,685G>A,Glu229Lys,conflicting
-7267,CYP1B1,241T>A,Tyr81Asn,conflicting
-7267,CYP1B1,155C>T,Pro52Leu,conflicting
-7267,CYP1B1,1328C>G,Ala443Gly,conflicting
+7267,CYP1B1,685G>A,Glu229Lys,multiple
+7267,CYP1B1,241T>A,Tyr81Asn,multiple
+7267,CYP1B1,155C>T,Pro52Leu,multiple
+7267,CYP1B1,1328C>G,Ala443Gly,multiple
 7267,CYP1B1,1409G>A,Cys470Tyr,autosomal recessive
 7267,CYP1B1,1093G>T,Gly365Trp,autosomal recessive
 7267,CYP1B1,1120G>A,Asp374Asn,autosomal recessive
@@ -6867,15 +6867,15 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 8836,KCNQ2,869G>A,Gly290Asp,autosomal dominant
 8836,KCNQ2,1016T>G,Leu339Arg,autosomal dominant
 8836,KCNQ2,1076C>A,Thr359Lys,autosomal dominant
-8858,RET,166C>A,Leu56Met,conflicting
-8858,RET,200G>A,Arg67His,conflicting
+8858,RET,166C>A,Leu56Met,multiple
+8858,RET,200G>A,Arg67His,multiple
 8858,RET,191C>T,Pro64Leu,autosomal dominant
 8858,RET,592C>A,Pro198Thr,autosomal recessive
-8858,RET,785T>C,Val262Ala,conflicting
-8858,RET,833C>A,Thr278Asn,conflicting
+8858,RET,785T>C,Val262Ala,multiple
+8858,RET,833C>A,Thr278Asn,multiple
 8858,RET,1013C>T,Thr338Ile,autosomal dominant
 8858,RET,961G>A,Gly321Arg,autosomal dominant
-8858,RET,874G>A,Val292Met,conflicting
+8858,RET,874G>A,Val292Met,multiple
 8858,RET,989G>A,Arg330Gln,autosomal dominant
 8858,RET,938G>A,Arg313Gln,autosomal dominant
 8858,RET,1179C>A,Phe393Leu,autosomal dominant
@@ -6888,7 +6888,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 9710,CYP11A1,1057C>T,Arg353Trp,autosomal recessive
 9710,CYP11A1,1076C>T,Ala359Val,autosomal recessive
 9710,CYP11A1,1244T>A,Val415Glu,autosomal recessive
-9715,GDF5,1322T>C,Leu441Pro,conflicting
+9715,GDF5,1322T>C,Leu441Pro,multiple
 9715,GDF5,1313G>T,Arg438Leu,autosomal dominant
 9715,GDF5,1471G>A,Glu491Lys,autosomal dominant
 9715,GDF5,1424G>A,Ser475Asn,autosomal dominant
@@ -6923,7 +6923,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 71625,CHST6,599T>G,Leu200Arg,autosomal recessive
 71625,CHST6,304T>G,Cys102Gly,autosomal recessive
 71625,CHST6,827T>C,Leu276Pro,autosomal recessive
-71615,GAS1,599C>G,Thr200Arg,
+71615,GAS1,599C>G,Thr200Arg,autosomal dominant
 71181,CEP41,107T>C,Met36Thr,autosomal recessive
 71181,CEP41,536G>A,Arg179His,autosomal recessive
 71181,CEP41,718T>G,Cys240Gly,autosomal recessive
@@ -6931,12 +6931,12 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 71620,ELANE,416C>T,Pro139Leu,autosomal dominant
 71620,ELANE,785C>T,Pro262Leu,autosomal dominant
 71620,ELANE,659G>A,Arg220Gln,autosomal dominant
-71427,POMC,706C>G,Arg236Gly,conflicting
+71427,POMC,706C>G,Arg236Gly,multiple
 71354,RAB33B,136A>C,Lys46Gln,autosomal recessive
-71045,HS6ST1,1144C>T,Arg382Trp,conflicting
+71045,HS6ST1,1144C>T,Arg382Trp,multiple
 70417,DPY19L2,892C>T,Arg298Cys,autosomal recessive
 70726,ANOS1,1540G>A,Glu514Lys,x-linked recessive
-70455,EVC,1328G>A,Arg443Gln,conflicting
+70455,EVC,1328G>A,Arg443Gln,multiple
 70610,RUNX1,467C>A,Ala156Glu,autosomal dominant
 70460,GJC2,814T>G,Tyr272Asp,autosomal recessive
 70460,GJC2,857T>C,Met286Thr,autosomal recessive
@@ -6965,18 +6965,18 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 2794,HBA2,2T>C,Met1Thr,autosomal recessive
 100009587,FKRP,520A>T,Ser174Cys,autosomal recessive
 100009587,FKRP,1073C>T,Pro358Leu,autosomal recessive
-100009587,FKRP,826C>A,Leu276Ile,conflicting
+100009587,FKRP,826C>A,Leu276Ile,multiple
 100009587,FKRP,941C>T,Thr314Met,autosomal recessive
 100009587,FKRP,160C>T,Arg54Trp,autosomal recessive
 100009557,KCNJ8,1265C>T,Ser422Leu,
-100009592,PITX3,38G>A,Ser13Asn,conflicting
+100009592,PITX3,38G>A,Ser13Asn,multiple
 100010506,KISS1,220C>T,Pro74Ser,
 6341,HBG2,227T>C,Ile76Thr,
 6341,HBG2,202G>A,Val68Met,autosomal dominant
 100011230,TWIST1,356A>C,Gln119Pro,autosomal dominant
 100011230,TWIST1,466A>G,Ile156Val,autosomal dominant
 100011230,TWIST1,392T>C,Leu131Pro,autosomal dominant
-100010388,COQ2,287G>A,Ser96Asn,conflicting
+100010388,COQ2,287G>A,Ser96Asn,multiple
 100010388,COQ2,533A>G,Asn178Ser,autosomal recessive
 100010266,ANKH,1001T>G,Leu334Arg,autosomal dominant
 100010266,ANKH,1015T>C,Cys339Arg,autosomal dominant
@@ -6994,12 +6994,12 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 100009081,TFAP2B,673C>A,Arg225Ser,autosomal dominant
 100009130,EIF2B5,545C>T,Thr182Met,autosomal recessive
 100009130,EIF2B5,808G>C,Asp270His,autosomal recessive
-100008339,LDLR,1085A>C,Asp362Ala,conflicting
-100008339,LDLR,798T>A,Asp266Glu,conflicting
-100008339,LDLR,1775G>A,Gly592Glu,conflicting
-100008339,LDLR,1816G>T,Ala606Ser,conflicting
-100009969,STIM1,1285C>T,Arg429Cys,conflicting
-100009969,STIM1,326A>G,His109Arg,conflicting
+100008339,LDLR,1085A>C,Asp362Ala,multiple
+100008339,LDLR,798T>A,Asp266Glu,multiple
+100008339,LDLR,1775G>A,Gly592Glu,multiple
+100008339,LDLR,1816G>T,Ala606Ser,multiple
+100009969,STIM1,1285C>T,Arg429Cys,multiple
+100009969,STIM1,326A>G,His109Arg,multiple
 100008954,TREM2,401A>G,Asp134Gly,autosomal recessive
 100008411,SERPINF2,1231G>A,Val411Met,autosomal recessive
 100010678,SNCB,208G>A,Val70Met,autosomal dominant
@@ -7007,10 +7007,10 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 100010671,NKX2-1,703G>T,Val235Phe,autosomal dominant
 100010671,NKX2-1,713G>T,Trp238Leu,autosomal dominant
 100010717,ECM1,499T>A,Phe167Ile,autosomal recessive
-100010705,GCH1,3G>C,Met1Ile,conflicting
-100010705,GCH1,671A>G,Lys224Arg,conflicting
-100010705,GCH1,610G>A,Val204Ile,conflicting
-100010705,GCH1,262C>T,Arg88Trp,conflicting
+100010705,GCH1,3G>C,Met1Ile,multiple
+100010705,GCH1,671A>G,Lys224Arg,multiple
+100010705,GCH1,610G>A,Val204Ile,multiple
+100010705,GCH1,262C>T,Arg88Trp,multiple
 100010705,GCH1,747G>C,Arg249Ser,
 100010705,GCH1,595C>G,Pro199Ala,
 100010633,GPI,1574T>C,Ile525Thr,autosomal recessive
@@ -7028,7 +7028,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 100011574,PTEN,235G>A,Ala79Thr,autosomal dominant
 100011574,PTEN,500C>A,Thr167Asn,autosomal dominant
 100011574,PTEN,1066A>G,Asn356Asp,autosomal dominant
-100011574,PTEN,386G>A,Gly129Glu,autosomal dominant
+100011574,PTEN,386G>A,Gly129Glu,somatic
 100011399,CST3,281T>A,Leu94Gln,autosomal dominant
 100011355,TCF21,63C>G,Asp21Glu,
 100011460,TEK,2675G>A,Arg892His,autosomal dominant
@@ -7038,16 +7038,16 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 100011621,PAX9,76C>T,Arg26Trp,autosomal dominant
 100011621,PAX9,259A>T,Ile87Phe,autosomal dominant
 100011621,PAX9,151G>A,Gly51Ser,autosomal dominant
-100066529,WNT10A,637G>A,Gly213Ser,conflicting
-100066529,WNT10A,383G>A,Arg128Gln,conflicting
-100066529,WNT10A,682T>A,Phe228Ile,conflicting
-100066529,WNT10A,649G>A,Asp217Asn,conflicting
+100066529,WNT10A,637G>A,Gly213Ser,multiple
+100066529,WNT10A,383G>A,Arg128Gln,multiple
+100066529,WNT10A,682T>A,Phe228Ile,multiple
+100066529,WNT10A,649G>A,Asp217Asn,multiple
 100066557,DEAF1,791A>C,Gln264Pro,autosomal dominant
 100066864,ALDH7A1,512C>T,Ala171Val,autosomal recessive
 100066864,ALDH7A1,818A>T,Asn273Ile,autosomal recessive
 100066905,LYRM4,203G>T,Arg68Leu,autosomal recessive
-100067264,EDAR,1355G>A,Arg452Gln,conflicting
-100067264,EDAR,266G>A,Arg89His,conflicting
+100067264,EDAR,1355G>A,Arg452Gln,multiple
+100067264,EDAR,266G>A,Arg89His,multiple
 100067264,EDAR,1220G>A,Arg407His,autosomal recessive
 100067267,DDR2,2177T>G,Ile726Arg,autosomal recessive
 100067469,CRLF1,852G>T,Trp284Cys,
@@ -7068,7 +7068,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 100070152,SRY,380A>T,Tyr127Phe,y-linked
 100070152,SRY,203T>C,Ile68Thr,y-linked
 100070152,SRY,337G>A,Ala113Thr,y-linked
-100070227,CTNNB1,860A>G,Asn287Ser,
+100070227,CTNNB1,860A>G,Asn287Ser,somatic mutation
 100070258,TBX19,383C>T,Ser128Phe,autosomal recessive
 100070258,TBX19,257T>G,Met86Arg,autosomal recessive
 100070273,GDF2,203G>T,Arg68Leu,autosomal dominant
@@ -7100,7 +7100,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 100014322,RS1,35T>A,Leu12His,
 100014322,RS1,1A>G,Met1Val,
 100014561,SSTR5,718C>T,Arg240Trp,
-100016074,POU1F1,71C>T,Pro24Leu,conflicting
+100016074,POU1F1,71C>T,Pro24Leu,multiple
 100061565,PDE8B,914A>C,His305Pro,autosomal dominant
 100062114,KRT12,405A>C,Arg135Ser,
 100063958,RUNX2,556A>G,Thr186Ala,autosomal dominant
@@ -7108,28 +7108,28 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 100066348,ALX4,19G>T,Val7Phe,autosomal dominant
 100068252,KCNH2,684G>T,Trp228Cys,
 100062530,RSPO4,353G>A,Cys118Tyr,autosomal recessive
-281,MVK,14T>C,Val5Ala,conflicting
-281,MVK,59A>C,His20Pro,conflicting
+281,MVK,14T>C,Val5Ala,multiple
+281,MVK,59A>C,His20Pro,multiple
 281,MVK,122T>C,Leu41Pro,autosomal dominant
-281,MVK,155G>A,Ser52Asn,conflicting
-281,MVK,238G>A,Val80Ile,conflicting
+281,MVK,155G>A,Ser52Asn,multiple
+281,MVK,238G>A,Val80Ile,multiple
 281,MVK,302G>A,Cys101Tyr,autosomal recessive
-281,MVK,317G>A,Arg106His,conflicting
-281,MVK,346T>C,Tyr116His,conflicting
-281,MVK,494C>T,Pro165Leu,conflicting
+281,MVK,317G>A,Arg106His,multiple
+281,MVK,346T>C,Tyr116His,multiple
+281,MVK,494C>T,Pro165Leu,multiple
 281,MVK,598C>T,Pro200Ser,autosomal recessive
-281,MVK,608T>C,Val203Ala,conflicting
-281,MVK,709A>T,Thr237Ser,conflicting
+281,MVK,608T>C,Val203Ala,multiple
+281,MVK,709A>T,Thr237Ser,multiple
 281,MVK,764T>C,Leu255Pro,autosomal dominant
-281,MVK,802A>G,Ile268Val,conflicting
-281,MVK,803T>C,Ile268Thr,conflicting
-281,MVK,832G>A,Val278Met,conflicting
-281,MVK,857C>T,Pro286Leu,conflicting
-281,MVK,928G>A,Val310Met,conflicting
+281,MVK,802A>G,Ile268Val,multiple
+281,MVK,803T>C,Ile268Thr,multiple
+281,MVK,832G>A,Val278Met,multiple
+281,MVK,857C>T,Pro286Leu,multiple
+281,MVK,928G>A,Val310Met,multiple
 281,MVK,1094T>C,Phe365Ser,autosomal dominant
-281,MVK,1129G>A,Val377Ile,conflicting
-281,MVK,1156G>A,Asp386Asn,conflicting
-281,MVK,1163G>A,Arg388Gln,conflicting
+281,MVK,1129G>A,Val377Ile,multiple
+281,MVK,1156G>A,Asp386Asn,multiple
+281,MVK,1163G>A,Arg388Gln,multiple
 300,GALT,27G>C,Gln9His,autosomal recessive
 300,GALT,67A>G,Thr23Ala,
 300,GALT,74G>C,Arg25Pro,
@@ -7392,12 +7392,12 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 2713,MLH1,2009A>G,Lys670Arg,
 2713,MLH1,2038T>C,Cys680Arg,autosomal dominant
 2713,MLH1,2038T>G,Cys680Gly,autosomal dominant
-2713,MLH1,2041G>A,Ala681Thr,conflicting
-2713,MLH1,2042C>T,Ala681Val,conflicting
+2713,MLH1,2041G>A,Ala681Thr,multiple
+2713,MLH1,2042C>T,Ala681Val,multiple
 2713,MLH1,2045T>C,Met682Thr,
 2713,MLH1,2103G>C,Gln701His,autosomal dominant
 2713,MLH1,2146G>A,Val716Met,autosomal dominant
-2713,MLH1,2239C>T,Pro747Ser,conflicting
+2713,MLH1,2239C>T,Pro747Ser,multiple
 3123,ACTG1,1036C>G,Leu346Val,autosomal dominant
 3123,ACTG1,994C>G,Pro332Ala,autosomal dominant
 3123,ACTG1,863A>G,Asp288Gly,
@@ -7464,7 +7464,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 4687,SMAD4,890A>G,His297Arg,autosomal dominant
 4687,SMAD4,899A>G,His300Arg,autosomal dominant
 4687,SMAD4,910G>A,Val304Ile,autosomal dominant
-4687,SMAD4,917A>G,Asn306Ser,autosomal dominant
+4687,SMAD4,917A>G,Asn306Ser,multiple
 4687,SMAD4,930C>G,Phe310Leu,autosomal dominant
 4687,SMAD4,940A>G,Ile314Val,autosomal dominant
 4687,SMAD4,947A>G,Asn316Ser,autosomal dominant
@@ -7514,7 +7514,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 4687,SMAD4,1498A>G,Ile500Val,autosomal dominant
 4687,SMAD4,1516G>A,Val506Met,autosomal dominant
 4687,SMAD4,1525T>A,Trp509Arg,
-4687,SMAD4,1547A>G,Gln516Arg,autosomal dominant
+4687,SMAD4,1547A>G,Gln516Arg,multiple
 4687,SMAD4,1561A>C,Thr521Pro,
 4687,SMAD4,1562C>T,Thr521Ile,autosomal dominant
 4687,SMAD4,1597C>G,Leu533Val,
@@ -7602,7 +7602,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 7154,SLC22A5,934A>G,Ile312Val,autosomal recessive
 7154,SLC22A5,980A>C,Gln327Pro,autosomal recessive
 7154,SLC22A5,1043T>A,Ile348Lys,autosomal recessive
-7154,SLC22A5,1085C>T,Ser362Leu,conflicting
+7154,SLC22A5,1085C>T,Ser362Leu,multiple
 7154,SLC22A5,1120G>A,Val374Met,autosomal recessive
 7154,SLC22A5,1193C>T,Pro398Leu,autosomal recessive
 7154,SLC22A5,1229G>A,Gly410Asp,autosomal recessive
@@ -7617,42 +7617,42 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 7652,STXBP1,281C>T,Pro94Leu,
 7652,STXBP1,385A>C,Thr129Pro,
 7652,STXBP1,548T>C,Leu183Pro,
-7652,STXBP1,568C>T,Arg190Trp,conflicting
-7652,STXBP1,569G>A,Arg190Gln,conflicting
+7652,STXBP1,568C>T,Arg190Trp,multiple
+7652,STXBP1,569G>A,Arg190Gln,multiple
 7652,STXBP1,587A>G,Lys196Arg,
 7652,STXBP1,619G>A,Asp207Asn,
-7652,STXBP1,704G>A,Arg235Gln,conflicting
-7652,STXBP1,714C>A,Asp238Glu,conflicting
-7652,STXBP1,734A>G,His245Arg,conflicting
-7652,STXBP1,743C>T,Thr248Ile,conflicting
+7652,STXBP1,704G>A,Arg235Gln,multiple
+7652,STXBP1,714C>A,Asp238Glu,multiple
+7652,STXBP1,734A>G,His245Arg,multiple
+7652,STXBP1,743C>T,Thr248Ile,multiple
 7652,STXBP1,767T>C,Leu256Pro,
-7652,STXBP1,847G>A,Glu283Lys,conflicting
+7652,STXBP1,847G>A,Glu283Lys,multiple
 7652,STXBP1,872T>C,Leu291Pro,
-7652,STXBP1,874C>T,Arg292Cys,conflicting
-7652,STXBP1,875G>A,Arg292His,conflicting
+7652,STXBP1,874C>T,Arg292Cys,multiple
+7652,STXBP1,875G>A,Arg292His,multiple
 7652,STXBP1,889G>A,Ala297Thr,
 7652,STXBP1,914G>A,Arg305Gln,
 7652,STXBP1,997A>G,Lys333Glu,
-7652,STXBP1,1003C>T,Pro335Ser,conflicting
-7652,STXBP1,1004C>T,Pro335Leu,conflicting
-7652,STXBP1,1060T>C,Cys354Arg,conflicting
-7652,STXBP1,1061G>A,Cys354Tyr,conflicting
+7652,STXBP1,1003C>T,Pro335Ser,multiple
+7652,STXBP1,1004C>T,Pro335Leu,multiple
+7652,STXBP1,1060T>C,Cys354Arg,multiple
+7652,STXBP1,1061G>A,Cys354Tyr,multiple
 7652,STXBP1,1082C>T,Thr361Ile,
 7652,STXBP1,1093C>T,Leu365Phe,
 7652,STXBP1,1193A>G,Asn398Ser,
-7652,STXBP1,1216C>T,Arg406Cys,conflicting
-7652,STXBP1,1217G>A,Arg406His,conflicting
-7652,STXBP1,1217G>T,Arg406Leu,conflicting
+7652,STXBP1,1216C>T,Arg406Cys,multiple
+7652,STXBP1,1217G>A,Arg406His,multiple
+7652,STXBP1,1217G>T,Arg406Leu,multiple
 7652,STXBP1,1231T>C,Tyr411His,
 7652,STXBP1,1250G>A,Gly417Asp,
 7652,STXBP1,1256C>T,Thr419Met,
 7652,STXBP1,1277T>C,Leu426Pro,
 7652,STXBP1,1351G>A,Val451Ile,
 7652,STXBP1,1385C>T,Pro462Leu,
-7652,STXBP1,1439C>T,Pro480Leu,conflicting
+7652,STXBP1,1439C>T,Pro480Leu,multiple
 7652,STXBP1,1514G>A,Arg505His,
 7652,STXBP1,1642A>G,Asn548Asp,
-7652,STXBP1,1651C>T,Arg551Cys,conflicting
+7652,STXBP1,1651C>T,Arg551Cys,multiple
 7652,STXBP1,1652G>T,Arg551Leu,
 7923,FAH,107T>C,Ile36Thr,autosomal recessive
 7923,FAH,109G>A,Gly37Ser,autosomal recessive
@@ -7777,117 +7777,117 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 12025,PRF1,11G>A,Arg4His,autosomal recessive
 12025,PRF1,10C>T,Arg4Cys,autosomal recessive
 12573,DES,25C>G,Gln9Glu,
-12573,DES,35C>T,Ser12Phe,conflicting
-12573,DES,38C>T,Ser13Phe,conflicting
+12573,DES,35C>T,Ser12Phe,multiple
+12573,DES,38C>T,Ser13Phe,multiple
 12573,DES,46C>T,Arg16Cys,
-12573,DES,58G>A,Gly20Arg,conflicting
-12573,DES,77T>A,Leu26His,conflicting
-12573,DES,79G>A,Gly27Ser,conflicting
+12573,DES,58G>A,Gly20Arg,multiple
+12573,DES,77T>A,Leu26His,multiple
+12573,DES,79G>A,Gly27Ser,multiple
 12573,DES,97C>T,Pro33Ser,
-12573,DES,109C>G,Arg37Gly,conflicting
-12573,DES,109C>T,Arg37Trp,conflicting
+12573,DES,109C>G,Arg37Gly,multiple
+12573,DES,109C>T,Arg37Trp,multiple
 12573,DES,127A>G,Lys43Glu,
-12573,DES,130G>A,Gly44Ser,conflicting
-12573,DES,154C>A,Arg52Ser,conflicting
-12573,DES,166G>C,Val56Leu,conflicting
-12573,DES,170C>T,Ser57Leu,conflicting
-12573,DES,184G>A,Gly62Arg,conflicting
-12573,DES,193G>A,Gly65Ser,conflicting
-12573,DES,209G>C,Arg70Pro,conflicting
-12573,DES,212C>T,Ala71Val,conflicting
-12573,DES,216C>A,Ser72Arg,conflicting
-12573,DES,250G>A,Gly84Ser,conflicting
-12573,DES,286G>T,Ala96Ser,conflicting
-12573,DES,295C>G,Gln99Glu,conflicting
-12573,DES,299A>C,Glu100Ala,conflicting
-12573,DES,328G>C,Val110Leu,conflicting
-12573,DES,347A>T,Asn116Ile,conflicting
-12573,DES,358G>C,Ala120Pro,conflicting
+12573,DES,130G>A,Gly44Ser,multiple
+12573,DES,154C>A,Arg52Ser,multiple
+12573,DES,166G>C,Val56Leu,multiple
+12573,DES,170C>T,Ser57Leu,multiple
+12573,DES,184G>A,Gly62Arg,multiple
+12573,DES,193G>A,Gly65Ser,multiple
+12573,DES,209G>C,Arg70Pro,multiple
+12573,DES,212C>T,Ala71Val,multiple
+12573,DES,216C>A,Ser72Arg,multiple
+12573,DES,250G>A,Gly84Ser,multiple
+12573,DES,286G>T,Ala96Ser,multiple
+12573,DES,295C>G,Gln99Glu,multiple
+12573,DES,299A>C,Glu100Ala,multiple
+12573,DES,328G>C,Val110Leu,multiple
+12573,DES,347A>T,Asn116Ile,multiple
+12573,DES,358G>C,Ala120Pro,multiple
 12573,DES,364T>G,Tyr122Asp,
-12573,DES,376G>T,Val126Leu,conflicting
-12573,DES,380G>C,Arg127Pro,conflicting
-12573,DES,391C>A,Gln131Lys,conflicting
-12573,DES,404C>T,Ala135Val,conflicting
-12573,DES,407T>C,Leu136Pro,conflicting
-12573,DES,410C>A,Ala137Asp,conflicting
-12573,DES,415G>A,Glu139Lys,conflicting
-12573,DES,449G>A,Arg150Gln,conflicting
-12573,DES,473A>T,Glu158Val,conflicting
-12573,DES,524G>A,Arg175His,conflicting
-12573,DES,529G>A,Asp177Asn,conflicting
-12573,DES,556G>T,Asp186Tyr,conflicting
-12573,DES,566G>A,Arg189Gln,conflicting
-12573,DES,623T>C,Leu208Ser,conflicting
-12573,DES,629C>T,Ala210Val,conflicting
-12573,DES,635G>A,Arg212Gln,conflicting
-12573,DES,638C>T,Ala213Val,conflicting
-12573,DES,643G>A,Val215Met,conflicting
-12573,DES,656C>T,Thr219Ile,conflicting
-12573,DES,665G>A,Arg222His,conflicting
-12573,DES,679C>T,Arg227Cys,conflicting
-12573,DES,680G>A,Arg227His,conflicting
-12573,DES,700G>A,Glu234Lys,conflicting
-12573,DES,709G>A,Ala237Thr,conflicting
-12573,DES,725T>A,Val242Glu,conflicting
-12573,DES,727C>T,His243Tyr,conflicting
-12573,DES,735G>C,Glu245Asp,conflicting
-12573,DES,743G>A,Arg248His,conflicting
-12573,DES,785A>T,Glu262Val,conflicting
-12573,DES,817G>T,Ala273Ser,conflicting
-12573,DES,833G>C,Arg278Pro,conflicting
-12573,DES,853G>A,Ala285Thr,conflicting
-12573,DES,883T>G,Trp295Gly,conflicting
-12573,DES,935A>C,Asp312Ala,conflicting
-12573,DES,937G>A,Ala313Thr,conflicting
-12573,DES,944G>A,Arg315His,conflicting
-12573,DES,974G>A,Arg325Gln,conflicting
-12573,DES,976C>T,His326Tyr,conflicting
+12573,DES,376G>T,Val126Leu,multiple
+12573,DES,380G>C,Arg127Pro,multiple
+12573,DES,391C>A,Gln131Lys,multiple
+12573,DES,404C>T,Ala135Val,multiple
+12573,DES,407T>C,Leu136Pro,multiple
+12573,DES,410C>A,Ala137Asp,multiple
+12573,DES,415G>A,Glu139Lys,multiple
+12573,DES,449G>A,Arg150Gln,multiple
+12573,DES,473A>T,Glu158Val,multiple
+12573,DES,524G>A,Arg175His,multiple
+12573,DES,529G>A,Asp177Asn,multiple
+12573,DES,556G>T,Asp186Tyr,multiple
+12573,DES,566G>A,Arg189Gln,multiple
+12573,DES,623T>C,Leu208Ser,multiple
+12573,DES,629C>T,Ala210Val,multiple
+12573,DES,635G>A,Arg212Gln,multiple
+12573,DES,638C>T,Ala213Val,multiple
+12573,DES,643G>A,Val215Met,multiple
+12573,DES,656C>T,Thr219Ile,multiple
+12573,DES,665G>A,Arg222His,multiple
+12573,DES,679C>T,Arg227Cys,multiple
+12573,DES,680G>A,Arg227His,multiple
+12573,DES,700G>A,Glu234Lys,multiple
+12573,DES,709G>A,Ala237Thr,multiple
+12573,DES,725T>A,Val242Glu,multiple
+12573,DES,727C>T,His243Tyr,multiple
+12573,DES,735G>C,Glu245Asp,multiple
+12573,DES,743G>A,Arg248His,multiple
+12573,DES,785A>T,Glu262Val,multiple
+12573,DES,817G>T,Ala273Ser,multiple
+12573,DES,833G>C,Arg278Pro,multiple
+12573,DES,853G>A,Ala285Thr,multiple
+12573,DES,883T>G,Trp295Gly,multiple
+12573,DES,935A>C,Asp312Ala,multiple
+12573,DES,937G>A,Ala313Thr,multiple
+12573,DES,944G>A,Arg315His,multiple
+12573,DES,974G>A,Arg325Gln,multiple
+12573,DES,976C>T,His326Tyr,multiple
 12573,DES,980A>C,Gln327Pro,
-12573,DES,986A>C,Gln329Pro,conflicting
-12573,DES,991T>A,Tyr331Asn,conflicting
-12573,DES,1009G>A,Ala337Thr,conflicting
-12573,DES,1013T>C,Leu338Pro,conflicting
-12573,DES,1013T>G,Leu338Arg,conflicting
-12573,DES,1024A>G,Asn342Asp,conflicting
-12573,DES,1027G>A,Asp343Asn,conflicting
-12573,DES,1030T>C,Ser344Pro,conflicting
-12573,DES,1034T>C,Leu345Pro,conflicting
-12573,DES,1038G>A,Met346Ile,conflicting
-12573,DES,1047G>A,Met349Ile,conflicting
-12573,DES,1048C>T,Arg350Trp,conflicting
-12573,DES,1049G>C,Arg350Pro,conflicting
-12573,DES,1064G>A,Arg355Gln,conflicting
-12573,DES,1064G>C,Arg355Pro,conflicting
+12573,DES,986A>C,Gln329Pro,multiple
+12573,DES,991T>A,Tyr331Asn,multiple
+12573,DES,1009G>A,Ala337Thr,multiple
+12573,DES,1013T>C,Leu338Pro,multiple
+12573,DES,1013T>G,Leu338Arg,multiple
+12573,DES,1024A>G,Asn342Asp,multiple
+12573,DES,1027G>A,Asp343Asn,multiple
+12573,DES,1030T>C,Ser344Pro,multiple
+12573,DES,1034T>C,Leu345Pro,multiple
+12573,DES,1038G>A,Met346Ile,multiple
+12573,DES,1047G>A,Met349Ile,multiple
+12573,DES,1048C>T,Arg350Trp,multiple
+12573,DES,1049G>C,Arg350Pro,multiple
+12573,DES,1064G>A,Arg355Gln,multiple
+12573,DES,1064G>C,Arg355Pro,multiple
 12573,DES,1069G>C,Ala357Pro,
-12573,DES,1078G>C,Ala360Pro,conflicting
+12573,DES,1078G>C,Ala360Pro,multiple
 12573,DES,1133A>C,Lys378Thr,
-12573,DES,1154T>C,Leu385Pro,conflicting
-12573,DES,1159G>A,Glu387Lys,conflicting
-12573,DES,1166A>C,Gln389Pro,conflicting
+12573,DES,1154T>C,Leu385Pro,multiple
+12573,DES,1159G>A,Glu387Lys,multiple
+12573,DES,1166A>C,Gln389Pro,multiple
 12573,DES,1167G>T,Gln389His,
 12573,DES,1175T>C,Leu392Pro,
-12573,DES,1178A>T,Asn393Ile,conflicting
-12573,DES,1180G>A,Val394Met,conflicting
-12573,DES,1189G>A,Ala397Thr,conflicting
-12573,DES,1195G>T,Asp399Tyr,conflicting
-12573,DES,1217G>A,Arg406Gln,conflicting
+12573,DES,1178A>T,Asn393Ile,multiple
+12573,DES,1180G>A,Val394Met,multiple
+12573,DES,1189G>A,Ala397Thr,multiple
+12573,DES,1195G>T,Asp399Tyr,multiple
+12573,DES,1217G>A,Arg406Gln,multiple
 12573,DES,1234G>A,Glu412Lys,
-12573,DES,1237G>A,Glu413Lys,conflicting
-12573,DES,1243C>T,Arg415Trp,conflicting
-12573,DES,1256C>T,Pro419Leu,conflicting
+12573,DES,1237G>A,Glu413Lys,multiple
+12573,DES,1243C>T,Arg415Trp,multiple
+12573,DES,1256C>T,Pro419Leu,multiple
 12573,DES,1271C>T,Ser424Phe,
-12573,DES,1286G>A,Arg429Gln,conflicting
+12573,DES,1286G>A,Arg429Gln,multiple
 12573,DES,1297C>A,Pro433Thr,
 12573,DES,1315G>A,Glu439Lys,autosomal dominant
-12573,DES,1322A>T,His441Leu,conflicting
-12573,DES,1325C>T,Thr442Ile,conflicting
-12573,DES,1346A>C,Lys449Thr,conflicting
-12573,DES,1353C>G,Ile451Met,conflicting
-12573,DES,1358C>T,Thr453Ile,conflicting
-12573,DES,1360C>T,Arg454Trp,conflicting
-12573,DES,1361G>A,Arg454Gln,conflicting
-12573,DES,1366G>A,Gly456Arg,conflicting
-12573,DES,1404A>C,Glu468Asp,conflicting
+12573,DES,1322A>T,His441Leu,multiple
+12573,DES,1325C>T,Thr442Ile,multiple
+12573,DES,1346A>C,Lys449Thr,multiple
+12573,DES,1353C>G,Ile451Met,multiple
+12573,DES,1358C>T,Thr453Ile,multiple
+12573,DES,1360C>T,Arg454Trp,multiple
+12573,DES,1361G>A,Arg454Gln,multiple
+12573,DES,1366G>A,Gly456Arg,multiple
+12573,DES,1404A>C,Glu468Asp,multiple
 12705,STRA6,1957G>A,Val653Ile,autosomal recessive
 12705,STRA6,1391T>G,Leu464Arg,autosomal recessive
 12705,STRA6,946G>A,Val316Met,autosomal recessive
@@ -7914,7 +7914,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 14117,DNM2,1106G>A,Arg369Gln,autosomal dominant
 14117,DNM2,1106G>T,Arg369Leu,
 14117,DNM2,1124T>A,Val375Glu,
-14117,DNM2,1135T>G,Phe379Val,conflicting
+14117,DNM2,1135T>G,Phe379Val,multiple
 14117,DNM2,1286A>T,Asp429Val,autosomal dominant
 14117,DNM2,1352G>A,Arg451Gln,autosomal dominant
 14117,DNM2,1354T>G,Leu452Val,autosomal dominant
@@ -7990,7 +7990,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 53281,PYGM,61G>A,Gly21Ser,autosomal recessive
 53281,PYGM,22C>A,Gln8Lys,autosomal recessive
 53281,PYGM,8G>A,Arg3Gln,autosomal recessive
-54055,ALDH18A1,781C>A,Leu261Ile,conflicting
+54055,ALDH18A1,781C>A,Leu261Ile,multiple
 54055,ALDH18A1,727G>C,Val243Leu,autosomal dominant
 54055,ALDH18A1,482G>A,Cys161Tyr,
 54308,PKP2,2504T>G,Leu835Arg,autosomal dominant
@@ -8303,7 +8303,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 71892,TH,19A>C,Thr7Pro,autosomal recessive
 71892,TH,16G>A,Ala6Thr,autosomal recessive
 71892,TH,5C>T,Pro2Leu,autosomal recessive
-100016069,KCNJ2,119G>A,Arg40Gln,conflicting
+100016069,KCNJ2,119G>A,Arg40Gln,multiple
 100016069,KCNJ2,119G>C,Arg40Pro,autosomal dominant
 100016069,KCNJ2,161G>T,Cys54Phe,autosomal dominant
 100016069,KCNJ2,199C>T,Arg67Trp,autosomal dominant
@@ -8451,7 +8451,7 @@ orf_id,symbol,nt_change,aa_change,inheritance_clean
 7038,DIABLO,175A>G,Ile59Val,
 13554,GLYCTK,1181C>T,Thr394Ile,
 3483,GYG1,98G>A,Arg33Lys,autosomal recessive
-3732,UROD,952G>A,Gly318Arg,conflicting
+3732,UROD,952G>A,Gly318Arg,multiple
 7038,DIABLO,8C>G,Ala3Gly,
 4692,LDHB,472C>T,Arg158Cys,
 13554,GLYCTK,1468C>T,His490Tyr,
