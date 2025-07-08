@@ -109,7 +109,7 @@ import matplotlib.pyplot as plt
 
 def process_H2_file(df, protein_of_interest):
     """ 
-    Filters for H₂: Facilitated Co-Operation
+    Filters for H₂: Facultative co-expression. 
     - POI must be expressed at least at the **median expression %** (within its tissue).
     - At least one interactor must be highly expressed (≥20%) in the same cell type.
     - **POI expression is explicitly retained & displayed.**
@@ -118,7 +118,7 @@ def process_H2_file(df, protein_of_interest):
     print(f"\n🔍STEP-1: Computing tissue median expression for {protein_of_interest}...")
 
     #Step-1: Compute POI-Specific Median Expression Cutoff
-    #Computes median expression % of POI across all cell types in each tissue
+    #Computes median expression% of POI across all cell types in each tissue
     #If POI is absent in a tissue, it won't be processed
     tissue_median_expr = df[df["Gene Symbol"] == protein_of_interest].groupby("Tissue")["%Cells Expressing Gene"].median()
 
@@ -191,8 +191,8 @@ def process_H2_file(df, protein_of_interest):
     #Categorizes interactions based on interactor expression level
     conditions = [
         df["%Cells Expressing Gene"] >= STRONG_COMPENSATION,  #Robust Compensation (≥50%)
-        df["%Cells Expressing Gene"] >= 30,  #Moderate Compensation (30-49%)  <-- ✅ FIXED RANGE
-        df["%Cells Expressing Gene"] >= 20  #Weak Compensation (20-29%)  <-- ✅ FIXED RANGE
+        df["%Cells Expressing Gene"] >= 30,  #Moderate Compensation (30-49%)  
+        df["%Cells Expressing Gene"] >= 20  #Weak Compensation (20-29%) 
     ]
     categories = ["Robust Compensation (≥50%)", "Moderate Compensation (30-49%)", "Weak Compensation (20-29%)"]
 
@@ -200,7 +200,10 @@ def process_H2_file(df, protein_of_interest):
 
     #STEP-7: Remove Lowly Expressed Interactors (<20%)
     #Interactions that fail the ≥20% expression cutoff are removed
-    df = df[df["Compensation Category"] != "No Compensation (<20%)"]
+    df = df[
+    (df["Gene Symbol"] == protein_of_interest) |  #Always keep POI
+    (df["Compensation Category"] != "No Compensation (<20%)")  # Filter only interactors
+]
 
     print(f"✅STEP-7: Final dataset contains {len(df)} rows after removing non-compensating interactors.")
 
@@ -244,12 +247,6 @@ for file in input_files:
     print(f"✅ Successfully saved H2 output: {output_file}")
 
 
-# In[ ]:
-
-
-
-
-
 # Key confirmations:
 # 
 # 1. All POI rows are first filtered for POI_Above_Median.
@@ -275,11 +272,10 @@ for file in input_files:
 # POI expression is shown in the final file for reference (POI_Expression_%).
 # Rows failing either condition are removed before saving.
 
-# In[10]:
+# In[9]:
 
 
 #Just print the moderate & robust compensations in the notebook:
-
 #Find all processed H2 files
 h2_files = [f for f in os.listdir(output_dir) if f.endswith("_S2_H2_24042025.xlsx")]
 len(h2_files)
@@ -298,10 +294,10 @@ len(h2_files)
 #     - Renames POI_Expression_% → %Cells Expressing POI
 #     - Ensures sorting remains correct (R → M → W)
 
-# In[11]:
+# In[10]:
 
 
-#let's retain all relevant columns, including Cell Count, so you have full flexibility
+#Let's retain all relevant columns, including Cell Count, so you have full flexibility
 #Self_Interaction == "Yes" rows should be removed just before saving the Excel file.
 #Refer to line-16 of PPI_CellxGene_H2_corr_27022025.ipynb 
 
@@ -362,16 +358,26 @@ for file in h2_files:
     output_cols = ["Tissue", "Cell Type", "Cell Count", "PPI", "%Cells Expressing POI", "%Cells Expressing Interactor", "Comp_Category", "Self_Interaction"]
     final_df = filtered_df[output_cols]  #Retain only relevant columns
 
+    #NaN ranks float to the top & will break R > M > W sort later. Let's filter NaN/Unknowns out. 
+    final_df = final_df[final_df["Comp_Category"].isin(["R", "M", "W"])]
+
     #Step 8: Sort by Tissue → Cell Type → Compensation (R → M → W)
+    final_df["%Cells Expressing Interactor"] = pd.to_numeric(
+        final_df["%Cells Expressing Interactor"], errors='coerce')
+
     comp_rank = {"R": 1, "M": 2, "W": 3}
     final_df["Comp_Rank"] = final_df["Comp_Category"].map(comp_rank)
 
-    sorted_df = final_df.sort_values(by=["Tissue", "Cell Type", "Comp_Rank"],
-                                     ascending=[True, True, True]).drop(columns=["Comp_Rank"])
+    sorted_df = final_df.sort_values(
+        by=["Tissue", "Cell Type", "Comp_Rank", "%Cells Expressing Interactor"],
+        ascending=[True, True, True, False])
 
     #Step 9: **Exclude H3 redundant cases (where both POI & Interactor are ≥30%)** => very important to avoid redundancy 
-    sorted_df = sorted_df[~((sorted_df["%Cells Expressing POI"] >= 30) & 
-                            (sorted_df["%Cells Expressing Interactor"] >= 30))]
+    #Create mask first, then apply filtering while preserving sort
+    h3_mask = ~((sorted_df["%Cells Expressing POI"] >= 30) & 
+                (sorted_df["%Cells Expressing Interactor"] >= 30))
+
+    sorted_df = sorted_df[h3_mask]
 
     print(f"✅ Removed H3 redundant cases. Final dataset contains {len(sorted_df)} rows.")
 
@@ -381,8 +387,42 @@ for file in h2_files:
     #Step 11: Remove Self-Interactions before saving the files
     sorted_df = sorted_df[sorted_df["Self_Interaction"] != "Yes"]
 
+    #Re-sort to fix any order distortion after filtering
+    sorted_df["Comp_Rank"] = sorted_df["Comp_Category"].map(comp_rank)
+    sorted_df = sorted_df.sort_values(
+        by=["Tissue", "Cell Type", "Comp_Rank", "%Cells Expressing Interactor"],
+        ascending=[True, True, True, False])
+
+    #Drop Comp_Rank before saving
+    sorted_df = sorted_df.drop(columns=["Comp_Rank"])
+
     #Step 12: Save the sorted version
     sorted_file_path = os.path.join(output_dir, file.replace("_S2_H2_24042025.xlsx", "_Sorted_S2_H2_24042025.xlsx"))
     sorted_df.to_excel(sorted_file_path, index=False, engine="openpyxl")
 
     print(f"✅ Saved sorted file (Only PPI + Cell Count, Self-Interactions Removed): {sorted_file_path}\n")
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
