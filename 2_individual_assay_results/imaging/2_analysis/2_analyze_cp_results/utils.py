@@ -9,6 +9,26 @@ import warnings
 warnings.filterwarnings('ignore')
 
 
+def plot_top_n_important_feat(df, feat_cols, n=10, ax=None, title=""):
+    # Calculate mean and standard deviation for each column
+    column_stats = df[feat_cols].agg(['mean', 'std']).T
+    # Sort columns by the sum of mean and std in descending order
+    sorted_columns = column_stats.sort_values(by=["mean"], ascending=False)
+    sorted_columns = sorted_columns.head(n)
+    # display(sorted_columns)
+
+    # Plot mean and std for each column
+    if ax is None:
+        fig, ax = plt.subplots(figsize=(5, 4))
+    ax.barh(y=sorted_columns.index, width=sorted_columns["mean"], color='skyblue') ## yerr=sorted_columns["std"], capsize=5, edgecolor='black'
+    ax.set_yticks(range(len(sorted_columns.index)))
+    ax.set_yticklabels(sorted_columns.index, rotation=0, fontsize=12)
+    # ax.set_xlabel("Mean")
+    ax.set_title(f"Top {n} Features Importance Mean {title}")
+    ax.axvline(x=0.01, color='r', linestyle='--')
+    return sorted_columns
+
+
 def remove_corr_feats(df, corr_thres=.8):
     # 2. Identify numeric columns
     all_num_feats = [
