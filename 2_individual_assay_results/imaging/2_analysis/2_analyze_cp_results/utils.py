@@ -1,3 +1,4 @@
+import polars as pl
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.cluster import AgglomerativeClustering
 from scipy.cluster.hierarchy import linkage, dendrogram, fcluster, optimal_leaf_ordering
@@ -29,13 +30,17 @@ def plot_top_n_important_feat(df, feat_cols, n=10, ax=None, title=""):
     return sorted_columns
 
 
-def remove_corr_feats(df, corr_thres=.8):
-    # 2. Identify numeric columns
-    all_num_feats = [
-        name
-        for name, dtype in df.schema.items()
-        if dtype in (pl.Int8, pl.Int16, pl.Int32, pl.Int64, pl.Float32, pl.Float64)
-    ]
+def remove_corr_feats(df, feat_cols=None, corr_thres=.9):
+    if feat_cols is None:
+        # 2. Identify numeric columns
+        all_num_feats = [
+            name
+            for name, dtype in df.schema.items()
+            if dtype in (pl.Int8, pl.Int16, pl.Int32, pl.Int64, pl.Float32, pl.Float64)
+        ]
+    else:
+        all_num_feats = feat_cols
+        
     # 3. Bring that slice into pandas
     pdf = df.select(all_num_feats).to_pandas()
     # 4. Compute absolute correlation matrix
