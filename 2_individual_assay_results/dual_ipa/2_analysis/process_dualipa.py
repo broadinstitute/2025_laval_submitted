@@ -95,6 +95,7 @@ def get_wt_variability_d_median(pDEST_DUAL_median_df,pDEST_DUAL_df):
 
     wt_median_d = {(orf_id, pla):median_ratio for i, (orf_id, pla, median_ratio, n_wt) in wt_median_df.query("n_wt >= 2").iterrows()}
     return wt_median_d, wt_ratio_l_median
+    
 
 def wt_log2fc_variability(pDEST_DUAL_avg_df, pDEST_DUAL_df):
     '''
@@ -146,12 +147,11 @@ def get_pDEST_DUAL_avg_allele_df(pDEST_DUAL_avg_df, wt_avg_d, wt_ratio_l, wt_std
     pDEST_DUAL_avg_allele_df['allele_wt_log2fc'] = np.log2(pDEST_DUAL_avg_allele_df['allele_wt_ratio'])
     pDEST_DUAL_avg_allele_df['allele_wt_log2fc_zscore'] = pDEST_DUAL_avg_allele_df.allele_wt_log2fc.apply(
         lambda x: (x - wt_mean) / wt_std
-        )
+    )
 
     pDEST_DUAL_avg_allele_df['allele_wt_log2fc_pvalue'] = pDEST_DUAL_avg_allele_df['allele_wt_log2fc_zscore'].apply(
         lambda z: 2 * norm.sf(np.abs(z))
-        )
-    
+    )
     
     # Jess add
     wt_log = np.log2(wt_ratio_l)
