@@ -2,6 +2,9 @@
 
 ## run this script by: bash runLLR.sh
 
+source ~/software/anaconda3/etc/profile.d/conda.sh
+conda activate py310
+
 ## Reference: 
 ## van Loggerenberg et al., 2023, The American Journal of Human Genetics 110, 1769–1786
 ## https://doi.org/10.1016/j.ajhg.2023.08.012
@@ -23,9 +26,9 @@
 # R -e "remotes::install_github('jweile/yogilog')"
 # R -e "remotes::install_github('jweile/maveLLR')"
 
-source ~/software/anaconda3/etc/profile.d/conda.sh
-
-conda activate py310
+## acmg scaler method from https://github.com/badonyi/acmgscaler
+## https://www.biorxiv.org/content/10.1101/2025.05.16.654507v1
+# R -e "remotes::install_github('badonyi/acmgscaler')"
 
 ## Run for DUAL-IPA example
 # Rscript calcLLR.R ../dual_ipa/3_outputs/DUALIPA_allScores.csv ../dual_ipa/3_outputs/DUALIPA_referenceSet.csv --printTransitions
