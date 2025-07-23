@@ -1,0 +1,8 @@
+Step,DB_ORF_IDs,AD_ORF_IDs,DB_Groups,Edge_Groups,PPI_Groups,DB_ORFs_Dropped,AD_ORFs_Dropped,DB_Groups_Dropped,Edge_Groups_Dropped,PPIs_Dropped,Percent_DB_ORFs_Dropped,Percent_AD_ORFs_Dropped,Percent_DB_Groups_Dropped,Percent_Edge_Groups_Dropped,Percent_PPIs_Dropped
+0. Original Data,167,776,1265,1160,8019,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+1. After Sequencing QC,84,373,671,467,3690,83,403,594,693,4329,49.7,51.93,46.96,59.74,53.98
+2. After AA Mating Failures (db_group),82,322,642,405,3276,2,51,29,62,414,2.38,13.67,4.32,13.28,11.22
+4. After Mating Failures (LW <= 300),82,318,637,400,3105,0,4,5,5,171,0.0,1.24,0.78,1.23,5.22
+5. After Mating Failures (LW null),79,304,596,382,2734,3,14,41,18,371,3.66,4.4,6.44,4.5,11.95
+7. After AA Score Filter (<=300),79,304,592,382,2722,0,0,4,0,12,0.0,0.0,0.67,0.0,0.44
+8. After WT Failures + Summed Score > 0,74,257,559,301,2210,5,47,33,81,512,6.33,15.46,5.57,21.2,18.81
