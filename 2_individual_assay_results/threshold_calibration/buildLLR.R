@@ -77,8 +77,8 @@ buildLLR.kernel <- function(posScores, negScores, bw=0.1, kernel="gaussian", out
 #' llr <- buildLLR.kernel(posScores,negScores,bw=0.1,kernel="gaussian")
 #' drawDensityLLR(c(posScores,negScores),llr$llr,llr$posDens,llr$negDens,posScores,negScores)
 #'
-buildLLR.kernelExperimental <- function(posScores, negScores, bw=0.1, kernel="gaussian", outlierSuppression=0.0001) {
-  
+buildLLR.kernelExperimental <- function(posScores, negScores, bw=0.1, kernel="gaussian", outlierSuppression=1) {
+  ## modify the original outlierSuppression=0.0001 to outlierSuppression=1
   library(kdensity)
   
   posDens <- kdensity(posScores,bw=bw,kernel=kernel)
