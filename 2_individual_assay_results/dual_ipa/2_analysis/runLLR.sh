@@ -20,4 +20,4 @@ source ~/software/anaconda3/etc/profile.d/conda.sh
 
 conda activate py310
 
-Rscript ../../threshold_calibration/calcLLR.R ../3_outputs/DUALIPA_allScores.csv ../3_outputs/DUALIPA_referenceSet.csv --outfile "../3_outputs/DUALIPA_LLR_score" --logfile "../3_outputs/DUALIPA_LLR.log" --printTransitions --gauss
+Rscript ../../threshold_calibration/calcLLR.R ../3_outputs/DUALIPA_allScores.csv ../3_outputs/DUALIPA_referenceSet.csv --outfile "../3_outputs/DUALIPA_LLR_score" --logfile "../3_outputs/DUALIPA_LLR.log" --printTransitions
