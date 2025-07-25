@@ -242,6 +242,7 @@ def plot_auroc_curves(df_clinvar_w_scores, pos_label, methods, set2_palette=set2
     
     return ap_results ## , sig_results_dict
 
+
 def plot_gene_level_summary(assay_df, assay, xlim=None, cat="clinvar_clnsig_clean", palette=None):
     gene_allele_cnts = assay_df.group_by(
         ["symbol"]
