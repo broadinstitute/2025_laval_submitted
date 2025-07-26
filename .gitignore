@@ -181,3 +181,8 @@ facs_single_cell.parquet
 OMIM_api_key.txt
 
 .vscode
+
+# Jupyter Notebook files with multiple automated processing methods
+1_process_sqY2H_automated_backup.ipynb
+2_normalize_sqY2H_automated_backup.ipynb
+3_make_edgotype_profiles_automated_backup.ipynb
