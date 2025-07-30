@@ -1,3 +1,4 @@
+import numpy as np
 import polars as pl
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.cluster import AgglomerativeClustering
@@ -7,6 +8,8 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.patches as mpatches
 from matplotlib.colors import ListedColormap
 import warnings
+from tqdm.contrib.concurrent import thread_map
+import scipy.stats as ss
 warnings.filterwarnings('ignore')
 
 
@@ -30,75 +33,104 @@ def plot_top_n_important_feat(df, feat_cols, n=10, ax=None, title=""):
     return sorted_columns
 
 
-def remove_corr_feats(df, feat_cols=None, corr_thres=.9):
-    if feat_cols is None:
-        # 2. Identify numeric columns
-        all_num_feats = [
-            name
-            for name, dtype in df.schema.items()
-            if dtype in (pl.Int8, pl.Int16, pl.Int32, pl.Int64, pl.Float32, pl.Float64)
-        ]
+def rank_int_array(array: np.ndarray,
+                   c: float = 3.0 / 8,
+                   stochastic: bool = True,
+                   seed: int = 0):
+    '''
+    Perform rank-based inverse normal transformation in a 1d numpy array. If
+    stochastic is True ties are given rank randomly, otherwise ties will share
+    the same value.
+
+    Copied directly from: https://github.com/carpenter-singh-lab/2023_Arevalo_NatComm_BatchCorrection/blob/cd9bcf99240880a5c9f9858debf70e94f5b4c0f7/preprocessing/transform.py#L8
+    Adapted from: https://github.com/edm1/rank-based-INT/blob/85cb37bb8e0d9e71bb9e8f801fd7369995b8aee7/rank_based_inverse_normal_transformation.py
+    '''
+    rng = np.random.default_rng(seed=seed)
+
+    if stochastic:
+        # Shuffle
+        ix = rng.permutation(len(array))
+        rev_ix = np.argsort(ix)
+        array = array[ix]
+        # Get rank, ties are determined by their position(hence why we shuffle)
+        rank = ss.rankdata(array, method="ordinal")
+        rank = rank[rev_ix]
     else:
-        all_num_feats = feat_cols
+        # Get rank, ties are averaged
+        rank = ss.rankdata(array, method="average")
+
+    x = (rank - c) / (len(rank) - 2 * c + 1)
+    return ss.norm.ppf(x)
+    
+
+def inverse_normal_transform(data, feat_cols=None, c: float = 3.0 / 8, stochastic: bool = True, seed: int = 0):
+    """
+    Apply inverse normal transformation (rank-based normalization) to data using rank_int_array.
+    
+    Parameters:
+    -----------
+    data : polars.DataFrame
+       Input dataframe
+    feat_cols : list, optional
+       Specific columns to transform. If None, auto-detect numeric columns
+    c : float
+       Blom's constant for rank transformation
+    stochastic : bool
+       Whether to use stochastic tie-breaking
+    seed : int
+       Random seed for stochastic tie-breaking
+    """
+    from tqdm.contrib.concurrent import thread_map
+    import scipy.stats as ss
+    
+    # Determine columns to transform
+    if feat_cols is not None:
+        numeric_cols = feat_cols
+    else:
+        numeric_cols = [col for col in data.columns if "Meta" not in col]
+    
+    if not numeric_cols:
+        return data  # No columns to transform
+    
+    # Convert to numpy for processing
+    data_np = data.select(numeric_cols).to_numpy()
+    
+    def to_normal(i):
+        """Transform column i using rank_int_array"""
+        col_data = data_np[:, i].copy()  # Work on copy to avoid race conditions
+        mask = ~np.isnan(col_data)
         
-    # 3. Bring that slice into pandas
-    pdf = df.select(all_num_feats).to_pandas()
-    # 4. Compute absolute correlation matrix
-    corr = pdf.corr().abs()
-    # 5. Mask out the lower triangle (we only need one side)
-    upper = corr.where(
-        np.triu(np.ones(corr.shape), k=1).astype(bool)
+        if np.sum(mask) > 0:  # Only transform if there are non-null values
+            # Transform non-null values
+            transformed_values = rank_int_array(
+               col_data[mask], 
+               c=c, 
+               stochastic=stochastic, 
+               seed=seed + i  # Different seed per column for stochastic mode
+            ).astype(np.float32)
+            
+            # Put transformed values back
+            col_data[mask] = transformed_values
+            data_np[:, i] = col_data
+    
+    # Apply transformation to all columns in parallel
+    thread_map(to_normal, range(len(numeric_cols)), leave=False)
+    
+    # Convert back to polars DataFrame
+    transformed_df = pl.DataFrame(
+       data_np, 
+       schema={col: pl.Float32 for col in numeric_cols}
     )
-    # 6. Pick columns to drop: any column with correlation > threshold to *any* other
-    to_drop = [col for col in upper.columns if any(upper[col] > corr_thres)]
-    # 7. Drop them in your original Polars DF
-    df_drop_corr_cols = df.drop(to_drop)
-    # colocal_col_cat = set(["_".join(col.split('_')[1:3]) for col in colocal_cols])
-    # print(colocal_col_cat)
-    # colocal_col_dict = defaultdict(list)
-    # for col in colocal_cols:
-    #     colocal_col_dict["_".join(col.split('_')[1:3])].append(col)
-    # colocal_col_dict
-    return df_drop_corr_cols
-
-
-def inverse_normal_transform(data):
-    """
-    Apply inverse normal transformation (rank-based normalization) to data.
-    """
-    from scipy.stats import norm
-    from scipy.stats import rankdata
     
-    def transform_column_polars(col_name, df):
-        """Transform a polars column"""
-        return (
-            pl.when(pl.col(col_name).is_not_null())
-            .then(
-                pl.col(col_name)
-                .rank(method="average")
-                .sub(0.5)
-                .truediv(pl.col(col_name).drop_nulls().len())
-                .map_elements(lambda x: norm.ppf(x), return_dtype=pl.Float64)
-            )
-            .otherwise(pl.col(col_name))
-            .alias(col_name)
-        )
-        
-    # Polars DataFrame
-    numeric_cols = [col for col in data.columns if data[col].dtype in [pl.Float32, pl.Float64, pl.Int8, pl.Int16, pl.Int32, pl.Int64, pl.UInt8, pl.UInt16, pl.UInt32, pl.UInt64]]
-    
-    # Apply transformation to numeric columns only
-    transformations = [transform_column_polars(col, data) for col in numeric_cols]
+    # Combine with non-numeric columns if they exist
     non_numeric_cols = [col for col in data.columns if col not in numeric_cols]
     
-    if transformations:
-        if non_numeric_cols:
-            # Keep non-numeric columns as they are
-            return data.with_columns(transformations).select(data.columns)
-        else:
-            return data.with_columns(transformations)
+    if non_numeric_cols:
+        # Preserve original column order
+        result_df = data.select(non_numeric_cols).hstack(transformed_df)
+        return result_df.select(data.columns)  # Maintain original column order
     else:
-        return data  # No numeric columns to transform
+        return transformed_df
 
 
 def robust_cosine_clustering_with_annotations(feat_df_clean_well_pd, 
