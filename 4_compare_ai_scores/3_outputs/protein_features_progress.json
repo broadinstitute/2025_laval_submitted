@@ -1,0 +1,2554 @@
+{
+  "LITAF": {
+    "gene": "LITAF",
+    "status": "success",
+    "valid_uniprot_id": "Q99732",
+    "uniprot_ids_tried": [
+      "Q99732"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 24,
+      "valid_matches": 24,
+      "mismatches": [],
+      "protein_length": 161
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_LITAF_Q99732_protein_features.tsv"
+  },
+  "MCEE": {
+    "gene": "MCEE",
+    "status": "success",
+    "valid_uniprot_id": "Q96PE7",
+    "uniprot_ids_tried": [
+      "Q96PE7"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 176
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_MCEE_Q96PE7_protein_features.tsv"
+  },
+  "COMP": {
+    "gene": "COMP",
+    "status": "success",
+    "valid_uniprot_id": "P49747",
+    "uniprot_ids_tried": [
+      "P49747"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 17,
+      "valid_matches": 17,
+      "mismatches": [],
+      "protein_length": 757
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_COMP_P49747_protein_features.tsv"
+  },
+  "AGXT": {
+    "gene": "AGXT",
+    "status": "success",
+    "valid_uniprot_id": "P21549",
+    "uniprot_ids_tried": [
+      "P21549"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 88,
+      "valid_matches": 88,
+      "mismatches": [],
+      "protein_length": 392
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_AGXT_P21549_protein_features.tsv"
+  },
+  "THAP1": {
+    "gene": "THAP1",
+    "status": "success",
+    "valid_uniprot_id": "Q9NVV9",
+    "uniprot_ids_tried": [
+      "Q9NVV9"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 5,
+      "valid_matches": 5,
+      "mismatches": [],
+      "protein_length": 213
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_THAP1_Q9NVV9_protein_features.tsv"
+  },
+  "SFTPC": {
+    "gene": "SFTPC",
+    "status": "success",
+    "valid_uniprot_id": "P11686",
+    "uniprot_ids_tried": [
+      "P11686"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 13,
+      "valid_matches": 13,
+      "mismatches": [],
+      "protein_length": 197
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_SFTPC_P11686_protein_features.tsv"
+  },
+  "FTH1": {
+    "gene": "FTH1",
+    "status": "success",
+    "valid_uniprot_id": "P02794",
+    "uniprot_ids_tried": [
+      "P02794"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 183
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_FTH1_P02794_protein_features.tsv"
+  },
+  "GALE": {
+    "gene": "GALE",
+    "status": "success",
+    "valid_uniprot_id": "Q14376",
+    "uniprot_ids_tried": [
+      "Q14376"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 10,
+      "valid_matches": 10,
+      "mismatches": [],
+      "protein_length": 348
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_GALE_Q14376_protein_features.tsv"
+  },
+  "GCK": {
+    "gene": "GCK",
+    "status": "success",
+    "valid_uniprot_id": "P35557",
+    "uniprot_ids_tried": [
+      "P35557"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 13,
+      "valid_matches": 13,
+      "mismatches": [],
+      "protein_length": 465
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_GCK_P35557_protein_features.tsv"
+  },
+  "BRCA1": {
+    "gene": "BRCA1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "P38398"
+    ],
+    "valid_uniprot_id": null
+  },
+  "DES": {
+    "gene": "DES",
+    "status": "success",
+    "valid_uniprot_id": "P17661",
+    "uniprot_ids_tried": [
+      "P17661"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 40,
+      "valid_matches": 40,
+      "mismatches": [],
+      "protein_length": 470
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_DES_P17661_protein_features.tsv"
+  },
+  "BRIP1": {
+    "gene": "BRIP1",
+    "status": "success",
+    "valid_uniprot_id": "Q9BX63",
+    "uniprot_ids_tried": [
+      "Q9BX63"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 7,
+      "valid_matches": 7,
+      "mismatches": [],
+      "protein_length": 1249
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_BRIP1_Q9BX63_protein_features.tsv"
+  },
+  "DCX": {
+    "gene": "DCX",
+    "status": "success",
+    "valid_uniprot_id": "O43602",
+    "uniprot_ids_tried": [
+      "O43602"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 30,
+      "valid_matches": 30,
+      "mismatches": [],
+      "protein_length": 365
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_DCX_O43602_protein_features.tsv"
+  },
+  "PCCA": {
+    "gene": "PCCA",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "P05165"
+    ],
+    "valid_uniprot_id": null
+  },
+  "IER3IP1": {
+    "gene": "IER3IP1",
+    "status": "success",
+    "valid_uniprot_id": "Q9Y5U9",
+    "uniprot_ids_tried": [
+      "Q9Y5U9"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 82
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_IER3IP1_Q9Y5U9_protein_features.tsv"
+  },
+  "KCNJ2": {
+    "gene": "KCNJ2",
+    "status": "success",
+    "valid_uniprot_id": "P63252",
+    "uniprot_ids_tried": [
+      "P63252"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 50,
+      "valid_matches": 50,
+      "mismatches": [],
+      "protein_length": 427
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_KCNJ2_P63252_protein_features.tsv"
+  },
+  "KRT6A": {
+    "gene": "KRT6A",
+    "status": "success",
+    "valid_uniprot_id": "P02538",
+    "uniprot_ids_tried": [
+      "P02538"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 23,
+      "valid_matches": 23,
+      "mismatches": [],
+      "protein_length": 564
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_KRT6A_P02538_protein_features.tsv"
+  },
+  "ACSF3": {
+    "gene": "ACSF3",
+    "status": "success",
+    "valid_uniprot_id": "Q4G176",
+    "uniprot_ids_tried": [
+      "Q4G176"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 18,
+      "valid_matches": 18,
+      "mismatches": [],
+      "protein_length": 576
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_ACSF3_Q4G176_protein_features.tsv"
+  },
+  "MVK": {
+    "gene": "MVK",
+    "status": "success",
+    "valid_uniprot_id": "Q03426",
+    "uniprot_ids_tried": [
+      "Q03426"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 36,
+      "valid_matches": 36,
+      "mismatches": [],
+      "protein_length": 396
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_MVK_Q03426_protein_features.tsv"
+  },
+  "SFTPA2": {
+    "gene": "SFTPA2",
+    "status": "success",
+    "valid_uniprot_id": "Q8IWL1",
+    "uniprot_ids_tried": [
+      "Q8IWL1"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 3,
+      "valid_matches": 3,
+      "mismatches": [],
+      "protein_length": 248
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_SFTPA2_Q8IWL1_protein_features.tsv"
+  },
+  "RET": {
+    "gene": "RET",
+    "status": "success",
+    "valid_uniprot_id": "P07949",
+    "uniprot_ids_tried": [
+      "P07949"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 10,
+      "valid_matches": 10,
+      "mismatches": [],
+      "protein_length": 1114
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_RET_P07949_protein_features.tsv"
+  },
+  "PLP1": {
+    "gene": "PLP1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "P60201"
+    ],
+    "valid_uniprot_id": null
+  },
+  "GFAP": {
+    "gene": "GFAP",
+    "status": "success",
+    "valid_uniprot_id": "P14136",
+    "uniprot_ids_tried": [
+      "P14136"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 28,
+      "valid_matches": 28,
+      "mismatches": [],
+      "protein_length": 432
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_GFAP_P14136_protein_features.tsv"
+  },
+  "EIF2B4": {
+    "gene": "EIF2B4",
+    "status": "success",
+    "valid_uniprot_id": "Q9UI10",
+    "uniprot_ids_tried": [
+      "Q9UI10"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 523
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_EIF2B4_Q9UI10_protein_features.tsv"
+  },
+  "HPRT1": {
+    "gene": "HPRT1",
+    "status": "success",
+    "valid_uniprot_id": "P00492",
+    "uniprot_ids_tried": [
+      "P00492"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 19,
+      "valid_matches": 19,
+      "mismatches": [],
+      "protein_length": 218
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_HPRT1_P00492_protein_features.tsv"
+  },
+  "FBP1": {
+    "gene": "FBP1",
+    "status": "success",
+    "valid_uniprot_id": "P09467",
+    "uniprot_ids_tried": [
+      "P09467"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 10,
+      "valid_matches": 10,
+      "mismatches": [],
+      "protein_length": 338
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_FBP1_P09467_protein_features.tsv"
+  },
+  "GCM2": {
+    "gene": "GCM2",
+    "status": "success",
+    "valid_uniprot_id": "O75603",
+    "uniprot_ids_tried": [
+      "O75603"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 3,
+      "valid_matches": 3,
+      "mismatches": [],
+      "protein_length": 506
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_GCM2_O75603_protein_features.tsv"
+  },
+  "STXBP1": {
+    "gene": "STXBP1",
+    "status": "success",
+    "valid_uniprot_id": "P61764",
+    "uniprot_ids_tried": [
+      "P61764"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 43,
+      "valid_matches": 43,
+      "mismatches": [],
+      "protein_length": 594
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_STXBP1_P61764_protein_features.tsv"
+  },
+  "MID1": {
+    "gene": "MID1",
+    "status": "success",
+    "valid_uniprot_id": "O15344",
+    "uniprot_ids_tried": [
+      "P29372",
+      "O15344"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 667
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_MID1_O15344_protein_features.tsv"
+  },
+  "RHO": {
+    "gene": "RHO",
+    "status": "success",
+    "valid_uniprot_id": "P08100",
+    "uniprot_ids_tried": [
+      "P08100"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 348
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_RHO_P08100_protein_features.tsv"
+  },
+  "PKP2": {
+    "gene": "PKP2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "Q99959"
+    ],
+    "valid_uniprot_id": null
+  },
+  "MLH1": {
+    "gene": "MLH1",
+    "status": "success",
+    "valid_uniprot_id": "P40692",
+    "uniprot_ids_tried": [
+      "P40692"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 32,
+      "valid_matches": 32,
+      "mismatches": [],
+      "protein_length": 756
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_MLH1_P40692_protein_features.tsv"
+  },
+  "ZC4H2": {
+    "gene": "ZC4H2",
+    "status": "success",
+    "valid_uniprot_id": "Q9NQZ6",
+    "uniprot_ids_tried": [
+      "Q9NQZ6"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 12,
+      "valid_matches": 12,
+      "mismatches": [],
+      "protein_length": 224
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_ZC4H2_Q9NQZ6_protein_features.tsv"
+  },
+  "MSH2": {
+    "gene": "MSH2",
+    "status": "success",
+    "valid_uniprot_id": "P43246",
+    "uniprot_ids_tried": [
+      "P43246"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 14,
+      "valid_matches": 14,
+      "mismatches": [],
+      "protein_length": 934
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_MSH2_P43246_protein_features.tsv"
+  },
+  "TTR": {
+    "gene": "TTR",
+    "status": "success",
+    "valid_uniprot_id": "P02766",
+    "uniprot_ids_tried": [
+      "P02766"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 16,
+      "valid_matches": 16,
+      "mismatches": [],
+      "protein_length": 147
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_TTR_P02766_protein_features.tsv"
+  },
+  "PITX2": {
+    "gene": "PITX2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "Q99697"
+    ],
+    "valid_uniprot_id": null
+  },
+  "PGBD1": {
+    "gene": "PGBD1",
+    "status": "success",
+    "valid_uniprot_id": "Q96JS3",
+    "uniprot_ids_tried": [
+      "Q96JS3"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 809
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_PGBD1_Q96JS3_protein_features.tsv"
+  },
+  "PRPS1": {
+    "gene": "PRPS1",
+    "status": "success",
+    "valid_uniprot_id": "P60891",
+    "uniprot_ids_tried": [
+      "P60891"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 318
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_PRPS1_P60891_protein_features.tsv"
+  },
+  "EFHC1": {
+    "gene": "EFHC1",
+    "status": "success",
+    "valid_uniprot_id": "Q5JVL4",
+    "uniprot_ids_tried": [
+      "Q5JVL4"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 10,
+      "valid_matches": 10,
+      "mismatches": [],
+      "protein_length": 640
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_EFHC1_Q5JVL4_protein_features.tsv"
+  },
+  "TPM3": {
+    "gene": "TPM3",
+    "status": "success",
+    "valid_uniprot_id": "P06753",
+    "uniprot_ids_tried": [
+      "P06753"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 5,
+      "valid_matches": 5,
+      "mismatches": [],
+      "protein_length": 285
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_TPM3_P06753_protein_features.tsv"
+  },
+  "PYGL": {
+    "gene": "PYGL",
+    "status": "success",
+    "valid_uniprot_id": "P06737",
+    "uniprot_ids_tried": [
+      "P06737"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 15,
+      "valid_matches": 15,
+      "mismatches": [],
+      "protein_length": 847
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_PYGL_P06737_protein_features.tsv"
+  },
+  "GSS": {
+    "gene": "GSS",
+    "status": "success",
+    "valid_uniprot_id": "P48637",
+    "uniprot_ids_tried": [
+      "P48637"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 3,
+      "valid_matches": 3,
+      "mismatches": [],
+      "protein_length": 474
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_GSS_P48637_protein_features.tsv"
+  },
+  "NCF2": {
+    "gene": "NCF2",
+    "status": "success",
+    "valid_uniprot_id": "P19878",
+    "uniprot_ids_tried": [
+      "P19878"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 12,
+      "valid_matches": 12,
+      "mismatches": [],
+      "protein_length": 526
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_NCF2_P19878_protein_features.tsv"
+  },
+  "KCTD7": {
+    "gene": "KCTD7",
+    "status": "success",
+    "valid_uniprot_id": "Q96MP8",
+    "uniprot_ids_tried": [
+      "Q96MP8"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 5,
+      "valid_matches": 5,
+      "mismatches": [],
+      "protein_length": 289
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_KCTD7_Q96MP8_protein_features.tsv"
+  },
+  "SMAD3": {
+    "gene": "SMAD3",
+    "status": "success",
+    "valid_uniprot_id": "P84022",
+    "uniprot_ids_tried": [
+      "P84022"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 64,
+      "valid_matches": 64,
+      "mismatches": [],
+      "protein_length": 425
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_SMAD3_P84022_protein_features.tsv"
+  },
+  "RAD51D": {
+    "gene": "RAD51D",
+    "status": "success",
+    "valid_uniprot_id": "O75771",
+    "uniprot_ids_tried": [
+      "O75771"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 20,
+      "valid_matches": 20,
+      "mismatches": [],
+      "protein_length": 328
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_RAD51D_O75771_protein_features.tsv"
+  },
+  "CUL3": {
+    "gene": "CUL3",
+    "status": "success",
+    "valid_uniprot_id": "Q13618",
+    "uniprot_ids_tried": [
+      "Q13618"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 768
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_CUL3_Q13618_protein_features.tsv"
+  },
+  "FXN": {
+    "gene": "FXN",
+    "status": "success",
+    "valid_uniprot_id": "Q16595",
+    "uniprot_ids_tried": [
+      "Q16595"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 5,
+      "valid_matches": 5,
+      "mismatches": [],
+      "protein_length": 210
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_FXN_Q16595_protein_features.tsv"
+  },
+  "AP2S1": {
+    "gene": "AP2S1",
+    "status": "success",
+    "valid_uniprot_id": "P53680",
+    "uniprot_ids_tried": [
+      "P53680"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 142
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_AP2S1_P53680_protein_features.tsv"
+  },
+  "SOS2": {
+    "gene": "SOS2",
+    "status": "success",
+    "valid_uniprot_id": "Q07890",
+    "uniprot_ids_tried": [
+      "Q07890"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 1332
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_SOS2_Q07890_protein_features.tsv"
+  },
+  "BRAF": {
+    "gene": "BRAF",
+    "status": "success",
+    "valid_uniprot_id": "P15056",
+    "uniprot_ids_tried": [
+      "P15056"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 16,
+      "valid_matches": 16,
+      "mismatches": [],
+      "protein_length": 766
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_BRAF_P15056_protein_features.tsv"
+  },
+  "PMP22": {
+    "gene": "PMP22",
+    "status": "success",
+    "valid_uniprot_id": "Q01453",
+    "uniprot_ids_tried": [
+      "Q01453"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 9,
+      "valid_matches": 9,
+      "mismatches": [],
+      "protein_length": 160
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_PMP22_Q01453_protein_features.tsv"
+  },
+  "MAP2K2": {
+    "gene": "MAP2K2",
+    "status": "success",
+    "valid_uniprot_id": "P36507",
+    "uniprot_ids_tried": [
+      "P36507"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 5,
+      "valid_matches": 5,
+      "mismatches": [],
+      "protein_length": 400
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_MAP2K2_P36507_protein_features.tsv"
+  },
+  "F9": {
+    "gene": "F9",
+    "status": "success",
+    "valid_uniprot_id": "P00740",
+    "uniprot_ids_tried": [
+      "P00740"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 52,
+      "valid_matches": 52,
+      "mismatches": [],
+      "protein_length": 461
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_F9_P00740_protein_features.tsv"
+  },
+  "HGD": {
+    "gene": "HGD",
+    "status": "success",
+    "valid_uniprot_id": "Q93099",
+    "uniprot_ids_tried": [
+      "Q93099"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 10,
+      "valid_matches": 10,
+      "mismatches": [],
+      "protein_length": 445
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_HGD_Q93099_protein_features.tsv"
+  },
+  "APOA1": {
+    "gene": "APOA1",
+    "status": "success",
+    "valid_uniprot_id": "P02647",
+    "uniprot_ids_tried": [
+      "P02647"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 7,
+      "valid_matches": 7,
+      "mismatches": [],
+      "protein_length": 267
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_APOA1_P02647_protein_features.tsv"
+  },
+  "BFSP2": {
+    "gene": "BFSP2",
+    "status": "success",
+    "valid_uniprot_id": "Q13515",
+    "uniprot_ids_tried": [
+      "Q13515"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 3,
+      "valid_matches": 3,
+      "mismatches": [],
+      "protein_length": 415
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_BFSP2_Q13515_protein_features.tsv"
+  },
+  "SH3BP2": {
+    "gene": "SH3BP2",
+    "status": "success",
+    "valid_uniprot_id": "P78314",
+    "uniprot_ids_tried": [
+      "P78314"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 5,
+      "valid_matches": 5,
+      "mismatches": [],
+      "protein_length": 561
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_SH3BP2_P78314_protein_features.tsv"
+  },
+  "SFTPB": {
+    "gene": "SFTPB",
+    "status": "success",
+    "valid_uniprot_id": "P07988",
+    "uniprot_ids_tried": [
+      "P07988"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 381
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_SFTPB_P07988_protein_features.tsv"
+  },
+  "DOLK": {
+    "gene": "DOLK",
+    "status": "success",
+    "valid_uniprot_id": "Q9UPQ8",
+    "uniprot_ids_tried": [
+      "Q9UPQ8"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 538
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_DOLK_Q9UPQ8_protein_features.tsv"
+  },
+  "KRT8": {
+    "gene": "KRT8",
+    "status": "success",
+    "valid_uniprot_id": "P05787",
+    "uniprot_ids_tried": [
+      "P05787"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 6,
+      "valid_matches": 6,
+      "mismatches": [],
+      "protein_length": 483
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_KRT8_P05787_protein_features.tsv"
+  },
+  "SDHD": {
+    "gene": "SDHD",
+    "status": "success",
+    "valid_uniprot_id": "O14521",
+    "uniprot_ids_tried": [
+      "O14521"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 19,
+      "valid_matches": 19,
+      "mismatches": [],
+      "protein_length": 159
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_SDHD_O14521_protein_features.tsv"
+  },
+  "NT5C3A": {
+    "gene": "NT5C3A",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "Q9H0P0"
+    ],
+    "valid_uniprot_id": null
+  },
+  "ASNS": {
+    "gene": "ASNS",
+    "status": "success",
+    "valid_uniprot_id": "P08243",
+    "uniprot_ids_tried": [
+      "P08243"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 561
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_ASNS_P08243_protein_features.tsv"
+  },
+  "BAP1": {
+    "gene": "BAP1",
+    "status": "success",
+    "valid_uniprot_id": "Q92560",
+    "uniprot_ids_tried": [
+      "Q92560"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 11,
+      "valid_matches": 11,
+      "mismatches": [],
+      "protein_length": 729
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_BAP1_Q92560_protein_features.tsv"
+  },
+  "ABCD1": {
+    "gene": "ABCD1",
+    "status": "success",
+    "valid_uniprot_id": "P33897",
+    "uniprot_ids_tried": [
+      "P33897"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 745
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_ABCD1_P33897_protein_features.tsv"
+  },
+  "GMPPB": {
+    "gene": "GMPPB",
+    "status": "success",
+    "valid_uniprot_id": "Q9Y5P6",
+    "uniprot_ids_tried": [
+      "Q9Y5P6"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 3,
+      "valid_matches": 3,
+      "mismatches": [],
+      "protein_length": 360
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_GMPPB_Q9Y5P6_protein_features.tsv"
+  },
+  "PRKAR1A": {
+    "gene": "PRKAR1A",
+    "status": "success",
+    "valid_uniprot_id": "P10644",
+    "uniprot_ids_tried": [
+      "P10644"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 7,
+      "valid_matches": 7,
+      "mismatches": [],
+      "protein_length": 381
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_PRKAR1A_P10644_protein_features.tsv"
+  },
+  "MYOZ2": {
+    "gene": "MYOZ2",
+    "status": "success",
+    "valid_uniprot_id": "Q9NPC6",
+    "uniprot_ids_tried": [
+      "Q9NPC6"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 3,
+      "valid_matches": 3,
+      "mismatches": [],
+      "protein_length": 264
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_MYOZ2_Q9NPC6_protein_features.tsv"
+  },
+  "MIP": {
+    "gene": "MIP",
+    "status": "success",
+    "valid_uniprot_id": "P30301",
+    "uniprot_ids_tried": [
+      "P30301"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 263
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_MIP_P30301_protein_features.tsv"
+  },
+  "FARS2": {
+    "gene": "FARS2",
+    "status": "success",
+    "valid_uniprot_id": "O95363",
+    "uniprot_ids_tried": [
+      "O95363"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 15,
+      "valid_matches": 15,
+      "mismatches": [],
+      "protein_length": 451
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_FARS2_O95363_protein_features.tsv"
+  },
+  "KRAS": {
+    "gene": "KRAS",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "P01116"
+    ],
+    "valid_uniprot_id": null
+  },
+  "HBD": {
+    "gene": "HBD",
+    "status": "success",
+    "valid_uniprot_id": "P02042",
+    "uniprot_ids_tried": [
+      "P02042"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 14,
+      "valid_matches": 14,
+      "mismatches": [],
+      "protein_length": 147
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_HBD_P02042_protein_features.tsv"
+  },
+  "PHYH": {
+    "gene": "PHYH",
+    "status": "success",
+    "valid_uniprot_id": "O14832",
+    "uniprot_ids_tried": [
+      "O14832"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 8,
+      "valid_matches": 8,
+      "mismatches": [],
+      "protein_length": 338
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_PHYH_O14832_protein_features.tsv"
+  },
+  "NR0B1": {
+    "gene": "NR0B1",
+    "status": "success",
+    "valid_uniprot_id": "P51843",
+    "uniprot_ids_tried": [
+      "P51843"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 7,
+      "valid_matches": 7,
+      "mismatches": [],
+      "protein_length": 470
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_NR0B1_P51843_protein_features.tsv"
+  },
+  "IL10": {
+    "gene": "IL10",
+    "status": "success",
+    "valid_uniprot_id": "P22301",
+    "uniprot_ids_tried": [
+      "P22301"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 178
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_IL10_P22301_protein_features.tsv"
+  },
+  "ORC6": {
+    "gene": "ORC6",
+    "status": "success",
+    "valid_uniprot_id": "Q9Y5N6",
+    "uniprot_ids_tried": [
+      "Q9Y5N6"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 252
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_ORC6_Q9Y5N6_protein_features.tsv"
+  },
+  "TAT": {
+    "gene": "TAT",
+    "status": "success",
+    "valid_uniprot_id": "P17735",
+    "uniprot_ids_tried": [
+      "P17735"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 454
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_TAT_P17735_protein_features.tsv"
+  },
+  "NMNAT1": {
+    "gene": "NMNAT1",
+    "status": "success",
+    "valid_uniprot_id": "Q9HAN9",
+    "uniprot_ids_tried": [
+      "Q9HAN9"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 6,
+      "valid_matches": 6,
+      "mismatches": [],
+      "protein_length": 279
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_NMNAT1_Q9HAN9_protein_features.tsv"
+  },
+  "RAF1": {
+    "gene": "RAF1",
+    "status": "success",
+    "valid_uniprot_id": "P04049",
+    "uniprot_ids_tried": [
+      "P04049"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 13,
+      "valid_matches": 13,
+      "mismatches": [],
+      "protein_length": 648
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_RAF1_P04049_protein_features.tsv"
+  },
+  "SHOC2": {
+    "gene": "SHOC2",
+    "status": "success",
+    "valid_uniprot_id": "Q9UQ13",
+    "uniprot_ids_tried": [
+      "Q9UQ13"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 7,
+      "valid_matches": 7,
+      "mismatches": [],
+      "protein_length": 582
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_SHOC2_Q9UQ13_protein_features.tsv"
+  },
+  "G6PD": {
+    "gene": "G6PD",
+    "status": "success",
+    "valid_uniprot_id": "P11413",
+    "uniprot_ids_tried": [
+      "P11413"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 515
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_G6PD_P11413_protein_features.tsv"
+  },
+  "TTPA": {
+    "gene": "TTPA",
+    "status": "success",
+    "valid_uniprot_id": "P49638",
+    "uniprot_ids_tried": [
+      "P49638"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 278
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_TTPA_P49638_protein_features.tsv"
+  },
+  "TH": {
+    "gene": "TH",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "P07101"
+    ],
+    "valid_uniprot_id": null
+  },
+  "CLDN19": {
+    "gene": "CLDN19",
+    "status": "success",
+    "valid_uniprot_id": "Q8N6F1",
+    "uniprot_ids_tried": [
+      "Q8N6F1"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 3,
+      "valid_matches": 3,
+      "mismatches": [],
+      "protein_length": 224
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_CLDN19_Q8N6F1_protein_features.tsv"
+  },
+  "LMNA": {
+    "gene": "LMNA",
+    "status": "success",
+    "valid_uniprot_id": "P02545",
+    "uniprot_ids_tried": [
+      "P02545"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 7,
+      "valid_matches": 7,
+      "mismatches": [],
+      "protein_length": 664
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_LMNA_P02545_protein_features.tsv"
+  },
+  "CHN1": {
+    "gene": "CHN1",
+    "status": "success",
+    "valid_uniprot_id": "P15882",
+    "uniprot_ids_tried": [
+      "P15882"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 9,
+      "valid_matches": 9,
+      "mismatches": [],
+      "protein_length": 459
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_CHN1_P15882_protein_features.tsv"
+  },
+  "IMPDH1": {
+    "gene": "IMPDH1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "P20839"
+    ],
+    "valid_uniprot_id": null
+  },
+  "GRN": {
+    "gene": "GRN",
+    "status": "success",
+    "valid_uniprot_id": "P28799",
+    "uniprot_ids_tried": [
+      "P28799"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 593
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_GRN_P28799_protein_features.tsv"
+  },
+  "ALAS2": {
+    "gene": "ALAS2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "P22557"
+    ],
+    "valid_uniprot_id": null
+  },
+  "NEXN": {
+    "gene": "NEXN",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "Q0ZGT2",
+      "Q8NBZ9"
+    ],
+    "valid_uniprot_id": null
+  },
+  "LIG4": {
+    "gene": "LIG4",
+    "status": "success",
+    "valid_uniprot_id": "P49917",
+    "uniprot_ids_tried": [
+      "P49917"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 911
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_LIG4_P49917_protein_features.tsv"
+  },
+  "WRAP53": {
+    "gene": "WRAP53",
+    "status": "success",
+    "valid_uniprot_id": "Q9BUR4",
+    "uniprot_ids_tried": [
+      "Q9BUR4"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 548
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_WRAP53_Q9BUR4_protein_features.tsv"
+  },
+  "TPM1": {
+    "gene": "TPM1",
+    "status": "success",
+    "valid_uniprot_id": "P09493",
+    "uniprot_ids_tried": [
+      "P09493"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 25,
+      "valid_matches": 25,
+      "mismatches": [],
+      "protein_length": 284
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_TPM1_P09493_protein_features.tsv"
+  },
+  "FANCC": {
+    "gene": "FANCC",
+    "status": "success",
+    "valid_uniprot_id": "Q00597",
+    "uniprot_ids_tried": [
+      "Q00597"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 3,
+      "valid_matches": 3,
+      "mismatches": [],
+      "protein_length": 558
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_FANCC_Q00597_protein_features.tsv"
+  },
+  "TPK1": {
+    "gene": "TPK1",
+    "status": "success",
+    "valid_uniprot_id": "Q9H3S4",
+    "uniprot_ids_tried": [
+      "Q9H3S4"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 243
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_TPK1_Q9H3S4_protein_features.tsv"
+  },
+  "GAMT": {
+    "gene": "GAMT",
+    "status": "success",
+    "valid_uniprot_id": "Q14353",
+    "uniprot_ids_tried": [
+      "Q14353"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 5,
+      "valid_matches": 5,
+      "mismatches": [],
+      "protein_length": 236
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_GAMT_Q14353_protein_features.tsv"
+  },
+  "PRPF31": {
+    "gene": "PRPF31",
+    "status": "success",
+    "valid_uniprot_id": "Q8WWY3",
+    "uniprot_ids_tried": [
+      "Q8WWY3"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 499
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_PRPF31_Q8WWY3_protein_features.tsv"
+  },
+  "AIPL1": {
+    "gene": "AIPL1",
+    "status": "success",
+    "valid_uniprot_id": "Q9NZN9",
+    "uniprot_ids_tried": [
+      "Q9NZN9"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 11,
+      "valid_matches": 11,
+      "mismatches": [],
+      "protein_length": 384
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_AIPL1_Q9NZN9_protein_features.tsv"
+  },
+  "TUFM": {
+    "gene": "TUFM",
+    "status": "success",
+    "valid_uniprot_id": "P49411",
+    "uniprot_ids_tried": [
+      "P49411"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 455
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_TUFM_P49411_protein_features.tsv"
+  },
+  "SIX1": {
+    "gene": "SIX1",
+    "status": "success",
+    "valid_uniprot_id": "Q15475",
+    "uniprot_ids_tried": [
+      "Q15475"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 6,
+      "valid_matches": 6,
+      "mismatches": [],
+      "protein_length": 284
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_SIX1_Q15475_protein_features.tsv"
+  },
+  "CFP": {
+    "gene": "CFP",
+    "status": "success",
+    "valid_uniprot_id": "P27918",
+    "uniprot_ids_tried": [
+      "P27918"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 5,
+      "valid_matches": 5,
+      "mismatches": [],
+      "protein_length": 469
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_CFP_P27918_protein_features.tsv"
+  },
+  "EMD": {
+    "gene": "EMD",
+    "status": "success",
+    "valid_uniprot_id": "P50402",
+    "uniprot_ids_tried": [
+      "P50402"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 6,
+      "valid_matches": 6,
+      "mismatches": [],
+      "protein_length": 254
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_EMD_P50402_protein_features.tsv"
+  },
+  "KRT2": {
+    "gene": "KRT2",
+    "status": "success",
+    "valid_uniprot_id": "P35908",
+    "uniprot_ids_tried": [
+      "P35908"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 8,
+      "valid_matches": 8,
+      "mismatches": [],
+      "protein_length": 639
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_KRT2_P35908_protein_features.tsv"
+  },
+  "TMEM43": {
+    "gene": "TMEM43",
+    "status": "success",
+    "valid_uniprot_id": "Q9BTV4",
+    "uniprot_ids_tried": [
+      "Q9BTV4"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 9,
+      "valid_matches": 9,
+      "mismatches": [],
+      "protein_length": 400
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_TMEM43_Q9BTV4_protein_features.tsv"
+  },
+  "KRT4": {
+    "gene": "KRT4",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "P19013"
+    ],
+    "valid_uniprot_id": null
+  },
+  "LDHB": {
+    "gene": "LDHB",
+    "status": "success",
+    "valid_uniprot_id": "P07195",
+    "uniprot_ids_tried": [
+      "P07195"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 334
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_LDHB_P07195_protein_features.tsv"
+  },
+  "BAG3": {
+    "gene": "BAG3",
+    "status": "success",
+    "valid_uniprot_id": "O95817",
+    "uniprot_ids_tried": [
+      "O95817"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 5,
+      "valid_matches": 5,
+      "mismatches": [],
+      "protein_length": 575
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_BAG3_O95817_protein_features.tsv"
+  },
+  "RP2": {
+    "gene": "RP2",
+    "status": "success",
+    "valid_uniprot_id": "O75695",
+    "uniprot_ids_tried": [
+      "O75695"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 5,
+      "valid_matches": 5,
+      "mismatches": [],
+      "protein_length": 350
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_RP2_O75695_protein_features.tsv"
+  },
+  "CTCF": {
+    "gene": "CTCF",
+    "status": "success",
+    "valid_uniprot_id": "P49711",
+    "uniprot_ids_tried": [
+      "P49711"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 10,
+      "valid_matches": 10,
+      "mismatches": [],
+      "protein_length": 727
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_CTCF_P49711_protein_features.tsv"
+  },
+  "IL2RG": {
+    "gene": "IL2RG",
+    "status": "success",
+    "valid_uniprot_id": "P31785",
+    "uniprot_ids_tried": [
+      "P31785"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 369
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_IL2RG_P31785_protein_features.tsv"
+  },
+  "SMARCB1": {
+    "gene": "SMARCB1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "Q12824"
+    ],
+    "valid_uniprot_id": null
+  },
+  "PLA2G6": {
+    "gene": "PLA2G6",
+    "status": "success",
+    "valid_uniprot_id": "O60733",
+    "uniprot_ids_tried": [
+      "O60733"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 806
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_PLA2G6_O60733_protein_features.tsv"
+  },
+  "FH": {
+    "gene": "FH",
+    "status": "success",
+    "valid_uniprot_id": "P07954",
+    "uniprot_ids_tried": [
+      "P07954"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 13,
+      "valid_matches": 13,
+      "mismatches": [],
+      "protein_length": 510
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_FH_P07954_protein_features.tsv"
+  },
+  "CLN6": {
+    "gene": "CLN6",
+    "status": "success",
+    "valid_uniprot_id": "Q9NWW5",
+    "uniprot_ids_tried": [
+      "Q9NWW5"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 311
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_CLN6_Q9NWW5_protein_features.tsv"
+  },
+  "KLHL3": {
+    "gene": "KLHL3",
+    "status": "success",
+    "valid_uniprot_id": "Q9UH77",
+    "uniprot_ids_tried": [
+      "Q9UH77"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 587
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_KLHL3_Q9UH77_protein_features.tsv"
+  },
+  "VHL": {
+    "gene": "VHL",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "P40337"
+    ],
+    "valid_uniprot_id": null
+  },
+  "FGD4": {
+    "gene": "FGD4",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "Q96M96"
+    ],
+    "valid_uniprot_id": null
+  },
+  "PNPO": {
+    "gene": "PNPO",
+    "status": "success",
+    "valid_uniprot_id": "Q9NVS9",
+    "uniprot_ids_tried": [
+      "Q9NVS9"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 261
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_PNPO_Q9NVS9_protein_features.tsv"
+  },
+  "FOXP3": {
+    "gene": "FOXP3",
+    "status": "success",
+    "valid_uniprot_id": "Q9BZS1",
+    "uniprot_ids_tried": [
+      "Q9BZS1"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 431
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_FOXP3_Q9BZS1_protein_features.tsv"
+  },
+  "CORO1A": {
+    "gene": "CORO1A",
+    "status": "success",
+    "valid_uniprot_id": "P31146",
+    "uniprot_ids_tried": [
+      "P31146"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 461
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_CORO1A_P31146_protein_features.tsv"
+  },
+  "TRIM2": {
+    "gene": "TRIM2",
+    "status": "success",
+    "valid_uniprot_id": "Q9C040",
+    "uniprot_ids_tried": [
+      "Q9C040"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 744
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_TRIM2_Q9C040_protein_features.tsv"
+  },
+  "KRT5": {
+    "gene": "KRT5",
+    "status": "success",
+    "valid_uniprot_id": "P13647",
+    "uniprot_ids_tried": [
+      "P13647"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 590
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_KRT5_P13647_protein_features.tsv"
+  },
+  "SUCLA2": {
+    "gene": "SUCLA2",
+    "status": "success",
+    "valid_uniprot_id": "Q9P2R7",
+    "uniprot_ids_tried": [
+      "Q9P2R7"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 463
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_SUCLA2_Q9P2R7_protein_features.tsv"
+  },
+  "PDGFRB": {
+    "gene": "PDGFRB",
+    "status": "success",
+    "valid_uniprot_id": "P09619",
+    "uniprot_ids_tried": [
+      "P09619"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 1106
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_PDGFRB_P09619_protein_features.tsv"
+  },
+  "CRADD": {
+    "gene": "CRADD",
+    "status": "success",
+    "valid_uniprot_id": "P78560",
+    "uniprot_ids_tried": [
+      "P78560"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 199
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_CRADD_P78560_protein_features.tsv"
+  },
+  "AMPD2": {
+    "gene": "AMPD2",
+    "status": "success",
+    "valid_uniprot_id": "Q01433",
+    "uniprot_ids_tried": [
+      "Q01433"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 825
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_AMPD2_Q01433_protein_features.tsv"
+  },
+  "IL36RN": {
+    "gene": "IL36RN",
+    "status": "success",
+    "valid_uniprot_id": "Q9UBH0",
+    "uniprot_ids_tried": [
+      "Q9UBH0"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 155
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_IL36RN_Q9UBH0_protein_features.tsv"
+  },
+  "STAR": {
+    "gene": "STAR",
+    "status": "success",
+    "valid_uniprot_id": "P49675",
+    "uniprot_ids_tried": [
+      "P49675"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 8,
+      "valid_matches": 8,
+      "mismatches": [],
+      "protein_length": 285
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_STAR_P49675_protein_features.tsv"
+  },
+  "CTNNA3": {
+    "gene": "CTNNA3",
+    "status": "success",
+    "valid_uniprot_id": "Q9UI47",
+    "uniprot_ids_tried": [
+      "Q9UI47"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 895
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_CTNNA3_Q9UI47_protein_features.tsv"
+  },
+  "GYG1": {
+    "gene": "GYG1",
+    "status": "success",
+    "valid_uniprot_id": "P46976",
+    "uniprot_ids_tried": [
+      "P46976"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 350
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_GYG1_P46976_protein_features.tsv"
+  },
+  "KCTD1": {
+    "gene": "KCTD1",
+    "status": "success",
+    "valid_uniprot_id": "Q719H9",
+    "uniprot_ids_tried": [
+      "Q719H9"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 7,
+      "valid_matches": 7,
+      "mismatches": [],
+      "protein_length": 257
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_KCTD1_Q719H9_protein_features.tsv"
+  },
+  "CRYAB": {
+    "gene": "CRYAB",
+    "status": "success",
+    "valid_uniprot_id": "P02511",
+    "uniprot_ids_tried": [
+      "P02511"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 6,
+      "valid_matches": 6,
+      "mismatches": [],
+      "protein_length": 175
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_CRYAB_P02511_protein_features.tsv"
+  },
+  "SNIP1": {
+    "gene": "SNIP1",
+    "status": "success",
+    "valid_uniprot_id": "Q8TAD8",
+    "uniprot_ids_tried": [
+      "Q8TAD8"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 396
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_SNIP1_Q8TAD8_protein_features.tsv"
+  },
+  "COQ8A": {
+    "gene": "COQ8A",
+    "status": "success",
+    "valid_uniprot_id": "Q8NI60",
+    "uniprot_ids_tried": [
+      "Q8NI60"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 647
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_COQ8A_Q8NI60_protein_features.tsv"
+  },
+  "SMAD1": {
+    "gene": "SMAD1",
+    "status": "success",
+    "valid_uniprot_id": "Q15797",
+    "uniprot_ids_tried": [
+      "Q15797"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 465
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_SMAD1_Q15797_protein_features.tsv"
+  },
+  "NEUROG3": {
+    "gene": "NEUROG3",
+    "status": "success",
+    "valid_uniprot_id": "Q9Y4Z2",
+    "uniprot_ids_tried": [
+      "Q9Y4Z2"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 214
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_NEUROG3_Q9Y4Z2_protein_features.tsv"
+  },
+  "FA2H": {
+    "gene": "FA2H",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "Q7L5A8"
+    ],
+    "valid_uniprot_id": null
+  },
+  "DIABLO": {
+    "gene": "DIABLO",
+    "status": "success",
+    "valid_uniprot_id": "Q9NR28",
+    "uniprot_ids_tried": [
+      "Q9NR28"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 239
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_DIABLO_Q9NR28_protein_features.tsv"
+  },
+  "PTS": {
+    "gene": "PTS",
+    "status": "success",
+    "valid_uniprot_id": "Q03393",
+    "uniprot_ids_tried": [
+      "Q03393"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 145
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_PTS_Q03393_protein_features.tsv"
+  },
+  "RPS19": {
+    "gene": "RPS19",
+    "status": "success",
+    "valid_uniprot_id": "P39019",
+    "uniprot_ids_tried": [
+      "P39019"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 145
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_RPS19_P39019_protein_features.tsv"
+  },
+  "NAA10": {
+    "gene": "NAA10",
+    "status": "success",
+    "valid_uniprot_id": "P41227",
+    "uniprot_ids_tried": [
+      "P41227"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 235
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_NAA10_P41227_protein_features.tsv"
+  },
+  "UROD": {
+    "gene": "UROD",
+    "status": "success",
+    "valid_uniprot_id": "P06132",
+    "uniprot_ids_tried": [
+      "P06132"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 5,
+      "valid_matches": 5,
+      "mismatches": [],
+      "protein_length": 367
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_UROD_P06132_protein_features.tsv"
+  },
+  "UBQLN2": {
+    "gene": "UBQLN2",
+    "status": "success",
+    "valid_uniprot_id": "Q9UHD9",
+    "uniprot_ids_tried": [
+      "Q9UHD9"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 3,
+      "valid_matches": 3,
+      "mismatches": [],
+      "protein_length": 624
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_UBQLN2_Q9UHD9_protein_features.tsv"
+  },
+  "CTH": {
+    "gene": "CTH",
+    "status": "success",
+    "valid_uniprot_id": "P32929",
+    "uniprot_ids_tried": [
+      "P32929"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 3,
+      "valid_matches": 3,
+      "mismatches": [],
+      "protein_length": 405
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_CTH_P32929_protein_features.tsv"
+  },
+  "CDKN1A": {
+    "gene": "CDKN1A",
+    "status": "success",
+    "valid_uniprot_id": "P38936",
+    "uniprot_ids_tried": [
+      "P38936"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 4,
+      "valid_matches": 4,
+      "mismatches": [],
+      "protein_length": 164
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_CDKN1A_P38936_protein_features.tsv"
+  },
+  "BCL10": {
+    "gene": "BCL10",
+    "status": "success",
+    "valid_uniprot_id": "O95999",
+    "uniprot_ids_tried": [
+      "O95999"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 233
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_BCL10_O95999_protein_features.tsv"
+  },
+  "CDC73": {
+    "gene": "CDC73",
+    "status": "success",
+    "valid_uniprot_id": "Q6P1J9",
+    "uniprot_ids_tried": [
+      "Q6P1J9"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 3,
+      "valid_matches": 3,
+      "mismatches": [],
+      "protein_length": 531
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_CDC73_Q6P1J9_protein_features.tsv"
+  },
+  "GNAI3": {
+    "gene": "GNAI3",
+    "status": "success",
+    "valid_uniprot_id": "P08754",
+    "uniprot_ids_tried": [
+      "P08754"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 354
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_GNAI3_P08754_protein_features.tsv"
+  },
+  "GATA2": {
+    "gene": "GATA2",
+    "status": "success",
+    "valid_uniprot_id": "P23769",
+    "uniprot_ids_tried": [
+      "P23769"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 480
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_GATA2_P23769_protein_features.tsv"
+  },
+  "POMT1": {
+    "gene": "POMT1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "Q9Y6A1"
+    ],
+    "valid_uniprot_id": null
+  },
+  "CCBE1": {
+    "gene": "CCBE1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "Q6UXH8"
+    ],
+    "valid_uniprot_id": null
+  },
+  "ZMYND10": {
+    "gene": "ZMYND10",
+    "status": "success",
+    "valid_uniprot_id": "O75800",
+    "uniprot_ids_tried": [
+      "O75800"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 3,
+      "valid_matches": 3,
+      "mismatches": [],
+      "protein_length": 440
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_ZMYND10_O75800_protein_features.tsv"
+  },
+  "PHYKPL": {
+    "gene": "PHYKPL",
+    "status": "success",
+    "valid_uniprot_id": "Q8IUZ5",
+    "uniprot_ids_tried": [
+      "Q8IUZ5"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 450
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_PHYKPL_Q8IUZ5_protein_features.tsv"
+  },
+  "FKBP6": {
+    "gene": "FKBP6",
+    "status": "success",
+    "valid_uniprot_id": "O75344",
+    "uniprot_ids_tried": [
+      "O75344"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 327
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_FKBP6_O75344_protein_features.tsv"
+  },
+  "GLYCTK": {
+    "gene": "GLYCTK",
+    "status": "success",
+    "valid_uniprot_id": "Q8IVS8",
+    "uniprot_ids_tried": [
+      "Q8IVS8"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 3,
+      "valid_matches": 3,
+      "mismatches": [],
+      "protein_length": 523
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_GLYCTK_Q8IVS8_protein_features.tsv"
+  },
+  "SDC3": {
+    "gene": "SDC3",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "O75056"
+    ],
+    "valid_uniprot_id": null
+  },
+  "MSRB3": {
+    "gene": "MSRB3",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "Q8IXL7"
+    ],
+    "valid_uniprot_id": null
+  },
+  "KRT86": {
+    "gene": "KRT86",
+    "status": "success",
+    "valid_uniprot_id": "O43790",
+    "uniprot_ids_tried": [
+      "O43790"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 486
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_KRT86_O43790_protein_features.tsv"
+  },
+  "IRAK4": {
+    "gene": "IRAK4",
+    "status": "success",
+    "valid_uniprot_id": "Q9NWZ3",
+    "uniprot_ids_tried": [
+      "Q9NWZ3"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 460
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_IRAK4_Q9NWZ3_protein_features.tsv"
+  },
+  "PNKP": {
+    "gene": "PNKP",
+    "status": "success",
+    "valid_uniprot_id": "Q96T60",
+    "uniprot_ids_tried": [
+      "Q96T60"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 521
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_PNKP_Q96T60_protein_features.tsv"
+  },
+  "SERPINF1": {
+    "gene": "SERPINF1",
+    "status": "success",
+    "valid_uniprot_id": "P36955",
+    "uniprot_ids_tried": [
+      "P36955"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 418
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_SERPINF1_P36955_protein_features.tsv"
+  },
+  "EZH2": {
+    "gene": "EZH2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "Q15910"
+    ],
+    "valid_uniprot_id": null
+  },
+  "COL2A1": {
+    "gene": "COL2A1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_ids_tried": [
+      "P02458"
+    ],
+    "valid_uniprot_id": null
+  },
+  "PSAP": {
+    "gene": "PSAP",
+    "status": "success",
+    "valid_uniprot_id": "P07602",
+    "uniprot_ids_tried": [
+      "P07602"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 524
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_PSAP_P07602_protein_features.tsv"
+  },
+  "FLCN": {
+    "gene": "FLCN",
+    "status": "success",
+    "valid_uniprot_id": "Q8NFG4",
+    "uniprot_ids_tried": [
+      "Q8NFG4"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 579
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_FLCN_Q8NFG4_protein_features.tsv"
+  },
+  "POLR1C": {
+    "gene": "POLR1C",
+    "status": "success",
+    "valid_uniprot_id": "O15160",
+    "uniprot_ids_tried": [
+      "O15160"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 346
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_POLR1C_O15160_protein_features.tsv"
+  },
+  "SUOX": {
+    "gene": "SUOX",
+    "status": "success",
+    "valid_uniprot_id": "P51687",
+    "uniprot_ids_tried": [
+      "P51687"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 2,
+      "valid_matches": 2,
+      "mismatches": [],
+      "protein_length": 545
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_SUOX_P51687_protein_features.tsv"
+  },
+  "NFU1": {
+    "gene": "NFU1",
+    "status": "success",
+    "valid_uniprot_id": "Q9UMS0",
+    "uniprot_ids_tried": [
+      "Q9UMS0"
+    ],
+    "validation_result": {
+      "valid": true,
+      "total_variants": 1,
+      "valid_matches": 1,
+      "mismatches": [],
+      "protein_length": 254
+    },
+    "protein_features_file": "/home/shenrunx/igvf/varchamp/2025_laval_submitted/4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features/G2P_NFU1_Q9UMS0_protein_features.tsv"
+  }
+}
