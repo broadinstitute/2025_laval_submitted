@@ -23,3 +23,6 @@ python merge_scores2clinvar.py \
     --input_file "../../3_outputs/processed_data/dbnsfp/dbNSFP5.0a_variant.clin_var_re-annot_pdb_variants.parquet" \
     --output_file "../../3_outputs/processed_data/dbnsfp/dbNSFP5.0a_variant.clin_var_re-annot_pdb_variants_plddt_rsa.parquet" \
     > pdb_prioritized_variants_add_plddt_rsa_scores.log
+
+## Append all protein features from G2P portal to allele_collection variants
+source /home/shenrunx/software/anaconda3/etc/profile.d/conda.sh && conda activate ai4protein && nohup python process_large_variant_collection.py

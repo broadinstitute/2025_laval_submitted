@@ -303,7 +303,16 @@ class AnalysisOpenCell(BaseAnalysis):
         cellid_by_idx = np.zeros((len(unique_labels), indhist.shape[-1]))
         for i, cid in enumerate(tqdm(unique_labels)):
             data0 = indhist[data_loader.dataset.label[:, label_col] == cid]
-            cellid_by_idx[i, :] = data0.sum(0) / data0.shape[0]
+            # Original code (commented out due to division by zero error):
+            # cellid_by_idx[i, :] = data0.sum(0) / data0.shape[0]
+            
+            # Fix by Claude Code: Handle empty cell groups to prevent NaN/Inf errors
+            if data0.shape[0] > 0:
+                cellid_by_idx[i, :] = data0.sum(0) / data0.shape[0]
+            else:
+                # Handle empty groups by setting to zero (or could use np.nan)
+                cellid_by_idx[i, :] = 0.0
+                print(f"Warning: Cell line '{cid}' has no cells, setting to zero")
         if savepath:
             np.save(join(savepath, f'cellid_vqidx{vq_idx}.npy'), cellid_by_idx)
         return cellid_by_idx
