@@ -2,6 +2,8 @@ import polars as pl
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
+from sklearn.metrics import precision_recall_curve, average_precision_score, roc_auc_score, roc_curve
+set2_palette = sns.color_palette("Set2")
 
 
 def plot_cat_count_perc(df, cat, title="", ax=None, palette="Dark2"):
@@ -87,7 +89,7 @@ def plot_assay_hit_by_category(df, hit_col, cat_cols, title="", ax=None):
         .rename({"len": "total_counts"})
     )
     df_hit_cnt_per_cat = (
-        df.unique("gene_variant")
+        df.unique("gene_allele")
         .filter(pl.col(hit_col))
         .group_by(cat_cols)
         .len()
@@ -152,9 +154,6 @@ def plot_assay_hit_by_category(df, hit_col, cat_cols, title="", ax=None):
 
     return img_hits_perc_df
 
-
-from sklearn.metrics import precision_recall_curve, average_precision_score, roc_auc_score, roc_curve
-set2_palette = sns.color_palette("Set2")
 
 def compute_aubprc(auprc, prior):
     return (auprc*(1-prior))/((auprc*(1-prior)) + ((1-auprc)*prior))
