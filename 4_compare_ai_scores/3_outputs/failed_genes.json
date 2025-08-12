@@ -1,0 +1,695 @@
+{
+  "EZH2": {
+    "gene": "EZH2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "HYLS1": {
+    "gene": "HYLS1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "DDHD2": {
+    "gene": "DDHD2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "FA2H": {
+    "gene": "FA2H",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "RPIA": {
+    "gene": "RPIA",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "ASAH1": {
+    "gene": "ASAH1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "PCCA": {
+    "gene": "PCCA",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "PRKAG2": {
+    "gene": "PRKAG2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "LFNG": {
+    "gene": "LFNG",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "BBS10": {
+    "gene": "BBS10",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "TMEM67": {
+    "gene": "TMEM67",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "GNPTG": {
+    "gene": "GNPTG",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "ZFYVE27": {
+    "gene": "ZFYVE27",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "GNAO1": {
+    "gene": "GNAO1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "KIF6": {
+    "gene": "KIF6",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "TGIF1": {
+    "gene": "TGIF1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "DIS3L2": {
+    "gene": "DIS3L2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "KRT8": {
+    "gene": "KRT8",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "FGFR1": {
+    "gene": "FGFR1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "BEST1": {
+    "gene": "BEST1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "ZNF41": {
+    "gene": "ZNF41",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "GDAP1": {
+    "gene": "GDAP1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "TFAP2A": {
+    "gene": "TFAP2A",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "NUBPL": {
+    "gene": "NUBPL",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "CEP290": {
+    "gene": "CEP290",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "PPARG": {
+    "gene": "PPARG",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "GATA3": {
+    "gene": "GATA3",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "BSG": {
+    "gene": "BSG",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "NEUROD1": {
+    "gene": "NEUROD1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "RGR": {
+    "gene": "RGR",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "AGT": {
+    "gene": "AGT",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "TAFAZZIN": {
+    "gene": "TAFAZZIN",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "CREB1": {
+    "gene": "CREB1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "KRAS": {
+    "gene": "KRAS",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "PLAU": {
+    "gene": "PLAU",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "PRKCSH": {
+    "gene": "PRKCSH",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "MCHR1": {
+    "gene": "MCHR1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "GPX1": {
+    "gene": "GPX1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "SQSTM1": {
+    "gene": "SQSTM1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "NF2": {
+    "gene": "NF2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "ZNF24": {
+    "gene": "ZNF24",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "MUTYH": {
+    "gene": "MUTYH",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "LMNA": {
+    "gene": "LMNA",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "SUCLG1": {
+    "gene": "SUCLG1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "PLP1": {
+    "gene": "PLP1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "TNNT2": {
+    "gene": "TNNT2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "ACSM3": {
+    "gene": "ACSM3",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "TMEM165": {
+    "gene": "TMEM165",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "STXBP2": {
+    "gene": "STXBP2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "STAC3": {
+    "gene": "STAC3",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "NMB": {
+    "gene": "NMB",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "DKK3": {
+    "gene": "DKK3",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "AGPAT2": {
+    "gene": "AGPAT2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "TPTEP2-CSNK1E": {
+    "gene": "TPTEP2-CSNK1E",
+    "status": "failed",
+    "reason": "no_uniprot_ids",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "MPZ": {
+    "gene": "MPZ",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "CDIN1": {
+    "gene": "CDIN1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "ABCB7": {
+    "gene": "ABCB7",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "PLTP": {
+    "gene": "PLTP",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "MMACHC": {
+    "gene": "MMACHC",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "P3H2": {
+    "gene": "P3H2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "AMT": {
+    "gene": "AMT",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "VCP": {
+    "gene": "VCP",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "PUF60": {
+    "gene": "PUF60",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "CPB2": {
+    "gene": "CPB2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "DNAL1": {
+    "gene": "DNAL1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "HIBCH": {
+    "gene": "HIBCH",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "NDUFAF5": {
+    "gene": "NDUFAF5",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "PHF6": {
+    "gene": "PHF6",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "CDKN2A": {
+    "gene": "CDKN2A",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "HADHB": {
+    "gene": "HADHB",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "DBH": {
+    "gene": "DBH",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "ALG9": {
+    "gene": "ALG9",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "IVD": {
+    "gene": "IVD",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "SDC3": {
+    "gene": "SDC3",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "TMEM216": {
+    "gene": "TMEM216",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "LDB3": {
+    "gene": "LDB3",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "UBE3A": {
+    "gene": "UBE3A",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "COG4": {
+    "gene": "COG4",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "MSH5": {
+    "gene": "MSH5",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "RPL11": {
+    "gene": "RPL11",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "PSEN1": {
+    "gene": "PSEN1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "PITX2": {
+    "gene": "PITX2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "DYNC2I2": {
+    "gene": "DYNC2I2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "KCNE4": {
+    "gene": "KCNE4",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "TBXAS1": {
+    "gene": "TBXAS1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "GSTZ1": {
+    "gene": "GSTZ1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "USH1C": {
+    "gene": "USH1C",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "MPG": {
+    "gene": "MPG",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "MPI": {
+    "gene": "MPI",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "NR1I2": {
+    "gene": "NR1I2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "FUCA1": {
+    "gene": "FUCA1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "PORCN": {
+    "gene": "PORCN",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "SCN1B": {
+    "gene": "SCN1B",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "BUB1B": {
+    "gene": "BUB1B",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "CTSA": {
+    "gene": "CTSA",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "KIF2A": {
+    "gene": "KIF2A",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "CIDEA": {
+    "gene": "CIDEA",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "GPD2": {
+    "gene": "GPD2",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  },
+  "FBLIM1": {
+    "gene": "FBLIM1",
+    "status": "failed",
+    "reason": "no_valid_uniprot_match",
+    "uniprot_id": "",
+    "protein_file": ""
+  }
+}
