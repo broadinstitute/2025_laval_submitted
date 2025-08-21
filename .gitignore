@@ -169,7 +169,6 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
-
 .DS_Store
 
 
@@ -179,7 +178,6 @@ facs_single_cell.parquet
 
 # OMIM api key file
 OMIM_api_key.txt
-
 .vscode
 
 # Jupyter Notebook files with multiple automated processing methods
