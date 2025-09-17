@@ -165,7 +165,7 @@ def validate_variants_against_protein_features(variants_df: pd.DataFrame, protei
 
 
 def extract_protein_features_for_variants(variants_df: pd.DataFrame, protein_features_file: str) -> pd.DataFrame:
-    """Extract all protein features for each variant position and append to variants dataframe."""
+    """Extract protein features for each variant, only for variants with matching amino acids."""
     enhanced_df = variants_df.copy()
     
     if not Path(protein_features_file).exists():
@@ -176,10 +176,12 @@ def extract_protein_features_for_variants(variants_df: pd.DataFrame, protein_fea
         # Load protein features
         prot_df = pd.read_csv(protein_features_file, sep='\t')
         
-        # Create mapping from position to all features
+        # Create mapping from position to all features (including amino acid)
         protein_features_dict = {}
+        pos_to_aa = {}
         for _, row in prot_df.iterrows():
             pos = int(row['residueId'])
+            pos_to_aa[pos] = row['AA']  # Store amino acid for validation
             # Convert all feature values to strings to handle mixed types
             features = {col: str(val) if pd.notna(val) else '' for col, val in row.items() if col != 'residueId'}
             protein_features_dict[pos] = features
@@ -194,17 +196,34 @@ def extract_protein_features_for_variants(variants_df: pd.DataFrame, protein_fea
         for col in all_feature_columns:
             enhanced_df[f'protein_{col}'] = ''
         
-        # Add protein features for each variant
+        # Add protein features for each variant - only if amino acid matches
+        matched_variants = 0
+        total_parseable = 0
+        
         for idx, row in enhanced_df.iterrows():
             aa_change = row['aa_change']
             ref_aa_3letter, position, alt_aa_3letter = parse_aa_change(aa_change)
             
-            if position and position in protein_features_dict:
-                features = protein_features_dict[position]
-                for col in all_feature_columns:
-                    enhanced_df.loc[idx, f'protein_{col}'] = features.get(col, '')
+            if ref_aa_3letter is None or position is None:
+                continue  # Skip unparseable variants
+            
+            total_parseable += 1
+            
+            # Check if position exists and amino acid matches
+            if position in protein_features_dict and position in pos_to_aa:
+                ref_aa_1letter = three_letter_to_one_letter(ref_aa_3letter)
+                protein_aa = pos_to_aa[position]
+                
+                if protein_aa == ref_aa_1letter:
+                    # Amino acid matches - extract features
+                    features = protein_features_dict[position]
+                    for col in all_feature_columns:
+                        enhanced_df.loc[idx, f'protein_{col}'] = features.get(col, '')
+                    matched_variants += 1
         
         print(f"  ✓ Added {len(all_feature_columns)} protein feature columns")
+        print(f"  ✓ Annotated {matched_variants}/{total_parseable} variants with matching amino acids")
+        
         return enhanced_df
         
     except Exception as e:
@@ -230,7 +249,13 @@ def process_gene_with_fallback(gene_name: str, variants_df: pd.DataFrame, output
     
     print(f"Found {len(uniprot_ids)} UniProt IDs: {uniprot_ids}")
     
-    # Try each UniProt ID until we find a perfect match
+    # Define minimum match threshold (90%)
+    MIN_MATCH_THRESHOLD = 0.90
+    
+    # Try each UniProt ID until we find a good enough match
+    best_result = None
+    best_match_rate = 0.0
+    
     for i, uniprot_id in enumerate(uniprot_ids):
         print(f"\n--- Trying UniProt ID {i+1}/{len(uniprot_ids)}: {uniprot_id} ---")
         
@@ -242,8 +267,12 @@ def process_gene_with_fallback(gene_name: str, variants_df: pd.DataFrame, output
         # Validate variants
         validation_result = validate_variants_against_protein_features(variants_df, protein_file)
         
+        valid_matches = validation_result.get('valid_matches', 0)
+        total_variants = validation_result.get('total_variants', 0)
+        match_rate = valid_matches / total_variants if total_variants > 0 else 0.0
+        
         print(f"  Validation: {'✓ Valid' if validation_result['valid'] else '✗ Invalid'}")
-        print(f"  Matches: {validation_result.get('valid_matches', 0)}/{validation_result.get('total_variants', 0)}")
+        print(f"  Matches: {valid_matches}/{total_variants} ({match_rate:.1%})")
         
         if validation_result['valid']:
             # Perfect match found - extract detailed features
@@ -253,17 +282,40 @@ def process_gene_with_fallback(gene_name: str, variants_df: pd.DataFrame, output
             return {
                 "gene": gene_name,
                 "status": "success",
+                "match_type": "perfect",
                 "uniprot_id": uniprot_id,
                 "protein_file": protein_file,
                 "validation_result": validation_result,
                 "enhanced_variants": enhanced_variants
             }
+        elif match_rate >= MIN_MATCH_THRESHOLD:
+            # Good enough match - keep track of best candidate
+            print(f"  ✓ Good partial match ({match_rate:.1%} ≥ {MIN_MATCH_THRESHOLD:.0%})")
+            if match_rate > best_match_rate:
+                best_match_rate = match_rate
+                best_result = {
+                    "gene": gene_name,
+                    "status": "success",
+                    "match_type": "partial",
+                    "uniprot_id": uniprot_id,
+                    "protein_file": protein_file,
+                    "validation_result": validation_result,
+                    "match_rate": match_rate
+                }
         else:
-            # Remove invalid file
+            # Not good enough - remove file
+            print(f"  ✗ Match rate too low ({match_rate:.1%} < {MIN_MATCH_THRESHOLD:.0%})")
             if Path(protein_file).exists():
                 Path(protein_file).unlink()
         
         time.sleep(1)  # Be respectful to API
+    
+    # If we found a good partial match, process it
+    if best_result:
+        print(f"\n  ✓ Using best partial match ({best_result['match_rate']:.1%})! Extracting protein features for matching variants...")
+        enhanced_variants = extract_protein_features_for_variants(variants_df, best_result['protein_file'])
+        best_result['enhanced_variants'] = enhanced_variants
+        return best_result
     
     return {
         "gene": gene_name,
@@ -318,7 +370,7 @@ def main():
     
     # Output paths
     protein_features_dir = base_dir / "4_compare_ai_scores/3_outputs/processed_data/g2p_protein_features"
-    progress_file = base_dir / "4_compare_ai_scores/3_outputs/large_collection_progress.json"
+    progress_file = base_dir / "4_compare_ai_scores/3_outputs/large_collection_progress_updated.json"
     output_file = base_dir / "1_allele_collection/3_outputs/varchamp_seq_confirm_alleles_clinvar_gnomad_dbnsfp_struc_scores_OMIM_MOI_disease_modules_with_protein_features.tsv"
     
     # Create output directory
