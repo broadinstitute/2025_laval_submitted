@@ -171,9 +171,10 @@ cython_debug/
 .pypirc
 .DS_Store
 
-
 # Large files - anything stored in raw_inputs folder
+2_individual_assay_results/imaging/2_analysis/3_cytoself
 **/raw_inputs/
+**/processed_data/
 facs_single_cell.parquet
 
 # OMIM api key file
