@@ -11,12 +11,12 @@ palette_dict = {
     "clinvar_clnsig_clean_oneperc": dict(
         zip(clinvar_category, clinvar_palette_clinvar[:7])
     ),
-    "clinvar_clnsig_clean_pillar":{
+    "clinvar_clnsig_clean":{
         '1_Pathogenic': "#CA7682",
         '2_Benign': "#1D7AAB",
-        '3_Conflicting': "#E6B1B8", #"grey",
-        '4_VUS': "#A0A0A0",
-        '5_Others': "#E0E0E0" #"#A0A0A0"
+        '3_Conflicting': "#505050", #"grey", or lighter red "#E6B1B8"
+        '4_VUS': "#A0A0A0", ## Pillar default
+        '5_Others': "#E0E0E0"
         # '6_No_ClinVar'
     }
 }
