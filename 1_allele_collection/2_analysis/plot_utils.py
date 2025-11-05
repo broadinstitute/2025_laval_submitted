@@ -7,17 +7,30 @@ clinvar_palette_clinvar[0], clinvar_palette_clinvar[1], clinvar_palette_clinvar[
 clinvar_palette_clinvar[1], clinvar_palette_clinvar[4], clinvar_palette_clinvar[3], \
     clinvar_palette_clinvar[2], clinvar_palette_clinvar[0], clinvar_palette_clinvar[7], clinvar_palette_clinvar[5]
 
+clinvar_order_dict = {
+    "original": ['Pathogenic', 'Likely Pathogenic', 'Benign', 'Likely benign', 'Conflicting', 'VUS', 'Others'],
+    "bio_descending": ['Pathogenic', 'Likely Pathogenic', 'Conflicting', 'VUS', 'Likely benign', 'Benign', 'Others']
+}
+
 palette_dict = {
     "clinvar_clnsig_clean_oneperc": dict(
         zip(clinvar_category, clinvar_palette_clinvar[:7])
     ),
-    "clinvar_clnsig_clean":{
-        '1_Pathogenic': "#CA7682",
-        '2_Benign': "#1D7AAB",
-        '3_Conflicting': "#505050", #"grey", or lighter red "#E6B1B8"
-        '4_VUS': "#A0A0A0", ## Pillar default
-        '5_Others': "#E0E0E0"
-        # '6_No_ClinVar'
+    "clinvar_clnsig_clean": {
+        'Pathogenic': "#CA7682",
+        'Benign': "#1D7AAB",
+        'Conflicting': "#505050", #"grey", or lighter red "#E6B1B8"
+        'VUS': "#A0A0A0", ## Pillar default
+        'Others': "#E0E0E0"
+    },
+    "clinvar_clnsig_clean_pp_strict": {
+        'Pathogenic': "#CA7682",
+        'Likely Pathogenic': "#E6B1B8",
+        'Benign': "#1D7AAB",
+        'Likely benign': "#63A1C4",
+        'Conflicting': "#505050", #"grey", or lighter red "#E6B1B8"
+        'VUS': "#A0A0A0", ## Pillar default
+        'Others': "#E0E0E0"
     }
 }
 

@@ -4,11 +4,9 @@
 ## ========================================================================================================
 # cd raw_inputs
 
-
 ## Downloading the AI-predicted scores for nsSNPs from the https://www.dbnsfp.org/download database
 ## It is located on G-drive in the below link: (gdown could be installed using conda/pip)
 # gdown --fuzzy https://drive.google.com/file/d/1QoVE-o8YBiXyp2wQjrmIvplBEdC5QYUE/view?usp=sharing
-
 
 # mkdir -p alphafold
 # cd alphafold
