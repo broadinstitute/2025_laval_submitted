@@ -25,7 +25,7 @@ palette_dict = {
     },
     "clinvar_clnsig_clean_pp_strict": {
         'Pathogenic': "#CA7682",
-        'Likely Pathogenic': "#E6B1B8",
+        'Likely pathogenic': "#E6B1B8",
         'Benign': "#1D7AAB",
         'Likely benign': "#63A1C4",
         'Conflicting': "#505050", #"grey", or lighter red "#E6B1B8"
