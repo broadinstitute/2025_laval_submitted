@@ -1,4 +1,10 @@
-#!/home/shenrunx/software/anaconda3/envs/ai4protein/bin/ python3
+#!/home/shenrunx/software/anaconda3/envs/ai4protein/bin/python3
+"""
+    ./1_mapping_plddt_rsa_scores.py 
+    --input_file "../../3_outputs/VarChAMP_Allele_Collection_1Perc_ClinVar_dbNSFP.parquet" 
+    --output_file "../../3_outputs/VarChAMP_Allele_Collection_1Perc_ClinVar_dbNSFP_pLDDT_RSA.parquet" 
+    > ../../3_outputs/processed_data/alphafold/pdb_prioritized_variants_add_plddt_rsa_scores.log
+"""
 
 import os
 import sys
@@ -10,8 +16,6 @@ import argparse
 from tqdm import tqdm
 import time
 import signal
-
-
 # Import custom modules
 import extract_plddt_scores as get_plddt
 import calculate_rsa_scores as get_rsa
