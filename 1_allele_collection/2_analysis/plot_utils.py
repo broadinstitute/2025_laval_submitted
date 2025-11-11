@@ -8,8 +8,8 @@ clinvar_palette_clinvar[1], clinvar_palette_clinvar[4], clinvar_palette_clinvar[
     clinvar_palette_clinvar[2], clinvar_palette_clinvar[0], clinvar_palette_clinvar[7], clinvar_palette_clinvar[5]
 
 clinvar_order_dict = {
-    "original": ['Pathogenic', 'Likely Pathogenic', 'Benign', 'Likely benign', 'Conflicting', 'VUS', 'Others'],
-    "bio_descending": ['Pathogenic', 'Likely Pathogenic', 'Conflicting', 'VUS', 'Likely benign', 'Benign', 'Others']
+    "original": ['Pathogenic', 'Likely pathogenic', 'Benign', 'Likely benign', 'Conflicting', 'VUS', 'Others'],
+    "bio_descending": ['Pathogenic', 'Likely pathogenic', 'Conflicting', 'VUS', 'Likely benign', 'Benign', 'Others']
 }
 
 palette_dict = {
