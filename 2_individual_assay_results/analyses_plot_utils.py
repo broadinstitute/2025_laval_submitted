@@ -88,7 +88,7 @@ def plot_assay_hit_by_category(df, hit_col, cat_cols, title="", ax=None):
         .rename({"len": "total_counts"})
     )
     df_hit_cnt_per_cat = (
-        df.unique("gene_allele")
+        df.unique("gene_variant")
         .filter(pl.col(hit_col))
         .group_by(cat_cols)
         .len()
@@ -193,7 +193,7 @@ def plot_assay_hit_by_category_perc(df, hit_col, cat_cols, title="", ax=None):
         .rename({"len": "total_counts"})
     )
     df_hit_cnt_per_cat = (
-        df.unique("gene_allele")
+        df.unique("gene_variant")
         .filter(pl.col(hit_col))
         .group_by(cat_cols)
         .len()
@@ -255,7 +255,7 @@ def compute_aubprc(auprc, prior):
     return (auprc*(1-prior))/((auprc*(1-prior)) + ((1-auprc)*prior))
 
 
-def plot_auroc_curves(df_clinvar_w_scores, pos_label, methods, set2_palette=set2_palette):
+def plot_auroc_curves(df_clinvar_w_scores, label, pos_labels, methods, set2_palette=set2_palette):
     """
     For each method, plot the adjusted PR curve (with both balanced and monotonized adjustments)
     and compute the adjusted AUPRC via bootstrapping. Also perform pairwise significance testing 
@@ -290,15 +290,13 @@ def plot_auroc_curves(df_clinvar_w_scores, pos_label, methods, set2_palette=set2
     for m_idx, met in enumerate(methods):
         ap_results[met] = {}
         # Filter data for current category and valid clinical labels.
-        df_clin_per_method = df_clinvar_w_scores.filter(
-            (pl.col("clinvar_clnsig_clean").is_in(["1_Pathogenic", "2_Benign"]))
-        ).with_columns(
+        df_clin_per_method = df_clinvar_w_scores.with_columns(
             (
-                pl.when(pl.col("clinvar_clnsig_clean") == pos_label)
+                pl.when(pl.col(label).is_in(pos_labels))
                 .then(1)
                 .otherwise(0)
             ).alias("clinvar_label")
-        ).drop_nulls(subset=["clinvar_clnsig_clean", met])
+        ).drop_nulls(subset=[label, met])
         
         # Convert to pandas DataFrame.
         df_pd = df_clin_per_method.to_pandas()
