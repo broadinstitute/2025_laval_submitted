@@ -131,6 +131,27 @@ def inverse_normal_transform(data, feat_cols=None, c: float = 3.0 / 8, stochasti
         return result_df.select(data.columns)  # Maintain original column order
     else:
         return transformed_df
+    
+
+# Standardize the features before PCA
+def median_iqr_std_polars(df: pl.DataFrame) -> pl.DataFrame:
+    # compute medians and IQRs
+    med = df.select(pl.all().median()).to_dict(as_series=False)
+    iqr = df.select(pl.all().quantile(0.75) - pl.all().quantile(0.25)).to_dict(as_series=False)
+
+    # identify zero-IQR columns
+    zero_iqr_cols = [c for c in df.columns if iqr[c][0] == 0]
+
+    # drop zero-IQR columns
+    df_scaled = df.drop(zero_iqr_cols)
+
+    # scale remaining columns
+    out_cols = [
+        ((pl.col(c) - med[c][0]) / iqr[c][0]).alias(c)
+        for c in df_scaled.columns
+    ]
+
+    return df_scaled.select(out_cols)
 
 
 def robust_cosine_clustering_with_annotations(feat_df_clean_well_pd, 

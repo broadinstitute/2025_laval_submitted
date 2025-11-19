@@ -229,7 +229,7 @@ def plot_assay_hit_by_category_perc(df, hit_col, cat_cols, title="", ax=None):
 
     # set labels
     ax.set_yticks(y_positions)
-    ax.set_yticklabels([f"{cat.split('_')[1]}\n(n={n})" for cat, n in zip(plot_df[cat_col_name], plot_df["total_counts"])])
+    ax.set_yticklabels([f"{cat}\n(n={n})" for cat, n in zip(plot_df[cat_col_name], plot_df["total_counts"])]) ##.split('_')[1]
     ax.set_xlabel("Percentage (%)")
     ax.set_xlim(0, 100)
     ax.set_title(title)
