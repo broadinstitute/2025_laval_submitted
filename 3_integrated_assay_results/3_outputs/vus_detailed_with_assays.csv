@@ -1,4 +1,4 @@
-symbol,gene_variant,nt_change,aa_change,spdi,tested_DUAL-IPA,tested_Imaging,tested_PPI,hit_DUAL-IPA,hit_Imaging,hit_PPI,dualipa_abun_score,AUROC_Mean_GFP,normalized_euclid_distance_normalized
+symbol,gene_variant,nt_change,aa_change,spdi,tested_DUAL-IPA,tested_Imaging,tested_PPI,hit_DUAL-IPA,hit_Imaging,hit_PPI,dualipa_score,imaging_score,ppi_score
 ACSF3,ACSF3_Asp457Asn,1369G>A,Asp457Asn,NC_000016.10:89145269:G:A,true,false,true,false,false,false,-1.2235085173912517,,0.6237819145623189
 ACSF3,ACSF3_Gly119Asp,356G>A,Gly119Asp,NC_000016.10:89101037:G:A,true,false,true,false,false,false,-0.7264800512269978,,0.6148137145102596
 ACSF3,ACSF3_Gly225Arg,673G>A,Gly225Arg,NC_000016.10:89102610:G:A,true,false,false,false,false,,-1.0945080619749785,,
@@ -97,7 +97,7 @@ MVK,MVK_Arg388Gln,1163G>A,Arg388Gln,NC_000012.12:109596549:G:A,false,true,false,
 MVK,MVK_Cys101Tyr,302G>A,Cys101Tyr,NC_000012.12:109579877:G:A,true,true,true,false,false,false,0.28634589799184623,0.5826477171257058,0.3083511054491771
 MVK,MVK_Pro200Ser,598C>T,Pro200Ser,NC_000012.12:109586092:C:T,true,true,false,false,false,,0.19352130358898695,0.6397215005042491,
 MVK,MVK_Pro288Leu,863C>T,Pro288Leu,NC_000012.12:109591335:C:T,true,true,false,false,false,,-0.016251961705794793,0.7186488492553973,
-MVK,MVK_Ser329Asn,986G>A,Ser329Asn,NC_000012.12:109595128:G:A,true,true,false,true,true,,-7.291243977725604,0.9545058566525753,
+MVK,MVK_Ser329Asn,986G>A,Ser329Asn,NC_000012.12:109595128:G:A,true,true,false,true,true,,-7.291243977725604,0.9982685254162489,
 MVK,MVK_Val278Met,832G>A,Val278Met,NC_000012.12:109591304:G:A,true,true,true,false,false,false,-0.7602441429041108,0.6304022202312165,0.17199787584158385
 MVK,MVK_Val293Met,877G>A,Val293Met,NC_000012.12:109591349:G:A,true,false,false,false,false,,-0.30088814890919624,,
 MVK,MVK_Val5Ala,14T>C,Val5Ala,NC_000012.12:109574836:T:C,true,true,false,false,false,,-1.2717047722776518,0.564998520515731,
