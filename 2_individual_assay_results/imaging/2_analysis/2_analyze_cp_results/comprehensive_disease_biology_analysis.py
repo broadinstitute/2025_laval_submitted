@@ -75,13 +75,19 @@ analyzer = FinalDiseaseModuleAnalyzer()
 # Create gene_allele column
 clustering_df['gene_allele'] = clustering_df.index
 
-# Merge with disease modules
+# Merge with disease modules (drop duplicates to prevent row explosion)
+disease_modules_dedup = disease_modules[['gene_allele', 'OMIM_disease_names', 'OMIM_IDs']].drop_duplicates(
+    subset='gene_allele', keep='first'
+)
 merged_df = clustering_df.merge(
-    disease_modules[['gene_allele', 'OMIM_disease_names', 'OMIM_IDs']],
+    disease_modules_dedup,
     on='gene_allele',
     how='left',
     suffixes=('', '_disease_db')
 )
+
+# Verify merge didn't create duplicates
+assert len(merged_df) == len(clustering_df), f"Merge error: {len(merged_df)} != {len(clustering_df)}"
 
 # Use the OMIM_disease_names from disease database, fallback to clustering metadata
 merged_df['diseases_to_classify'] = merged_df['OMIM_disease_names'].fillna(
