@@ -2,7 +2,7 @@
 
 **Date:** 2025-11-19
 **Analysis:** Cell Painting Imaging Variant Clustering with Disease Modules and Feature Analysis
-**Variants:** 162 across 10 morphological clusters
+**Variants:** 140 across 7 morphological clusters
 
 ---
 
@@ -18,22 +18,23 @@ This comprehensive analysis integrates:
 
 #### 1. Disease Module Enrichment
 
-- **Cluster 5**: 92.3% Other_Genetic_Disorders enrichment (12/13 variants)
-- **Cluster 8**: 58.3% Cancer_Syndromes enrichment (7/12 variants)
+- **Cluster 2**: 53.6% Other_Genetic_Disorders enrichment (15/28 variants)
+- **Cluster 3**: 71.4% Other_Genetic_Disorders enrichment (15/21 variants)
+- **Cluster 7**: 57.1% Neuropathy enrichment (8/14 variants)
 
 #### 2. Gene Clustering Patterns
 
-**Perfect clustering (100% consistency):** GFAP, LITAF, RAD51D, BRCA1, FH, NR0B1, KRT8
+**Perfect clustering (100% consistency):** RAD51D, NR0B1, DCX, NT5C3A, PNPO
 
-**High consistency (≥80%):** PLP1
+**High consistency (≥80%):** PLP1, LITAF, GFAP
 
 
 #### 3. Feature Structure
 
-- Total features: 56
-- Feature clusters identified: 21
-- Representative features selected: 21
-- Largest feature cluster: 8 features
+- Total features: 52
+- Feature clusters identified: 23
+- Representative features selected: 23
+- Largest feature cluster: 7 features
 
 
 ---
@@ -42,89 +43,113 @@ This comprehensive analysis integrates:
 
 ### Overall Statistics
 
-- **Total variants analyzed:** 162
-- **Variants with disease annotations:** 124
-- **Total clusters:** 10
-- **Disease modules identified:** 9
-- **Mean AUROC:** 0.969
+- **Total variants analyzed:** 140
+- **Variants with disease annotations:** 109
+- **Total clusters:** 7
+- **Disease modules identified:** 10
+- **Mean AUROC:** 0.964
 
 ### Cluster-by-Cluster Disease Analysis
 
 #### Cluster 1
 
-- **Size:** 26 variants
-- **Mean AUROC:** 0.980
-- **Altered:** 24/26 (92.3%)
+- **Size:** 29 variants
+- **Mean AUROC:** 0.950
+- **Altered:** 22/29 (75.9%)
 
 **Disease Modules:**
 
-- Other_Genetic_Disorders: 10 variants (38.5%)
-- Cancer_Syndromes: 7 variants (26.9%)
-- Unclassified: 7 variants (26.9%)
-- Muscle_Disorders: 2 variants (7.7%)
-
-**Top Genes:**
-
-- MLH1: 9 variants
-- NR0B1: 4 variants
-- DCX: 3 variants
-- AGXT: 2 variants
-- LMNA: 2 variants
-
-#### Cluster 2
-
-- **Size:** 31 variants
-- **Mean AUROC:** 0.968
-- **Altered:** 25/31 (80.6%)
-
-**Disease Modules:**
-
-- Neuropathy: 10 variants (32.3%)
-- Unclassified: 8 variants (25.8%)
-- Cancer_Syndromes: 8 variants (25.8%)
-- Other_Genetic_Disorders: 5 variants (16.1%)
-
-**Top Genes:**
-
-- LITAF: 12 variants
-- FH: 6 variants
-- BRCA1: 6 variants
-- SMARCB1: 2 variants
-- IL36RN: 1 variants
-
-#### Cluster 3
-
-- **Size:** 18 variants
-- **Mean AUROC:** 0.949
-- **Altered:** 16/18 (88.9%)
-
-**Disease Modules:**
-
-- Cancer_Syndromes: 6 variants (33.3%)
-- Other_Genetic_Disorders: 6 variants (33.3%)
-- Unclassified: 5 variants (27.8%)
-- Immunodeficiency: 1 variants (5.6%)
+- Cancer_Syndromes: 14 variants (48.3%)
+- Other_Genetic_Disorders: 10 variants (34.5%)
+- Unclassified: 4 variants (13.8%)
+- Immunodeficiency: 1 variants (3.4%)
 
 **Top Genes:**
 
 - MLH1: 8 variants
+- RAD51D: 6 variants
+- KRT8: 3 variants
 - BFSP2: 2 variants
-- KRAS: 2 variants
-- MSRB3: 1 variants
-- EMD: 1 variants
+- APOA1: 2 variants
+
+#### Cluster 2
+
+- **Size:** 28 variants
+- **Mean AUROC:** 0.971
+- **Altered:** 16/28 (57.1%)
+
+**Disease Modules:**
+
+- Other_Genetic_Disorders: 15 variants (53.6%)
+- Unclassified: 9 variants (32.1%)
+- Cancer_Syndromes: 2 variants (7.1%)
+- Coagulation_Disorders: 1 variants (3.6%)
+- Metabolic_Disorders: 1 variants (3.6%)
+
+**Top Genes:**
+
+- DCX: 4 variants
+- NT5C3A: 4 variants
+- MVK: 3 variants
+- FBP1: 3 variants
+- PNPO: 3 variants
+
+#### Cluster 3
+
+- **Size:** 21 variants
+- **Mean AUROC:** 0.971
+- **Altered:** 16/21 (76.2%)
+
+**Disease Modules:**
+
+- Other_Genetic_Disorders: 15 variants (71.4%)
+- Coagulation_Disorders: 3 variants (14.3%)
+- Unclassified: 2 variants (9.5%)
+- Retinal_Disorders: 1 variants (4.8%)
+
+**Top Genes:**
+
+- GFAP: 12 variants
+- F9: 3 variants
+- SFTPA2: 1 variants
+- SFTPC: 1 variants
+- SDHD: 1 variants
 
 #### Cluster 4
 
 - **Size:** 18 variants
-- **Mean AUROC:** 0.978
-- **Altered:** 15/18 (83.3%)
+- **Mean AUROC:** 0.939
+- **Altered:** 11/18 (61.1%)
 
 **Disease Modules:**
 
-- Other_Genetic_Disorders: 9 variants (50.0%)
+- Other_Genetic_Disorders: 6 variants (33.3%)
 - Unclassified: 5 variants (27.8%)
-- Neuropathy: 2 variants (11.1%)
-- Retinal_Disorders: 2 variants (11.1%)
+- Cancer_Syndromes: 4 variants (22.2%)
+- Cardiomyopathy: 1 variants (5.6%)
+- Neuropathy: 1 variants (5.6%)
+- Retinal_Disorders: 1 variants (5.6%)
+
+**Top Genes:**
+
+- SMAD3: 4 variants
+- BRCA1: 3 variants
+- AGXT: 2 variants
+- MLH1: 2 variants
+- BAG3: 1 variants
+
+#### Cluster 5
+
+- **Size:** 16 variants
+- **Mean AUROC:** 0.981
+- **Altered:** 14/16 (87.5%)
+
+**Disease Modules:**
+
+- Other_Genetic_Disorders: 7 variants (43.8%)
+- Unclassified: 5 variants (31.2%)
+- Neuropathy: 2 variants (12.5%)
+- Retinal_Disorders: 2 variants (12.5%)
 
 **Top Genes:**
 
@@ -132,120 +157,45 @@ This comprehensive analysis integrates:
 - PMP22: 3 variants
 - RHO: 3 variants
 - SFTPC: 2 variants
-- SDHD: 2 variants
-
-#### Cluster 5
-
-- **Size:** 13 variants
-- **Mean AUROC:** 0.973
-- **Altered:** 13/13 (100.0%)
-
-**Disease Modules:**
-
-- Other_Genetic_Disorders: 12 variants (92.3%)
-- Unclassified: 1 variants (7.7%)
-
-**Top Genes:**
-
-- GFAP: 13 variants
 
 #### Cluster 6
 
-- **Size:** 12 variants
-- **Mean AUROC:** 0.975
-- **Altered:** 3/12 (25.0%)
+- **Size:** 14 variants
+- **Mean AUROC:** 0.989
+- **Altered:** 14/14 (100.0%)
 
 **Disease Modules:**
 
-- Other_Genetic_Disorders: 6 variants (50.0%)
-- Unclassified: 5 variants (41.7%)
-- Metabolic_Disorders: 1 variants (8.3%)
+- Other_Genetic_Disorders: 5 variants (35.7%)
+- Cancer_Syndromes: 5 variants (35.7%)
+- Unclassified: 4 variants (28.6%)
 
 **Top Genes:**
 
-- MVK: 3 variants
-- FBP1: 3 variants
-- TAT: 2 variants
-- RP2: 2 variants
-- DCX: 1 variants
+- MLH1: 7 variants
+- NR0B1: 4 variants
+- SMAD3: 2 variants
+- AIPL1: 1 variants
 
 #### Cluster 7
 
-- **Size:** 12 variants
-- **Mean AUROC:** 0.970
-- **Altered:** 10/12 (83.3%)
+- **Size:** 14 variants
+- **Mean AUROC:** 0.963
+- **Altered:** 8/14 (57.1%)
 
 **Disease Modules:**
 
-- Other_Genetic_Disorders: 6 variants (50.0%)
-- Muscle_Disorders: 2 variants (16.7%)
-- Coagulation_Disorders: 2 variants (16.7%)
-- Unclassified: 2 variants (16.7%)
+- Neuropathy: 8 variants (57.1%)
+- Muscle_Disorders: 2 variants (14.3%)
+- Other_Genetic_Disorders: 2 variants (14.3%)
+- Unclassified: 2 variants (14.3%)
 
 **Top Genes:**
 
-- NT5C3A: 4 variants
-- PNPO: 3 variants
+- LITAF: 10 variants
 - DES: 2 variants
-- F9: 2 variants
-- SFTPC: 1 variants
-
-#### Cluster 8
-
-- **Size:** 12 variants
-- **Mean AUROC:** 0.949
-- **Altered:** 7/12 (58.3%)
-
-**Disease Modules:**
-
-- Cancer_Syndromes: 7 variants (58.3%)
-- Other_Genetic_Disorders: 2 variants (16.7%)
-- Retinal_Disorders: 2 variants (16.7%)
-- Immunodeficiency: 1 variants (8.3%)
-
-**Top Genes:**
-
-- RAD51D: 6 variants
-- ZC4H2: 2 variants
-- IMPDH1: 2 variants
-- MLH1: 1 variants
-- LIG4: 1 variants
-
-#### Cluster 9
-
-- **Size:** 10 variants
-- **Mean AUROC:** 0.975
-- **Altered:** 10/10 (100.0%)
-
-**Disease Modules:**
-
-- Other_Genetic_Disorders: 5 variants (50.0%)
-- Unclassified: 5 variants (50.0%)
-
-**Top Genes:**
-
-- SMAD3: 5 variants
-- KRT8: 4 variants
-- TTPA: 1 variants
-
-#### Cluster 10
-
-- **Size:** 10 variants
-- **Mean AUROC:** 0.968
-- **Altered:** 6/10 (60.0%)
-
-**Disease Modules:**
-
-- Coagulation_Disorders: 5 variants (50.0%)
-- Other_Genetic_Disorders: 4 variants (40.0%)
-- Retinal_Disorders: 1 variants (10.0%)
-
-**Top Genes:**
-
-- F9: 5 variants
-- SFTPA2: 2 variants
-- RET: 2 variants
-- IMPDH1: 1 variants
+- FXN: 1 variants
+- PLP1: 1 variants
 
 
 ---
@@ -259,18 +209,18 @@ indicating how similar their morphological phenotypes are across different mutat
 
 | Gene | Variants | Primary Cluster | Consistency | Mean AUROC |
 |------|----------|----------------|-------------|------------|
-| GFAP | 13 | 5 | 100.0% | 0.973 |
-| LITAF | 12 | 2 | 100.0% | 0.960 |
-| RAD51D | 6 | 8 | 100.0% | 0.962 |
-| BRCA1 | 6 | 2 | 100.0% | 0.974 |
-| FH | 6 | 2 | 100.0% | 0.968 |
-| NR0B1 | 4 | 1 | 100.0% | 0.998 |
-| KRT8 | 4 | 9 | 100.0% | 0.985 |
-| PLP1 | 9 | 4 | 88.9% | 0.978 |
-| DCX | 4 | 1 | 75.0% | 0.949 |
-| SMAD3 | 7 | 9 | 71.4% | 0.971 |
-| F9 | 7 | 10 | 71.4% | 0.973 |
-| MLH1 | 18 | 1 | 50.0% | 0.949 |
+| RAD51D | 6 | 1 | 100.0% | 0.962 |
+| NR0B1 | 4 | 6 | 100.0% | 0.998 |
+| DCX | 4 | 2 | 100.0% | 0.949 |
+| NT5C3A | 4 | 2 | 100.0% | 0.975 |
+| PNPO | 3 | 2 | 100.0% | 0.959 |
+| GFAP | 13 | 3 | 92.3% | 0.973 |
+| LITAF | 11 | 7 | 90.9% | 0.957 |
+| PLP1 | 9 | 5 | 88.9% | 0.978 |
+| BRCA1 | 4 | 4 | 75.0% | 0.973 |
+| F9 | 4 | 3 | 75.0% | 0.968 |
+| SMAD3 | 7 | 4 | 57.1% | 0.964 |
+| MLH1 | 17 | 1 | 47.1% | 0.947 |
 
 
 ### Interpretation
@@ -289,30 +239,30 @@ redundant features and select representatives.
 
 ### Feature Clustering Summary
 
-- **Total features:** 56
-- **Feature clusters:** 21
-- **Singleton clusters:** 8
-- **Largest cluster:** 8 features
+- **Total features:** 52
+- **Feature clusters:** 23
+- **Singleton clusters:** 12
+- **Largest cluster:** 7 features
 
 ### Top 10 Representative Features
 
 | Feature | Cluster Size | Mean |r| with Cluster |
 |---------|-------------|----------------------|
-| Cytoplasm_Texture_InfoMeas1_GFP_20_02_256 | 8 | 0.847 |
-| Nuclei_RadialDistribution_MeanFrac_GFP_10of10 | 5 | 0.876 |
-| Cytoplasm_Granularity_2_GFP | 5 | 0.794 |
-| Cells_Correlation_RWC_AGP_GFP | 5 | 0.813 |
-| Cells_RadialDistribution_FracAtD_GFP_9of10 | 4 | 0.854 |
-| Cytoplasm_RadialDistribution_MeanFrac_GFP_10of10 | 3 | 0.880 |
-| Cells_RadialDistribution_MeanFrac_GFP_7of10 | 3 | 0.815 |
-| Nuclei_Correlation_RWC_Mito_GFP | 3 | 0.832 |
-| Cytoplasm_Texture_Correlation_GFP_20_03_256 | 3 | 0.796 |
-| Cells_Correlation_Correlation_DNA_GFP | 3 | 0.824 |
+| Nuclei_RadialDistribution_RadialCV_GFP_10of10 | 7 | 0.810 |
+| Cytoplasm_Texture_InfoMeas1_GFP_20_00_256 | 5 | 0.806 |
+| Nuclei_Granularity_4_GFP | 5 | 0.853 |
+| Nuclei_RadialDistribution_MeanFrac_GFP_10of10 | 5 | 0.900 |
+| Cells_Correlation_Correlation_DNA_GFP | 3 | 0.833 |
+| Cytoplasm_Granularity_3_GFP | 3 | 0.802 |
+| Cytoplasm_RadialDistribution_MeanFrac_GFP_6of10 | 3 | 0.890 |
+| Cells_Correlation_RWC_Mito_GFP | 3 | 0.819 |
+| Cells_Correlation_RWC_GFP_DNA | 2 | 0.790 |
+| Nuclei_Correlation_K_GFP_Mito | 2 | 0.765 |
 
 
 ### Usage Recommendations
 
-1. **For dimensionality reduction:** Use representative features to reduce from 56 to 21 features
+1. **For dimensionality reduction:** Use representative features to reduce from 52 to 23 features
 2. **For interpretation:** Focus on representative features from large clusters (high redundancy removed)
 3. **For modeling:** Using representatives avoids multicollinearity issues
 
@@ -330,81 +280,57 @@ using Cohen's d effect size.
 
 | Feature | Effect Size (d) | Direction | Biological Relevance |
 |---------|----------------|-----------|--------------------|
-| Nuclei_Correlation_Correlation_AGP_GFP | 2.46 | ↑ Higher | Nuclear morphology |
-| Cells_Correlation_Correlation_DNA_GFP | -2.40 | ↓ Lower | Nuclear morphology |
-| Nuclei_Correlation_Correlation_DNA_GFP | -2.32 | ↓ Lower | Nuclear morphology |
+| Cells_RadialDistribution_RadialCV_GFP_5of10 | 2.72 | ↑ Higher | Cytoplasmic |
+| Nuclei_RadialDistribution_RadialCV_GFP_10of10 | 2.14 | ↑ Higher | Nuclear morphology |
+| Cytoplasm_Correlation_RWC_AGP_GFP | -1.98 | ↓ Lower | ER structure |
 
 #### Cluster 2 Distinctive Features
 
 | Feature | Effect Size (d) | Direction | Biological Relevance |
 |---------|----------------|-----------|--------------------|
-| Nuclei_Correlation_RWC_GFP_AGP | -1.89 | ↓ Lower | Nuclear morphology |
-| Nuclei_Correlation_RWC_GFP_Mito | -1.89 | ↓ Lower | Nuclear morphology |
-| Cytoplasm_Texture_Correlation_GFP_20_03_256 | 1.72 | ↑ Higher | Cytoplasmic |
+| Cytoplasm_Texture_InverseDifferenceMoment_GFP_5_00 | 1.85 | ↑ Higher | Cytoplasmic |
+| Nuclei_RadialDistribution_MeanFrac_GFP_1of10 | 1.81 | ↑ Higher | Nuclear morphology |
+| Nuclei_Texture_InverseDifferenceMoment_GFP_20_00_2 | 1.79 | ↑ Higher | Nuclear morphology |
 
 #### Cluster 3 Distinctive Features
 
 | Feature | Effect Size (d) | Direction | Biological Relevance |
 |---------|----------------|-----------|--------------------|
-| Nuclei_Intensity_MassDisplacement_GFP | 1.82 | ↑ Higher | Nuclear morphology |
-| Cells_RadialDistribution_RadialCV_GFP_10of10 | 1.81 | ↑ Higher | Cytoplasmic |
-| Cells_RadialDistribution_RadialCV_GFP_5of10 | 1.80 | ↑ Higher | Cytoplasmic |
+| Cytoplasm_Texture_InverseDifferenceMoment_GFP_5_00 | -1.78 | ↓ Lower | Cytoplasmic |
+| Cells_RadialDistribution_FracAtD_GFP_8of10 | 1.30 | ↑ Higher | Cytoplasmic |
+| Cells_Intensity_MADIntensity_GFP | 1.26 | ↑ Higher | Cytoplasmic |
 
 #### Cluster 4 Distinctive Features
 
 | Feature | Effect Size (d) | Direction | Biological Relevance |
 |---------|----------------|-----------|--------------------|
-| Cells_Granularity_5_GFP | 2.33 | ↑ Higher | Cytoplasmic |
-| Cytoplasm_Texture_Correlation_GFP_5_02_256 | 2.30 | ↑ Higher | Cytoplasmic |
-| Cytoplasm_Correlation_Correlation_GFP_Mito | 2.16 | ↑ Higher | Mitochondrial |
+| Cytoplasm_Intensity_MassDisplacement_GFP | -1.02 | ↓ Lower | Cytoplasmic |
+| Nuclei_Correlation_Overlap_GFP_Mito | -0.99 | ↓ Lower | Nuclear morphology |
+| Cells_Intensity_MADIntensity_GFP | -0.94 | ↓ Lower | Cytoplasmic |
 
 #### Cluster 5 Distinctive Features
 
 | Feature | Effect Size (d) | Direction | Biological Relevance |
 |---------|----------------|-----------|--------------------|
-| Cytoplasm_RadialDistribution_FracAtD_GFP_7of10 | -1.80 | ↓ Lower | Cytoplasmic |
-| Cytoplasm_RadialDistribution_RadialCV_GFP_1of10 | 1.73 | ↑ Higher | Cytoplasmic |
-| Cytoplasm_RadialDistribution_MeanFrac_GFP_10of10 | 1.72 | ↑ Higher | Cytoplasmic |
+| Cells_Correlation_Correlation_GFP_Mito | 3.31 | ↑ Higher | Mitochondrial |
+| Cytoplasm_Correlation_Correlation_DNA_GFP | 2.81 | ↑ Higher | Nuclear morphology |
+| Cytoplasm_Texture_Correlation_GFP_5_01_256 | 2.70 | ↑ Higher | Cytoplasmic |
 
 #### Cluster 6 Distinctive Features
 
 | Feature | Effect Size (d) | Direction | Biological Relevance |
 |---------|----------------|-----------|--------------------|
-| Cells_Intensity_MADIntensity_GFP | -2.43 | ↓ Lower | Cytoplasmic |
-| Nuclei_Texture_SumAverage_GFP_20_00_256 | -2.23 | ↓ Lower | Nuclear morphology |
-| Nuclei_Texture_Correlation_GFP_20_01_256 | 2.12 | ↑ Higher | Nuclear morphology |
+| Nuclei_Correlation_Correlation_DNA_GFP | -3.42 | ↓ Lower | Nuclear morphology |
+| Nuclei_RadialDistribution_MeanFrac_GFP_10of10 | 3.30 | ↑ Higher | Nuclear morphology |
+| Cells_Correlation_Correlation_DNA_GFP | -3.03 | ↓ Lower | Nuclear morphology |
 
 #### Cluster 7 Distinctive Features
 
 | Feature | Effect Size (d) | Direction | Biological Relevance |
 |---------|----------------|-----------|--------------------|
-| Nuclei_Correlation_RWC_Mito_GFP | 2.20 | ↑ Higher | Nuclear morphology |
-| Nuclei_Correlation_RWC_GFP_DNA | 2.14 | ↑ Higher | Nuclear morphology |
-| Cytoplasm_Granularity_3_GFP | -1.95 | ↓ Lower | Cytoplasmic |
-
-#### Cluster 8 Distinctive Features
-
-| Feature | Effect Size (d) | Direction | Biological Relevance |
-|---------|----------------|-----------|--------------------|
-| Nuclei_Correlation_Overlap_GFP_Mito | -1.54 | ↓ Lower | Nuclear morphology |
-| Nuclei_RadialDistribution_FracAtD_GFP_9of10 | -1.48 | ↓ Lower | Nuclear morphology |
-| Cells_Correlation_RWC_Mito_GFP | -1.45 | ↓ Lower | Mitochondrial |
-
-#### Cluster 9 Distinctive Features
-
-| Feature | Effect Size (d) | Direction | Biological Relevance |
-|---------|----------------|-----------|--------------------|
-| Cytoplasm_Texture_Correlation_GFP_5_02_256 | -2.28 | ↓ Lower | Cytoplasmic |
-| Nuclei_Correlation_RWC_Mito_GFP | -2.26 | ↓ Lower | Nuclear morphology |
-| Nuclei_RadialDistribution_RadialCV_GFP_1of10 | 2.05 | ↑ Higher | Nuclear morphology |
-
-#### Cluster 10 Distinctive Features
-
-| Feature | Effect Size (d) | Direction | Biological Relevance |
-|---------|----------------|-----------|--------------------|
-| Cells_RadialDistribution_FracAtD_GFP_8of10 | 1.56 | ↑ Higher | Cytoplasmic |
-| Cytoplasm_Texture_InverseDifferenceMoment_GFP_20_0 | -1.40 | ↓ Lower | Cytoplasmic |
-| Nuclei_Texture_InverseDifferenceMoment_GFP_20_00_2 | -1.26 | ↓ Lower | Nuclear morphology |
+| Nuclei_Texture_Correlation_GFP_5_03_256 | 2.68 | ↑ Higher | Nuclear morphology |
+| Nuclei_Correlation_RWC_GFP_Mito | -2.50 | ↓ Lower | Nuclear morphology |
+| Cytoplasm_Correlation_RWC_GFP_DNA | 2.41 | ↑ Higher | Nuclear morphology |
 
 
 ---
@@ -416,50 +342,36 @@ using Cohen's d effect size.
 Based on the morphological features that distinguish each cluster, we can infer
 biological mechanisms:
 
-#### Cluster 1: Other_Genetic_Disorders
+#### Cluster 1: Cancer_Syndromes
 
-- **Nuclear features prominent**: GFP, GFP
+- **Nuclear features prominent**: 10of10
 - **ER features prominent**: Suggests ER stress or protein trafficking defects
 
-#### Cluster 2: Neuropathy
+#### Cluster 2: Other_Genetic_Disorders
 
-- **Nuclear features prominent**: AGP, Mito
-- **ER features prominent**: Suggests ER stress or protein trafficking defects
-- **Mitochondrial features**: May indicate metabolic dysfunction
+- **Nuclear features prominent**: 1of10, 256
 
-#### Cluster 3: Cancer_Syndromes
+#### Cluster 3: Other_Genetic_Disorders
 
-- **Nuclear features prominent**: GFP
 
 #### Cluster 4: Other_Genetic_Disorders
 
+- **Nuclear features prominent**: Mito
 - **Mitochondrial features**: May indicate metabolic dysfunction
 
 #### Cluster 5: Other_Genetic_Disorders
 
+- **Nuclear features prominent**: GFP
+- **Mitochondrial features**: May indicate metabolic dysfunction
 
 #### Cluster 6: Other_Genetic_Disorders
 
-- **Nuclear features prominent**: 256, 256
+- **Nuclear features prominent**: GFP, 10of10
 
-#### Cluster 7: Other_Genetic_Disorders
+#### Cluster 7: Neuropathy
 
-- **Nuclear features prominent**: GFP, DNA
+- **Nuclear features prominent**: 256, Mito
 - **Mitochondrial features**: May indicate metabolic dysfunction
-
-#### Cluster 8: Cancer_Syndromes
-
-- **Nuclear features prominent**: Mito, 9of10
-- **Mitochondrial features**: May indicate metabolic dysfunction
-
-#### Cluster 9: Other_Genetic_Disorders
-
-- **Nuclear features prominent**: GFP, 1of10
-- **Mitochondrial features**: May indicate metabolic dysfunction
-
-#### Cluster 10: Coagulation_Disorders
-
-- **Nuclear features prominent**: 256
 
 
 ---
@@ -494,7 +406,7 @@ This integrated analysis reveals:
 1. **Disease biology drives clustering**: Variants with similar disease mechanisms cluster together morphologically
 2. **Gene-specific signatures exist**: Some genes (100% consistency) have invariant phenotypes across mutations
 3. **Features are interpretable**: Morphological features connect to biological processes (ER, mitochondria, nucleus)
-4. **Feature redundancy is high**: 56 features can be reduced to 21 representatives
+4. **Feature redundancy is high**: 52 features can be reduced to 23 representatives
 
 ### Clinical Implications
 
