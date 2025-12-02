@@ -13,6 +13,14 @@ All results are summarized in one markdown file.
 
 Author: Claude Code
 Date: 2025-11-19
+
+Usage:
+  python comprehensive_disease_biology_analysis.py --clustering misloc_var_clustering_results.csv --prefix Misloc_Var_
+
+Arguments:
+  --clustering: CSV file containing clustering results with Metadata_cluster column and feature columns
+                (non-Metadata_ prefixed columns are treated as features)
+  --prefix: Output prefix for all generated files (e.g., "Misloc_Var_")
 """
 
 import pandas as pd
@@ -28,11 +36,23 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 import warnings
 warnings.filterwarnings('ignore')
+import argparse
 
 # Import disease module analyzer
 import sys
 sys.path.append('.')
 from disease_module_annot import FinalDiseaseModuleAnalyzer
+
+# ============================================================================
+# ARGUMENT PARSING
+# ============================================================================
+parser = argparse.ArgumentParser(description='Comprehensive Disease Biology and Feature Analysis')
+parser.add_argument('--clustering', type=str, required=True,
+                    help='Clustering results CSV filename (in ../../3_outputs/). '
+                         'Should contain Metadata_cluster and feature columns (non-Metadata_ prefixed).')
+parser.add_argument('--prefix', type=str, required=True,
+                    help='Output prefix for all generated files (e.g., "Misloc_Var_")')
+args = parser.parse_args()
 
 # Set style
 sns.set_style('whitegrid')
@@ -41,23 +61,26 @@ plt.rcParams['font.size'] = 10
 print("="*80)
 print("COMPREHENSIVE DISEASE BIOLOGY AND FEATURE ANALYSIS")
 print("="*80)
+if args.prefix:
+    print(f"Output prefix: {args.prefix}")
 
 # ============================================================================
 # PART 1: LOAD ALL DATA
 # ============================================================================
 print("\n[1/6] Loading data...")
 
-# Clustering results with disease info
-clustering_df = pd.read_csv('../../3_outputs/variant_clustering_results.csv', index_col=0)
+# Clustering results with disease info and features
+clustering_df = pd.read_csv(f'../../3_outputs/{args.clustering}', index_col=0)
 print(f"  - Loaded {len(clustering_df)} variants with clustering assignments")
 
-# Feature matrix
-feature_matrix = pd.read_csv('../../3_outputs/variant_protein_feature_matrix.csv', index_col=0)
-print(f"  - Loaded feature matrix: {feature_matrix.shape[0]} variants x {feature_matrix.shape[1]} features")
+# Extract feature matrix (columns without 'Metadata_' prefix)
+feature_cols = [c for c in clustering_df.columns if not c.startswith('Metadata_')]
+feature_matrix = clustering_df[feature_cols].copy()
+print(f"  - Extracted feature matrix: {feature_matrix.shape[0]} variants x {feature_matrix.shape[1]} features")
 
-# Feature correlation matrix
-feature_corr = pd.read_csv('../../3_outputs/protein_features_corr_mat.csv', index_col=0)
-print(f"  - Loaded feature correlation matrix: {feature_corr.shape[0]} x {feature_corr.shape[1]}")
+# Compute feature correlation matrix
+feature_corr = feature_matrix.corr()
+print(f"  - Computed feature correlation matrix: {feature_corr.shape[0]} x {feature_corr.shape[1]}")
 
 # Disease modules
 disease_modules = pd.read_csv(
@@ -95,6 +118,20 @@ merged_df['diseases_to_classify'] = merged_df['OMIM_disease_names'].fillna(
 )
 
 # Classify disease modules
+# Detect column naming convention (AUROC vs misloc_score)
+if 'Metadata_AUROC_Mean_GFP_ADJ' in merged_df.columns:
+    score_col = 'Metadata_AUROC_Mean_GFP_ADJ'
+    hit_col = 'Metadata_Altered_95th_perc_both_batches_GFP_ADJ'
+    score_name = 'AUROC'
+elif 'Metadata_img_misloc_score' in merged_df.columns:
+    score_col = 'Metadata_img_misloc_score'
+    hit_col = 'Metadata_img_misloc_hit'
+    score_name = 'score'
+else:
+    score_col = None
+    hit_col = None
+    score_name = 'score'
+
 results = []
 for idx, row in merged_df.iterrows():
     diseases = analyzer.clean_disease_names(row.get('diseases_to_classify', ''))
@@ -103,17 +140,21 @@ for idx, row in merged_df.iterrows():
     primary_module = classifications[0][0] if classifications else 'Unclassified'
     primary_confidence = classifications[0][1] if classifications else 0.0
 
-    results.append({
+    result = {
         'gene_allele': row['gene_allele'],
         'gene': row['gene_allele'].split('_')[0],
         'cluster': row['Metadata_cluster'],
-        'AUROC': row['Metadata_AUROC_Mean_GFP_ADJ'],
-        'is_altered': row['Metadata_Altered_95th_perc_both_batches_GFP_ADJ'],
         'primary_disease_module': primary_module,
         'primary_module_confidence': primary_confidence,
         'cleaned_diseases': '; '.join(diseases),
         'disease_count': len(diseases)
-    })
+    }
+    if score_col:
+        result['score'] = row[score_col]
+    if hit_col:
+        result['is_hit'] = row[hit_col]
+
+    results.append(result)
 
 classified_df = pd.DataFrame(results)
 print(f"  - Classified {len(classified_df)} variants into disease modules")
@@ -220,12 +261,12 @@ for cluster_id in sorted(classified_df['cluster'].unique()):
 
 cluster_feature_df = pd.DataFrame(cluster_feature_importance)
 
-# Get top 3 features per cluster
+# Get top 5 features per cluster
 top_features_per_cluster = {}
 for cluster_id in sorted(classified_df['cluster'].unique()):
     top_feats = cluster_feature_df[
         cluster_feature_df['cluster'] == cluster_id
-    ].nlargest(3, 'abs_cohens_d')
+    ].nlargest(5, 'abs_cohens_d')
     top_features_per_cluster[cluster_id] = top_feats
 
 print(f"  - Identified top discriminative features for {len(top_features_per_cluster)} clusters")
@@ -235,14 +276,14 @@ print(f"  - Identified top discriminative features for {len(top_features_per_clu
 # ============================================================================
 print("\n[5/6] Generating comprehensive visualizations (single PDF)...")
 
-pdf_path = '../../3_outputs/comprehensive_disease_biology_analysis.pdf'
+pdf_path = f'../../3_outputs/{args.prefix}comprehensive_disease_biology_analysis.pdf'
 
 with PdfPages(pdf_path) as pdf:
 
     # PAGE 1: Cluster Overview
     print("  - Page 1: Cluster overview metrics")
     fig = plt.figure(figsize=(11, 8.5))
-    gs = fig.add_gridspec(3, 2, hspace=0.35, wspace=0.3)
+    gs = fig.add_gridspec(2, 2, hspace=0.35, wspace=0.3)
 
     # Cluster sizes
     ax1 = fig.add_subplot(gs[0, 0])
@@ -252,67 +293,46 @@ with PdfPages(pdf_path) as pdf:
     ax1.set_ylabel('Number of Variants')
     ax1.set_title('Cluster Sizes', fontweight='bold')
 
-    # Mean AUROC by cluster
+    # Mean score by cluster
     ax2 = fig.add_subplot(gs[0, 1])
-    cluster_aurocs = classified_df.groupby('cluster')['AUROC'].mean().sort_index()
-    cluster_aurocs.plot(kind='bar', ax=ax2, color='coral')
-    ax2.axhline(y=0.95, color='red', linestyle='--', alpha=0.7)
-    ax2.set_xlabel('Cluster')
-    ax2.set_ylabel('Mean AUROC')
-    ax2.set_title('Mean AUROC by Cluster', fontweight='bold')
-    ax2.set_ylim([0.90, 1.0])
+    if 'score' in classified_df.columns:
+        cluster_scores = classified_df.groupby('cluster')['score'].mean().sort_index()
+        cluster_scores.plot(kind='bar', ax=ax2, color='coral')
+        ax2.axhline(y=0.95, color='red', linestyle='--', alpha=0.7)
+        ax2.set_xlabel('Cluster')
+        ax2.set_ylabel(f'Mean {score_name}')
+        ax2.set_title(f'Mean {score_name} by Cluster', fontweight='bold')
+        ax2.set_ylim([0.90, 1.0])
+    else:
+        ax2.text(0.5, 0.5, 'Score not available', ha='center', va='center', transform=ax2.transAxes)
+        ax2.set_title('Mean Score by Cluster', fontweight='bold')
 
-    # Disease module distribution
+    # Disease module distribution with custom colors (grey for Unclassified)
     ax3 = fig.add_subplot(gs[1, :])
     module_cluster = pd.crosstab(
         classified_df['primary_disease_module'],
         classified_df['cluster']
     )
     module_cluster_pct = module_cluster.div(module_cluster.sum(axis=0), axis=1) * 100
-    module_cluster_pct.T.plot(kind='bar', stacked=True, ax=ax3, colormap='tab10')
+
+    # Create custom color palette with grey for Unclassified
+    modules = module_cluster_pct.index.tolist()
+    base_colors = plt.cm.tab10.colors
+    custom_colors = []
+    color_idx = 0
+    for module in modules:
+        if module == 'Unclassified':
+            custom_colors.append('#808080')  # Grey for Unclassified
+        else:
+            custom_colors.append(base_colors[color_idx % len(base_colors)])
+            color_idx += 1
+
+    module_cluster_pct.T.plot(kind='bar', stacked=True, ax=ax3, color=custom_colors)
     ax3.set_xlabel('Cluster')
     ax3.set_ylabel('Percentage (%)')
     ax3.set_title('Disease Module Composition by Cluster', fontweight='bold')
     ax3.legend(title='Disease Module', bbox_to_anchor=(1.02, 1), loc='upper left', fontsize=8)
     ax3.set_ylim([0, 100])
-
-    # UMAP with clusters
-    ax4 = fig.add_subplot(gs[2, 0])
-    scatter = ax4.scatter(
-        clustering_df['UMAP1'],
-        clustering_df['UMAP2'],
-        c=clustering_df['Metadata_cluster'],
-        cmap='tab10',
-        s=50,
-        alpha=0.7,
-        edgecolors='black',
-        linewidth=0.5
-    )
-    ax4.set_xlabel('UMAP1')
-    ax4.set_ylabel('UMAP2')
-    ax4.set_title('UMAP: Colored by Cluster', fontweight='bold')
-    plt.colorbar(scatter, ax=ax4, label='Cluster')
-    ax4.grid(True, alpha=0.3)
-
-    # UMAP with AUROC
-    ax5 = fig.add_subplot(gs[2, 1])
-    scatter2 = ax5.scatter(
-        clustering_df['UMAP1'],
-        clustering_df['UMAP2'],
-        c=clustering_df['Metadata_AUROC_Mean_GFP_ADJ'],
-        cmap='RdYlGn',
-        s=50,
-        alpha=0.7,
-        edgecolors='black',
-        linewidth=0.5,
-        vmin=0.93,
-        vmax=1.0
-    )
-    ax5.set_xlabel('UMAP1')
-    ax5.set_ylabel('UMAP2')
-    ax5.set_title('UMAP: Colored by AUROC', fontweight='bold')
-    plt.colorbar(scatter2, ax=ax5, label='AUROC')
-    ax5.grid(True, alpha=0.3)
 
     fig.suptitle('Comprehensive Disease Biology Analysis - Overview',
                  fontsize=14, fontweight='bold', y=0.995)
@@ -334,13 +354,15 @@ with PdfPages(pdf_path) as pdf:
         primary_cluster = clusters.index[0]
         consistency = (clusters.iloc[0] / len(gene_data) * 100)
 
-        gene_cluster_analysis.append({
+        result = {
             'gene': gene,
             'total_variants': len(gene_data),
             'primary_cluster': primary_cluster,
             'consistency_%': consistency,
-            'mean_AUROC': gene_data['AUROC'].mean()
-        })
+        }
+        if 'score' in gene_data.columns:
+            result['mean_score'] = gene_data['score'].mean()
+        gene_cluster_analysis.append(result)
 
     gene_df = pd.DataFrame(gene_cluster_analysis).sort_values('consistency_%', ascending=True)
 
@@ -378,83 +400,195 @@ with PdfPages(pdf_path) as pdf:
     pdf.savefig(fig, bbox_inches='tight')
     plt.close()
 
-    # PAGE 3: Feature Correlation Clustering
-    print("  - Page 3: Feature correlation analysis")
-    fig = plt.figure(figsize=(11, 8.5))
-    gs = fig.add_gridspec(2, 2, hspace=0.3, wspace=0.3)
+    # PAGES 3+: Cluster-Specific Feature Analysis (one page per cluster)
+    print("  - Pages 3+: Cluster-specific feature analysis")
 
-    # Feature cluster sizes
-    ax1 = fig.add_subplot(gs[0, :])
-    cluster_size_counts = representative_features_df['cluster_size'].value_counts().sort_index()
-    ax1.bar(cluster_size_counts.index, cluster_size_counts.values, color='steelblue')
-    ax1.set_xlabel('Feature Cluster Size')
-    ax1.set_ylabel('Number of Feature Clusters')
-    ax1.set_title('Distribution of Feature Cluster Sizes', fontweight='bold')
-    ax1.grid(True, alpha=0.3, axis='y')
+    # Define metadata columns to check for enrichment (excluding disease_modules, using primary_disease_module instead)
+    metadata_cols_to_check = [
+        'Metadata_inheritance_pattern',
+        'Metadata_pLDDT_Category', 'Metadata_RSA_Category',
+        'Metadata_g2p_Signal (UniProt)', 'Metadata_g2p_Transit peptide (UniProt)',
+        'Metadata_g2p_Transmembrane (UniProt)', 'Metadata_g2p_Topological domain (UniProt)',
+        'Metadata_g2p_Intramembrane (UniProt)', 'Metadata_g2p_Lipidation (UniProt)'
+    ]
 
-    # Top representative features
-    ax2 = fig.add_subplot(gs[1, :])
-    top_rep_feats = representative_features_df.nlargest(15, 'cluster_size')
-    y_pos = range(len(top_rep_feats))
-    ax2.barh(y_pos, top_rep_feats['cluster_size'], color='coral')
-    ax2.set_yticks(y_pos)
-    ax2.set_yticklabels([f[:50] for f in top_rep_feats['representative_feature']], fontsize=8)
-    ax2.set_xlabel('Cluster Size (# features)')
-    ax2.set_title('Top 15 Representative Features by Cluster Size', fontweight='bold')
-    ax2.grid(True, alpha=0.3, axis='x')
-
-    fig.suptitle('Feature Correlation Clustering Results',
-                 fontsize=14, fontweight='bold', y=0.995)
-    pdf.savefig(fig, bbox_inches='tight')
-    plt.close()
-
-    # PAGES 4+: Cluster-Specific Feature Analysis (one page per cluster)
-    print("  - Pages 4+: Cluster-specific feature analysis")
     for cluster_id in sorted(classified_df['cluster'].unique()):
-        fig = plt.figure(figsize=(11, 8.5))
-        gs = fig.add_gridspec(3, 2, hspace=0.35, wspace=0.3)
-
         cluster_data = classified_df[classified_df['cluster'] == cluster_id]
 
-        # Cluster info
+        # Use larger figure for more content
+        fig = plt.figure(figsize=(16, 20))
+        gs = fig.add_gridspec(4, 2, hspace=0.25, wspace=0.2,
+                              height_ratios=[1.4, 0.7, 0.5, 0.5])
+
+        # =====================================================================
+        # TOP SECTION: Cluster Info + Variants List + Enrichments
+        # =====================================================================
         ax_info = fig.add_subplot(gs[0, :])
         ax_info.axis('off')
-        info_text = f"""
-CLUSTER {cluster_id} ANALYSIS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Size: {len(cluster_data)} variants
-Mean AUROC: {cluster_data['AUROC'].mean():.3f}
-Altered variants: {cluster_data['is_altered'].sum()} ({cluster_data['is_altered'].sum()/len(cluster_data)*100:.1f}%)
+        # Sort variants by gene name, then by position (extract number from variant name)
+        def extract_position(variant):
+            import re
+            match = re.search(r'(\d+)', variant.split('_')[-1] if '_' in variant else variant)
+            return int(match.group(1)) if match else 0
 
-Disease Module Distribution:
-{cluster_data['primary_disease_module'].value_counts().to_string()}
+        cluster_data_sorted = cluster_data.copy()
+        cluster_data_sorted['_gene'] = cluster_data_sorted['gene_allele'].apply(lambda x: x.split('_')[0])
+        cluster_data_sorted['_pos'] = cluster_data_sorted['gene_allele'].apply(extract_position)
+        cluster_data_sorted = cluster_data_sorted.sort_values(['_gene', '_pos'])
 
-Top Genes:
-{cluster_data['gene'].value_counts().head(5).to_string()}
-        """
-        ax_info.text(0.05, 0.95, info_text, transform=ax_info.transAxes,
-                    fontsize=9, verticalalignment='top', fontfamily='monospace')
+        # Build comprehensive info text
+        info_lines = [
+            f"CLUSTER {cluster_id} ANALYSIS",
+            "=" * 100,
+            "",
+            f"Size: {len(cluster_data)} variants",
+        ]
+        if 'score' in cluster_data.columns:
+            info_lines.append(f"Mean {score_name}: {cluster_data['score'].mean():.3f}")
+        if 'is_hit' in cluster_data.columns:
+            hit_count = cluster_data['is_hit'].sum()
+            info_lines.append(f"Hit variants: {hit_count} ({hit_count/len(cluster_data)*100:.1f}%)")
 
-        # Top discriminative features
+        # All variants in cluster (sorted)
+        info_lines.extend([
+            "",
+            "ALL VARIANTS (sorted by gene, position):",
+            "-" * 50,
+        ])
+        variants_list = cluster_data_sorted['gene_allele'].tolist()
+        # Format as multiple columns for readability
+        n_cols = 4
+        for i in range(0, len(variants_list), n_cols):
+            row_variants = variants_list[i:i+n_cols]
+            info_lines.append("  " + "  |  ".join(f"{v:<22}" for v in row_variants))
+
+        # Disease modules (detailed from Metadata_disease_modules)
+        info_lines.extend([
+            "",
+            "DISEASE MODULES (detailed):",
+            "-" * 50,
+        ])
+        if 'Metadata_disease_modules' in clustering_df.columns:
+            # Get disease modules for this cluster's variants
+            cluster_variants = cluster_data['gene_allele'].tolist()
+            disease_modules_col = clustering_df.loc[
+                clustering_df.index.isin(cluster_variants), 'Metadata_disease_modules'
+            ]
+            # Build mapping: module -> list of variants
+            module_to_variants = {}
+            for variant in cluster_variants:
+                if variant in clustering_df.index:
+                    dm = clustering_df.loc[variant, 'Metadata_disease_modules']
+                    if pd.notna(dm) and dm != '':
+                        for m in str(dm).split(';'):
+                            m = m.strip()
+                            if m:
+                                if m not in module_to_variants:
+                                    module_to_variants[m] = []
+                                module_to_variants[m].append(variant)
+            if module_to_variants:
+                # Sort by count descending
+                sorted_modules = sorted(module_to_variants.items(), key=lambda x: -len(x[1]))
+                for module, vars_list in sorted_modules[:10]:
+                    vars_str = ', '.join(vars_list)
+                    info_lines.append(f"  {module}: {len(vars_list)} [{vars_str}]")
+            else:
+                info_lines.append("  No detailed disease modules available")
+
+        # Annotation enrichments (including cleaned_diseases from classified_df)
+        info_lines.extend([
+            "",
+            "ANNOTATION ENRICHMENTS (values appearing ≥2 times):",
+            "-" * 50,
+        ])
+        enrichments_found = False
+
+        # First check cleaned_diseases from classified_df (split by "; " and count)
+        if 'cleaned_diseases' in cluster_data.columns:
+            # Build mapping: disease -> list of variants
+            disease_to_variants = {}
+            for _, row in cluster_data.iterrows():
+                diseases_str = row.get('cleaned_diseases', '')
+                if diseases_str and str(diseases_str).strip():
+                    variant = row['gene_allele']
+                    for d in str(diseases_str).split(';'):
+                        d = d.strip()
+                        if d:
+                            if d not in disease_to_variants:
+                                disease_to_variants[d] = []
+                            disease_to_variants[d].append(variant)
+            # Only show diseases with >=2 variants
+            enriched_diseases = {k: v for k, v in disease_to_variants.items() if len(v) >= 2}
+            if enriched_diseases:
+                # Sort by count descending
+                sorted_diseases = sorted(enriched_diseases.items(), key=lambda x: -len(x[1]))
+                for disease, vars_list in sorted_diseases:
+                    vars_str = ', '.join(vars_list)
+                    info_lines.append(f"  Disease: {disease} ({len(vars_list)}x) [{vars_str}]")
+                    enrichments_found = True
+
+        # Then check other metadata columns
+        cluster_variants = cluster_data['gene_allele'].tolist()
+        for col in metadata_cols_to_check:
+            if col in clustering_df.columns:
+                # Build mapping: value -> list of variants
+                value_to_variants = {}
+                for variant in cluster_variants:
+                    if variant in clustering_df.index:
+                        val = clustering_df.loc[variant, col]
+                        if pd.notna(val) and str(val).strip() != '':
+                            val_str = str(val).strip()
+                            if val_str not in value_to_variants:
+                                value_to_variants[val_str] = []
+                            value_to_variants[val_str].append(variant)
+                # Only show values with >=2 variants
+                enriched = {k: v for k, v in value_to_variants.items() if len(v) >= 2}
+                if enriched:
+                    col_short = col.replace('Metadata_', '').replace('g2p_', '')
+                    # Sort by count descending
+                    sorted_vals = sorted(enriched.items(), key=lambda x: -len(x[1]))
+                    for val, vars_list in sorted_vals:
+                        vars_str = ', '.join(vars_list)
+                        info_lines.append(f"  {col_short}: {val} ({len(vars_list)}x) [{vars_str}]")
+                        enrichments_found = True
+        if not enrichments_found:
+            info_lines.append("  No enriched annotations found")
+
+        info_text = "\n".join(info_lines)
+        # Position text at absolute top-left with no margins, larger font
+        ax_info.text(-0.02, 1.02, info_text, transform=ax_info.transAxes,
+                    fontsize=10, verticalalignment='top', horizontalalignment='left',
+                    fontfamily='monospace', linespacing=1.1)
+
+        # =====================================================================
+        # MIDDLE SECTION: Top 5 Discriminative Features
+        # =====================================================================
         if cluster_id in top_features_per_cluster:
             top_feats = top_features_per_cluster[cluster_id]
 
             ax1 = fig.add_subplot(gs[1, :])
-            colors_feat = ['red' if d > 0 else 'blue' for d in top_feats['cohens_d']]
-            bars = ax1.barh(range(len(top_feats)), top_feats['cohens_d'], color=colors_feat, alpha=0.7)
-            ax1.set_yticks(range(len(top_feats)))
-            ax1.set_yticklabels([f[:50] for f in top_feats['feature']], fontsize=9)
-            ax1.set_xlabel("Cohen's d (effect size)")
-            ax1.set_title(f"Top 3 Discriminative Features for Cluster {cluster_id}", fontweight='bold')
+            colors_feat = ['#d62728' if d > 0 else '#1f77b4' for d in top_feats['cohens_d']]
+            y_positions = range(len(top_feats))
+            bars = ax1.barh(y_positions, top_feats['cohens_d'], color=colors_feat, alpha=0.8)
+            ax1.set_yticks(y_positions)
+            ax1.set_yticklabels([f[:55] for f in top_feats['feature']], fontsize=9)
+            ax1.set_xlabel("Cohen's d (effect size)", fontsize=10)
+            ax1.set_title(f"Top 5 Discriminative Features for Cluster {cluster_id}",
+                         fontweight='bold', fontsize=11)
             ax1.axvline(x=0, color='black', linestyle='-', linewidth=0.5)
             ax1.grid(True, alpha=0.3, axis='x')
+            # Add value labels
+            for i, (idx, row) in enumerate(top_feats.iterrows()):
+                ax1.text(row['cohens_d'], i, f" {row['cohens_d']:.2f}",
+                        va='center', fontsize=8,
+                        ha='left' if row['cohens_d'] >= 0 else 'right')
 
-            # Feature value distributions
-            for i, (idx, feat_row) in enumerate(top_feats.iterrows()):
-                ax = fig.add_subplot(gs[2, i]) if i < 2 else None
-                if ax is None:
-                    continue
+            # =====================================================================
+            # BOTTOM SECTION: Feature value distributions (top 2 features)
+            # =====================================================================
+            for i, (idx, feat_row) in enumerate(top_feats.head(2).iterrows()):
+                ax = fig.add_subplot(gs[2 + i//2, i%2])
 
                 feat_name = feat_row['feature']
                 cluster_vals = feature_matrix.loc[
@@ -468,13 +602,13 @@ Top Genes:
                 ]
 
                 ax.hist(other_vals, bins=20, alpha=0.5, label='Other clusters', color='gray')
-                ax.hist(cluster_vals, bins=20, alpha=0.7, label=f'Cluster {cluster_id}', color='red')
-                ax.set_xlabel('Feature Value')
-                ax.set_ylabel('Frequency')
-                ax.set_title(f"{feat_name[:40]}", fontsize=9)
-                ax.legend(fontsize=8)
+                ax.hist(cluster_vals, bins=20, alpha=0.7, label=f'Cluster {cluster_id}', color='#d62728')
+                ax.set_xlabel('Feature Value', fontsize=9)
+                ax.set_ylabel('Frequency', fontsize=9)
+                ax.set_title(f"{feat_name[:50]}", fontsize=9)
+                ax.legend(fontsize=8, loc='upper right')
 
-        fig.suptitle(f'Cluster {cluster_id}: Detailed Feature Analysis',
+        fig.suptitle(f'Cluster {cluster_id}: Comprehensive Analysis',
                      fontsize=14, fontweight='bold', y=0.995)
         pdf.savefig(fig, bbox_inches='tight')
         plt.close()
@@ -482,339 +616,18 @@ Top Genes:
 print(f"  - Saved comprehensive PDF: {pdf_path}")
 
 # ============================================================================
-# PART 6: GENERATE MARKDOWN SUMMARY
+# PART 6: SAVE RESULTS CSV
 # ============================================================================
-print("\n[6/6] Generating comprehensive markdown summary...")
-
-markdown_path = '../../3_outputs/COMPREHENSIVE_ANALYSIS_SUMMARY.md'
-
-with open(markdown_path, 'w') as f:
-    f.write("""# Comprehensive Disease Biology and Feature Analysis
-
-**Date:** 2025-11-19
-**Analysis:** Cell Painting Imaging Variant Clustering with Disease Modules and Feature Analysis
-**Variants:** {total_variants} across {n_clusters} morphological clusters
-
----
-
-## Executive Summary
-
-This comprehensive analysis integrates:
-1. **Disease module classification** - Understanding biological pathways
-2. **Gene-specific clustering patterns** - Identifying consistent phenotypes
-3. **Feature-driven cluster analysis** - Morphological basis of clustering
-4. **Feature correlation structure** - Representative feature selection
-
-### Key Findings
-
-""".format(
-        total_variants=len(classified_df),
-        n_clusters=classified_df['cluster'].nunique()
-    ))
-
-    # Key findings
-    f.write("#### 1. Disease Module Enrichment\n\n")
-    for cluster_id in sorted(classified_df['cluster'].unique()):
-        cluster_data = classified_df[classified_df['cluster'] == cluster_id]
-        dominant_module = cluster_data['primary_disease_module'].value_counts()
-        if len(dominant_module) > 0:
-            enrichment = dominant_module.iloc[0] / len(cluster_data) * 100
-            if enrichment > 50:
-                f.write(f"- **Cluster {cluster_id}**: {enrichment:.1f}% {dominant_module.index[0]} enrichment ({dominant_module.iloc[0]}/{len(cluster_data)} variants)\n")
-
-    f.write("\n#### 2. Gene Clustering Patterns\n\n")
-    perfect_genes = gene_df[gene_df['consistency_%'] == 100]
-    if len(perfect_genes) > 0:
-        f.write(f"**Perfect clustering (100% consistency):** {', '.join(perfect_genes['gene'].tolist())}\n\n")
-
-    high_genes = gene_df[(gene_df['consistency_%'] >= 80) & (gene_df['consistency_%'] < 100)]
-    if len(high_genes) > 0:
-        f.write(f"**High consistency (≥80%):** {', '.join(high_genes['gene'].tolist())}\n\n")
-
-    f.write("\n#### 3. Feature Structure\n\n")
-    f.write(f"- Total features: {len(feature_corr)}\n")
-    f.write(f"- Feature clusters identified: {representative_features_df['feature_cluster'].nunique()}\n")
-    f.write(f"- Representative features selected: {len(representative_features_df)}\n")
-    f.write(f"- Largest feature cluster: {representative_features_df['cluster_size'].max()} features\n\n")
-
-    # Detailed sections
-    f.write("""
----
-
-## Part 1: Disease Module Analysis
-
-### Overall Statistics
-
-""")
-
-    f.write(f"- **Total variants analyzed:** {len(classified_df)}\n")
-    f.write(f"- **Variants with disease annotations:** {(classified_df['disease_count'] > 0).sum()}\n")
-    f.write(f"- **Total clusters:** {classified_df['cluster'].nunique()}\n")
-    f.write(f"- **Disease modules identified:** {classified_df['primary_disease_module'].nunique()}\n")
-    f.write(f"- **Mean AUROC:** {classified_df['AUROC'].mean():.3f}\n\n")
-
-    f.write("### Cluster-by-Cluster Disease Analysis\n\n")
-
-    for cluster_id in sorted(classified_df['cluster'].unique()):
-        cluster_data = classified_df[classified_df['cluster'] == cluster_id]
-        f.write(f"#### Cluster {cluster_id}\n\n")
-        f.write(f"- **Size:** {len(cluster_data)} variants\n")
-        f.write(f"- **Mean AUROC:** {cluster_data['AUROC'].mean():.3f}\n")
-        f.write(f"- **Altered:** {cluster_data['is_altered'].sum()}/{len(cluster_data)} ({cluster_data['is_altered'].sum()/len(cluster_data)*100:.1f}%)\n\n")
-
-        f.write("**Disease Modules:**\n\n")
-        module_dist = cluster_data['primary_disease_module'].value_counts()
-        for module, count in module_dist.items():
-            pct = count / len(cluster_data) * 100
-            f.write(f"- {module}: {count} variants ({pct:.1f}%)\n")
-
-        f.write("\n**Top Genes:**\n\n")
-        gene_dist = cluster_data['gene'].value_counts().head(5)
-        for gene, count in gene_dist.items():
-            f.write(f"- {gene}: {count} variants\n")
-        f.write("\n")
-
-    f.write("""
----
-
-## Part 2: Gene Clustering Consistency
-
-Genes with multiple variants show varying degrees of clustering consistency,
-indicating how similar their morphological phenotypes are across different mutations.
-
-### Consistency Analysis
-
-""")
-
-    f.write("| Gene | Variants | Primary Cluster | Consistency | Mean AUROC |\n")
-    f.write("|------|----------|----------------|-------------|------------|\n")
-    for idx, row in gene_df.sort_values('consistency_%', ascending=False).iterrows():
-        f.write(f"| {row['gene']} | {row['total_variants']} | {row['primary_cluster']} | {row['consistency_%']:.1f}% | {row['mean_AUROC']:.3f} |\n")
-
-    f.write("""
-
-### Interpretation
-
-- **100% consistency**: All variants from this gene cluster together - strong gene-specific phenotype
-- **80-99% consistency**: Most variants cluster together - relatively consistent phenotype
-- **<80% consistency**: Variants show heterogeneous phenotypes - mutation-location may matter
-
-""")
-
-    f.write("""
----
-
-## Part 3: Feature Correlation Structure
-
-Features were clustered based on their pairwise correlations to identify
-redundant features and select representatives.
-
-### Feature Clustering Summary
-
-""")
-
-    f.write(f"- **Total features:** {len(feature_corr)}\n")
-    f.write(f"- **Feature clusters:** {representative_features_df['feature_cluster'].nunique()}\n")
-    f.write(f"- **Singleton clusters:** {(representative_features_df['cluster_size'] == 1).sum()}\n")
-    f.write(f"- **Largest cluster:** {representative_features_df['cluster_size'].max()} features\n\n")
-
-    f.write("### Top 10 Representative Features\n\n")
-    f.write("| Feature | Cluster Size | Mean |r| with Cluster |\n")
-    f.write("|---------|-------------|----------------------|\n")
-    for idx, row in representative_features_df.head(10).iterrows():
-        f.write(f"| {row['representative_feature'][:60]} | {row['cluster_size']} | {row['mean_abs_corr']:.3f} |\n")
-
-    f.write("""
-
-### Usage Recommendations
-
-1. **For dimensionality reduction:** Use representative features to reduce from {total_feat} to {rep_feat} features
-2. **For interpretation:** Focus on representative features from large clusters (high redundancy removed)
-3. **For modeling:** Using representatives avoids multicollinearity issues
-
-""".format(
-        total_feat=len(feature_corr),
-        rep_feat=len(representative_features_df)
-    ))
-
-    f.write("""
----
-
-## Part 4: Cluster-Specific Morphological Features
-
-For each cluster, we identified the top 3 features that distinguish it from other clusters
-using Cohen's d effect size.
-
-### Feature-Cluster Associations
-
-""")
-
-    for cluster_id in sorted(classified_df['cluster'].unique()):
-        if cluster_id in top_features_per_cluster:
-            f.write(f"#### Cluster {cluster_id} Distinctive Features\n\n")
-            top_feats = top_features_per_cluster[cluster_id]
-
-            f.write("| Feature | Effect Size (d) | Direction | Biological Relevance |\n")
-            f.write("|---------|----------------|-----------|--------------------|\n")
-
-            for idx, row in top_feats.iterrows():
-                direction = "↑ Higher" if row['cohens_d'] > 0 else "↓ Lower"
-
-                # Infer biological meaning from feature name
-                feat_name = row['feature']
-                bio_meaning = ""
-                if 'Nuclei' in feat_name or 'DNA' in feat_name:
-                    bio_meaning = "Nuclear morphology"
-                elif 'ER' in feat_name or 'AGP' in feat_name:
-                    bio_meaning = "ER structure"
-                elif 'Mito' in feat_name or 'Mitochondria' in feat_name:
-                    bio_meaning = "Mitochondrial"
-                elif 'Cytoplasm' in feat_name or 'Cells' in feat_name:
-                    bio_meaning = "Cytoplasmic"
-                elif 'Texture' in feat_name:
-                    bio_meaning = "Texture pattern"
-                elif 'Intensity' in feat_name:
-                    bio_meaning = "Intensity measure"
-                elif 'Granularity' in feat_name:
-                    bio_meaning = "Granular structure"
-                elif 'RadialDistribution' in feat_name:
-                    bio_meaning = "Spatial distribution"
-                else:
-                    bio_meaning = "Morphology"
-
-                f.write(f"| {feat_name[:50]} | {row['cohens_d']:.2f} | {direction} | {bio_meaning} |\n")
-
-            f.write("\n")
-
-    f.write("""
----
-
-## Part 5: Biological Interpretation
-
-### Feature-Disease Connections
-
-Based on the morphological features that distinguish each cluster, we can infer
-biological mechanisms:
-
-""")
-
-    # Analyze which types of features are important per cluster
-    for cluster_id in sorted(classified_df['cluster'].unique()):
-        if cluster_id in top_features_per_cluster:
-            cluster_data = classified_df[classified_df['cluster'] == cluster_id]
-            dominant_module = cluster_data['primary_disease_module'].value_counts()
-
-            if len(dominant_module) > 0:
-                top_feats = top_features_per_cluster[cluster_id]
-
-                f.write(f"#### Cluster {cluster_id}: {dominant_module.index[0]}\n\n")
-
-                # Categorize features
-                nuclear_feats = [f for f in top_feats['feature'] if 'Nuclei' in f or 'DNA' in f]
-                er_feats = [f for f in top_feats['feature'] if 'ER' in f or 'AGP' in f]
-                mito_feats = [f for f in top_feats['feature'] if 'Mito' in f]
-
-                if nuclear_feats:
-                    f.write(f"- **Nuclear features prominent**: {', '.join([f.split('_')[-1] for f in nuclear_feats[:2]])}\n")
-                if er_feats:
-                    f.write(f"- **ER features prominent**: Suggests ER stress or protein trafficking defects\n")
-                if mito_feats:
-                    f.write(f"- **Mitochondrial features**: May indicate metabolic dysfunction\n")
-
-                f.write("\n")
-
-    f.write("""
----
-
-## Part 6: Data Files and Visualizations
-
-### Generated Files
-
-1. **comprehensive_disease_biology_analysis.pdf** - All visualizations in one PDF
-2. **COMPREHENSIVE_ANALYSIS_SUMMARY.md** - This summary document
-
-### Original Data Files Used
-
-1. `variant_clustering_results.csv` - PCA, UMAP, cluster assignments
-2. `variant_protein_feature_matrix.csv` - Morphological features per variant
-3. `protein_features_corr_mat.csv` - Feature correlation matrix
-
-### Tables for Export
-
-The following dataframes are available in the analysis:
-- `classified_df` - Disease module classifications per variant
-- `gene_df` - Gene clustering consistency analysis
-- `representative_features_df` - Representative features per feature cluster
-- `cluster_feature_df` - Discriminative features per variant cluster
-
----
-
-## Conclusions
-
-This integrated analysis reveals:
-
-1. **Disease biology drives clustering**: Variants with similar disease mechanisms cluster together morphologically
-2. **Gene-specific signatures exist**: Some genes (100% consistency) have invariant phenotypes across mutations
-3. **Features are interpretable**: Morphological features connect to biological processes (ER, mitochondria, nucleus)
-4. **Feature redundancy is high**: {n_feat} features can be reduced to {n_rep} representatives
-
-### Clinical Implications
-
-- Morphological clustering could predict variant pathogenicity
-- Gene consistency patterns inform variant interpretation strategies
-- Feature-disease connections suggest mechanistic hypotheses
-- Representative features enable efficient future screening
-
-### Recommended Follow-ups
-
-1. **Validate feature-disease connections** with orthogonal assays
-2. **Test variant predictions** using morphological similarity to known variants
-3. **Develop feature-based biomarkers** for specific disease modules
-4. **Investigate heterogeneous genes** (e.g., MLH1) to understand why variants differ
-
----
-
-**Analysis completed:** 2025-11-19
-**Scripts:** `comprehensive_disease_biology_analysis.py`, `disease_module_annot.py`
-**Contact:** Bioinformatics team for questions
-""".format(
-        n_feat=len(feature_corr),
-        n_rep=len(representative_features_df)
-    ))
-
-print(f"  - Saved markdown summary: {markdown_path}")
-
-# Save key dataframes as CSV
-classified_df.to_csv('../../3_outputs/disease_module_classifications.csv', index=False)
-gene_df.to_csv('../../3_outputs/gene_clustering_consistency.csv', index=False)
-representative_features_df.to_csv('../../3_outputs/representative_features.csv', index=False)
-
-cluster_feature_summary = []
-for cluster_id in sorted(classified_df['cluster'].unique()):
-    if cluster_id in top_features_per_cluster:
-        top_feats = top_features_per_cluster[cluster_id]
-        for idx, row in top_feats.iterrows():
-            cluster_feature_summary.append({
-                'cluster': cluster_id,
-                'feature': row['feature'],
-                'cohens_d': row['cohens_d'],
-                'direction': row['direction']
-            })
-
-pd.DataFrame(cluster_feature_summary).to_csv(
-    '../../3_outputs/cluster_discriminative_features.csv', index=False
-)
-
-print("\nAdditional CSV files saved:")
-print("  - disease_module_classifications.csv")
-print("  - gene_clustering_consistency.csv")
-print("  - representative_features.csv")
-print("  - cluster_discriminative_features.csv")
+print("\n[6/6] Saving analysis results...")
+
+# Save main results CSV (renamed from disease_module_classifications)
+results_csv_path = f'../../3_outputs/{args.prefix}analysis_results.csv'
+classified_df.to_csv(results_csv_path, index=False)
+print(f"  - Saved results CSV: {results_csv_path}")
 
 print("\n" + "="*80)
 print("ANALYSIS COMPLETE!")
 print("="*80)
-print(f"\n📊 Visualizations: ../../3_outputs/comprehensive_disease_biology_analysis.pdf")
-print(f"📝 Summary: ../../3_outputs/COMPREHENSIVE_ANALYSIS_SUMMARY.md")
-print(f"📁 Data tables: 4 CSV files in ../../3_outputs/")
-print("\nAll results consolidated into 1 PDF + 1 Markdown file!")
+print(f"\nOutputs:")
+print(f"  - PDF: ../../3_outputs/{args.prefix}comprehensive_disease_biology_analysis.pdf")
+print(f"  - CSV: {results_csv_path}")
