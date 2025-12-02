@@ -63,7 +63,7 @@ AGXT	AGXT_Gly170Arg	Pathogenic	Likely pathogenic	-5.269775187899883			true	false
 AGXT	AGXT_Gly199Ser	Pathogenic	Pathogenic	-10.837931617737016			true	false	
 AGXT	AGXT_Gly216Arg	Pathogenic	Likely pathogenic	-5.351425187494356			true	false	
 AGXT	AGXT_Gly349Ser	Pathogenic	Pathogenic	0.15456252951269445			false	false	
-AGXT	AGXT_Gly41Arg	Pathogenic	Pathogenic		0.8114874757107335	0.5365299475821593	false	false	false
+AGXT	AGXT_Gly41Arg	Pathogenic	Pathogenic	-1.7808517841085818	0.8114874757107335	0.5365299475821593	false	false	false
 AGXT	AGXT_Gly41Glu	Pathogenic	Pathogenic	-0.475222205786109	0.8506002493336247	0.0007900545603819977	false	false	false
 AGXT	AGXT_Gly41Val	Pathogenic	Likely pathogenic	-0.47091708332022186			false	false	
 AGXT	AGXT_Gly42Glu	Pathogenic	Pathogenic	-0.6381988382392424			false	false	
@@ -74,7 +74,7 @@ AGXT	AGXT_Gly82Glu	Pathogenic	Likely pathogenic	0.3940111740313967			false	false
 AGXT	AGXT_Ile202Asn	Pathogenic	Pathogenic	-5.589415497718287	0.9519031721362382		true	true	
 AGXT	AGXT_Ile244Thr	Pathogenic	Pathogenic	-14.242806492789816			true	false	
 AGXT	AGXT_Ile279Thr	Conflicting	Conflicting	-2.8013544177622927	0.8275767167534442		true	false	
-AGXT	AGXT_Ile340Met	Benign	Likely benign		0.6885676223947665		false	false	
+AGXT	AGXT_Ile340Met	Benign	Likely benign	0.21025943067944208	0.6885676223947665	0.4989447663438211	false	false	false
 AGXT	AGXT_Leu101Pro	Pathogenic	Likely pathogenic	-3.9761483209075865			true	false	
 AGXT	AGXT_Leu153Val	Pathogenic	Pathogenic	0.0006717507358401274			false	false	
 AGXT	AGXT_Leu166Pro	Pathogenic	Pathogenic	-9.061819559219535			true	false	
@@ -87,7 +87,7 @@ AGXT	AGXT_Leu384Pro	Conflicting	Conflicting	-5.128927717395002			true	false
 AGXT	AGXT_Lys12Arg	Conflicting	Conflicting	0.33161782859865885	0.6177724714328224	0.5398964212479218	false	false	false
 AGXT	AGXT_Met195Leu	Pathogenic	Pathogenic	-0.8522182097544868	0.7292902858644899		false	false	
 AGXT	AGXT_Met49Leu	Conflicting	Conflicting	1.841432885848359	0.6079465790196223	0.48472172697942373	false	false	false
-AGXT	AGXT_Phe152Ile	Pathogenic	Pathogenic	0.811018559488984	0.7063895473415049		false	false	
+AGXT	AGXT_Phe152Ile	Pathogenic	Pathogenic	0.811018559488984	0.7063895473415049	0.5491342374875268	false	false	false
 AGXT	AGXT_Pro10Ala	VUS	VUS	1.553667867628839	0.8427628997222512	0.5254679050968284	false	false	false
 AGXT	AGXT_Pro11Arg	Pathogenic	Likely pathogenic	-2.1233372617607276			false	false	
 AGXT	AGXT_Pro11His	Conflicting	Conflicting	-0.2533278652365397	0.7266446707797621	0.5472158205330918	false	false	false
@@ -261,7 +261,7 @@ COMP	COMP_Asp342Tyr	Pathogenic	Pathogenic	-0.3632271333500339			false	false
 COMP	COMP_Asp408Asn	Pathogenic	Likely pathogenic	0.8499479439988809			false	false	
 COMP	COMP_Asp511Glu	Pathogenic	Likely pathogenic	-2.7092268606804817	0.8612183049870688		true	false	
 COMP	COMP_Asp605Asn	Others	Others	0.4947498242981179	0.7131859633100166		false	false	
-COMP	COMP_Cys348Arg	Pathogenic	Pathogenic		0.8789717903168505		false	false	
+COMP	COMP_Cys348Arg	Pathogenic	Pathogenic	0.44826924735950363	0.8789717903168505		false	false	
 COMP	COMP_His441Arg	Pathogenic	Pathogenic	0.2343483051117984	0.8625809805687541		false	false	
 COMP	COMP_His587Arg	Pathogenic	Likely pathogenic	0.8232336554149453			false	false	
 COMP	COMP_Ser681Cys	Others	Others	0.28023317723219154			false	false	
@@ -567,7 +567,7 @@ GRN	GRN_Cys105Arg	Others	Others	1.748314006320783	0.8583440572431343	0.196390300
 GRN	GRN_Ser120Tyr	Benign	Likely benign	-0.563361526822744	0.6920997893947811	0.3828887368905875	false	false	false
 GRN	GRN_Thr182Met	Benign	Likely benign	-0.8192718093225471	0.6890725925354151	0.1938902778313877	false	false	false
 GSS	GSS_Arg125Cys	Pathogenic	Likely pathogenic	-0.29823306043628034	0.6522669807833479	0.19145495306357563	false	false	false
-GSS	GSS_Arg283Cys	Pathogenic	Likely pathogenic		0.8556528834596691		false	false	
+GSS	GSS_Arg283Cys	Pathogenic	Likely pathogenic		0.8556528834596691	0.32527112905266325	false	false	false
 GSS	GSS_Pro314Leu	Conflicting	Conflicting	-0.3649675253996319	0.7035845793326502	0.5634913604817979	false	false	false
 GYG1	GYG1_Ala16Thr	Conflicting	Conflicting		0.6799354294353653		false	false	
 GYG1	GYG1_Arg33Lys	Conflicting	Conflicting		0.6642665603183939		false	false	
@@ -636,7 +636,7 @@ IL36RN	IL36RN_Ser113Leu	Conflicting	Conflicting			0.03992446478733767	false	fals
 IL36RN	IL36RN_Thr123Arg	Pathogenic	Pathogenic		0.9048907790015104	0.75113126715603	false	false	true
 IMPDH1	IMPDH1_Arg154Trp	Conflicting	Conflicting		0.9913300462875392	0.06517521406486151	false	true	false
 IMPDH1	IMPDH1_Asp275Asn	Pathogenic	Likely pathogenic		0.8304908077698561		false	false	
-IMPDH1	IMPDH1_Val317Ile	VUS	VUS		0.9641859751068068		false	true	
+IMPDH1	IMPDH1_Val317Ile	VUS	VUS		0.9641859751068068	0.1355265134321219	false	true	false
 IRAK4	IRAK4_Ala428Thr	Benign	Benign		0.6338330787261409		false	false	
 KCNJ2	KCNJ2_Ala115Val	VUS	VUS	-1.6879537325701486			false	false	
 KCNJ2	KCNJ2_Ala70Ser	Conflicting	Conflicting	-3.3156604231933224			true	false	
@@ -770,7 +770,7 @@ LITAF	LITAF_Gly112Ser	Pathogenic	Pathogenic		0.8988009402925502	0.37465735384271
 LITAF	LITAF_Gly130Ser	VUS	VUS			0.32574183456342376	false	false	false
 LITAF	LITAF_Gly53Ala	VUS	VUS		0.6957523147753879		false	false	
 LITAF	LITAF_Ile92Val	Benign	Benign		0.996021179045125		false	true	
-LITAF	LITAF_Leu122Val	Pathogenic	Pathogenic		0.9750810221547253		false	true	
+LITAF	LITAF_Leu122Val	Pathogenic	Pathogenic		0.9750810221547253	0.3155887645488443	false	true	false
 LITAF	LITAF_Phe136Leu	VUS	VUS		0.9638258016255625	0.2727311456927333	false	true	false
 LITAF	LITAF_Pro135Arg	VUS	VUS		0.9718161248669934	0.525826782609545	false	true	false
 LITAF	LITAF_Pro135Ser	VUS	VUS		0.9623265257528324	0.311396814926522	false	true	false
@@ -781,7 +781,7 @@ LITAF	LITAF_Pro51Ser	VUS	VUS			0.19947302395282657	false	false	false
 LITAF	LITAF_Pro84Leu	VUS	VUS		0.9779089066779512	0.34270605863323245	false	true	false
 LITAF	LITAF_Ser118Pro	VUS	VUS		0.9785965505986718	0.43893900577780437	false	true	false
 LITAF	LITAF_Ser15Leu	Conflicting	Conflicting		0.956553680908004	0.24381006452431678	false	false	false
-LITAF	LITAF_Thr115Asn	Pathogenic	Likely pathogenic		0.9326179312732445		false	false	
+LITAF	LITAF_Thr115Asn	Pathogenic	Likely pathogenic		0.9326179312732445	0.3711041990458714	false	false	false
 LITAF	LITAF_Thr49Met	Conflicting	Conflicting			0.2095309317876993	false	false	false
 LITAF	LITAF_Trp116Gly	Pathogenic	Pathogenic		0.9770109599833958	0.3088299972243169	false	true	false
 LITAF	LITAF_Val144Met	VUS	VUS		0.9770880704446215	0.28476510550153344	false	true	false
@@ -814,7 +814,7 @@ MLH1	MLH1_Gln701His	Pathogenic	Pathogenic		0.9927718910761028		false	true
 MLH1	MLH1_Gly147Arg	Conflicting	Conflicting		0.9849765360912859	0.502831859137342	false	true	false
 MLH1	MLH1_Gly244Asp	Pathogenic	Pathogenic			0.40495282504548585	false	false	false
 MLH1	MLH1_His318Gln	VUS	VUS		0.9224992698229073		false	true	
-MLH1	MLH1_Ile36Asn	VUS	VUS		0.9863376760598268		false	true	
+MLH1	MLH1_Ile36Asn	VUS	VUS		0.9863376760598268	0.584735801612018	false	true	false
 MLH1	MLH1_Ile36Met	VUS	VUS		0.7435793605614309		false	false	
 MLH1	MLH1_Leu653Pro	Pathogenic	Likely pathogenic		0.9739886628129371		false	true	
 MLH1	MLH1_Leu73Arg	Pathogenic	Likely pathogenic			0.5832227886647859	false	false	false
@@ -844,7 +844,7 @@ MSH2	MSH2_Leu92Val	Conflicting	Conflicting	-0.8160248299994429			false	false
 MSH2	MSH2_Lys627Asn	Others	Others	-0.5270359547717584			false	false	
 MSH2	MSH2_Thr335Ile	VUS	VUS	-1.8734162385164712			false	false	
 MSRB3	MSRB3_Cys82Gly	Pathogenic	Pathogenic		0.9871160048478136		false	true	
-MVK	MVK_Ala148Thr	Pathogenic	Likely pathogenic			0.6181791826738329	false	false	false
+MVK	MVK_Ala148Thr	Pathogenic	Likely pathogenic	-0.3815515065339839		0.6181791826738329	false	false	false
 MVK	MVK_Arg106His	VUS	VUS	-2.174016787498574	0.6772953585094089		false	false	
 MVK	MVK_Arg277Cys	Pathogenic	Likely pathogenic	-0.7895926755252656			false	false	
 MVK	MVK_Arg388Gln	VUS	VUS		0.6418541717482504		false	false	
@@ -947,7 +947,7 @@ PITX2	PITX2_Leu107Gln	Pathogenic	Pathogenic	0.4559911334515614			false	false
 PITX2	PITX2_Lys141Glu	Pathogenic	Pathogenic	0.6366147868405981		0.15539487133410146	false	false	false
 PITX2	PITX2_Pro117Arg	Pathogenic	Pathogenic	-1.3120643395929983			false	false	
 PITX2	PITX2_Thr121Pro	Pathogenic	Pathogenic	-1.2763201457159148		0.5951141364180224	false	false	false
-PKP2	PKP2_Ala372Pro	Conflicting	Conflicting			0.1638093590983728	false	false	false
+PKP2	PKP2_Ala372Pro	Conflicting	Conflicting	0.49071171709937633		0.1638093590983728	false	false	false
 PKP2	PKP2_Arg158Lys	Conflicting	Conflicting	-0.15725298240912428			false	false	
 PKP2	PKP2_Asn513Asp	VUS	VUS	-0.1738103467110135			false	false	
 PKP2	PKP2_Asn598Lys	VUS	VUS	-1.2007384480709231			false	false	
@@ -966,7 +966,7 @@ PKP2	PKP2_Leu481Arg	Conflicting	Conflicting	0.5536895677083674		0.16380935909837
 PKP2	PKP2_Lys472Arg	VUS	VUS	-0.15186050236515145			false	false	
 PKP2	PKP2_Lys724Thr	Conflicting	Conflicting	-0.5548262702830941			false	false	
 PKP2	PKP2_Met365Val	Conflicting	Conflicting	-0.15419160550106		0.18122911930236138	false	false	false
-PKP2	PKP2_Phe424Ser	VUS	VUS	1.6908817277972779			false	false	
+PKP2	PKP2_Phe424Ser	VUS	VUS	1.6908817277972779		0.697364355568772	false	false	true
 PKP2	PKP2_Pro156Ala	VUS	VUS	2.0546985567324616			true	false	
 PKP2	PKP2_Ser140Phe	Conflicting	Conflicting	-0.8426103954020132			false	false	
 PKP2	PKP2_Ser140Thr	VUS	VUS	-7.853486011282536			true	false	
@@ -1074,9 +1074,11 @@ RAF1	RAF1_Cys95Trp	Pathogenic	Likely pathogenic		0.7608854211490736		false	false
 RAF1	RAF1_Leu603Pro	Pathogenic	Pathogenic		0.9501162006988433		false	false	
 RAF1	RAF1_Leu613Val	Pathogenic	Pathogenic		0.79441929048666		false	false	
 RAF1	RAF1_Phe22Leu	Benign	Likely benign		0.664065204650373		false	false	
+RAF1	RAF1_Pro225Ser	Others	Others		0.8400227408271465		false	false	
 RAF1	RAF1_Ser427Gly	Pathogenic	Likely pathogenic		0.7736220483313998		false	false	
 RAF1	RAF1_Thr145Pro	Pathogenic	Likely pathogenic		0.687317434177529		false	false	
 RAF1	RAF1_Thr491Arg	Pathogenic	Likely pathogenic		0.7792184176096615		false	false	
+RAF1	RAF1_Thr491Ile	Others	Others		0.6755519757530309		false	false	
 RET	RET_Arg313Gln	VUS	VUS		0.7833764794679428		false	false	
 RET	RET_Arg330Gln	Conflicting	Conflicting		0.9591082167793807		false	true	
 RET	RET_Arg67His	Benign	Likely benign		0.769387573081834		false	false	
@@ -1141,13 +1143,20 @@ SH3BP2	SH3BP2_Gly420Arg	Pathogenic	Pathogenic	2.170471900351931			true	false
 SH3BP2	SH3BP2_Pro418Arg	Pathogenic	Pathogenic		0.6824895911903823	0.21454225093106882	false	false	false
 SH3BP2	SH3BP2_Pro418His	Pathogenic	Pathogenic	0.2336689870692553	0.6670287908254318	0.09068518777122392	false	false	false
 SH3BP2	SH3BP2_Pro418Leu	Pathogenic	Likely pathogenic	2.3570816099354044	0.6122622173322809	0.22428067028081017	true	false	false
+SHOC2	SHOC2_Asn527Ser	Others	Others		0.7710175341342798		false	false	
+SHOC2	SHOC2_Gln269Arg	Others	Others		0.6676286678847452		false	false	
+SHOC2	SHOC2_Glu13Ala	Others	Others		0.7501438167944281		false	false	
+SHOC2	SHOC2_Glu25Gly	Others	Others		0.6341315825139133		false	false	
 SHOC2	SHOC2_Gly53Arg	Pathogenic	Likely pathogenic		0.7141038097413828		false	false	
+SHOC2	SHOC2_Ile112Thr	Others	Others		0.6785073534665893		false	false	
+SHOC2	SHOC2_Leu174Phe	Others	Others		0.83695583547662		false	false	
 SHOC2	SHOC2_Met173Val	Conflicting	Conflicting		0.803022799751459		false	false	
 SHOC2	SHOC2_Ser2Gly	Pathogenic	Pathogenic		0.9773181444696033		false	true	
 SHOC2	SHOC2_Ser403Gly	Benign	Likely benign		0.807299952424563		false	false	
 SHOC2	SHOC2_Ser4Arg	Benign	Benign		0.8136433297193351		false	false	
 SHOC2	SHOC2_Ser57Phe	Conflicting	Conflicting		0.6781057112412727		false	false	
 SHOC2	SHOC2_Thr205Ala	Benign	Likely benign		0.7065534444042283		false	false	
+SHOC2	SHOC2_Thr321Ala	Others	Others		0.8265709649959601		false	false	
 SIX1	SIX1_Arg110Trp	Pathogenic	Pathogenic	-0.5487921278640774			false	false	
 SIX1	SIX1_Arg112Cys	Others	Others	-0.682411684191356			false	false	
 SIX1	SIX1_Asp227Tyr	Conflicting	Conflicting	-0.545613787231773			false	false	
@@ -1160,9 +1169,9 @@ SMAD3	SMAD3_Arg243Cys	Conflicting	Conflicting	-0.4551273519922421			false	false
 SMAD3	SMAD3_Arg243His	VUS	VUS	-0.482619818714428			false	false	
 SMAD3	SMAD3_Arg268Cys	Pathogenic	Likely pathogenic	-1.5844254050333928	0.697220660442252	0.19267088552890202	false	false	false
 SMAD3	SMAD3_Arg268His	Pathogenic	Likely pathogenic	-0.5026216656649343			false	false	
-SMAD3	SMAD3_Arg279Lys	Pathogenic	Pathogenic	-1.486785730703656	0.7930987354609764		false	false	
+SMAD3	SMAD3_Arg279Lys	Pathogenic	Pathogenic	-1.486785730703656	0.7930987354609764	0.5966376880492004	false	false	false
 SMAD3	SMAD3_Arg287Gln	Pathogenic	Likely pathogenic	-2.8683464545694104			true	false	
-SMAD3	SMAD3_Arg287Trp	Pathogenic	Likely pathogenic		0.8422439911091602		false	false	
+SMAD3	SMAD3_Arg287Trp	Pathogenic	Likely pathogenic	-3.763320407925178	0.8422439911091602	0.14683740635670975	true	false	false
 SMAD3	SMAD3_Arg323His	Conflicting	Conflicting	-0.8083987639332454	0.724576827406402	0.3642366998207893	false	false	false
 SMAD3	SMAD3_Arg373His	Conflicting	Conflicting	-0.31245804004684424			false	false	
 SMAD3	SMAD3_Arg385Gly	Conflicting	Conflicting		0.8685043057081775		false	false	
@@ -1180,7 +1189,7 @@ SMAD3	SMAD3_Cys109Tyr	VUS	VUS		0.9947907432456968	0.7071525868489712	false	true	
 SMAD3	SMAD3_Cys64Arg	VUS	VUS	-4.004651115916261			true	false	
 SMAD3	SMAD3_Gln316Pro	VUS	VUS	-4.6920701403740095	0.8625113497648953		true	false	
 SMAD3	SMAD3_Glu228Lys	VUS	VUS	-2.3305978794782805			false	false	
-SMAD3	SMAD3_Glu239Lys	Pathogenic	Likely pathogenic		0.9723755851570736		false	true	
+SMAD3	SMAD3_Glu239Lys	Pathogenic	Likely pathogenic	-5.126739163082886	0.9723755851570736	0.6832370315106151	true	true	true
 SMAD3	SMAD3_Glu284Gln	VUS	VUS	0.23982515290646955	0.6709739139617761	0.12027548432444714	false	false	false
 SMAD3	SMAD3_Glu361Gln	VUS	VUS	0.06814127854680192			false	false	
 SMAD3	SMAD3_Glu361Lys	VUS	VUS	-0.8364046562202709			false	false	
@@ -1201,13 +1210,13 @@ SMAD3	SMAD3_Pro124Leu	Conflicting	Conflicting	-3.249617161941845		0.707051910968
 SMAD3	SMAD3_Pro147Leu	VUS	VUS	-1.587348142701149			false	false	
 SMAD3	SMAD3_Pro263Ala	Pathogenic	Pathogenic		0.7428400910530384		false	false	
 SMAD3	SMAD3_Pro263Arg	Conflicting	Conflicting	0.39421286684500617			false	false	
-SMAD3	SMAD3_Pro263Leu	Conflicting	Conflicting		0.7440584661253711	0.19626731963697328	false	false	false
+SMAD3	SMAD3_Pro263Leu	Conflicting	Conflicting	-1.7798594071050424	0.7440584661253711	0.19626731963697328	false	false	false
 SMAD3	SMAD3_Pro6Leu	VUS	VUS	-0.0783363880658493			false	false	
 SMAD3	SMAD3_Ser355Leu	VUS	VUS	-1.304383462800322	0.7533175271616932		false	false	
 SMAD3	SMAD3_Ser423Arg	VUS	VUS	-0.883372986406661	0.7124244889632612	0.3371579616803649	false	false	false
 SMAD3	SMAD3_Thr132Ala	VUS	VUS	0.3193569837907745			false	false	
 SMAD3	SMAD3_Thr261Ala	VUS	VUS	0.5137525173040248			false	false	
-SMAD3	SMAD3_Thr261Ile	Pathogenic	Pathogenic		0.9048606988548265		false	false	
+SMAD3	SMAD3_Thr261Ile	Pathogenic	Pathogenic	-0.6318558629204958	0.9048606988548265	0.15032819650245108	false	false	false
 SMAD3	SMAD3_Thr57Pro	VUS	VUS	-4.064282262819771			true	false	
 SMAD3	SMAD3_Trp232Cys	VUS	VUS	-6.644584260404235	0.981734854281652	0.4355815225925545	true	true	false
 SMAD3	SMAD3_Trp94Leu	Conflicting	Conflicting	-3.7551557290142736	0.9818529744069975	0.673788252787291	true	true	false
@@ -1251,7 +1260,7 @@ STXBP1	STXBP1_Asn398Ser	VUS	VUS	-0.16803406751496303		0.5509582198525076	false	f
 STXBP1	STXBP1_Asn548Asp	Pathogenic	Likely pathogenic	-6.584100583729033		0.7885152316068033	true	false	true
 STXBP1	STXBP1_Asp207Asn	VUS	VUS	0.8130406366015078			false	false	
 STXBP1	STXBP1_Asp238Glu	VUS	VUS	-6.911123561352408		0.8854823675894241	true	false	true
-STXBP1	STXBP1_Cys180Tyr	Pathogenic	Pathogenic			0.760931494893594	false	false	true
+STXBP1	STXBP1_Cys180Tyr	Pathogenic	Pathogenic	-5.551695371053185		0.760931494893594	true	false	true
 STXBP1	STXBP1_Cys354Arg	Pathogenic	Pathogenic	-7.433812495167485		0.89840800837882	true	false	true
 STXBP1	STXBP1_Cys354Tyr	Pathogenic	Likely pathogenic	-6.183332926969716			true	false	
 STXBP1	STXBP1_Glu12Asp	Conflicting	Conflicting	-1.2933463329319923			false	false	
