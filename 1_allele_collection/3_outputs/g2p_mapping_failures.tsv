@@ -1,1077 +1,1077 @@
-variant_id	gene	aa_change	failure_reason	details
-210253	TEK	Arg892His	residue_mismatch	Expected R at position 892, but G2P has C
-204632	ZEB1	Gln841Pro	residue_mismatch	Expected Q at position 841, but G2P has V
-28356	AMPD3	Asn319Lys	residue_mismatch	Expected N at position 319, but G2P has H
-28358	AMPD3	Ala329Val	residue_mismatch	Expected A at position 329, but G2P has L
-28363	AMPD3	Trp459Arg	residue_mismatch	Expected W at position 459, but G2P has Q
-28365	AMPD3	Pro594Leu	residue_mismatch	Expected P at position 594, but G2P has T
-22447	ANTXR2	Tyr45Cys	residue_mismatch	Expected Y at position 45, but G2P has L
-22449	ANTXR2	Val50Phe	residue_mismatch	Expected V at position 50, but G2P has D
-22450	ANTXR2	Val58Ala	residue_mismatch	Expected V at position 58, but G2P has N
-9656	VCP	Thr44Ala	residue_mismatch	Expected T at position 44, but G2P has P
-9658	VCP	Ala221Ser	residue_mismatch	Expected A at position 221, but G2P has E
-215408	PUF60	His152Tyr	residue_mismatch	Expected H at position 152, but G2P has F
-201632	STXBP2	Pro474Leu	residue_mismatch	Expected P at position 474, but G2P has R
-18119	A2M	Val1000Ile	residue_mismatch	Expected V at position 1000, but G2P has I
-18293	TRAK2	Ile142Val	residue_mismatch	Expected I at position 142, but G2P has V
-34794	PYY	Arg72Thr	residue_mismatch	Expected R at position 72, but G2P has T
-218616	DPM3	Leu115Ser	position_not_in_g2p	Position 115 not found in G2P data (protein length: 92)
-16119	F12	Trp190Cys	residue_mismatch	Expected W at position 190, but G2P has L
-16123	F12	Cys275Ser	residue_mismatch	Expected C at position 275, but G2P has P
-27874	KLKB1	Asn143Ser	residue_mismatch	Expected N at position 143, but G2P has S
-22392	SLC2A2	Val24Ile	residue_mismatch	Expected V at position 24, but G2P has F
-22397	SLC2A2	Gly145Arg	residue_mismatch	Expected G at position 145, but G2P has S
-22402	SLC2A2	Val250Glu	residue_mismatch	Expected V at position 250, but G2P has L
-22403	SLC2A2	Trp271Arg	residue_mismatch	Expected W at position 271, but G2P has K
-218068	SLC2A2	Leu216Pro	residue_mismatch	Expected L at position 216, but G2P has D
-218070	SLC2A2	Pro244Leu	residue_mismatch	Expected P at position 244, but G2P has R
-204320	SS18L1	Ile126Met	residue_mismatch	Expected I at position 126, but G2P has G
-16935	CLCN2	Arg101Gln	residue_mismatch	Expected R at position 101, but G2P has M
-16938	CLCN2	Gly239Glu	residue_mismatch	Expected G at position 239, but G2P has M
-16941	CLCN2	Arg249Trp	residue_mismatch	Expected R at position 249, but G2P has G
-216784	CLCN2	Ala24Val	residue_mismatch	Expected A at position 24, but G2P has G
-2234	PRKAG2	Thr159Asn	residue_mismatch	Expected T at position 159, but G2P has L
-2235	PRKAG2	Tyr246His	residue_mismatch	Expected Y at position 246, but G2P has L
-2240	PRKAG2	Arg290Gln	residue_mismatch	Expected R at position 290, but G2P has K
-218323	PRKAG2	His339Arg	residue_mismatch	Expected H at position 339, but G2P has Y
-218325	PRKAG2	Asn444Ile	residue_mismatch	Expected N at position 444, but G2P has P
-218327	PRKAG2	Glu462Gln	residue_mismatch	Expected E at position 462, but G2P has V
-218330	PRKAG2	Ser504Pro	residue_mismatch	Expected S at position 504, but G2P has Y
-218331	PRKAG2	His486Arg	residue_mismatch	Expected H at position 486, but G2P has T
-9645	AMT	Asn48Ile	residue_mismatch	Expected N at position 48, but G2P has K
-9648	AMT	Val115Ala	residue_mismatch	Expected V at position 115, but G2P has T
-9650	AMT	Gly172Asp	residue_mismatch	Expected G at position 172, but G2P has L
-9653	AMT	Arg223His	residue_mismatch	Expected R at position 223, but G2P has C
-215379	AMT	Tyr128Cys	residue_mismatch	Expected Y at position 128, but G2P has D
-215381	AMT	Asp179His	residue_mismatch	Expected D at position 179, but G2P has L
-31767	TMPRSS5	Ala285Ser	residue_mismatch	Expected A at position 285, but G2P has P
-14939	CIDEA	Val149Phe	residue_mismatch	Expected V at position 149, but G2P has A
-205052	CHAT	Leu92Pro	residue_mismatch	Expected L at position 92, but G2P has P
-205054	CHAT	Ile187Thr	residue_mismatch	Expected I at position 187, but G2P has Q
-205055	CHAT	Ile218Thr	residue_mismatch	Expected I at position 218, but G2P has V
-205058	CHAT	Arg364Gly	residue_mismatch	Expected R at position 364, but G2P has A
-205061	CHAT	Arg442His	residue_mismatch	Expected R at position 442, but G2P has H
-216781	PIGO	Leu322Phe	residue_mismatch	Expected L at position 322, but G2P has S
-32825	ATP2B2	Val586Met	residue_mismatch	Expected V at position 586, but G2P has P
-202814	CTSA	Trp64Arg	residue_mismatch	Expected W at position 64, but G2P has Y
-202815	CTSA	Val131Met	residue_mismatch	Expected V at position 131, but G2P has G
-202816	CTSA	Tyr248Asn	residue_mismatch	Expected Y at position 248, but G2P has F
-202817	CTSA	Tyr394Cys	residue_mismatch	Expected Y at position 394, but G2P has L
-202818	CTSA	Met405Thr	residue_mismatch	Expected M at position 405, but G2P has F
-202819	CTSA	Lys452Glu	residue_mismatch	Expected K at position 452, but G2P has I
-31711	TPH2	Pro212Ser	residue_mismatch	Expected P at position 212, but G2P has Y
-31712	TPH2	Arg309Trp	residue_mismatch	Expected R at position 309, but G2P has L
-31713	TPH2	Pro318Pro	residue_mismatch	Expected P at position 318, but G2P has H
-31714	TPH2	Arg447His	residue_mismatch	Expected R at position 447, but G2P has F
-16928	NDUFS1	Gln50Lys	residue_mismatch	Expected Q at position 50, but G2P has L
-2077	PCCA	Ala50Pro	residue_mismatch	Expected A at position 50, but G2P has N
-2094	PCCA	Leu392Trp	residue_mismatch	Expected L at position 392, but G2P has N
-2102	PCCA	Met641Lys	residue_mismatch	Expected M at position 641, but G2P has R
-200361	PCCA	Ile139Thr	residue_mismatch	Expected I at position 139, but G2P has V
-200362	PCCA	Arg263Gly	residue_mismatch	Expected R at position 263, but G2P has F
-200363	PCCA	Met348Lys	residue_mismatch	Expected M at position 348, but G2P has L
-200364	PCCA	Ile450Val	residue_mismatch	Expected I at position 450, but G2P has S
-31257	MERTK	Arg668Cys	residue_mismatch	Expected R at position 668, but G2P has M
-31258	MERTK	Arg733His	residue_mismatch	Expected R at position 733, but G2P has D
-216765	PIEZO1	Met93Arg	residue_mismatch	Expected M at position 93, but G2P has P
-227956	KCNH2	Trp228Cys	residue_mismatch	Expected W at position 228, but G2P has A
-21025	HJV	Asp23His	residue_mismatch	Expected D at position 23, but G2P has L
-21026	HJV	Gly24Val	residue_mismatch	Expected G at position 24, but G2P has T
-21027	HJV	Ile55Thr	residue_mismatch	Expected I at position 55, but G2P has G
-21028	HJV	Arg62Trp	residue_mismatch	Expected R at position 62, but G2P has L
-217588	HJV	Gly94Val	residue_mismatch	Expected G at position 94, but G2P has A
-214959	SUCLG1	Gly72Ala	residue_mismatch	Expected G at position 72, but G2P has S
-214960	SUCLG1	Pro157Arg	residue_mismatch	Expected P at position 157, but G2P has H
-213583	EZH2	Ala682Thr	residue_mismatch	Expected A at position 682, but G2P has N
-213584	EZH2	Arg684Cys	residue_mismatch	Expected R at position 684, but G2P has I
-213585	EZH2	His694Tyr	residue_mismatch	Expected H at position 694, but G2P has N
-27917	SYN3	Ser469Asn	residue_mismatch	Expected S at position 469, but G2P has L
-17706	EGR2	Arg404His	residue_mismatch	Expected R at position 404, but G2P has G
-17709	EGR2	Glu435Lys	residue_mismatch	Expected E at position 435, but G2P has V
-216955	EGR2	Asp406Tyr	residue_mismatch	Expected D at position 406, but G2P has K
-14068	MPI	Gly189Ser	residue_mismatch	Expected G at position 189, but G2P has A
-14072	MPI	Arg357His	residue_mismatch	Expected R at position 357, but G2P has T
-14161	BUB1B	Gln349Arg	residue_mismatch	Expected Q at position 349, but G2P has R
-215126	STAC3	Trp245Ser	residue_mismatch	Expected W at position 245, but G2P has G
-5345	PLAU	Pro141Leu	residue_mismatch	Expected P at position 141, but G2P has L
-20119	PHF8	Phe279Ser	residue_mismatch	Expected F at position 279, but G2P has Y
-3996	TH	Val468Met	residue_mismatch	Expected V at position 468, but G2P has F
-3998	TH	Thr463Met	residue_mismatch	Expected T at position 463, but G2P has F
-3999	TH	Pro454His	residue_mismatch	Expected P at position 454, but G2P has Q
-4001	TH	Thr368Met	residue_mismatch	Expected T at position 368, but G2P has P
-4002	TH	Gly357Arg	residue_mismatch	Expected G at position 357, but G2P has P
-4003	TH	Cys328Phe	residue_mismatch	Expected C at position 328, but G2P has R
-4003	TH	Cys328Phe	residue_mismatch	Expected C at position 328, but G2P has R
-4004	TH	Arg306His	residue_mismatch	Expected R at position 306, but G2P has V
-4005	TH	Thr283Met	residue_mismatch	Expected T at position 283, but G2P has L
-4006	TH	Asp267His	residue_mismatch	Expected D at position 267, but G2P has Y
-4008	TH	Glu250Gln	residue_mismatch	Expected E at position 250, but G2P has I
-4009	TH	Thr245Pro	residue_mismatch	Expected T at position 245, but G2P has R
-4009	TH	Thr245Pro	residue_mismatch	Expected T at position 245, but G2P has R
-4010	TH	Ala226Thr	residue_mismatch	Expected A at position 226, but G2P has S
-4011	TH	Arg221Leu	residue_mismatch	Expected R at position 221, but G2P has D
-4012	TH	Ile219Thr	residue_mismatch	Expected I at position 219, but G2P has D
-4013	TH	Pro218Leu	residue_mismatch	Expected P at position 218, but G2P has L
-4014	TH	Ile209Met	residue_mismatch	Expected I at position 209, but G2P has H
-4015	TH	Leu205Pro	residue_mismatch	Expected L at position 205, but G2P has D
-4016	TH	Arg202His	residue_mismatch	Expected R at position 202, but G2P has S
-4017	TH	Arg200His	residue_mismatch	Expected R at position 200, but G2P has K
-4018	TH	Val136Met	residue_mismatch	Expected V at position 136, but G2P has T
-4019	TH	Arg133His	residue_mismatch	Expected R at position 133, but G2P has V
-4020	TH	Pro121Leu	residue_mismatch	Expected P at position 121, but G2P has A
-4021	TH	Arg89Arg	residue_mismatch	Expected R at position 89, but G2P has A
-4022	TH	Pro88Leu	residue_mismatch	Expected P at position 88, but G2P has A
-4025	TH	Gln39Glu	residue_mismatch	Expected Q at position 39, but G2P has P
-36334	TH	His215Tyr	residue_mismatch	Expected H at position 215, but G2P has D
-36336	TH	Thr245Pro	residue_mismatch	Expected T at position 245, but G2P has R
-36336	TH	Thr245Pro	residue_mismatch	Expected T at position 245, but G2P has R
-36341	TH	Cys328Phe	residue_mismatch	Expected C at position 328, but G2P has R
-36341	TH	Cys328Phe	residue_mismatch	Expected C at position 328, but G2P has R
-36345	TH	Gln381Lys	residue_mismatch	Expected Q at position 381, but G2P has D
-219507	MASP1	His497Tyr	residue_mismatch	Expected H at position 497, but G2P has D
-219508	MASP1	Gly666Glu	residue_mismatch	Expected G at position 666, but G2P has V
-18292	GABBR1	Gly372Ser	residue_mismatch	Expected G at position 372, but G2P has R
-6747	NF2	Gly114Cys	residue_mismatch	Expected G at position 114, but G2P has T
-6750	NF2	Asn137Tyr	residue_mismatch	Expected N at position 137, but G2P has A
-6778	NF2	Arg335Cys	residue_mismatch	Expected R at position 335, but G2P has E
-6794	NF2	Leu452Pro	residue_mismatch	Expected L at position 452, but G2P has D
-0	NF2	Arg335Cys	residue_mismatch	Expected R at position 335, but G2P has E
-0	NF2	Gly114Cys	residue_mismatch	Expected G at position 114, but G2P has T
-0	NF2	Glu111Asp	residue_mismatch	Expected E at position 111, but G2P has Q
-0	NF2	Gly157Glu	residue_mismatch	Expected G at position 157, but G2P has V
-0	NF2	Lys206Glu	residue_mismatch	Expected K at position 206, but G2P has E
-0	NF2	Leu315Pro	residue_mismatch	Expected L at position 315, but G2P has S
-0	NF2	Leu434Pro	residue_mismatch	Expected L at position 434, but G2P has E
-0	NF2	Leu459Phe	residue_mismatch	Expected L at position 459, but G2P has Q
-0	NF2	Glu462Lys	residue_mismatch	Expected E at position 462, but G2P has R
-0	NF2	His479Arg	residue_mismatch	Expected H at position 479, but G2P has P
-0	NF2	Asn92Ser	residue_mismatch	Expected N at position 92, but G2P has V
-0	NF2	Met100Leu	residue_mismatch	Expected M at position 100, but G2P has F
-0	NF2	Leu131Pro	residue_mismatch	Expected L at position 131, but G2P has I
-0	NF2	Val136Met	residue_mismatch	Expected V at position 136, but G2P has E
-0	NF2	Lys186Glu	residue_mismatch	Expected K at position 186, but G2P has E
-0	NF2	Thr336Arg	residue_mismatch	Expected T at position 336, but G2P has R
-0	NF2	Asp411His	residue_mismatch	Expected D at position 411, but G2P has R
-0	NF2	Asp420Asn	residue_mismatch	Expected D at position 420, but G2P has E
-204752	KCNQ1	Thr17Ala	residue_mismatch	Expected T at position 17, but G2P has W
-204754	KCNQ1	Thr26Met	residue_mismatch	Expected T at position 26, but G2P has G
-204756	KCNQ1	Val35Met	residue_mismatch	Expected V at position 35, but G2P has P
-204757	KCNQ1	Tyr57His	residue_mismatch	Expected Y at position 57, but G2P has G
-204758	KCNQ1	Arg68Trp	residue_mismatch	Expected R at position 68, but G2P has A
-204766	KCNQ1	Leu76Pro	residue_mismatch	Expected L at position 76, but G2P has A
-204767	KCNQ1	Trp121Arg	residue_mismatch	Expected W at position 121, but G2P has K
-204768	KCNQ1	Asp115Tyr	residue_mismatch	Expected D at position 115, but G2P has E
-204771	KCNQ1	Glu157Lys	residue_mismatch	Expected E at position 157, but G2P has F
-204773	KCNQ1	Arg166Cys	residue_mismatch	Expected R at position 166, but G2P has F
-204776	KCNQ1	Ile141Ser	residue_mismatch	Expected I at position 141, but G2P has V
-204778	KCNQ1	Ala175Glu	residue_mismatch	Expected A at position 175, but G2P has L
-204783	KCNQ1	Pro216Ser	residue_mismatch	Expected P at position 216, but G2P has G
-204784	KCNQ1	Pro216Leu	residue_mismatch	Expected P at position 216, but G2P has G
-204801	KCNQ1	Arg239Trp	residue_mismatch	Expected R at position 239, but G2P has L
-204818	KCNQ1	Lys430Glu	residue_mismatch	Expected K at position 430, but G2P has G
-204828	KCNQ1	Arg456His	residue_mismatch	Expected R at position 456, but G2P has F
-36331	GP6	Ser219Pro	residue_mismatch	Expected S at position 219, but G2P has P
-201069	CREB1	Asp116Gly	residue_mismatch	Expected D at position 116, but G2P has R
-30201	APTX	Ala110Val	residue_mismatch	Expected A at position 110, but G2P has Y
-30204	APTX	His140Arg	residue_mismatch	Expected H at position 140, but G2P has R
-30209	APTX	Val175Gly	residue_mismatch	Expected V at position 175, but G2P has K
-219209	APTX	Pro118Leu	residue_mismatch	Expected P at position 118, but G2P has A
-0	F9	Cys124Tyr	residue_mismatch	Expected C at position 124, but G2P has E
-204649	NYX	Cys31Ser	residue_mismatch	Expected C at position 31, but G2P has A
-204651	NYX	Pro151Leu	residue_mismatch	Expected P at position 151, but G2P has A
-204652	NYX	Pro175Arg	residue_mismatch	Expected P at position 175, but G2P has G
-204656	NYX	Asn264Lys	residue_mismatch	Expected N at position 264, but G2P has V
-204657	NYX	Leu285Pro	residue_mismatch	Expected L at position 285, but G2P has I
-204659	NYX	Asn312Ser	residue_mismatch	Expected N at position 312, but G2P has L
-204660	NYX	Leu347Pro	residue_mismatch	Expected L at position 347, but G2P has E
-204663	NYX	Arg94Pro	residue_mismatch	Expected R at position 94, but G2P has S
-28459	UTS2	Ser44Asn	residue_mismatch	Expected S at position 44, but G2P has P
-16892	PANK2	Asp11Asn	residue_mismatch	Expected D at position 11, but G2P has V
-16896	PANK2	Ser35Asn	residue_mismatch	Expected S at position 35, but G2P has P
-16909	PANK2	Gly85Arg	residue_mismatch	Expected G at position 85, but G2P has N
-16913	PANK2	Phe114Leu	residue_mismatch	Expected F at position 114, but G2P has L
-5231	TAFAZZIN	Arg69Cys	residue_mismatch	Expected R at position 69, but G2P has H
-5239	TAFAZZIN	Gly128Val	residue_mismatch	Expected G at position 128, but G2P has Y
-5241	TAFAZZIN	Leu141Arg	residue_mismatch	Expected L at position 141, but G2P has H
-201034	TAFAZZIN	Arg69Ser	residue_mismatch	Expected R at position 69, but G2P has H
-201035	TAFAZZIN	Cys93Arg	residue_mismatch	Expected C at position 93, but G2P has M
-201036	TAFAZZIN	Ser85Pro	residue_mismatch	Expected S at position 85, but G2P has R
-201037	TAFAZZIN	Gly128Glu	residue_mismatch	Expected G at position 128, but G2P has Y
-201038	TAFAZZIN	Gly128Arg	residue_mismatch	Expected G at position 128, but G2P has Y
-11465	SDC3	Val136Ile	residue_mismatch	Expected V at position 136, but G2P has L
-215893	SDC3	Thr257Ile	residue_mismatch	Expected T at position 257, but G2P has R
-900194	SDC3	Asp231Asn	residue_mismatch	Expected D at position 231, but G2P has S
-215306	ABCB7	Glu209Asp	residue_mismatch	Expected E at position 209, but G2P has V
-215307	ABCB7	Ile401Met	residue_mismatch	Expected I at position 401, but G2P has V
-215308	ABCB7	Glu434Lys	residue_mismatch	Expected E at position 434, but G2P has T
-215309	ABCB7	Val412Leu	residue_mismatch	Expected V at position 412, but G2P has M
-2601	TMEM67	Pro120Arg	residue_mismatch	Expected P at position 120, but G2P has D
-2609	TMEM67	Gln366Pro	residue_mismatch	Expected Q at position 366, but G2P has A
-2613	TMEM67	Tyr503Cys	residue_mismatch	Expected Y at position 503, but G2P has Q
-2622	TMEM67	Leu956Pro	residue_mismatch	Expected L at position 956, but G2P has N
-200463	TMEM67	Tyr44Cys	residue_mismatch	Expected Y at position 44, but G2P has Q
-7935	ACSM3	Lys359Asn	residue_mismatch	Expected K at position 359, but G2P has D
-3854	ZNF41	Pro111Leu	residue_mismatch	Expected P at position 111, but G2P has Q
-900185	ZNF41	Ile125Arg	residue_mismatch	Expected I at position 125, but G2P has E
-900188	ZNF41	Cys301Arg	residue_mismatch	Expected C at position 301, but G2P has T
-218044	UMOD	Val244Phe	residue_mismatch	Expected V at position 244, but G2P has S
-218046	UMOD	Cys271Gly	residue_mismatch	Expected C at position 271, but G2P has Y
-218048	UMOD	Cys286Tyr	residue_mismatch	Expected C at position 286, but G2P has Y
-204313	RBPJ	Glu48Gly	residue_mismatch	Expected E at position 48, but G2P has V
-16166	F8	Arg47Pro	residue_mismatch	Expected R at position 47, but G2P has A
-16181	F8	Glu65Asp	residue_mismatch	Expected E at position 65, but G2P has Y
-16214	F8	Trp113Cys	residue_mismatch	Expected W at position 113, but G2P has H
-16263	F8	Arg191Gln	residue_mismatch	Expected R at position 191, but G2P has L
-216703	F8	Arg47Cys	residue_mismatch	Expected R at position 47, but G2P has A
-216704	F8	Leu50Ser	residue_mismatch	Expected L at position 50, but G2P has P
-216705	F8	Arg34His	residue_mismatch	Expected R at position 34, but G2P has D
-216706	F8	Arg43Cys	residue_mismatch	Expected R at position 43, but G2P has L
-216707	F8	Thr38Ile	residue_mismatch	Expected T at position 38, but G2P has S
-216708	F8	Arg47His	residue_mismatch	Expected R at position 47, but G2P has A
-216709	F8	Pro37Gln	residue_mismatch	Expected P at position 37, but G2P has Q
-216710	F8	Arg43His	residue_mismatch	Expected R at position 43, but G2P has L
-216711	F8	Arg43Leu	residue_mismatch	Expected R at position 43, but G2P has L
-216712	F8	Arg93Gly	residue_mismatch	Expected R at position 93, but G2P has P
-216713	F8	Arg93Gln	residue_mismatch	Expected R at position 93, but G2P has P
-216715	F8	Ala76Pro	residue_mismatch	Expected A at position 76, but G2P has H
-216716	F8	Met122Val	residue_mismatch	Expected M at position 122, but G2P has V
-216717	F8	Gln130Arg	residue_mismatch	Expected Q at position 130, but G2P has G
-216719	F8	Arg191Leu	residue_mismatch	Expected R at position 191, but G2P has L
-216720	F8	Pro184Leu	residue_mismatch	Expected P at position 184, but G2P has V
-216721	F8	Pro184Ser	residue_mismatch	Expected P at position 184, but G2P has V
-216722	F8	Arg188Cys	residue_mismatch	Expected R at position 188, but G2P has N
-216723	F8	Arg188His	residue_mismatch	Expected R at position 188, but G2P has N
-10271	HIBCH	Tyr117Cys	residue_mismatch	Expected Y at position 117, but G2P has F
-225725	NKX2-1	Trp238Leu	residue_mismatch	Expected W at position 238, but G2P has G
-225727	NKX2-1	Val235Phe	residue_mismatch	Expected V at position 235, but G2P has G
-22370	VHL	Leu157Arg	residue_mismatch	Expected L at position 157, but G2P has T
-204005	VHL	Tyr115Cys	residue_mismatch	Expected Y at position 115, but G2P has H
-204006	VHL	His150Asp	residue_mismatch	Expected H at position 150, but G2P has N
-204008	VHL	Tyr134Cys	residue_mismatch	Expected Y at position 134, but G2P has E
-204009	VHL	Val125Ala	residue_mismatch	Expected V at position 125, but G2P has H
-204010	VHL	Leu122Pro	residue_mismatch	Expected L at position 122, but G2P has A
-204012	VHL	Arg126Gly	residue_mismatch	Expected R at position 126, but G2P has D
-204013	VHL	Arg126Trp	residue_mismatch	Expected R at position 126, but G2P has D
-204015	VHL	Cys121Phe	residue_mismatch	Expected C at position 121, but G2P has D
-204016	VHL	Gln123Arg	residue_mismatch	Expected Q at position 123, but G2P has G
-204017	VHL	Glu145Lys	residue_mismatch	Expected E at position 145, but G2P has Q
-204018	VHL	Leu147Val	residue_mismatch	Expected L at position 147, but G2P has I
-204020	VHL	Arg159Trp	residue_mismatch	Expected R at position 159, but G2P has K
-215345	P3H2	Gly327Val	residue_mismatch	Expected G at position 327, but G2P has E
-18055	TULP1	Phe329Ser	residue_mismatch	Expected F at position 329, but G2P has D
-18058	TULP1	Arg367Pro	residue_mismatch	Expected R at position 367, but G2P has I
-18061	TULP1	Arg429Trp	residue_mismatch	Expected R at position 429, but G2P has S
-18064	TULP1	Ala443Thr	residue_mismatch	Expected A at position 443, but G2P has S
-216993	TULP1	Arg127His	residue_mismatch	Expected R at position 127, but G2P has D
-216995	TULP1	Arg347Trp	residue_mismatch	Expected R at position 347, but G2P has T
-216999	TULP1	Ile406Lys	residue_mismatch	Expected I at position 406, but G2P has V
-217001	TULP1	Lys436Arg	residue_mismatch	Expected K at position 436, but G2P has P
-15667	IHH	Glu13Lys	residue_mismatch	Expected E at position 13, but G2P has C
-15668	IHH	Thr36Ile	residue_mismatch	Expected T at position 36, but G2P has S
-15669	IHH	Val72Ala	residue_mismatch	Expected V at position 72, but G2P has A
-216672	IHH	Arg10Gln	residue_mismatch	Expected R at position 10, but G2P has L
-216673	IHH	Thr12Asn	residue_mismatch	Expected T at position 12, but G2P has F
-21337	LY96	Gly56Arg	residue_mismatch	Expected G at position 56, but G2P has R
-20081	PEMT	Val212Met	position_not_in_g2p	Position 212 not found in G2P data (protein length: 199)
-217591	VWF	Asp84His	residue_mismatch	Expected D at position 84, but G2P has L
-217592	VWF	Ser86Arg	residue_mismatch	Expected S at position 86, but G2P has V
-217593	VWF	Arg71Gly	residue_mismatch	Expected R at position 71, but G2P has S
-217594	VWF	Ser122Pro	residue_mismatch	Expected S at position 122, but G2P has T
-217595	VWF	Asp178Asn	residue_mismatch	Expected D at position 178, but G2P has G
-217596	VWF	Asp178Tyr	residue_mismatch	Expected D at position 178, but G2P has G
-217597	VWF	Asp178Gly	residue_mismatch	Expected D at position 178, but G2P has G
-217598	VWF	Asn203Ile	residue_mismatch	Expected N at position 203, but G2P has A
-217600	VWF	Leu166Met	residue_mismatch	Expected L at position 166, but G2P has N
-217601	VWF	Leu187Pro	residue_mismatch	Expected L at position 187, but G2P has F
-23116	FABP2	Ala55Thr	residue_mismatch	Expected A at position 55, but G2P has T
-21938	MT1A	Asn27Thr	residue_mismatch	Expected N at position 27, but G2P has T
-4070	TFAP2A	Arg248Trp	residue_mismatch	Expected R at position 248, but G2P has L
-4071	TFAP2A	Arg249Gly	residue_mismatch	Expected R at position 249, but G2P has L
-4072	TFAP2A	Gly256Glu	residue_mismatch	Expected G at position 256, but G2P has A
-214233	FGFR1	Ile637Thr	residue_mismatch	Expected I at position 637, but G2P has M
-214235	FGFR1	Glu668Lys	residue_mismatch	Expected E at position 668, but G2P has A
-214237	FGFR1	Pro720Ser	residue_mismatch	Expected P at position 720, but G2P has D
-214242	FGFR1	Asp766Tyr	residue_mismatch	Expected D at position 766, but G2P has Y
-12480	PITX2	Leu107Gln	residue_mismatch	Expected L at position 107, but G2P has N
-12484	PITX2	Pro117Arg	residue_mismatch	Expected P at position 117, but G2P has E
-12488	PITX2	Val136Leu	residue_mismatch	Expected V at position 136, but G2P has R
-12499	PITX2	Gly190Val	residue_mismatch	Expected G at position 190, but G2P has S
-216121	PITX2	Thr121Pro	residue_mismatch	Expected T at position 121, but G2P has W
-216122	PITX2	Arg122His	residue_mismatch	Expected R at position 122, but G2P has T
-216124	PITX2	Lys141Glu	residue_mismatch	Expected K at position 141, but G2P has R
-216125	PITX2	Arg144Pro	residue_mismatch	Expected R at position 144, but G2P has E
-17762	SETX	Leu127Arg	residue_mismatch	Expected L at position 127, but G2P has E
-17763	SETX	Leu128Phe	residue_mismatch	Expected L at position 128, but G2P has R
-17764	SETX	Arg287His	residue_mismatch	Expected R at position 287, but G2P has W
-17769	SETX	Arg595His	residue_mismatch	Expected R at position 595, but G2P has I
-9310	PLTP	Arg183Trp	residue_mismatch	Expected R at position 183, but G2P has Q
-9311	PLTP	Arg424Gln	residue_mismatch	Expected R at position 424, but G2P has P
-30865	CYP11B1	Leu128Ser	residue_mismatch	Expected L at position 128, but G2P has G
-30869	CYP11B1	His170Arg	residue_mismatch	Expected H at position 170, but G2P has Q
-30886	CYP11B1	Thr389Pro	residue_mismatch	Expected T at position 389, but G2P has D
-30906	CYP11B1	Arg519His	position_not_in_g2p	Position 519 not found in G2P data (protein length: 503)
-219384	CYP11B1	Pro139Leu	residue_mismatch	Expected P at position 139, but G2P has F
-219385	CYP11B1	Met133Ile	residue_mismatch	Expected M at position 133, but G2P has N
-219386	CYP11B1	Arg214Trp	residue_mismatch	Expected R at position 214, but G2P has H
-219387	CYP11B1	Asn204His	residue_mismatch	Expected N at position 204, but G2P has L
-219388	CYP11B1	Ala377Val	residue_mismatch	Expected A at position 377, but G2P has P
-219389	CYP11B1	Leu370Pro	residue_mismatch	Expected L at position 370, but G2P has K
-219390	CYP11B1	Thr389Met	residue_mismatch	Expected T at position 389, but G2P has D
-219391	CYP11B1	Ala439Asp	residue_mismatch	Expected A at position 439, but G2P has Y
-219392	CYP11B1	Arg445Gln	residue_mismatch	Expected R at position 445, but G2P has F
-219393	CYP11B1	Thr390Met	residue_mismatch	Expected T at position 390, but G2P has L
-1946	CAPN3	Thr48Ala	residue_mismatch	Expected T at position 48, but G2P has S
-16549	CAPN3	Thr194Lys	residue_mismatch	Expected T at position 194, but G2P has S
-16573	CAPN3	Ala286Glu	residue_mismatch	Expected A at position 286, but G2P has L
-202962	CAPN3	Arg60Gln	residue_mismatch	Expected R at position 60, but G2P has T
-202964	CAPN3	Arg29Gln	residue_mismatch	Expected R at position 29, but G2P has S
-202965	CAPN3	Arg236Gln	residue_mismatch	Expected R at position 236, but G2P has A
-202966	CAPN3	Arg257Gln	residue_mismatch	Expected R at position 257, but G2P has E
-28578	CLCN5	Gly88Asp	residue_mismatch	Expected G at position 88, but G2P has N
-28583	CLCN5	Leu200Arg	residue_mismatch	Expected L at position 200, but G2P has D
-28614	CLCN5	Arg516Trp	residue_mismatch	Expected R at position 516, but G2P has F
-28630	CLCN5	Lys725Glu	residue_mismatch	Expected K at position 725, but G2P has V
-18928	PLA2G7	Ala379Val	residue_mismatch	Expected A at position 379, but G2P has V
-204103	MC3R	Ile183Asn	residue_mismatch	Expected I at position 183, but G2P has S
-31265	MC3R	Thr6Lys	residue_mismatch	Expected T at position 6, but G2P has C
-31270	MC3R	Thr280Ser	residue_mismatch	Expected T at position 280, but G2P has H
-12090	MSH5	Pro787Ser	residue_mismatch	Expected P at position 787, but G2P has V
-36374	TAS2R38	Val262Ala	residue_mismatch	Expected V at position 262, but G2P has A
-202115	TMEM216	Arg12His	residue_mismatch	Expected R at position 12, but G2P has G
-202116	TMEM216	Leu53Arg	residue_mismatch	Expected L at position 53, but G2P has T
-204886	NFIX	Leu59Pro	residue_mismatch	Expected L at position 59, but G2P has E
-204887	NFIX	Arg120Pro	residue_mismatch	Expected R at position 120, but G2P has L
-16945	LDLRAP1	Arg193Trp	residue_mismatch	Expected R at position 193, but G2P has L
-3303	TCF4	Gln624Pro	residue_mismatch	Expected Q at position 624, but G2P has R
-32190	TCF4	Arg580Gln	residue_mismatch	Expected R at position 580, but G2P has I
-219629	TCF4	Arg580Trp	residue_mismatch	Expected R at position 580, but G2P has I
-2242	LFNG	Phe59Leu	residue_mismatch	Expected F at position 59, but G2P has A
-203455	NR2E3	Glu33Lys	residue_mismatch	Expected E at position 33, but G2P has G
-203456	NR2E3	Arg223Gln	residue_mismatch	Expected R at position 223, but G2P has T
-3908	GDAP1	Met48Thr	residue_mismatch	Expected M at position 48, but G2P has A
-3915	GDAP1	Arg93His	residue_mismatch	Expected R at position 93, but G2P has I
-3928	GDAP1	Arg242Gln	residue_mismatch	Expected R at position 242, but G2P has E
-200702	GDAP1	Arg52Trp	residue_mismatch	Expected R at position 52, but G2P has E
-200704	GDAP1	Thr89Pro	residue_mismatch	Expected T at position 89, but G2P has E
-200705	GDAP1	His55Arg	residue_mismatch	Expected H at position 55, but G2P has D
-200706	GDAP1	Ala88Gly	residue_mismatch	Expected A at position 88, but G2P has C
-200707	GDAP1	Gln150Glu	residue_mismatch	Expected Q at position 150, but G2P has S
-200708	GDAP1	Pro163Leu	residue_mismatch	Expected P at position 163, but G2P has Q
-200709	GDAP1	Arg158Ser	residue_mismatch	Expected R at position 158, but G2P has T
-200710	GDAP1	Arg214Cys	residue_mismatch	Expected R at position 214, but G2P has K
-200712	GDAP1	Cys172Tyr	residue_mismatch	Expected C at position 172, but G2P has K
-200713	GDAP1	Gly259Asp	residue_mismatch	Expected G at position 259, but G2P has K
-200714	GDAP1	Pro206Leu	residue_mismatch	Expected P at position 206, but G2P has K
-7871	TNNT2	Ala28Val	residue_mismatch	Expected A at position 28, but G2P has R
-7907	TNNT2	Asn268Ile	residue_mismatch	Expected N at position 268, but G2P has K
-200466	GNPTG	Leu229Val	residue_mismatch	Expected L at position 229, but G2P has Q
-200467	GNPTG	Thr285Met	residue_mismatch	Expected T at position 285, but G2P has E
-9314	MMACHC	Leu59Pro	residue_mismatch	Expected L at position 59, but G2P has F
-9315	MMACHC	His65Arg	residue_mismatch	Expected H at position 65, but G2P has P
-9330	MMACHC	Leu136Pro	residue_mismatch	Expected L at position 136, but G2P has E
-9336	MMACHC	Arg149Pro	residue_mismatch	Expected R at position 149, but G2P has C
-201816	MMACHC	Arg104Gln	residue_mismatch	Expected R at position 104, but G2P has D
-201817	MMACHC	Gly98Glu	residue_mismatch	Expected G at position 98, but G2P has Q
-30070	TOPBP1	Arg222Cys	residue_mismatch	Expected R at position 222, but G2P has T
-218701	NR3C2	Ser693Leu	residue_mismatch	Expected S at position 693, but G2P has Q
-218703	NR3C2	Leu807Pro	residue_mismatch	Expected L at position 807, but G2P has M
-35201	OCRL	Ala853Thr	residue_mismatch	Expected A at position 853, but G2P has N
-205765	OCRL	Leu883Arg	residue_mismatch	Expected L at position 883, but G2P has D
-8596	NMB	Met120Ile	residue_mismatch	Expected M at position 120, but G2P has Q
-218206	MOCS1	Arg232Gln	residue_mismatch	Expected R at position 232, but G2P has F
-31563	CD22	Pro596Pro	residue_mismatch	Expected P at position 596, but G2P has L
-5221	AGT	Leu43Phe	residue_mismatch	Expected L at position 43, but G2P has E
-5224	AGT	Thr207Met	residue_mismatch	Expected T at position 207, but G2P has G
-5228	AGT	Tyr281Cys	residue_mismatch	Expected Y at position 281, but G2P has G
-5229	AGT	Arg375Gln	residue_mismatch	Expected R at position 375, but G2P has L
-23651	BRCA1	Arg391Met	residue_mismatch	Expected R at position 391, but G2P has E
-23739	BRCA1	Thr669Ser	residue_mismatch	Expected T at position 669, but G2P has M
-218408	BRCA1	Pro387Ala	residue_mismatch	Expected P at position 387, but G2P has S
-218410	BRCA1	Tyr418Cys	residue_mismatch	Expected Y at position 418, but G2P has E
-218418	BRCA1	Lys502Glu	residue_mismatch	Expected K at position 502, but G2P has L
-218422	BRCA1	Thr581Ile	residue_mismatch	Expected T at position 581, but G2P has K
-218423	BRCA1	Tyr562His	residue_mismatch	Expected Y at position 562, but G2P has I
-218425	BRCA1	Thr587Arg	residue_mismatch	Expected T at position 587, but G2P has I
-218428	BRCA1	Phe591Leu	residue_mismatch	Expected F at position 591, but G2P has I
-218429	BRCA1	Arg595Gln	residue_mismatch	Expected R at position 595, but G2P has E
-218439	BRCA1	Ala648Pro	residue_mismatch	Expected A at position 648, but G2P has E
-218448	BRCA1	Glu631Lys	residue_mismatch	Expected E at position 631, but G2P has L
-218449	BRCA1	Leu660Pro	residue_mismatch	Expected L at position 660, but G2P has V
-0	BRCA1	Arg391Met	residue_mismatch	Expected R at position 391, but G2P has E
-0	BRCA1	Lys502Glu	residue_mismatch	Expected K at position 502, but G2P has L
-0	BRCA1	Thr581Ile	residue_mismatch	Expected T at position 581, but G2P has K
-0	BRCA1	Thr587Arg	residue_mismatch	Expected T at position 587, but G2P has I
-0	BRCA1	Phe591Leu	residue_mismatch	Expected F at position 591, but G2P has I
-0	BRCA1	Arg595Gln	residue_mismatch	Expected R at position 595, but G2P has E
-0	BRCA1	Glu631Lys	residue_mismatch	Expected E at position 631, but G2P has L
-0	BRCA1	Leu660Pro	residue_mismatch	Expected L at position 660, but G2P has V
-0	BRCA1	Ser408Ile	residue_mismatch	Expected S at position 408, but G2P has K
-0	BRCA1	His299Tyr	residue_mismatch	Expected H at position 299, but G2P has V
-0	BRCA1	Gly666Val	residue_mismatch	Expected G at position 666, but G2P has L
-0	BRCA1	Ser611Arg	residue_mismatch	Expected S at position 611, but G2P has L
-0	BRCA1	Thr581Ala	residue_mismatch	Expected T at position 581, but G2P has K
-0	BRCA1	Ser611Arg	residue_mismatch	Expected S at position 611, but G2P has L
-0	BRCA1	Val632Ala	residue_mismatch	Expected V at position 632, but G2P has S
-0	BRCA1	Glu455Lys	residue_mismatch	Expected E at position 455, but G2P has N
-0	BRCA1	Met671Lys	residue_mismatch	Expected M at position 671, but G2P has G
-0	BRCA1	Phe558Ser	residue_mismatch	Expected F at position 558, but G2P has K
-0	BRCA1	Pro533Leu	residue_mismatch	Expected P at position 533, but G2P has N
-0	BRCA1	Met548Ile	residue_mismatch	Expected M at position 548, but G2P has I
-0	BRCA1	Val275Ile	residue_mismatch	Expected V at position 275, but G2P has G
-0	BRCA1	Gly602Ala	residue_mismatch	Expected G at position 602, but G2P has N
-0	BRCA1	Pro510Ser	residue_mismatch	Expected P at position 510, but G2P has S
-0	BRCA1	Leu460Pro	residue_mismatch	Expected L at position 460, but G2P has I
-0	BRCA1	Thr616Ala	residue_mismatch	Expected T at position 616, but G2P has S
-34736	ZFP57	Arg248His	residue_mismatch	Expected R at position 248, but G2P has P
-34738	ZFP57	His277Asn	residue_mismatch	Expected H at position 277, but G2P has I
-220218	ZFP57	His458Asp	position_not_in_g2p	Position 458 not found in G2P data (protein length: 452)
-32004	DRD3	Ser9Gly	residue_mismatch	Expected S at position 9, but G2P has G
-15010	FBLIM1	Phe191Ser	residue_mismatch	Expected F at position 191, but G2P has S
-2914	TGIF1	Ser28Cys	residue_mismatch	Expected S at position 28, but G2P has F
-2918	TGIF1	Pro63Arg	residue_mismatch	Expected P at position 63, but G2P has A
-2919	TGIF1	Arg90Cys	residue_mismatch	Expected R at position 90, but G2P has Q
-900150	TGIF1	Pro163Leu	residue_mismatch	Expected P at position 163, but G2P has G
-900158	TGIF1	Pro163Ser	residue_mismatch	Expected P at position 163, but G2P has G
-27707	ABCG8	Ala632Val	residue_mismatch	Expected A at position 632, but G2P has V
-20145	MEF2A	Asn182Ser	residue_mismatch	Expected N at position 182, but G2P has P
-20146	MEF2A	Pro198Leu	residue_mismatch	Expected P at position 198, but G2P has R
-20147	MEF2A	Gly202Asp	residue_mismatch	Expected G at position 202, but G2P has T
-21154	CLCNKB	Arg310His	residue_mismatch	Expected R at position 310, but G2P has I
-21155	CLCNKB	Thr353Ser	residue_mismatch	Expected T at position 353, but G2P has S
-203894	CLCNKB	Ala221Asp	residue_mismatch	Expected A at position 221, but G2P has L
-203895	CLCNKB	Tyr304His	residue_mismatch	Expected Y at position 304, but G2P has R
-21487	SERPINC1	Asn232Lys	residue_mismatch	Expected N at position 232, but G2P has D
-217662	SERPINC1	Ala209Thr	residue_mismatch	Expected A at position 209, but G2P has E
-217663	SERPINC1	Arg220His	residue_mismatch	Expected R at position 220, but G2P has K
-217664	SERPINC1	Arg220Cys	residue_mismatch	Expected R at position 220, but G2P has K
-217665	SERPINC1	Pro234Leu	residue_mismatch	Expected P at position 234, but G2P has I
-217667	SERPINC1	Arg220Pro	residue_mismatch	Expected R at position 220, but G2P has K
-217668	SERPINC1	Ser221Leu	residue_mismatch	Expected S at position 221, but G2P has W
-217669	SERPINC1	Ala231Thr	residue_mismatch	Expected A at position 231, but G2P has T
-217671	SERPINC1	Gly219Asp	residue_mismatch	Expected G at position 219, but G2P has N
-217672	SERPINC1	Pro256Leu	residue_mismatch	Expected P at position 256, but G2P has L
-217673	SERPINC1	Ala214Val	residue_mismatch	Expected A at position 214, but G2P has S
-30760	NELL1	Gln82Arg	residue_mismatch	Expected Q at position 82, but G2P has R
-35127	FGD4	Met50Thr	residue_mismatch	Expected M at position 50, but G2P has P
-205731	FGD4	Arg194His	residue_mismatch	Expected R at position 194, but G2P has D
-201774	CDIN1	Leu80Gln	residue_mismatch	Expected L at position 80, but G2P has G
-22499	AHSG	Thr248Met	residue_mismatch	Expected T at position 248, but G2P has M
-22500	AHSG	Thr256Ser	residue_mismatch	Expected T at position 256, but G2P has S
-27729	SMARCB1	Asn279Lys	residue_mismatch	Expected N at position 279, but G2P has F
-27730	SMARCB1	Asp360Val	residue_mismatch	Expected D at position 360, but G2P has E
-6801	ZNF24	Ser220Asn	residue_mismatch	Expected S at position 220, but G2P has N
-201947	DNAL1	Asn111Ser	residue_mismatch	Expected N at position 111, but G2P has I
-6150	GPX1	Pro142Leu	residue_mismatch	Expected P at position 142, but G2P has A
-203200	BBS9	Gly96Arg	residue_mismatch	Expected G at position 96, but G2P has A
-25940	TNFRSF13B	Cys58Arg	residue_mismatch	Expected C at position 58, but G2P has S
-25943	TNFRSF13B	Ala103Thr	residue_mismatch	Expected A at position 103, but G2P has F
-25946	TNFRSF13B	Leu125Arg	residue_mismatch	Expected L at position 125, but G2P has E
-25951	TNFRSF13B	Val200Phe	residue_mismatch	Expected V at position 200, but G2P has R
-900189	TNFRSF13B	Lys142Met	residue_mismatch	Expected K at position 142, but G2P has R
-10148	CPB2	Thr347Ile	residue_mismatch	Expected T at position 347, but G2P has I
-20846	TREX1	Arg169His	residue_mismatch	Expected R at position 169, but G2P has S
-20848	TREX1	Ala213Val	residue_mismatch	Expected A at position 213, but G2P has Q
-20857	TREX1	Gly361Ala	position_not_in_g2p	Position 361 not found in G2P data (protein length: 314)
-27879	CAPN13	Thr280Ala	residue_mismatch	Expected T at position 280, but G2P has A
-31040	MAPT	Gly214Val	residue_mismatch	Expected G at position 214, but G2P has S
-31060	MAPT	Gly331Arg	residue_mismatch	Expected G at position 331, but G2P has P
-200753	NUBPL	Asp75Tyr	residue_mismatch	Expected D at position 75, but G2P has G
-35813	TMPRSS3	Cys406Arg	residue_mismatch	Expected C at position 406, but G2P has V
-220427	TMPRSS3	Pro403Leu	residue_mismatch	Expected P at position 403, but G2P has G
-220428	TMPRSS3	Ala425Thr	residue_mismatch	Expected A at position 425, but G2P has C
-23125	CLDN16	Met71Arg	residue_mismatch	Expected M at position 71, but G2P has H
-23146	CLDN16	Arg216Cys	residue_mismatch	Expected R at position 216, but G2P has K
-23153	CLDN16	Ser235Tyr	residue_mismatch	Expected S at position 235, but G2P has V
-204140	CLDN16	Leu145Pro	residue_mismatch	Expected L at position 145, but G2P has E
-204143	CLDN16	Leu167Pro	residue_mismatch	Expected L at position 167, but G2P has W
-204144	CLDN16	Gly191Arg	residue_mismatch	Expected G at position 191, but G2P has K
-204145	CLDN16	Gly198Asp	residue_mismatch	Expected G at position 198, but G2P has N
-204146	CLDN16	Phe232Cys	residue_mismatch	Expected F at position 232, but G2P has D
-204147	CLDN16	Gly233Asp	residue_mismatch	Expected G at position 233, but G2P has T
-204148	CLDN16	Ser235Phe	residue_mismatch	Expected S at position 235, but G2P has V
-204149	CLDN16	Gly239Arg	position_not_in_g2p	Position 239 not found in G2P data (protein length: 235)
-204150	CLDN16	Thr303Arg	position_not_in_g2p	Position 303 not found in G2P data (protein length: 235)
-14073	NR1I2	Arg43Cys	residue_mismatch	Expected R at position 43, but G2P has V
-14076	NR1I2	Gln103Lys	residue_mismatch	Expected Q at position 103, but G2P has L
-14078	NR1I2	Ala314Thr	residue_mismatch	Expected A at position 314, but G2P has G
-28857	NR1H4	Trp80Arg	residue_mismatch	Expected W at position 80, but G2P has L
-28858	NR1H4	Met173Thr	residue_mismatch	Expected M at position 173, but G2P has C
-28069	NGF	Val35Ala	residue_mismatch	Expected V at position 35, but G2P has A
-213752	FA2H	Arg62Cys	residue_mismatch	Expected R at position 62, but G2P has L
-213753	FA2H	Arg143Cys	residue_mismatch	Expected R at position 143, but G2P has E
-213754	FA2H	Phe144Ser	residue_mismatch	Expected F at position 144, but G2P has W
-35694	HFE	Gln280Pro	residue_mismatch	Expected Q at position 280, but G2P has Y
-100074	CEP290	Ile3Val	residue_mismatch	Expected I at position 3, but G2P has P
-205669	MSX1	Glu78Val	residue_mismatch	Expected E at position 78, but G2P has S
-205671	MSX1	Pro147Gln	residue_mismatch	Expected P at position 147, but G2P has Q
-205672	MSX1	Arg196Pro	residue_mismatch	Expected R at position 196, but G2P has Y
-18972	SMPD1	Asp49Val	residue_mismatch	Expected D at position 49, but G2P has L
-203411	SMPD1	Cys157Arg	residue_mismatch	Expected C at position 157, but G2P has E
-203412	SMPD1	Gly245Ser	residue_mismatch	Expected G at position 245, but G2P has Y
-203413	SMPD1	Asp251His	residue_mismatch	Expected D at position 251, but G2P has K
-203415	SMPD1	Leu302Pro	residue_mismatch	Expected L at position 302, but G2P has T
-2819	ZFYVE27	Gly123Val	residue_mismatch	Expected G at position 123, but G2P has M
-11817	UBE3A	Ile62Thr	residue_mismatch	Expected I at position 62, but G2P has R
-11819	UBE3A	Ser82Pro	residue_mismatch	Expected S at position 82, but G2P has L
-11822	UBE3A	Arg239Cys	residue_mismatch	Expected R at position 239, but G2P has I
-11825	UBE3A	Ile537Lys	residue_mismatch	Expected I at position 537, but G2P has L
-219773	KIF7	Pro119Leu	residue_mismatch	Expected P at position 119, but G2P has I
-219774	KIF7	His602Gln	residue_mismatch	Expected H at position 602, but G2P has R
-22389	SERPINA6	Ala246Ser	residue_mismatch	Expected A at position 246, but G2P has S
-18889	CASP10	Pro501Leu	residue_mismatch	Expected P at position 501, but G2P has L
-34521	HSD17B1	Ser313Gly	residue_mismatch	Expected S at position 313, but G2P has G
-21291	SGCD	Ala131Pro	residue_mismatch	Expected A at position 131, but G2P has V
-21295	SGCD	Asn211Tyr	residue_mismatch	Expected N at position 211, but G2P has A
-21296	SGCD	Glu262Lys	residue_mismatch	Expected E at position 262, but G2P has I
-203903	SGCD	Ser151Ala	residue_mismatch	Expected S at position 151, but G2P has A
-25878	PAX4	Arg119Trp	residue_mismatch	Expected R at position 119, but G2P has P
-25879	PAX4	Arg131Trp	residue_mismatch	Expected R at position 131, but G2P has L
-25880	PAX4	Arg162Trp	residue_mismatch	Expected R at position 162, but G2P has P
-15184	NIPA1	Ala25Thr	residue_mismatch	Expected A at position 25, but G2P has P
-16943	KIF1B	Ser290Asn	residue_mismatch	Expected S at position 290, but G2P has N
-2448	BBS10	Cys25Trp	residue_mismatch	Expected C at position 25, but G2P has V
-2452	BBS10	Val174Gly	residue_mismatch	Expected V at position 174, but G2P has L
-2463	BBS10	Thr623Pro	residue_mismatch	Expected T at position 623, but G2P has Q
-3389	KRT8	Arg137Cys	residue_mismatch	Expected R at position 137, but G2P has D
-3390	KRT8	Arg137His	residue_mismatch	Expected R at position 137, but G2P has D
-3392	KRT8	Val176Ile	residue_mismatch	Expected V at position 176, but G2P has K
-3395	KRT8	Lys260Asn	residue_mismatch	Expected K at position 260, but G2P has I
-14084	FUCA1	Gly60Asp	residue_mismatch	Expected G at position 60, but G2P has V
-14085	FUCA1	Ser63Leu	residue_mismatch	Expected S at position 63, but G2P has H
-14091	FUCA1	Asn329Tyr	residue_mismatch	Expected N at position 329, but G2P has V
-14096	FUCA1	Leu405Arg	residue_mismatch	Expected L at position 405, but G2P has N
-14096	FUCA1	Leu405Arg	residue_mismatch	Expected L at position 405, but G2P has N
-216455	FUCA1	Leu405Arg	residue_mismatch	Expected L at position 405, but G2P has N
-216455	FUCA1	Leu405Arg	residue_mismatch	Expected L at position 405, but G2P has N
-36894	TK2	Thr15Met	residue_mismatch	Expected T at position 15, but G2P has R
-36898	TK2	His72Asn	residue_mismatch	Expected H at position 72, but G2P has N
-36905	TK2	Arg143Lys	residue_mismatch	Expected R at position 143, but G2P has F
-36907	TK2	Leu166Pro	residue_mismatch	Expected L at position 166, but G2P has D
-220667	TK2	Ile4Met	residue_mismatch	Expected I at position 4, but G2P has W
-220669	TK2	Cys17Trp	residue_mismatch	Expected C at position 17, but G2P has F
-220670	TK2	Asn9Ser	residue_mismatch	Expected N at position 9, but G2P has W
-220671	TK2	Asn44Ser	residue_mismatch	Expected N at position 44, but G2P has E
-220672	TK2	Arg41Cys	residue_mismatch	Expected R at position 41, but G2P has P
-220674	TK2	Thr59Met	residue_mismatch	Expected T at position 59, but G2P has I
-220675	TK2	Tyr63Asn	residue_mismatch	Expected Y at position 63, but G2P has K
-220676	TK2	Ala90Val	residue_mismatch	Expected A at position 90, but G2P has R
-220677	TK2	Arg81Trp	residue_mismatch	Expected R at position 81, but G2P has E
-220678	TK2	Arg81Gln	residue_mismatch	Expected R at position 81, but G2P has E
-220682	TK2	Thr139Ala	residue_mismatch	Expected T at position 139, but G2P has A
-220683	TK2	Ile163Asn	residue_mismatch	Expected I at position 163, but G2P has E
-14122	SCN1B	Arg52Cys	residue_mismatch	Expected R at position 52, but G2P has E
-14123	SCN1B	Arg52His	residue_mismatch	Expected R at position 52, but G2P has E
-14124	SCN1B	Glu54Gln	residue_mismatch	Expected E at position 54, but G2P has F
-14125	SCN1B	Cys88Trp	residue_mismatch	Expected C at position 88, but G2P has G
-202611	SCN1B	Asp120Asn	residue_mismatch	Expected D at position 120, but G2P has E
-200788	GATA3	Trp275Arg	residue_mismatch	Expected W at position 275, but G2P has R
-200789	GATA3	Cys342Tyr	residue_mismatch	Expected C at position 342, but G2P has G
-17249	MITF	Asn204Lys	residue_mismatch	Expected N at position 204, but G2P has R
-17251	MITF	Arg211Ile	residue_mismatch	Expected R at position 211, but G2P has G
-17252	MITF	Ser244Pro	residue_mismatch	Expected S at position 244, but G2P has L
-17255	MITF	Ser292Pro	residue_mismatch	Expected S at position 292, but G2P has L
-203056	MITF	Glu312Lys	residue_mismatch	Expected E at position 312, but G2P has K
-205331	NEXN	Arg171Cys	residue_mismatch	Expected R at position 171, but G2P has I
-205332	NEXN	Tyr544Cys	residue_mismatch	Expected Y at position 544, but G2P has Q
-33232	FGF8	Pro168Arg	residue_mismatch	Expected P at position 168, but G2P has Y
-219868	FGF8	Thr189Met	residue_mismatch	Expected T at position 189, but G2P has E
-10872	DBH	Asp100Glu	residue_mismatch	Expected D at position 100, but G2P has L
-10873	DBH	Cys255Phe	residue_mismatch	Expected C at position 255, but G2P has K
-10874	DBH	Arg535Cys	residue_mismatch	Expected R at position 535, but G2P has V
-10875	DBH	Tyr542Cys	residue_mismatch	Expected Y at position 542, but G2P has V
-201996	DBH	Asp331Asn	residue_mismatch	Expected D at position 331, but G2P has E
-14966	GPD2	His263Arg	residue_mismatch	Expected H at position 263, but G2P has V
-226756	LIPI	Cys76Tyr	residue_mismatch	Expected C at position 76, but G2P has T
-673	HYLS1	Asp198Gly	residue_mismatch	Expected D at position 198, but G2P has P
-17415	IL10RA	Gly351Arg	residue_mismatch	Expected G at position 351, but G2P has R
-203029	SLC27A4	Arg177His	residue_mismatch	Expected R at position 177, but G2P has L
-17589	TWNK	Arg125Trp	residue_mismatch	Expected R at position 125, but G2P has F
-17590	TWNK	Arg125Gln	residue_mismatch	Expected R at position 125, but G2P has F
-17592	TWNK	Trp137Leu	residue_mismatch	Expected W at position 137, but G2P has R
-17616	TWNK	Glu301Lys	residue_mismatch	Expected E at position 301, but G2P has F
-203132	TWNK	Arg176Pro	residue_mismatch	Expected R at position 176, but G2P has A
-203135	TWNK	Leu203Pro	residue_mismatch	Expected L at position 203, but G2P has S
-203136	TWNK	Ser191Tyr	residue_mismatch	Expected S at position 191, but G2P has K
-203138	TWNK	Lys141Glu	residue_mismatch	Expected K at position 141, but G2P has L
-203142	TWNK	Ala297Pro	residue_mismatch	Expected A at position 297, but G2P has Y
-202203	PSEN1	Val90Met	residue_mismatch	Expected V at position 90, but G2P has T
-202204	PSEN1	Leu109Pro	residue_mismatch	Expected L at position 109, but G2P has K
-202206	PSEN1	Val85Leu	residue_mismatch	Expected V at position 85, but G2P has L
-202210	PSEN1	Val93Leu	residue_mismatch	Expected V at position 93, but G2P has M
-202217	PSEN1	Tyr150Cys	residue_mismatch	Expected Y at position 150, but G2P has L
-202219	PSEN1	Tyr111Asp	residue_mismatch	Expected Y at position 111, but G2P has G
-202238	PSEN1	Leu162Arg	residue_mismatch	Expected L at position 162, but G2P has I
-202246	PSEN1	Leu170Arg	residue_mismatch	Expected L at position 170, but G2P has S
-202247	PSEN1	Ser166Phe	residue_mismatch	Expected S at position 166, but G2P has L
-202250	PSEN1	Ser165Leu	residue_mismatch	Expected S at position 165, but G2P has W
-202255	PSEN1	Leu215Phe	residue_mismatch	Expected L at position 215, but G2P has W
-202259	PSEN1	Met229Leu	residue_mismatch	Expected M at position 229, but G2P has I
-202266	PSEN1	Gln218His	residue_mismatch	Expected Q at position 218, but G2P has P
-202268	PSEN1	Ile209Phe	residue_mismatch	Expected I at position 209, but G2P has G
-202271	PSEN1	His210Tyr	residue_mismatch	Expected H at position 210, but G2P has M
-202272	PSEN1	Thr241Pro	residue_mismatch	Expected T at position 241, but G2P has L
-202278	PSEN1	Ile209Thr	residue_mismatch	Expected I at position 209, but G2P has G
-202281	PSEN1	Met229Thr	residue_mismatch	Expected M at position 229, but G2P has I
-202285	PSEN1	Gly205Arg	residue_mismatch	Expected G at position 205, but G2P has F
-202290	PSEN1	Gly262Ser	residue_mismatch	Expected G at position 262, but G2P has L
-202295	PSEN1	Val268Ala	residue_mismatch	Expected V at position 268, but G2P has L
-202298	PSEN1	Arg274Ser	residue_mismatch	Expected R at position 274, but G2P has T
-202309	PSEN1	Arg265His	residue_mismatch	Expected R at position 265, but G2P has K
-202312	PSEN1	Glu269Ala	residue_mismatch	Expected E at position 269, but G2P has R
-202313	PSEN1	Thr287Pro	residue_mismatch	Expected T at position 287, but G2P has I
-202323	PSEN1	Leu377Val	residue_mismatch	Expected L at position 377, but G2P has R
-202332	PSEN1	Leu414Phe	residue_mismatch	Expected L at position 414, but G2P has I
-202339	PSEN1	Pro432Gln	residue_mismatch	Expected P at position 432, but G2P has L
-20979	HPD	Ala33Thr	residue_mismatch	Expected A at position 33, but G2P has T
-28859	UGT2A3	Thr497Ala	residue_mismatch	Expected T at position 497, but G2P has A
-3785	BEST1	Tyr25His	residue_mismatch	Expected Y at position 25, but G2P has R
-3790	BEST1	Arg32Cys	residue_mismatch	Expected R at position 32, but G2P has L
-3821	BEST1	Arg158Gly	residue_mismatch	Expected R at position 158, but G2P has V
-3853	BEST1	Leu480Phe	residue_mismatch	Expected L at position 480, but G2P has P
-200631	BEST1	Ile13Leu	residue_mismatch	Expected I at position 13, but G2P has R
-200634	BEST1	Asn39Lys	residue_mismatch	Expected N at position 39, but G2P has F
-200637	BEST1	Arg81His	residue_mismatch	Expected R at position 81, but G2P has V
-200639	BEST1	Pro41Thr	residue_mismatch	Expected P at position 41, but G2P has L
-200647	BEST1	Leu80Val	residue_mismatch	Expected L at position 80, but G2P has F
-200648	BEST1	Arg81Ser	residue_mismatch	Expected R at position 81, but G2P has V
-200650	BEST1	Trp33Cys	residue_mismatch	Expected W at position 33, but G2P has Y
-200651	BEST1	Asp44Glu	residue_mismatch	Expected D at position 44, but G2P has Y
-200653	BEST1	Gln36His	residue_mismatch	Expected Q at position 36, but G2P has F
-200654	BEST1	Gly75Ser	residue_mismatch	Expected G at position 75, but G2P has L
-200655	BEST1	Glu59Gln	residue_mismatch	Expected E at position 59, but G2P has Q
-200656	BEST1	Ser149Asn	residue_mismatch	Expected S at position 149, but G2P has K
-200658	BEST1	Ile141Thr	residue_mismatch	Expected I at position 141, but G2P has R
-200661	BEST1	Ser171Arg	residue_mismatch	Expected S at position 171, but G2P has L
-200662	BEST1	Thr177Arg	residue_mismatch	Expected T at position 177, but G2P has P
-200663	BEST1	Leu164Met	residue_mismatch	Expected L at position 164, but G2P has T
-200665	BEST1	Arg158His	residue_mismatch	Expected R at position 158, but G2P has V
-200667	BEST1	Leu164Pro	residue_mismatch	Expected L at position 164, but G2P has T
-200668	BEST1	Val175Leu	residue_mismatch	Expected V at position 175, but G2P has S
-200670	BEST1	Val175Ala	residue_mismatch	Expected V at position 175, but G2P has S
-200671	BEST1	Asp168Asn	residue_mismatch	Expected D at position 168, but G2P has H
-200676	BEST1	Arg158Ser	residue_mismatch	Expected R at position 158, but G2P has V
-200680	BEST1	Val215Ile	residue_mismatch	Expected V at position 215, but G2P has N
-200681	BEST1	Phe216Leu	residue_mismatch	Expected F at position 216, but G2P has T
-200683	BEST1	Val179Met	residue_mismatch	Expected V at position 179, but G2P has N
-200685	BEST1	Tyr224Cys	residue_mismatch	Expected Y at position 224, but G2P has L
-200686	BEST1	Val230Met	residue_mismatch	Expected V at position 230, but G2P has I
-36314	HUS1B	Tyr268Asp	residue_mismatch	Expected Y at position 268, but G2P has D
-217605	AUH	Gly188Asp	residue_mismatch	Expected G at position 188, but G2P has L
-34979	FOXI1	Gly240Val	residue_mismatch	Expected G at position 240, but G2P has V
-202833	KIF2A	His294Asp	residue_mismatch	Expected H at position 294, but G2P has A
-202834	KIF2A	Ser290Asn	residue_mismatch	Expected S at position 290, but G2P has Y
-28011	FOXP2	Arg461His	residue_mismatch	Expected R at position 461, but G2P has P
-204132	LMX1B	Arg200Gln	residue_mismatch	Expected R at position 200, but G2P has K
-204133	LMX1B	Asn246Lys	residue_mismatch	Expected N at position 246, but G2P has R
-27598	LMX1B	Leu58Trp	residue_mismatch	Expected L at position 58, but G2P has G
-27617	LMX1B	Cys95Phe	residue_mismatch	Expected C at position 95, but G2P has Y
-27649	LMX1B	Thr233Arg	residue_mismatch	Expected T at position 233, but G2P has A
-21003	SERPINB5	Pro176Ser	residue_mismatch	Expected P at position 176, but G2P has S
-215173	AGPAT2	Leu196Pro	residue_mismatch	Expected L at position 196, but G2P has Q
-10910	AGPAT2	Ala240Val	residue_mismatch	Expected A at position 240, but G2P has D
-16294	DMD	Asp119Gly	residue_mismatch	Expected D at position 119, but G2P has Q
-16296	DMD	Cys139Arg	residue_mismatch	Expected C at position 139, but G2P has I
-16308	DMD	Asp267His	residue_mismatch	Expected D at position 267, but G2P has Q
-16322	DMD	Ala353Val	residue_mismatch	Expected A at position 353, but G2P has S
-216725	DMD	Phe160Leu	residue_mismatch	Expected F at position 160, but G2P has T
-201350	LMNA	Arg571Cys	residue_mismatch	Expected R at position 571, but G2P has S
-0	LMNA	Arg571Cys	residue_mismatch	Expected R at position 571, but G2P has S
-8711	DKK3	Gly335Arg	residue_mismatch	Expected G at position 335, but G2P has R
-30748	GPR68	Arg63Gln	residue_mismatch	Expected R at position 63, but G2P has L
-5022	RGR	Val136Leu	residue_mismatch	Expected V at position 136, but G2P has W
-5023	RGR	His156Asn	residue_mismatch	Expected H at position 156, but G2P has E
-5024	RGR	Ala238Thr	residue_mismatch	Expected A at position 238, but G2P has D
-100206	RGR	Ser245Phe	residue_mismatch	Expected S at position 245, but G2P has K
-24157	CRP	Leu6Leu	residue_mismatch	Expected L at position 6, but G2P has C
-216920	MTFMT	Pro66Leu	residue_mismatch	Expected P at position 66, but G2P has L
-218231	LOXHD1	Glu43Lys	residue_mismatch	Expected E at position 43, but G2P has R
-31617	CHRNG	Arg187Cys	residue_mismatch	Expected R at position 187, but G2P has G
-7812	PLP1	Trp128Leu	residue_mismatch	Expected W at position 128, but G2P has G
-7860	PLP1	Ala213Glu	residue_mismatch	Expected A at position 213, but G2P has N
-201424	PLP1	Trp128Arg	residue_mismatch	Expected W at position 128, but G2P has G
-201425	PLP1	Thr121Ile	residue_mismatch	Expected T at position 121, but G2P has Q
-201426	PLP1	Thr147Pro	residue_mismatch	Expected T at position 147, but G2P has G
-201427	PLP1	Asp168His	residue_mismatch	Expected D at position 168, but G2P has A
-201428	PLP1	Ile152Thr	residue_mismatch	Expected I at position 152, but G2P has F
-201429	PLP1	Ser135Phe	residue_mismatch	Expected S at position 135, but G2P has L
-201430	PLP1	Cys193Tyr	residue_mismatch	Expected C at position 193, but G2P has T
-201431	PLP1	Pro181Ser	residue_mismatch	Expected P at position 181, but G2P has W
-201432	PLP1	Val184Phe	residue_mismatch	Expected V at position 184, but G2P has C
-201433	PLP1	Leu189Pro	residue_mismatch	Expected L at position 189, but G2P has F
-201434	PLP1	Gly186Cys	residue_mismatch	Expected G at position 186, but G2P has S
-217395	ANKS6	Gln41Arg	residue_mismatch	Expected Q at position 41, but G2P has A
-216032	COG4	Arg477Trp	residue_mismatch	Expected R at position 477, but G2P has M
-216033	COG4	Leu517Arg	residue_mismatch	Expected L at position 517, but G2P has V
-18524	SLC5A11	Val118Ala	residue_mismatch	Expected V at position 118, but G2P has P
-23333	MYO1C	Arg156Trp	residue_mismatch	Expected R at position 156, but G2P has F
-23335	MYO1C	Thr380Met	residue_mismatch	Expected T at position 380, but G2P has A
-23336	MYO1C	Gln750Lys	residue_mismatch	Expected Q at position 750, but G2P has W
-23338	MYO1C	Glu831Lys	residue_mismatch	Expected E at position 831, but G2P has T
-218695	IL17RD	Tyr235Cys	residue_mismatch	Expected Y at position 235, but G2P has K
-218696	IL17RD	Ser324Leu	residue_mismatch	Expected S at position 324, but G2P has K
-218697	IL17RD	Pro433Gln	residue_mismatch	Expected P at position 433, but G2P has K
-218698	IL17RD	Ala591Val	residue_mismatch	Expected A at position 591, but G2P has V
-13696	GSTZ1	Gly42Arg	residue_mismatch	Expected G at position 42, but G2P has R
-204956	TNNT3	Arg55His	residue_mismatch	Expected R at position 55, but G2P has T
-204957	TNNT3	Arg55Cys	residue_mismatch	Expected R at position 55, but G2P has T
-204342	LRIT3	Cys201Tyr	residue_mismatch	Expected C at position 201, but G2P has N
-31157	TLR6	Pro249Ser	residue_mismatch	Expected P at position 249, but G2P has S
-20312	STOX1	Leu24Phe	residue_mismatch	Expected L at position 24, but G2P has A
-20313	STOX1	Glu50Asp	residue_mismatch	Expected E at position 50, but G2P has N
-20314	STOX1	Asn267Ile	residue_mismatch	Expected N at position 267, but G2P has K
-203119	NNT	Leu98Pro	residue_mismatch	Expected L at position 98, but G2P has A
-203120	NNT	Ala129Pro	residue_mismatch	Expected A at position 129, but G2P has R
-18412	CYP4V2	Lys259Gln	residue_mismatch	Expected K at position 259, but G2P has Q
-200510	GNAO1	Gly151Arg	residue_mismatch	Expected G at position 151, but G2P has D
-18065	HPS5	Leu510Arg	residue_mismatch	Expected L at position 510, but G2P has P
-217004	HPS5	Thr984Ile	residue_mismatch	Expected T at position 984, but G2P has G
-6044	MCHR1	Tyr250His	residue_mismatch	Expected Y at position 250, but G2P has R
-23211	PTCH1	Leu40Arg	residue_mismatch	Expected L at position 40, but G2P has R
-23212	PTCH1	Gly44Arg	residue_mismatch	Expected G at position 44, but G2P has A
-23219	PTCH1	Thr164Pro	residue_mismatch	Expected T at position 164, but G2P has E
-28468	SERPINB11	Trp74Arg	residue_mismatch	Expected W at position 74, but G2P has S
-28469	SERPINB11	Ser189Pro	residue_mismatch	Expected S at position 189, but G2P has Q
-23456	NT5C3A	Cys108Arg	residue_mismatch	Expected C at position 108, but G2P has N
-23457	NT5C3A	Asp132Val	residue_mismatch	Expected D at position 132, but G2P has Y
-23459	NT5C3A	Gly202Arg	residue_mismatch	Expected G at position 202, but G2P has F
-23463	NT5C3A	Gly275Arg	residue_mismatch	Expected G at position 275, but G2P has L
-900163	NT5C3A	Phe31Leu	residue_mismatch	Expected F at position 31, but G2P has L
-5347	PRKCSH	Arg10His	residue_mismatch	Expected R at position 10, but G2P has P
-5348	PRKCSH	Lys26Arg	residue_mismatch	Expected K at position 26, but G2P has T
-25926	TSSK4	Val151Ile	residue_mismatch	Expected V at position 151, but G2P has L
-23550	B3GNT3	His328Arg	residue_mismatch	Expected H at position 328, but G2P has R
-28884	LIPC	Leu356Phe	residue_mismatch	Expected L at position 356, but G2P has F
-216126	DYNC2I2	Gly276Ser	residue_mismatch	Expected G at position 276, but G2P has P
-216127	DYNC2I2	Thr237Met	residue_mismatch	Expected T at position 237, but G2P has L
-216130	DYNC2I2	Lys319Arg	residue_mismatch	Expected K at position 319, but G2P has L
-12308	RPL11	Leu19His	residue_mismatch	Expected L at position 19, but G2P has K
-14045	MPG	Arg55Cys	residue_mismatch	Expected R at position 55, but G2P has P
-21142	CD96	Thr264Met	residue_mismatch	Expected T at position 264, but G2P has K
-12735	KCNE4	Met58Val	residue_mismatch	Expected M at position 58, but G2P has L
-12736	KCNE4	Glu145Asp	residue_mismatch	Expected E at position 145, but G2P has R
-227495	EDAR	Arg407His	residue_mismatch	Expected R at position 407, but G2P has S
-227497	EDAR	Arg452Gln	position_not_in_g2p	Position 452 not found in G2P data (protein length: 448)
-30088	OAS1	Ser162Gly	residue_mismatch	Expected S at position 162, but G2P has G
-21011	PIK3R1	Met56Ile	residue_mismatch	Expected M at position 56, but G2P has L
-21012	PIK3R1	Arg139Gln	residue_mismatch	Expected R at position 139, but G2P has I
-203889	PIK3R1	Glu219Lys	residue_mismatch	Expected E at position 219, but G2P has Y
-203890	PIK3R1	Arg379Trp	residue_mismatch	Expected R at position 379, but G2P has K
-20093	UGT1A1	Gln328Arg	residue_mismatch	Expected Q at position 328, but G2P has K
-20115	UGT1A1	Arg400Cys	residue_mismatch	Expected R at position 400, but G2P has N
-17753	OTX2	Arg97Gly	residue_mismatch	Expected R at position 97, but G2P has Q
-17756	OTX2	Pro141Thr	residue_mismatch	Expected P at position 141, but G2P has T
-17757	OTX2	Pro142Ala	residue_mismatch	Expected P at position 142, but G2P has I
-17759	OTX2	Asn233Ser	residue_mismatch	Expected N at position 233, but G2P has Q
-3892	RUNX1	Glu474Asp	position_not_in_g2p	Position 474 not found in G2P data (protein length: 453)
-3897	RUNX1	Glu422Asp	residue_mismatch	Expected E at position 422, but G2P has Q
-3898	RUNX1	Met418Arg	residue_mismatch	Expected M at position 418, but G2P has S
-3899	RUNX1	Met418Val	residue_mismatch	Expected M at position 418, but G2P has S
-3900	RUNX1	Pro395Arg	residue_mismatch	Expected P at position 395, but G2P has E
-3902	RUNX1	Gln335His	residue_mismatch	Expected Q at position 335, but G2P has S
-3903	RUNX1	Ser318Ala	residue_mismatch	Expected S at position 318, but G2P has P
-3904	RUNX1	Leu313Arg	residue_mismatch	Expected L at position 313, but G2P has P
-3905	RUNX1	Thr300Met	residue_mismatch	Expected T at position 300, but G2P has L
-3906	RUNX1	Pro278Ser	residue_mismatch	Expected P at position 278, but G2P has G
-3907	RUNX1	Asp269His	residue_mismatch	Expected D at position 269, but G2P has V
-3908	RUNX1	Met267Ile	residue_mismatch	Expected M at position 267, but G2P has P
-3909	RUNX1	Arg250His	residue_mismatch	Expected R at position 250, but G2P has P
-3910	RUNX1	Thr246Met	residue_mismatch	Expected T at position 246, but G2P has I
-3911	RUNX1	Met236Ile	residue_mismatch	Expected M at position 236, but G2P has P
-3912	RUNX1	Arg233His	residue_mismatch	Expected R at position 233, but G2P has N
-3913	RUNX1	Arg233Cys	residue_mismatch	Expected R at position 233, but G2P has N
-3914	RUNX1	Glu223Lys	residue_mismatch	Expected E at position 223, but G2P has R
-3915	RUNX1	Thr214Ile	residue_mismatch	Expected T at position 214, but G2P has H
-3916	RUNX1	Arg201Gln	residue_mismatch	Expected R at position 201, but G2P has L
-3917	RUNX1	Val186Asp	residue_mismatch	Expected V at position 186, but G2P has Q
-3918	RUNX1	Arg166Gln	residue_mismatch	Expected R at position 166, but G2P has I
-3920	RUNX1	Arg162Ser	residue_mismatch	Expected R at position 162, but G2P has Y
-3921	RUNX1	Arg162Lys	residue_mismatch	Expected R at position 162, but G2P has Y
-3922	RUNX1	Arg162Gly	residue_mismatch	Expected R at position 162, but G2P has Y
-3923	RUNX1	Ala156Glu	residue_mismatch	Expected A at position 156, but G2P has P
-3923	RUNX1	Ala156Glu	residue_mismatch	Expected A at position 156, but G2P has P
-3925	RUNX1	Ala134Pro	residue_mismatch	Expected A at position 134, but G2P has L
-3926	RUNX1	Asp123His	residue_mismatch	Expected D at position 123, but G2P has A
-3930	RUNX1	Met78Leu	residue_mismatch	Expected M at position 78, but G2P has H
-3935	RUNX1	Asp4Gly	residue_mismatch	Expected D at position 4, but G2P has P
-220149	RUNX1	Ala156Glu	residue_mismatch	Expected A at position 156, but G2P has P
-220149	RUNX1	Ala156Glu	residue_mismatch	Expected A at position 156, but G2P has P
-211414	RUNX2	Thr186Ala	residue_mismatch	Expected T at position 186, but G2P has R
-205407	CYP21A2	Pro102Ser	residue_mismatch	Expected P at position 102, but G2P has S
-15642	ALAS2	Arg133His	residue_mismatch	Expected R at position 133, but G2P has I
-15648	ALAS2	Ile252Thr	residue_mismatch	Expected I at position 252, but G2P has A
-15661	ALAS2	Ile439Asn	residue_mismatch	Expected I at position 439, but G2P has K
-216654	ALAS2	Asp122Asn	residue_mismatch	Expected D at position 122, but G2P has Q
-216655	ALAS2	Phe128Leu	residue_mismatch	Expected F at position 128, but G2P has K
-216656	ALAS2	Ala135Thr	residue_mismatch	Expected A at position 135, but G2P has N
-216657	ALAS2	Asp153Val	residue_mismatch	Expected D at position 153, but G2P has I
-216659	ALAS2	Gly254Ser	residue_mismatch	Expected G at position 254, but G2P has L
-216660	ALAS2	Lys262Gln	residue_mismatch	Expected K at position 262, but G2P has N
-216661	ALAS2	Thr351Ser	residue_mismatch	Expected T at position 351, but G2P has G
-216662	ALAS2	Cys358Tyr	residue_mismatch	Expected C at position 358, but G2P has E
-216664	ALAS2	Arg374Cys	residue_mismatch	Expected R at position 374, but G2P has E
-216665	ALAS2	Arg415Cys	residue_mismatch	Expected R at position 415, but G2P has A
-216667	ALAS2	Tyr549Phe	residue_mismatch	Expected Y at position 549, but G2P has D
-216668	ALAS2	Ser531Gly	residue_mismatch	Expected S at position 531, but G2P has D
-16693	GNAS	Val93Glu	residue_mismatch	Expected V at position 93, but G2P has A
-16697	GNAS	Ile104Thr	residue_mismatch	Expected I at position 104, but G2P has L
-16711	GNAS	Arg202Cys	residue_mismatch	Expected R at position 202, but G2P has S
-16735	GNAS	Ala367Ser	residue_mismatch	Expected A at position 367, but G2P has P
-202927	PHC1	Leu435Phe	residue_mismatch	Expected L at position 435, but G2P has Q
-20989	CABP4	Arg19Cys	residue_mismatch	Expected R at position 19, but G2P has Q
-10408	NDUFAF5	Leu42Pro	residue_mismatch	Expected L at position 42, but G2P has R
-10408	NDUFAF5	Leu42Pro	residue_mismatch	Expected L at position 42, but G2P has R
-201972	NDUFAF5	Leu42Pro	residue_mismatch	Expected L at position 42, but G2P has R
-201972	NDUFAF5	Leu42Pro	residue_mismatch	Expected L at position 42, but G2P has R
-4352	PPARG	Pro85Gln	residue_mismatch	Expected P at position 85, but G2P has R
-4356	PPARG	Cys162Trp	residue_mismatch	Expected C at position 162, but G2P has F
-4358	PPARG	Val290Met	residue_mismatch	Expected V at position 290, but G2P has I
-4362	PPARG	Asp396Asn	residue_mismatch	Expected D at position 396, but G2P has F
-27899	CASK	Asp687Gly	residue_mismatch	Expected D at position 687, but G2P has M
-34982	IMPDH1	Arg273Pro	residue_mismatch	Expected R at position 273, but G2P has L
-34982	IMPDH1	Arg273Pro	residue_mismatch	Expected R at position 273, but G2P has L
-34983	IMPDH1	Asp275Asn	residue_mismatch	Expected D at position 275, but G2P has S
-34983	IMPDH1	Asp275Asn	residue_mismatch	Expected D at position 275, but G2P has S
-34989	IMPDH1	Val317Ile	residue_mismatch	Expected V at position 317, but G2P has G
-34989	IMPDH1	Val317Ile	residue_mismatch	Expected V at position 317, but G2P has G
-34990	IMPDH1	His421Pro	residue_mismatch	Expected H at position 421, but G2P has E
-220310	IMPDH1	Arg154Trp	residue_mismatch	Expected R at position 154, but G2P has L
-220312	IMPDH1	Arg273Pro	residue_mismatch	Expected R at position 273, but G2P has L
-220312	IMPDH1	Arg273Pro	residue_mismatch	Expected R at position 273, but G2P has L
-220313	IMPDH1	Asp275Asn	residue_mismatch	Expected D at position 275, but G2P has S
-220313	IMPDH1	Asp275Asn	residue_mismatch	Expected D at position 275, but G2P has S
-220314	IMPDH1	Val317Ile	residue_mismatch	Expected V at position 317, but G2P has G
-220314	IMPDH1	Val317Ile	residue_mismatch	Expected V at position 317, but G2P has G
-227381	ALDH7A1	Ala171Val	residue_mismatch	Expected A at position 171, but G2P has S
-227382	ALDH7A1	Asn273Ile	residue_mismatch	Expected N at position 273, but G2P has T
-203467	MSRB3	Cys82Gly	residue_mismatch	Expected C at position 82, but G2P has G
-31609	TEAD1	Tyr352His	residue_mismatch	Expected Y at position 352, but G2P has R
-1830	RPIA	Ala61Val	residue_mismatch	Expected A at position 61, but G2P has S
-4943	BSG	Glu92Lys	residue_mismatch	Expected E at position 92, but G2P has T
-214938	MUTYH	Tyr165Cys	residue_mismatch	Expected Y at position 165, but G2P has E
-214939	MUTYH	Ile209Val	residue_mismatch	Expected I at position 209, but G2P has L
-214941	MUTYH	Arg231Cys	residue_mismatch	Expected R at position 231, but G2P has V
-214943	MUTYH	Gln324Arg	residue_mismatch	Expected Q at position 324, but G2P has P
-214946	MUTYH	Arg412Cys	residue_mismatch	Expected R at position 412, but G2P has L
-214947	MUTYH	Ala459Thr	residue_mismatch	Expected A at position 459, but G2P has G
-214948	MUTYH	Ala459Asp	residue_mismatch	Expected A at position 459, but G2P has G
-15213	AKR7A3	Asp215Asn	residue_mismatch	Expected D at position 215, but G2P has N
-22495	NINJ1	Asp110Ala	residue_mismatch	Expected D at position 110, but G2P has A
-13303	TBXAS1	Leu15Pro	residue_mismatch	Expected L at position 15, but G2P has M
-13304	TBXAS1	Lys190Glu	residue_mismatch	Expected K at position 190, but G2P has V
-13305	TBXAS1	Arg345Gln	residue_mismatch	Expected R at position 345, but G2P has I
-13308	TBXAS1	Thr383Asn	residue_mismatch	Expected T at position 383, but G2P has F
-203419	TBXAS1	Gly482Trp	residue_mismatch	Expected G at position 482, but G2P has V
-203420	TBXAS1	Leu488Pro	residue_mismatch	Expected L at position 488, but G2P has E
-20805	GFER	Arg114His	residue_mismatch	Expected R at position 114, but G2P has A
-36732	HTR2C	Cys23Ser	residue_mismatch	Expected C at position 23, but G2P has S
-215811	ALG9	Glu530Lys	residue_mismatch	Expected E at position 530, but G2P has I
-24413	ZNF624	Lys9Asn	residue_mismatch	Expected K at position 9, but G2P has S
-25998	NAGS	Ala113Pro	residue_mismatch	Expected A at position 113, but G2P has C
-26010	NAGS	Ala352Thr	residue_mismatch	Expected A at position 352, but G2P has T
-204637	NAGS	Leu264Pro	residue_mismatch	Expected L at position 264, but G2P has T
-204638	NAGS	Glu267Asp	residue_mismatch	Expected E at position 267, but G2P has R
-204639	NAGS	Trp318Arg	residue_mismatch	Expected W at position 318, but G2P has L
-215244	MPZ	Ile40Thr	residue_mismatch	Expected I at position 40, but G2P has G
-215245	MPZ	Ser73Cys	residue_mismatch	Expected S at position 73, but G2P has G
-215246	MPZ	Ser88Leu	residue_mismatch	Expected S at position 88, but G2P has Y
-215247	MPZ	Ile124Thr	residue_mismatch	Expected I at position 124, but G2P has T
-215249	MPZ	Lys106Glu	residue_mismatch	Expected K at position 106, but G2P has R
-215250	MPZ	Arg108His	residue_mismatch	Expected R at position 108, but G2P has K
-215251	MPZ	Arg108Pro	residue_mismatch	Expected R at position 108, but G2P has K
-215252	MPZ	Ile145Thr	residue_mismatch	Expected I at position 145, but G2P has Y
-215253	MPZ	His91Tyr	residue_mismatch	Expected H at position 91, but G2P has E
-215254	MPZ	Val123Phe	residue_mismatch	Expected V at position 123, but G2P has G
-215255	MPZ	Asn126Ser	residue_mismatch	Expected N at position 126, but G2P has T
-215256	MPZ	Gly173Arg	residue_mismatch	Expected G at position 173, but G2P has L
-215257	MPZ	Ile172Met	residue_mismatch	Expected I at position 172, but G2P has L
-215258	MPZ	Asp234Tyr	residue_mismatch	Expected D at position 234, but G2P has E
-215259	MPZ	Pro227Ser	residue_mismatch	Expected P at position 227, but G2P has R
-10810	HADHB	Arg62His	residue_mismatch	Expected R at position 62, but G2P has T
-10814	HADHB	Thr134Pro	residue_mismatch	Expected T at position 134, but G2P has V
-10826	HADHB	Ala327Pro	residue_mismatch	Expected A at position 327, but G2P has L
-10827	HADHB	His380Arg	residue_mismatch	Expected H at position 380, but G2P has E
-201990	HADHB	Arg248His	residue_mismatch	Expected R at position 248, but G2P has S
-201991	HADHB	Asp264Gly	residue_mismatch	Expected D at position 264, but G2P has V
-201992	HADHB	Val456Gly	residue_mismatch	Expected V at position 456, but G2P has A
-201993	HADHB	Arg445Lys	residue_mismatch	Expected R at position 445, but G2P has L
-28446	SLC30A8	Arg276Trp	residue_mismatch	Expected R at position 276, but G2P has E
-900180	SLC30A8	Arg276Gln	residue_mismatch	Expected R at position 276, but G2P has E
-201586	TMEM165	Arg7Cys	residue_mismatch	Expected R at position 7, but G2P has G
-215783	CDKN2A	Asp33Ala	residue_mismatch	Expected D at position 33, but G2P has E
-215785	CDKN2A	Met2Ile	residue_mismatch	Expected M at position 2, but G2P has E
-206113	SPAST	Ile312Lys	residue_mismatch	Expected I at position 312, but G2P has K
-206114	SPAST	Ser330Cys	residue_mismatch	Expected S at position 330, but G2P has N
-206116	SPAST	Ile374Val	residue_mismatch	Expected I at position 374, but G2P has P
-206118	SPAST	Asp438Val	residue_mismatch	Expected D at position 438, but G2P has I
-206120	SPAST	Cys416Tyr	residue_mismatch	Expected C at position 416, but G2P has V
-206122	SPAST	Arg530Gly	residue_mismatch	Expected R at position 530, but G2P has T
-22937	LIM2	Phe147Val	residue_mismatch	Expected F at position 147, but G2P has V
-22938	LIM2	Gly196Glu	position_not_in_g2p	Position 196 not found in G2P data (protein length: 173)
-200274	DDHD2	Asp334His	residue_mismatch	Expected D at position 334, but G2P has F
-35218	SLCO1A2	Asn115Ile	residue_mismatch	Expected N at position 115, but G2P has Y
-35220	SLCO1A2	Ala167Thr	residue_mismatch	Expected A at position 167, but G2P has V
-4998	NEUROD1	Ala45Thr	residue_mismatch	Expected A at position 45, but G2P has T
-20556	SMARCA2	Asp75Glu	residue_mismatch	Expected D at position 75, but G2P has K
-205604	AR	Arg603Lys	residue_mismatch	Expected R at position 603, but G2P has T
-205605	AR	His684Pro	residue_mismatch	Expected H at position 684, but G2P has G
-205608	AR	Ala640Asp	residue_mismatch	Expected A at position 640, but G2P has L
-205624	AR	Arg835His	residue_mismatch	Expected R at position 835, but G2P has Y
-205625	AR	Arg835Cys	residue_mismatch	Expected R at position 835, but G2P has Y
-205719	POMT1	Thr392Met	residue_mismatch	Expected T at position 392, but G2P has P
-205720	POMT1	Ser515Arg	residue_mismatch	Expected S at position 515, but G2P has Y
-205721	POMT1	Trp560Cys	residue_mismatch	Expected W at position 560, but G2P has D
-205722	POMT1	Gln568His	residue_mismatch	Expected Q at position 568, but G2P has S
-205723	POMT1	Ala647Thr	residue_mismatch	Expected A at position 647, but G2P has W
-219544	STRC	Arg618Gly	residue_mismatch	Expected R at position 618, but G2P has T
-11603	LDB3	Asp117Asn	residue_mismatch	Expected D at position 117, but G2P has L
-11604	LDB3	Lys136Met	residue_mismatch	Expected K at position 136, but G2P has P
-11605	LDB3	Ala147Thr	residue_mismatch	Expected A at position 147, but G2P has S
-11607	LDB3	Arg268Cys	residue_mismatch	Expected R at position 268, but G2P has S
-34919	FGFR2	Ser152Phe	residue_mismatch	Expected S at position 152, but G2P has R
-34937	FGFR2	Tyr213Cys	residue_mismatch	Expected Y at position 213, but G2P has H
-34968	FGFR2	Asn432His	residue_mismatch	Expected N at position 432, but G2P has A
-34977	FGFR2	Arg561Gly	residue_mismatch	Expected R at position 561, but G2P has Y
-220281	FGFR2	Pro138Arg	residue_mismatch	Expected P at position 138, but G2P has D
-220282	FGFR2	Ser152Pro	residue_mismatch	Expected S at position 152, but G2P has R
-220283	FGFR2	Gln174Pro	residue_mismatch	Expected Q at position 174, but G2P has T
-220286	FGFR2	Trp175Cys	residue_mismatch	Expected W at position 175, but G2P has V
-220288	FGFR2	Ala200Ser	residue_mismatch	Expected A at position 200, but G2P has Q
-220292	FGFR2	Cys227Arg	residue_mismatch	Expected C at position 227, but G2P has G
-220294	FGFR2	Ser232Cys	residue_mismatch	Expected S at position 232, but G2P has V
-220296	FGFR2	Asp206Ala	residue_mismatch	Expected D at position 206, but G2P has G
-220297	FGFR2	Thr226Pro	residue_mismatch	Expected T at position 226, but G2P has K
-220298	FGFR2	Cys227Trp	residue_mismatch	Expected C at position 227, but G2P has G
-220299	FGFR2	Cys227Ser	residue_mismatch	Expected C at position 227, but G2P has G
-220302	FGFR2	Met276Arg	residue_mismatch	Expected M at position 276, but G2P has F
-220305	FGFR2	Tyr260Cys	residue_mismatch	Expected Y at position 260, but G2P has A
-220306	FGFR2	Lys409Glu	residue_mismatch	Expected K at position 409, but G2P has F
-220309	FGFR2	Ala531Thr	residue_mismatch	Expected A at position 531, but G2P has L
-17416	BANK1	Arg31His	residue_mismatch	Expected R at position 31, but G2P has M
-17417	BANK1	Ala353Thr	residue_mismatch	Expected A at position 353, but G2P has F
-214494	KRAS	Asp153Val	residue_mismatch	Expected D at position 153, but G2P has E
-0	KRAS	Asp153Val	residue_mismatch	Expected D at position 153, but G2P has E
-204170	TGFBR1	Thr123Ile	residue_mismatch	Expected T at position 123, but G2P has P
-204171	TGFBR1	Ser164Leu	residue_mismatch	Expected S at position 164, but G2P has P
-204172	TGFBR1	Met241Arg	residue_mismatch	Expected M at position 241, but G2P has S
-204174	TGFBR1	Arg410Pro	residue_mismatch	Expected R at position 410, but G2P has E
-204175	TGFBR1	Arg410Gln	residue_mismatch	Expected R at position 410, but G2P has E
-200557	DIS3L2	Cys482Tyr	residue_mismatch	Expected C at position 482, but G2P has G
-220355	GH1	Cys64Ser	residue_mismatch	Expected C at position 64, but G2P has K
-220356	GH1	Arg88Cys	residue_mismatch	Expected R at position 88, but G2P has S
-220357	GH1	Asp123Gly	residue_mismatch	Expected D at position 123, but G2P has F
-220358	GH1	Arg194His	residue_mismatch	Expected R at position 194, but G2P has K
-100027	USH1C	Ala396Thr	residue_mismatch	Expected A at position 396, but G2P has P
-100028	USH1C	Gly402Ser	residue_mismatch	Expected G at position 402, but G2P has P
-100037	USH1C	Arg412Trp	residue_mismatch	Expected R at position 412, but G2P has L
-100038	USH1C	Lys413Glu	residue_mismatch	Expected K at position 413, but G2P has E
-100040	USH1C	Ala464Ser	residue_mismatch	Expected A at position 464, but G2P has L
-100041	USH1C	Thr495Asn	residue_mismatch	Expected T at position 495, but G2P has G
-100044	USH1C	Gly511Arg	residue_mismatch	Expected G at position 511, but G2P has T
-100120	USH1C	Glu297Gln	residue_mismatch	Expected E at position 297, but G2P has F
-216450	USH1C	Gly360Asp	residue_mismatch	Expected G at position 360, but G2P has M
-16674	COL2A1	Arg57Cys	residue_mismatch	Expected R at position 57, but G2P has C
-16675	COL2A1	Tyr79Asn	residue_mismatch	Expected Y at position 79, but G2P has E
-16677	COL2A1	Thr171Asn	residue_mismatch	Expected T at position 171, but G2P has G
-16682	COL2A1	Thr229Pro	residue_mismatch	Expected T at position 229, but G2P has E
-216769	COL2A1	Gly86Asp	residue_mismatch	Expected G at position 86, but G2P has C
-216770	COL2A1	Thr220Met	residue_mismatch	Expected T at position 220, but G2P has P
-216771	COL2A1	Tyr172Cys	residue_mismatch	Expected Y at position 172, but G2P has P
-216772	COL2A1	Thr164Met	residue_mismatch	Expected T at position 164, but G2P has P
-209289	TFAP2B	Arg225Ser	residue_mismatch	Expected R at position 225, but G2P has N
-209291	TFAP2B	Arg289Cys	residue_mismatch	Expected R at position 289, but G2P has E
-15557	FCGR3A	Arg72Ser	residue_mismatch	Expected R at position 72, but G2P has S
-15561	FCGR3A	Val212Phe	residue_mismatch	Expected V at position 212, but G2P has C
-14114	PORCN	His336Leu	residue_mismatch	Expected H at position 336, but G2P has A
-14121	PORCN	Trp434Arg	residue_mismatch	Expected W at position 434, but G2P has Y
-202607	PORCN	Arg360Gln	residue_mismatch	Expected R at position 360, but G2P has V
-25104	CCN6	Cys96Arg	residue_mismatch	Expected C at position 96, but G2P has K
-25105	CCN6	Cys132Tyr	residue_mismatch	Expected C at position 132, but G2P has G
-25106	CCN6	Cys163Tyr	residue_mismatch	Expected C at position 163, but G2P has S
-25108	CCN6	Ser352Pro	residue_mismatch	Expected S at position 352, but G2P has K
-34504	TLR1	Ile602Ser	residue_mismatch	Expected I at position 602, but G2P has S
-19746	SLC14A1	Asn280Asp	residue_mismatch	Expected N at position 280, but G2P has D
-217252	CCBE1	Gly136Arg	residue_mismatch	Expected G at position 136, but G2P has D
-2861	KIF6	Trp170Arg	residue_mismatch	Expected W at position 170, but G2P has P
-6459	SQSTM1	Ala297Val	residue_mismatch	Expected A at position 297, but G2P has G
-6460	SQSTM1	Pro303Leu	residue_mismatch	Expected P at position 303, but G2P has A
-6461	SQSTM1	Pro308Leu	residue_mismatch	Expected P at position 308, but G2P has A
-6462	SQSTM1	Ser315Pro	residue_mismatch	Expected S at position 315, but G2P has A
-201979	PHF6	His230Arg	residue_mismatch	Expected H at position 230, but G2P has I
-201981	PHF6	Arg258Gly	residue_mismatch	Expected R at position 258, but G2P has A
-31970	PRODH	Ala59Val	residue_mismatch	Expected A at position 59, but G2P has Q
-31971	PRODH	Arg77Trp	residue_mismatch	Expected R at position 77, but G2P has L
-31972	PRODH	Leu181Met	residue_mismatch	Expected L at position 181, but G2P has Y
-31974	PRODH	Asp318Asn	residue_mismatch	Expected D at position 318, but G2P has S
-219607	PRODH	Leu333Pro	residue_mismatch	Expected L at position 333, but G2P has V
-219608	PRODH	Ala347Ser	residue_mismatch	Expected A at position 347, but G2P has R
-219609	PRODH	Thr358Met	residue_mismatch	Expected T at position 358, but G2P has R
-219611	PRODH	Arg323His	residue_mismatch	Expected R at position 323, but G2P has S
-16848	EGLN1	Pro19Arg	residue_mismatch	Expected P at position 19, but G2P has Q
-16849	EGLN1	Arg73His	residue_mismatch	Expected R at position 73, but G2P has Q
-16850	EGLN1	His76Arg	residue_mismatch	Expected H at position 76, but G2P has G
-203031	GALNT12	Thr182Met	residue_mismatch	Expected T at position 182, but G2P has H
-217010	EXOC8	Glu261Gly	residue_mismatch	Expected E at position 261, but G2P has I
-16347	D2HGDH	Asp74Tyr	residue_mismatch	Expected D at position 74, but G2P has V
-16348	D2HGDH	Gly135Val	residue_mismatch	Expected G at position 135, but G2P has M
-16349	D2HGDH	Asn138Asp	residue_mismatch	Expected N at position 138, but G2P has G
-16350	D2HGDH	Val143Ala	residue_mismatch	Expected V at position 143, but G2P has F
-11081	IVD	Leu42Pro	residue_mismatch	Expected L at position 42, but G2P has I
-11098	IVD	Lys315Gln	residue_mismatch	Expected K at position 315, but G2P has F
-11101	IVD	Val371Ala	residue_mismatch	Expected V at position 371, but G2P has A
-202082	IVD	Ala311Val	residue_mismatch	Expected A at position 311, but G2P has V
-202083	IVD	Cys378Arg	residue_mismatch	Expected C at position 378, but G2P has G
-34606	WDR36	Leu25Pro	residue_mismatch	Expected L at position 25, but G2P has N
-34608	WDR36	Asp33Glu	residue_mismatch	Expected D at position 33, but G2P has F
-34613	WDR36	Ala353Ser	residue_mismatch	Expected A at position 353, but G2P has T
-34621	WDR36	Pro487Arg	residue_mismatch	Expected P at position 487, but G2P has R
-205630	WDR36	Ala449Thr	residue_mismatch	Expected A at position 449, but G2P has C
-205631	WDR36	Arg529Gln	residue_mismatch	Expected R at position 529, but G2P has I
-205632	WDR36	Asp658Gly	residue_mismatch	Expected D at position 658, but G2P has V
-218110	KRT4	Glu449Lys	residue_mismatch	Expected E at position 449, but G2P has R
-35207	RGS9	Trp247Arg	residue_mismatch	Expected W at position 247, but G2P has L
-25936	TMPRSS11A	Arg290Gln	residue_mismatch	Expected R at position 290, but G2P has Q
-2021	ASAH1	Val93Ile	residue_mismatch	Expected V at position 93, but G2P has I
-220339	CEP41	Arg288Cys	residue_mismatch	Expected R at position 288, but G2P has S
-3003	PKP2	Leu835Arg	residue_mismatch	Expected L at position 835, but G2P has K
-3007	PKP2	His810Tyr	residue_mismatch	Expected H at position 810, but G2P has A
-3009	PKP2	Thr807Met	residue_mismatch	Expected T at position 807, but G2P has Y
-3014	PKP2	Val798Ile	residue_mismatch	Expected V at position 798, but G2P has T
-3022	PKP2	Asp768Asn	residue_mismatch	Expected D at position 768, but G2P has K
-3025	PKP2	Cys752Arg	residue_mismatch	Expected C at position 752, but G2P has L
-3028	PKP2	Leu743Arg	residue_mismatch	Expected L at position 743, but G2P has P
-3030	PKP2	Lys724Thr	residue_mismatch	Expected K at position 724, but G2P has V
-3035	PKP2	Thr666Met	residue_mismatch	Expected T at position 666, but G2P has E
-3038	PKP2	Leu662Pro	residue_mismatch	Expected L at position 662, but G2P has V
-3045	PKP2	Asn598Lys	residue_mismatch	Expected N at position 598, but G2P has Q
-3048	PKP2	Tyr582Asn	residue_mismatch	Expected Y at position 582, but G2P has L
-3052	PKP2	Ser571Thr	residue_mismatch	Expected S at position 571, but G2P has D
-3054	PKP2	Ile566Val	residue_mismatch	Expected I at position 566, but G2P has S
-3055	PKP2	Ile550Val	residue_mismatch	Expected I at position 550, but G2P has L
-3056	PKP2	Val543Ile	residue_mismatch	Expected V at position 543, but G2P has Y
-3059	PKP2	Ala526Thr	residue_mismatch	Expected A at position 526, but G2P has T
-3060	PKP2	Val514Ile	residue_mismatch	Expected V at position 514, but G2P has K
-3061	PKP2	Asn513Asp	residue_mismatch	Expected N at position 513, but G2P has D
-3064	PKP2	Pro495Ala	residue_mismatch	Expected P at position 495, but G2P has G
-3065	PKP2	Ile487Ser	residue_mismatch	Expected I at position 487, but G2P has Q
-3065	PKP2	Ile487Ser	residue_mismatch	Expected I at position 487, but G2P has Q
-3066	PKP2	Leu483Pro	residue_mismatch	Expected L at position 483, but G2P has T
-3067	PKP2	Thr482Met	residue_mismatch	Expected T at position 482, but G2P has S
-3067	PKP2	Thr482Met	residue_mismatch	Expected T at position 482, but G2P has S
-3068	PKP2	Thr482Ala	residue_mismatch	Expected T at position 482, but G2P has S
-3069	PKP2	Leu481Arg	residue_mismatch	Expected L at position 481, but G2P has P
-3072	PKP2	Lys472Arg	residue_mismatch	Expected K at position 472, but G2P has P
-28264	PKP2	Lys610Gln	residue_mismatch	Expected K at position 610, but G2P has I
-218855	PKP2	Ile487Ser	residue_mismatch	Expected I at position 487, but G2P has Q
-218855	PKP2	Ile487Ser	residue_mismatch	Expected I at position 487, but G2P has Q
-218856	PKP2	Thr482Met	residue_mismatch	Expected T at position 482, but G2P has S
-218856	PKP2	Thr482Met	residue_mismatch	Expected T at position 482, but G2P has S
-23465	DCTN1	Met437Thr	residue_mismatch	Expected M at position 437, but G2P has E
-23466	DCTN1	Arg651Trp	residue_mismatch	Expected R at position 651, but G2P has S
-23467	DCTN1	Arg863Trp	residue_mismatch	Expected R at position 863, but G2P has V
-23469	DCTN1	Thr1110Ile	residue_mismatch	Expected T at position 1110, but G2P has E
-25898	MUSK	Val704Met	residue_mismatch	Expected V at position 704, but G2P has C
-204629	MUSK	Ala641Val	residue_mismatch	Expected A at position 641, but G2P has L
-18225	SORBS1	Thr196Ala	residue_mismatch	Expected T at position 196, but G2P has A
-35710	ART4	Asn265Asp	residue_mismatch	Expected N at position 265, but G2P has D
-9046	TPTEP2-CSNK1E	Ser408Asn	gene_missing_g2p	No G2P protein features file found for this gene
-204033	CCDC103	His154Pro	gene_missing_g2p	No G2P protein features file found for this gene
+ccsb_mutation_id	gene	uniprot_id	aa_change	G2P_ref_aa	failure_reason	details
+CCSBVarC005208	MC3R	P41968	Ile183Asn	Ser	residue_mismatch	Expected I at position 183, but G2P has S
+CCSBVarC002511	MC3R	P41968	Thr6Lys	Cys	residue_mismatch	Expected T at position 6, but G2P has C
+CCSBVarC002512	MC3R	P41968	Thr280Ser	His	residue_mismatch	Expected T at position 280, but G2P has H
+CCSBVarC000097	ASAH1	Q13510	Val93Ile	Ile	residue_mismatch	Expected V at position 93, but G2P has I
+CCSBVarC000400	PLAU	P00749	Pro141Leu	Leu	residue_mismatch	Expected P at position 141, but G2P has L
+CCSBVarC002302	KLKB1	P03952	Asn143Ser	Ser	residue_mismatch	Expected N at position 143, but G2P has S
+CCSBVarC000132	LFNG	Q8NES3	Phe59Leu	Ala	residue_mismatch	Expected F at position 59, but G2P has A
+CCSBVarC001412	DMD	P11532	Asp119Gly	Gln	residue_mismatch	Expected D at position 119, but G2P has Q
+CCSBVarC001413	DMD	P11532	Cys139Arg	Ile	residue_mismatch	Expected C at position 139, but G2P has I
+CCSBVarC001414	DMD	P11532	Asp267His	Gln	residue_mismatch	Expected D at position 267, but G2P has Q
+CCSBVarC001415	DMD	P11532	Ala353Val	Ser	residue_mismatch	Expected A at position 353, but G2P has S
+CCSBVarC003457	DMD	P11532	Phe160Leu	Thr	residue_mismatch	Expected F at position 160, but G2P has T
+CCSBVarC005084	LMX1B	O60663	Arg200Gln	Lys	residue_mismatch	Expected R at position 200, but G2P has K
+CCSBVarC005085	LMX1B	O60663	Asn246Lys	Arg	residue_mismatch	Expected N at position 246, but G2P has R
+CCSBVarC002278	LMX1B	O60663	Leu58Trp	Gly	residue_mismatch	Expected L at position 58, but G2P has G
+CCSBVarC002280	LMX1B	O60663	Cys95Phe	Tyr	residue_mismatch	Expected C at position 95, but G2P has Y
+CCSBVarC002281	LMX1B	O60663	Thr233Arg	Ala	residue_mismatch	Expected T at position 233, but G2P has A
+CCSBVarC002230	TSSK4	Q6SA08	Val151Ile	Leu	residue_mismatch	Expected V at position 151, but G2P has L
+CCSBVarC001246	MPI	P34949	Gly189Ser	Ala	residue_mismatch	Expected G at position 189, but G2P has A
+CCSBVarC001247	MPI	P34949	Arg357His	Thr	residue_mismatch	Expected R at position 357, but G2P has T
+CCSBVarC002713	FOXI1	Q12951	Gly240Val	Val	residue_mismatch	Expected G at position 240, but G2P has V
+CCSBVarC001580	HPS5	Q9UPZ3	Leu510Arg	Pro	residue_mismatch	Expected L at position 510, but G2P has P
+CCSBVarC002965	HPS5	Q9UPZ3	Thr984Ile	Gly	residue_mismatch	Expected T at position 984, but G2P has G
+CCSBVarC001107	RPL11	P62913	Leu19His	Lys	residue_mismatch	Expected L at position 19, but G2P has K
+CCSBVarC002421	OAS1	P00973	Ser162Gly	Gly	residue_mismatch	Expected S at position 162, but G2P has G
+CCSBVarC001981	ANTXR2	P58335	Tyr45Cys	Leu	residue_mismatch	Expected Y at position 45, but G2P has L
+CCSBVarC001982	ANTXR2	P58335	Val50Phe	Asp	residue_mismatch	Expected V at position 50, but G2P has D
+CCSBVarC001983	ANTXR2	P58335	Val58Ala	Asn	residue_mismatch	Expected V at position 58, but G2P has N
+CCSBVarC002551	CD22	P20273	Pro596Pro	Leu	residue_mismatch	Expected P at position 596, but G2P has L
+CCSBVarC006101	KRAS	P01116	Asp153Val	Glu	residue_mismatch	Expected D at position 153, but G2P has E
+CCSBVarC006101	KRAS	P01116	Asp153Val	Glu	residue_mismatch	Expected D at position 153, but G2P has E
+CCSBVarC000339	BSG	P35613	Glu92Lys	Thr	residue_mismatch	Expected E at position 92, but G2P has T
+CCSBVarC003564	STXBP2	Q15833	Pro474Leu	Arg	residue_mismatch	Expected P at position 474, but G2P has R
+CCSBVarC003236	MASP1	P48740	His497Tyr	Asp	residue_mismatch	Expected H at position 497, but G2P has D
+CCSBVarC003237	MASP1	P48740	Gly666Glu	Val	residue_mismatch	Expected G at position 666, but G2P has V
+CCSBVarC004339	PSEN1	P49768	Val90Met	Thr	residue_mismatch	Expected V at position 90, but G2P has T
+CCSBVarC004341	PSEN1	P49768	Leu109Pro	Lys	residue_mismatch	Expected L at position 109, but G2P has K
+CCSBVarC004338	PSEN1	P49768	Val85Leu	Leu	residue_mismatch	Expected V at position 85, but G2P has L
+CCSBVarC004340	PSEN1	P49768	Val93Leu	Met	residue_mismatch	Expected V at position 93, but G2P has M
+CCSBVarC004344	PSEN1	P49768	Tyr150Cys	Leu	residue_mismatch	Expected Y at position 150, but G2P has L
+CCSBVarC004342	PSEN1	P49768	Tyr111Asp	Gly	residue_mismatch	Expected Y at position 111, but G2P has G
+CCSBVarC004345	PSEN1	P49768	Leu162Arg	Ile	residue_mismatch	Expected L at position 162, but G2P has I
+CCSBVarC004348	PSEN1	P49768	Leu170Arg	Ser	residue_mismatch	Expected L at position 170, but G2P has S
+CCSBVarC004347	PSEN1	P49768	Ser166Phe	Leu	residue_mismatch	Expected S at position 166, but G2P has L
+CCSBVarC004346	PSEN1	P49768	Ser165Leu	Trp	residue_mismatch	Expected S at position 165, but G2P has W
+CCSBVarC004353	PSEN1	P49768	Leu215Phe	Trp	residue_mismatch	Expected L at position 215, but G2P has W
+CCSBVarC004355	PSEN1	P49768	Met229Leu	Ile	residue_mismatch	Expected M at position 229, but G2P has I
+CCSBVarC004354	PSEN1	P49768	Gln218His	Pro	residue_mismatch	Expected Q at position 218, but G2P has P
+CCSBVarC004350	PSEN1	P49768	Ile209Phe	Gly	residue_mismatch	Expected I at position 209, but G2P has G
+CCSBVarC004352	PSEN1	P49768	His210Tyr	Met	residue_mismatch	Expected H at position 210, but G2P has M
+CCSBVarC004357	PSEN1	P49768	Thr241Pro	Leu	residue_mismatch	Expected T at position 241, but G2P has L
+CCSBVarC004351	PSEN1	P49768	Ile209Thr	Gly	residue_mismatch	Expected I at position 209, but G2P has G
+CCSBVarC004356	PSEN1	P49768	Met229Thr	Ile	residue_mismatch	Expected M at position 229, but G2P has I
+CCSBVarC004349	PSEN1	P49768	Gly205Arg	Phe	residue_mismatch	Expected G at position 205, but G2P has F
+CCSBVarC004359	PSEN1	P49768	Gly262Ser	Leu	residue_mismatch	Expected G at position 262, but G2P has L
+CCSBVarC004361	PSEN1	P49768	Val268Ala	Leu	residue_mismatch	Expected V at position 268, but G2P has L
+CCSBVarC004363	PSEN1	P49768	Arg274Ser	Thr	residue_mismatch	Expected R at position 274, but G2P has T
+CCSBVarC004360	PSEN1	P49768	Arg265His	Lys	residue_mismatch	Expected R at position 265, but G2P has K
+CCSBVarC004362	PSEN1	P49768	Glu269Ala	Arg	residue_mismatch	Expected E at position 269, but G2P has R
+CCSBVarC004364	PSEN1	P49768	Thr287Pro	Ile	residue_mismatch	Expected T at position 287, but G2P has I
+CCSBVarC004365	PSEN1	P49768	Leu377Val	Arg	residue_mismatch	Expected L at position 377, but G2P has R
+CCSBVarC004366	PSEN1	P49768	Leu414Phe	Ile	residue_mismatch	Expected L at position 414, but G2P has I
+CCSBVarC004367	PSEN1	P49768	Pro432Gln	Leu	residue_mismatch	Expected P at position 432, but G2P has L
+CCSBVarC000376	TAFAZZIN	Q16635	Arg69Cys	His	residue_mismatch	Expected R at position 69, but G2P has H
+CCSBVarC000377	TAFAZZIN	Q16635	Gly128Val	Tyr	residue_mismatch	Expected G at position 128, but G2P has Y
+CCSBVarC000378	TAFAZZIN	Q16635	Leu141Arg	His	residue_mismatch	Expected L at position 141, but G2P has H
+CCSBVarC005753	TAFAZZIN	Q16635	Arg69Ser	His	residue_mismatch	Expected R at position 69, but G2P has H
+CCSBVarC005755	TAFAZZIN	Q16635	Cys93Arg	Met	residue_mismatch	Expected C at position 93, but G2P has M
+CCSBVarC005754	TAFAZZIN	Q16635	Ser85Pro	Arg	residue_mismatch	Expected S at position 85, but G2P has R
+CCSBVarC005757	TAFAZZIN	Q16635	Gly128Glu	Tyr	residue_mismatch	Expected G at position 128, but G2P has Y
+CCSBVarC005756	TAFAZZIN	Q16635	Gly128Arg	Tyr	residue_mismatch	Expected G at position 128, but G2P has Y
+CCSBVarC001129	KCNE4	Q8WWG9	Met58Val	Leu	residue_mismatch	Expected M at position 58, but G2P has L
+CCSBVarC001130	KCNE4	Q8WWG9	Glu145Asp	Arg	residue_mismatch	Expected E at position 145, but G2P has R
+CCSBVarC007036	TEK	Q02763	Arg892His	Cys	residue_mismatch	Expected R at position 892, but G2P has C
+CCSBVarC001322	FBLIM1	Q8WUP2	Phe191Ser	Ser	residue_mismatch	Expected F at position 191, but G2P has S
+CCSBVarC002955	ZEB1	P37275	Gln841Pro	Val	residue_mismatch	Expected Q at position 841, but G2P has V
+CCSBVarC000606	PLP1	P60201	Trp128Leu	Gly	residue_mismatch	Expected W at position 128, but G2P has G
+CCSBVarC000607	PLP1	P60201	Ala213Glu	Asn	residue_mismatch	Expected A at position 213, but G2P has N
+CCSBVarC005857	PLP1	P60201	Trp128Arg	Gly	residue_mismatch	Expected W at position 128, but G2P has G
+CCSBVarC005856	PLP1	P60201	Thr121Ile	Gln	residue_mismatch	Expected T at position 121, but G2P has Q
+CCSBVarC005859	PLP1	P60201	Thr147Pro	Gly	residue_mismatch	Expected T at position 147, but G2P has G
+CCSBVarC005861	PLP1	P60201	Asp168His	Ala	residue_mismatch	Expected D at position 168, but G2P has A
+CCSBVarC005860	PLP1	P60201	Ile152Thr	Phe	residue_mismatch	Expected I at position 152, but G2P has F
+CCSBVarC005858	PLP1	P60201	Ser135Phe	Leu	residue_mismatch	Expected S at position 135, but G2P has L
+CCSBVarC005866	PLP1	P60201	Cys193Tyr	Thr	residue_mismatch	Expected C at position 193, but G2P has T
+CCSBVarC005862	PLP1	P60201	Pro181Ser	Trp	residue_mismatch	Expected P at position 181, but G2P has W
+CCSBVarC005863	PLP1	P60201	Val184Phe	Cys	residue_mismatch	Expected V at position 184, but G2P has C
+CCSBVarC005865	PLP1	P60201	Leu189Pro	Phe	residue_mismatch	Expected L at position 189, but G2P has F
+CCSBVarC005864	PLP1	P60201	Gly186Cys	Ser	residue_mismatch	Expected G at position 186, but G2P has S
+CCSBVarC006909	BBS9	Q3SYG4	Gly96Arg	Ala	residue_mismatch	Expected G at position 96, but G2P has A
+CCSBVarC005545	GNAO1	P09471	Gly151Arg	Asp	residue_mismatch	Expected G at position 151, but G2P has D
+CCSBVarC001560	SETX	Q7Z333	Leu127Arg	Glu	residue_mismatch	Expected L at position 127, but G2P has E
+CCSBVarC001561	SETX	Q7Z333	Leu128Phe	Arg	residue_mismatch	Expected L at position 128, but G2P has R
+CCSBVarC001562	SETX	Q7Z333	Arg287His	Trp	residue_mismatch	Expected R at position 287, but G2P has W
+CCSBVarC001563	SETX	Q7Z333	Arg595His	Ile	residue_mismatch	Expected R at position 595, but G2P has I
+CCSBVarC000372	AGT	P01019	Leu43Phe	Glu	residue_mismatch	Expected L at position 43, but G2P has E
+CCSBVarC000373	AGT	P01019	Thr207Met	Gly	residue_mismatch	Expected T at position 207, but G2P has G
+CCSBVarC000374	AGT	P01019	Tyr281Cys	Gly	residue_mismatch	Expected Y at position 281, but G2P has G
+CCSBVarC000375	AGT	P01019	Arg375Gln	Leu	residue_mismatch	Expected R at position 375, but G2P has L
+CCSBVarC006707	MUTYH	Q9UIF7	Tyr165Cys	Glu	residue_mismatch	Expected Y at position 165, but G2P has E
+CCSBVarC006708	MUTYH	Q9UIF7	Ile209Val	Leu	residue_mismatch	Expected I at position 209, but G2P has L
+CCSBVarC006709	MUTYH	Q9UIF7	Arg231Cys	Val	residue_mismatch	Expected R at position 231, but G2P has V
+CCSBVarC006710	MUTYH	Q9UIF7	Gln324Arg	Pro	residue_mismatch	Expected Q at position 324, but G2P has P
+CCSBVarC006712	MUTYH	Q9UIF7	Arg412Cys	Leu	residue_mismatch	Expected R at position 412, but G2P has L
+CCSBVarC006713	MUTYH	Q9UIF7	Ala459Thr	Gly	residue_mismatch	Expected A at position 459, but G2P has G
+CCSBVarC006714	MUTYH	Q9UIF7	Ala459Asp	Gly	residue_mismatch	Expected A at position 459, but G2P has G
+CCSBVarC000524	NF2	P35240	Gly114Cys	Thr	residue_mismatch	Expected G at position 114, but G2P has T
+CCSBVarC000525	NF2	P35240	Asn137Tyr	Ala	residue_mismatch	Expected N at position 137, but G2P has A
+CCSBVarC000526	NF2	P35240	Arg335Cys	Glu	residue_mismatch	Expected R at position 335, but G2P has E
+CCSBVarC000527	NF2	P35240	Leu452Pro	Asp	residue_mismatch	Expected L at position 452, but G2P has D
+CCSBVarC000526	NF2	P35240	Arg335Cys	Glu	residue_mismatch	Expected R at position 335, but G2P has E
+CCSBVarC000524	NF2	P35240	Gly114Cys	Thr	residue_mismatch	Expected G at position 114, but G2P has T
+CCSBVarC016628	NF2	P35240	Glu111Asp	Gln	residue_mismatch	Expected E at position 111, but G2P has Q
+CCSBVarC016636	NF2	P35240	Gly157Glu	Val	residue_mismatch	Expected G at position 157, but G2P has V
+CCSBVarC016645	NF2	P35240	Lys206Glu	Glu	residue_mismatch	Expected K at position 206, but G2P has E
+CCSBVarC015533	NF2	P35240	Leu315Pro	Ser	residue_mismatch	Expected L at position 315, but G2P has S
+CCSBVarC016554	NF2	P35240	Leu434Pro	Glu	residue_mismatch	Expected L at position 434, but G2P has E
+CCSBVarC016563	NF2	P35240	Leu459Phe	Gln	residue_mismatch	Expected L at position 459, but G2P has Q
+CCSBVarC016578	NF2	P35240	Glu462Lys	Arg	residue_mismatch	Expected E at position 462, but G2P has R
+CCSBVarC016584	NF2	P35240	His479Arg	Pro	residue_mismatch	Expected H at position 479, but G2P has P
+CCSBVarC016619	NF2	P35240	Asn92Ser	Val	residue_mismatch	Expected N at position 92, but G2P has V
+CCSBVarC016623	NF2	P35240	Met100Leu	Phe	residue_mismatch	Expected M at position 100, but G2P has F
+CCSBVarC016632	NF2	P35240	Leu131Pro	Ile	residue_mismatch	Expected L at position 131, but G2P has I
+CCSBVarC016634	NF2	P35240	Val136Met	Glu	residue_mismatch	Expected V at position 136, but G2P has E
+CCSBVarC016639	NF2	P35240	Lys186Glu	Glu	residue_mismatch	Expected K at position 186, but G2P has E
+CCSBVarC016525	NF2	P35240	Thr336Arg	Arg	residue_mismatch	Expected T at position 336, but G2P has R
+CCSBVarC016545	NF2	P35240	Asp411His	Arg	residue_mismatch	Expected D at position 411, but G2P has R
+CCSBVarC016549	NF2	P35240	Asp420Asn	Glu	residue_mismatch	Expected D at position 420, but G2P has E
+CCSBVarC005787	MPZ	P25189	Ile40Thr	Gly	residue_mismatch	Expected I at position 40, but G2P has G
+CCSBVarC005788	MPZ	P25189	Ser73Cys	Gly	residue_mismatch	Expected S at position 73, but G2P has G
+CCSBVarC005789	MPZ	P25189	Ser88Leu	Tyr	residue_mismatch	Expected S at position 88, but G2P has Y
+CCSBVarC005795	MPZ	P25189	Ile124Thr	Thr	residue_mismatch	Expected I at position 124, but G2P has T
+CCSBVarC005791	MPZ	P25189	Lys106Glu	Arg	residue_mismatch	Expected K at position 106, but G2P has R
+CCSBVarC005792	MPZ	P25189	Arg108His	Lys	residue_mismatch	Expected R at position 108, but G2P has K
+CCSBVarC005793	MPZ	P25189	Arg108Pro	Lys	residue_mismatch	Expected R at position 108, but G2P has K
+CCSBVarC005797	MPZ	P25189	Ile145Thr	Tyr	residue_mismatch	Expected I at position 145, but G2P has Y
+CCSBVarC005790	MPZ	P25189	His91Tyr	Glu	residue_mismatch	Expected H at position 91, but G2P has E
+CCSBVarC005794	MPZ	P25189	Val123Phe	Gly	residue_mismatch	Expected V at position 123, but G2P has G
+CCSBVarC005796	MPZ	P25189	Asn126Ser	Thr	residue_mismatch	Expected N at position 126, but G2P has T
+CCSBVarC005799	MPZ	P25189	Gly173Arg	Leu	residue_mismatch	Expected G at position 173, but G2P has L
+CCSBVarC005798	MPZ	P25189	Ile172Met	Leu	residue_mismatch	Expected I at position 172, but G2P has L
+CCSBVarC005801	MPZ	P25189	Asp234Tyr	Glu	residue_mismatch	Expected D at position 234, but G2P has E
+CCSBVarC005800	MPZ	P25189	Pro227Ser	Arg	residue_mismatch	Expected P at position 227, but G2P has R
+CCSBVarC005379	SUCLG1	P53597	Gly72Ala	Ser	residue_mismatch	Expected G at position 72, but G2P has S
+CCSBVarC005380	SUCLG1	P53597	Pro157Arg	His	residue_mismatch	Expected P at position 157, but G2P has H
+CCSBVarC007108	RUNX2	Q13950	Thr186Ala	Arg	residue_mismatch	Expected T at position 186, but G2P has R
+CCSBVarC006035	NNT	Q13423	Leu98Pro	Ala	residue_mismatch	Expected L at position 98, but G2P has A
+CCSBVarC006036	NNT	Q13423	Ala129Pro	Arg	residue_mismatch	Expected A at position 129, but G2P has R
+CCSBVarC002232	TMPRSS11A	Q6ZMR5	Arg290Gln	Gln	residue_mismatch	Expected R at position 290, but G2P has Q
+CCSBVarC002587	PRODH	O43272	Ala59Val	Gln	residue_mismatch	Expected A at position 59, but G2P has Q
+CCSBVarC002588	PRODH	O43272	Arg77Trp	Leu	residue_mismatch	Expected R at position 77, but G2P has L
+CCSBVarC002589	PRODH	O43272	Leu181Met	Tyr	residue_mismatch	Expected L at position 181, but G2P has Y
+CCSBVarC002590	PRODH	O43272	Asp318Asn	Ser	residue_mismatch	Expected D at position 318, but G2P has S
+CCSBVarC004208	PRODH	O43272	Leu333Pro	Val	residue_mismatch	Expected L at position 333, but G2P has V
+CCSBVarC004209	PRODH	O43272	Ala347Ser	Arg	residue_mismatch	Expected A at position 347, but G2P has R
+CCSBVarC004210	PRODH	O43272	Thr358Met	Arg	residue_mismatch	Expected T at position 358, but G2P has R
+CCSBVarC004207	PRODH	O43272	Arg323His	Ser	residue_mismatch	Expected R at position 323, but G2P has S
+CCSBVarC002215	PAX4	O43316	Arg119Trp	Pro	residue_mismatch	Expected R at position 119, but G2P has P
+CCSBVarC002216	PAX4	O43316	Arg131Trp	Leu	residue_mismatch	Expected R at position 131, but G2P has L
+CCSBVarC002217	PAX4	O43316	Arg162Trp	Pro	residue_mismatch	Expected R at position 162, but G2P has P
+CCSBVarC001354	FCGR3A	P08637	Arg72Ser	Ser	residue_mismatch	Expected R at position 72, but G2P has S
+CCSBVarC001357	FCGR3A	P08637	Val212Phe	Cys	residue_mismatch	Expected V at position 212, but G2P has C
+CCSBVarC001406	F12	P00748	Trp190Cys	Leu	residue_mismatch	Expected W at position 190, but G2P has L
+CCSBVarC001407	F12	P00748	Cys275Ser	Pro	residue_mismatch	Expected C at position 275, but G2P has P
+CCSBVarC001830	TREX1	Q9NSU2	Arg169His	Ser	residue_mismatch	Expected R at position 169, but G2P has S
+CCSBVarC001831	TREX1	Q9NSU2	Ala213Val	Gln	residue_mismatch	Expected A at position 213, but G2P has Q
+CCSBVarC001832	TREX1	Q9NSU2	Gly361Ala		position_not_in_g2p	Position 361 not found in G2P data (protein length: 314)
+CCSBVarC003920	COG4	Q9H9E3	Arg477Trp	Met	residue_mismatch	Expected R at position 477, but G2P has M
+CCSBVarC003921	COG4	Q9H9E3	Leu517Arg	Val	residue_mismatch	Expected L at position 517, but G2P has V
+CCSBVarC001240	MPG	P29372	Arg55Cys	Pro	residue_mismatch	Expected R at position 55, but G2P has P
+CCSBVarC001760	UGT1A1	P22309	Gln328Arg	Lys	residue_mismatch	Expected Q at position 328, but G2P has K
+CCSBVarC001761	UGT1A1	P22309	Arg400Cys	Asn	residue_mismatch	Expected R at position 400, but G2P has N
+CCSBVarC000182	ZFYVE27	Q5T4F4	Gly123Val	Met	residue_mismatch	Expected G at position 123, but G2P has M
+CCSBVarC002413	TOPBP1	Q92547	Arg222Cys	Thr	residue_mismatch	Expected R at position 222, but G2P has T
+CCSBVarC001765	MEF2A	Q02078	Asn182Ser	Pro	residue_mismatch	Expected N at position 182, but G2P has P
+CCSBVarC001766	MEF2A	Q02078	Pro198Leu	Arg	residue_mismatch	Expected P at position 198, but G2P has R
+CCSBVarC001767	MEF2A	Q02078	Gly202Asp	Thr	residue_mismatch	Expected G at position 202, but G2P has T
+CCSBVarC002591	DRD3	P35462	Ser9Gly	Gly	residue_mismatch	Expected S at position 9, but G2P has G
+CCSBVarC002289	ABCG8	Q9H221	Ala632Val	Val	residue_mismatch	Expected A at position 632, but G2P has V
+CCSBVarC004737	DYNC2I2	Q96EX3	Gly276Ser	Pro	residue_mismatch	Expected G at position 276, but G2P has P
+CCSBVarC004736	DYNC2I2	Q96EX3	Thr237Met	Leu	residue_mismatch	Expected T at position 237, but G2P has L
+CCSBVarC004738	DYNC2I2	Q96EX3	Lys319Arg	Leu	residue_mismatch	Expected K at position 319, but G2P has L
+CCSBVarC005664	MOCS1	Q9NZB8	Arg232Gln	Phe	residue_mismatch	Expected R at position 232, but G2P has F
+CCSBVarC000838	CPB2	Q96IY4	Thr347Ile	Ile	residue_mismatch	Expected T at position 347, but G2P has I
+CCSBVarC005076	PIEZO1	Q92508	Met93Arg	Pro	residue_mismatch	Expected M at position 93, but G2P has P
+CCSBVarC001555	OTX2	P32243	Arg97Gly	Gln	residue_mismatch	Expected R at position 97, but G2P has Q
+CCSBVarC001556	OTX2	P32243	Pro141Thr	Thr	residue_mismatch	Expected P at position 141, but G2P has T
+CCSBVarC001557	OTX2	P32243	Pro142Ala	Ile	residue_mismatch	Expected P at position 142, but G2P has I
+CCSBVarC001558	OTX2	P32243	Asn233Ser	Gln	residue_mismatch	Expected N at position 233, but G2P has Q
+CCSBVarC002328	NGF	P01138	Val35Ala	Ala	residue_mismatch	Expected V at position 35, but G2P has A
+CCSBVarC003211	ABCB7	O75027	Glu209Asp	Val	residue_mismatch	Expected E at position 209, but G2P has V
+CCSBVarC003212	ABCB7	O75027	Ile401Met	Val	residue_mismatch	Expected I at position 401, but G2P has V
+CCSBVarC003214	ABCB7	O75027	Glu434Lys	Thr	residue_mismatch	Expected E at position 434, but G2P has T
+CCSBVarC003213	ABCB7	O75027	Val412Leu	Met	residue_mismatch	Expected V at position 412, but G2P has M
+CCSBVarC013587	EGFR	P00533	Glu645Lys	Ser	residue_mismatch	Expected E at position 645, but G2P has S
+CCSBVarC002223	MUSK	O15146	Val704Met	Cys	residue_mismatch	Expected V at position 704, but G2P has C
+CCSBVarC003136	MUSK	O15146	Ala641Val	Leu	residue_mismatch	Expected A at position 641, but G2P has L
+CCSBVarC001041	UBE3A	Q05086	Ile62Thr	Arg	residue_mismatch	Expected I at position 62, but G2P has R
+CCSBVarC001042	UBE3A	Q05086	Ser82Pro	Leu	residue_mismatch	Expected S at position 82, but G2P has L
+CCSBVarC001043	UBE3A	Q05086	Arg239Cys	Ile	residue_mismatch	Expected R at position 239, but G2P has I
+CCSBVarC001044	UBE3A	Q05086	Ile537Lys	Leu	residue_mismatch	Expected I at position 537, but G2P has L
+CCSBVarC003658	NEXN	Q0ZGT2	Arg171Cys	Ile	residue_mismatch	Expected R at position 171, but G2P has I
+CCSBVarC003659	NEXN	Q0ZGT2	Tyr544Cys	Gln	residue_mismatch	Expected Y at position 544, but G2P has Q
+CCSBVarC002740	SLCO1A2	P46721	Asn115Ile	Tyr	residue_mismatch	Expected N at position 115, but G2P has Y
+CCSBVarC002742	SLCO1A2	P46721	Ala167Thr	Val	residue_mismatch	Expected A at position 167, but G2P has V
+CCSBVarC000897	NDUFAF5	Q5TEU4	Leu42Pro	Arg	residue_mismatch	Expected L at position 42, but G2P has R
+CCSBVarC000897	NDUFAF5	Q5TEU4	Leu42Pro	Arg	residue_mismatch	Expected L at position 42, but G2P has R
+CCSBVarC000897	NDUFAF5	Q5TEU4	Leu42Pro	Arg	residue_mismatch	Expected L at position 42, but G2P has R
+CCSBVarC000897	NDUFAF5	Q5TEU4	Leu42Pro	Arg	residue_mismatch	Expected L at position 42, but G2P has R
+CCSBVarC000464	MCHR1	Q99705	Tyr250His	Arg	residue_mismatch	Expected Y at position 250, but G2P has R
+CCSBVarC001611	GABBR1	Q9UBS5	Gly372Ser	Arg	residue_mismatch	Expected G at position 372, but G2P has R
+CCSBVarC000481	GPX1	P07203	Pro142Leu	Ala	residue_mismatch	Expected P at position 142, but G2P has A
+CCSBVarC001433	GNAS	P84996	Val93Glu	Ala	residue_mismatch	Expected V at position 93, but G2P has A
+CCSBVarC001434	GNAS	P84996	Ile104Thr	Leu	residue_mismatch	Expected I at position 104, but G2P has L
+CCSBVarC001435	GNAS	P84996	Arg202Cys	Ser	residue_mismatch	Expected R at position 202, but G2P has S
+CCSBVarC001436	GNAS	P84996	Ala367Ser	Pro	residue_mismatch	Expected A at position 367, but G2P has P
+CCSBVarC001065	MSH5	O43196	Pro787Ser	Val	residue_mismatch	Expected P at position 787, but G2P has V
+CCSBVarC005421	NR2E3	Q9Y5X4	Glu33Lys	Gly	residue_mismatch	Expected E at position 33, but G2P has G
+CCSBVarC005422	NR2E3	Q9Y5X4	Arg223Gln	Thr	residue_mismatch	Expected R at position 223, but G2P has T
+CCSBVarC002422	APTX	Q7Z2E3	Ala110Val	Tyr	residue_mismatch	Expected A at position 110, but G2P has Y
+CCSBVarC002423	APTX	Q7Z2E3	His140Arg	Arg	residue_mismatch	Expected H at position 140, but G2P has R
+CCSBVarC002424	APTX	Q7Z2E3	Val175Gly	Lys	residue_mismatch	Expected V at position 175, but G2P has K
+CCSBVarC005817	APTX	Q7Z2E3	Pro118Leu	Ala	residue_mismatch	Expected P at position 118, but G2P has A
+CCSBVarC001646	CYP4V2	Q6ZWL3	Lys259Gln	Gln	residue_mismatch	Expected K at position 259, but G2P has Q
+CCSBVarC006996	TFAP2B	Q92481	Arg225Ser	Asn	residue_mismatch	Expected R at position 225, but G2P has N
+CCSBVarC006995	TFAP2B	Q92481	Arg289Cys	Glu	residue_mismatch	Expected R at position 289, but G2P has E
+CCSBVarC001684	CASP10	Q92851	Pro501Leu	Leu	residue_mismatch	Expected P at position 501, but G2P has L
+CCSBVarC000929	DBH	P09172	Asp100Glu	Leu	residue_mismatch	Expected D at position 100, but G2P has L
+CCSBVarC000930	DBH	P09172	Cys255Phe	Lys	residue_mismatch	Expected C at position 255, but G2P has K
+CCSBVarC000931	DBH	P09172	Arg535Cys	Val	residue_mismatch	Expected R at position 535, but G2P has V
+CCSBVarC000932	DBH	P09172	Tyr542Cys	Val	residue_mismatch	Expected Y at position 542, but G2P has V
+CCSBVarC003525	DBH	P09172	Asp331Asn	Glu	residue_mismatch	Expected D at position 331, but G2P has E
+CCSBVarC002404	LIPC	P11150	Leu356Phe	Phe	residue_mismatch	Expected L at position 356, but G2P has F
+CCSBVarC002714	IMPDH1	P20839	Arg273Pro	Leu	residue_mismatch	Expected R at position 273, but G2P has L
+CCSBVarC002714	IMPDH1	P20839	Arg273Pro	Leu	residue_mismatch	Expected R at position 273, but G2P has L
+CCSBVarC002715	IMPDH1	P20839	Asp275Asn	Ser	residue_mismatch	Expected D at position 275, but G2P has S
+CCSBVarC002715	IMPDH1	P20839	Asp275Asn	Ser	residue_mismatch	Expected D at position 275, but G2P has S
+CCSBVarC002716	IMPDH1	P20839	Val317Ile	Gly	residue_mismatch	Expected V at position 317, but G2P has G
+CCSBVarC002716	IMPDH1	P20839	Val317Ile	Gly	residue_mismatch	Expected V at position 317, but G2P has G
+CCSBVarC002717	IMPDH1	P20839	His421Pro	Glu	residue_mismatch	Expected H at position 421, but G2P has E
+CCSBVarC006915	IMPDH1	P20839	Arg154Trp	Leu	residue_mismatch	Expected R at position 154, but G2P has L
+CCSBVarC002714	IMPDH1	P20839	Arg273Pro	Leu	residue_mismatch	Expected R at position 273, but G2P has L
+CCSBVarC002714	IMPDH1	P20839	Arg273Pro	Leu	residue_mismatch	Expected R at position 273, but G2P has L
+CCSBVarC002715	IMPDH1	P20839	Asp275Asn	Ser	residue_mismatch	Expected D at position 275, but G2P has S
+CCSBVarC002715	IMPDH1	P20839	Asp275Asn	Ser	residue_mismatch	Expected D at position 275, but G2P has S
+CCSBVarC002716	IMPDH1	P20839	Val317Ile	Gly	residue_mismatch	Expected V at position 317, but G2P has G
+CCSBVarC002716	IMPDH1	P20839	Val317Ile	Gly	residue_mismatch	Expected V at position 317, but G2P has G
+CCSBVarC003120	FGFR1	P11362	Ile637Thr	Met	residue_mismatch	Expected I at position 637, but G2P has M
+CCSBVarC003121	FGFR1	P11362	Glu668Lys	Ala	residue_mismatch	Expected E at position 668, but G2P has A
+CCSBVarC003122	FGFR1	P11362	Pro720Ser	Asp	residue_mismatch	Expected P at position 720, but G2P has D
+CCSBVarC003123	FGFR1	P11362	Asp766Tyr	Tyr	residue_mismatch	Expected D at position 766, but G2P has Y
+CCSBVarC006511	AUH	Q13825	Gly188Asp	Leu	residue_mismatch	Expected G at position 188, but G2P has L
+CCSBVarC002776	ART4	Q93070	Asn265Asp	Asp	residue_mismatch	Expected N at position 265, but G2P has D
+CCSBVarC002734	FGD4	Q96M96	Met50Thr	Pro	residue_mismatch	Expected M at position 50, but G2P has P
+CCSBVarC004312	FGD4	Q96M96	Arg194His	Asp	residue_mismatch	Expected R at position 194, but G2P has D
+CCSBVarC001590	A2M	P01023	Val1000Ile	Ile	residue_mismatch	Expected V at position 1000, but G2P has I
+CCSBVarC008122	TCF4	P15884	Gln624Pro	Arg	residue_mismatch	Expected Q at position 624, but G2P has R
+CCSBVarC002610	TCF4	P15884	Arg580Gln	Ile	residue_mismatch	Expected R at position 580, but G2P has I
+CCSBVarC006425	TCF4	P15884	Arg580Trp	Ile	residue_mismatch	Expected R at position 580, but G2P has I
+CCSBVarC007053	EDAR	Q9UNE0	Arg407His	Ser	residue_mismatch	Expected R at position 407, but G2P has S
+CCSBVarC007051	EDAR	Q9UNE0	Arg452Gln		position_not_in_g2p	Position 452 not found in G2P data (protein length: 448)
+CCSBVarC002064	MYO1C	O00159	Arg156Trp	Phe	residue_mismatch	Expected R at position 156, but G2P has F
+CCSBVarC002065	MYO1C	O00159	Thr380Met	Ala	residue_mismatch	Expected T at position 380, but G2P has A
+CCSBVarC002066	MYO1C	O00159	Gln750Lys	Trp	residue_mismatch	Expected Q at position 750, but G2P has W
+CCSBVarC002067	MYO1C	O00159	Glu831Lys	Thr	residue_mismatch	Expected E at position 831, but G2P has T
+CCSBVarC002790	TMPRSS3	P57727	Cys406Arg	Val	residue_mismatch	Expected C at position 406, but G2P has V
+CCSBVarC004483	TMPRSS3	P57727	Pro403Leu	Gly	residue_mismatch	Expected P at position 403, but G2P has G
+CCSBVarC004484	TMPRSS3	P57727	Ala425Thr	Cys	residue_mismatch	Expected A at position 425, but G2P has C
+CCSBVarC002695	ZFP57	Q9NU63	Arg248His	Pro	residue_mismatch	Expected R at position 248, but G2P has P
+CCSBVarC002696	ZFP57	Q9NU63	His277Asn	Ile	residue_mismatch	Expected H at position 277, but G2P has I
+CCSBVarC003892	ZFP57	Q9NU63	His458Asp		position_not_in_g2p	Position 458 not found in G2P data (protein length: 452)
+CCSBVarC002837	HUS1B	Q8NHY5	Tyr268Asp	Asp	residue_mismatch	Expected Y at position 268, but G2P has D
+CCSBVarC002979	STRC	Q7RTU9	Arg618Gly	Thr	residue_mismatch	Expected R at position 618, but G2P has T
+CCSBVarC000612	TNNT2	P45379	Ala28Val	Arg	residue_mismatch	Expected A at position 28, but G2P has R
+CCSBVarC000613	TNNT2	P45379	Asn268Ile	Lys	residue_mismatch	Expected N at position 268, but G2P has K
+CCSBVarC000968	IVD	P26440	Leu42Pro	Ile	residue_mismatch	Expected L at position 42, but G2P has I
+CCSBVarC000969	IVD	P26440	Lys315Gln	Phe	residue_mismatch	Expected K at position 315, but G2P has F
+CCSBVarC000970	IVD	P26440	Val371Ala	Ala	residue_mismatch	Expected V at position 371, but G2P has A
+CCSBVarC004700	IVD	P26440	Ala311Val	Val	residue_mismatch	Expected A at position 311, but G2P has V
+CCSBVarC004701	IVD	P26440	Cys378Arg	Gly	residue_mismatch	Expected C at position 378, but G2P has G
+CCSBVarC002681	WDR36	Q8NI36	Leu25Pro	Asn	residue_mismatch	Expected L at position 25, but G2P has N
+CCSBVarC002682	WDR36	Q8NI36	Asp33Glu	Phe	residue_mismatch	Expected D at position 33, but G2P has F
+CCSBVarC002683	WDR36	Q8NI36	Ala353Ser	Thr	residue_mismatch	Expected A at position 353, but G2P has T
+CCSBVarC002684	WDR36	Q8NI36	Pro487Arg	Arg	residue_mismatch	Expected P at position 487, but G2P has R
+CCSBVarC002998	WDR36	Q8NI36	Ala449Thr	Cys	residue_mismatch	Expected A at position 449, but G2P has C
+CCSBVarC002999	WDR36	Q8NI36	Arg529Gln	Ile	residue_mismatch	Expected R at position 529, but G2P has I
+CCSBVarC003000	WDR36	Q8NI36	Asp658Gly	Val	residue_mismatch	Expected D at position 658, but G2P has V
+CCSBVarC006911	EXOC8	Q8IYI6	Glu261Gly	Ile	residue_mismatch	Expected E at position 261, but G2P has I
+CCSBVarC002305	CAPN13	Q6MZZ7	Thr280Ala	Ala	residue_mismatch	Expected T at position 280, but G2P has A
+CCSBVarC005603	NUBPL	Q8TB37	Asp75Tyr	Gly	residue_mismatch	Expected D at position 75, but G2P has G
+CCSBVarC001884	CD96	P40200	Thr264Met	Lys	residue_mismatch	Expected T at position 264, but G2P has K
+CCSBVarC001501	BANK1	Q8NDB2	Arg31His	Met	residue_mismatch	Expected R at position 31, but G2P has M
+CCSBVarC001502	BANK1	Q8NDB2	Ala353Thr	Phe	residue_mismatch	Expected A at position 353, but G2P has F
+CCSBVarC000864	HIBCH	Q6NVY1	Tyr117Cys	Phe	residue_mismatch	Expected Y at position 117, but G2P has F
+CCSBVarC001378	IHH	Q14623	Glu13Lys	Cys	residue_mismatch	Expected E at position 13, but G2P has C
+CCSBVarC001379	IHH	Q14623	Thr36Ile	Ser	residue_mismatch	Expected T at position 36, but G2P has S
+CCSBVarC001380	IHH	Q14623	Val72Ala	Ala	residue_mismatch	Expected V at position 72, but G2P has A
+CCSBVarC005582	IHH	Q14623	Arg10Gln	Leu	residue_mismatch	Expected R at position 10, but G2P has L
+CCSBVarC005583	IHH	Q14623	Thr12Asn	Phe	residue_mismatch	Expected T at position 12, but G2P has F
+CCSBVarC006211	DNAL1	Q4LDG9	Asn111Ser	Ile	residue_mismatch	Expected N at position 111, but G2P has I
+CCSBVarC001865	PIK3R1	P27986	Met56Ile	Leu	residue_mismatch	Expected M at position 56, but G2P has L
+CCSBVarC001866	PIK3R1	P27986	Arg139Gln	Ile	residue_mismatch	Expected R at position 139, but G2P has I
+CCSBVarC004473	PIK3R1	P27986	Glu219Lys	Tyr	residue_mismatch	Expected E at position 219, but G2P has Y
+CCSBVarC004474	PIK3R1	P27986	Arg379Trp	Lys	residue_mismatch	Expected R at position 379, but G2P has K
+CCSBVarC005541	GNPTG	Q9UJJ9	Leu229Val	Gln	residue_mismatch	Expected L at position 229, but G2P has Q
+CCSBVarC005542	GNPTG	Q9UJJ9	Thr285Met	Glu	residue_mismatch	Expected T at position 285, but G2P has E
+CCSBVarC001942	MT1A	P04731	Asn27Thr	Thr	residue_mismatch	Expected N at position 27, but G2P has T
+CCSBVarC002090	NT5C3A	Q9H0P0	Cys108Arg	Asn	residue_mismatch	Expected C at position 108, but G2P has N
+CCSBVarC002091	NT5C3A	Q9H0P0	Asp132Val	Tyr	residue_mismatch	Expected D at position 132, but G2P has Y
+CCSBVarC002092	NT5C3A	Q9H0P0	Gly202Arg	Phe	residue_mismatch	Expected G at position 202, but G2P has F
+CCSBVarC002093	NT5C3A	Q9H0P0	Gly275Arg	Leu	residue_mismatch	Expected G at position 275, but G2P has L
+CCSBVarC002889	NT5C3A	Q9H0P0	Phe31Leu	Leu	residue_mismatch	Expected F at position 31, but G2P has L
+CCSBVarC004475	PIGO	Q8TEQ8	Leu322Phe	Ser	residue_mismatch	Expected L at position 322, but G2P has S
+CCSBVarC001825	GFER	P55789	Arg114His	Ala	residue_mismatch	Expected R at position 114, but G2P has A
+CCSBVarC000913	HADHB	P55084	Arg62His	Thr	residue_mismatch	Expected R at position 62, but G2P has T
+CCSBVarC000914	HADHB	P55084	Thr134Pro	Val	residue_mismatch	Expected T at position 134, but G2P has V
+CCSBVarC000915	HADHB	P55084	Ala327Pro	Leu	residue_mismatch	Expected A at position 327, but G2P has L
+CCSBVarC000916	HADHB	P55084	His380Arg	Glu	residue_mismatch	Expected H at position 380, but G2P has E
+CCSBVarC004285	HADHB	P55084	Arg248His	Ser	residue_mismatch	Expected R at position 248, but G2P has S
+CCSBVarC004286	HADHB	P55084	Asp264Gly	Val	residue_mismatch	Expected D at position 264, but G2P has V
+CCSBVarC004288	HADHB	P55084	Val456Gly	Ala	residue_mismatch	Expected V at position 456, but G2P has A
+CCSBVarC004287	HADHB	P55084	Arg445Lys	Leu	residue_mismatch	Expected R at position 445, but G2P has L
+CCSBVarC003855	PUF60	Q9UHX1	His152Tyr	Phe	residue_mismatch	Expected H at position 152, but G2P has F
+CCSBVarC002177	ZNF624	Q9P2J8	Lys9Asn	Ser	residue_mismatch	Expected K at position 9, but G2P has S
+CCSBVarC000665	DKK3	Q9UBP4	Gly335Arg	Arg	residue_mismatch	Expected G at position 335, but G2P has R
+CCSBVarC005544	MTFMT	Q96DP5	Pro66Leu	Leu	residue_mismatch	Expected P at position 66, but G2P has L
+CCSBVarC005570	MSX1	P28360	Glu78Val	Ser	residue_mismatch	Expected E at position 78, but G2P has S
+CCSBVarC005572	MSX1	P28360	Pro147Gln	Gln	residue_mismatch	Expected P at position 147, but G2P has Q
+CCSBVarC005573	MSX1	P28360	Arg196Pro	Tyr	residue_mismatch	Expected R at position 196, but G2P has Y
+CCSBVarC003954	P3H2	Q8IVL5	Gly327Val	Glu	residue_mismatch	Expected G at position 327, but G2P has E
+CCSBVarC002233	TNFRSF13B	O14836	Cys58Arg	Ser	residue_mismatch	Expected C at position 58, but G2P has S
+CCSBVarC002234	TNFRSF13B	O14836	Ala103Thr	Phe	residue_mismatch	Expected A at position 103, but G2P has F
+CCSBVarC002235	TNFRSF13B	O14836	Leu125Arg	Glu	residue_mismatch	Expected L at position 125, but G2P has E
+CCSBVarC002236	TNFRSF13B	O14836	Val200Phe	Arg	residue_mismatch	Expected V at position 200, but G2P has R
+CCSBVarC002910	TNFRSF13B	O14836	Lys142Met	Arg	residue_mismatch	Expected K at position 142, but G2P has R
+CCSBVarC006374	NYX	Q9GZU5	Cys31Ser	Ala	residue_mismatch	Expected C at position 31, but G2P has A
+CCSBVarC006375	NYX	Q9GZU5	Pro151Leu	Ala	residue_mismatch	Expected P at position 151, but G2P has A
+CCSBVarC006376	NYX	Q9GZU5	Pro175Arg	Gly	residue_mismatch	Expected P at position 175, but G2P has G
+CCSBVarC006379	NYX	Q9GZU5	Asn264Lys	Val	residue_mismatch	Expected N at position 264, but G2P has V
+CCSBVarC006380	NYX	Q9GZU5	Leu285Pro	Ile	residue_mismatch	Expected L at position 285, but G2P has I
+CCSBVarC006381	NYX	Q9GZU5	Asn312Ser	Leu	residue_mismatch	Expected N at position 312, but G2P has L
+CCSBVarC006382	NYX	Q9GZU5	Leu347Pro	Glu	residue_mismatch	Expected L at position 347, but G2P has E
+CCSBVarC006383	NYX	Q9GZU5	Arg94Pro	Ser	residue_mismatch	Expected R at position 94, but G2P has S
+CCSBVarC006772	ALG9	Q9H6U8	Glu530Lys	Ile	residue_mismatch	Expected E at position 530, but G2P has I
+CCSBVarC001248	NR1I2	O75469	Arg43Cys	Val	residue_mismatch	Expected R at position 43, but G2P has V
+CCSBVarC001250	NR1I2	O75469	Gln103Lys	Leu	residue_mismatch	Expected Q at position 103, but G2P has L
+CCSBVarC001251	NR1I2	O75469	Ala314Thr	Gly	residue_mismatch	Expected A at position 314, but G2P has G
+CCSBVarC005476	PHF6	Q8IWS0	His230Arg	Ile	residue_mismatch	Expected H at position 230, but G2P has I
+CCSBVarC005478	PHF6	Q8IWS0	Arg258Gly	Ala	residue_mismatch	Expected R at position 258, but G2P has A
+CCSBVarC002016	LIM2	P55344	Phe147Val	Val	residue_mismatch	Expected F at position 147, but G2P has V
+CCSBVarC002017	LIM2	P55344	Gly196Glu		position_not_in_g2p	Position 196 not found in G2P data (protein length: 173)
+CCSBVarC005849	AGPAT2	O15120	Leu196Pro	Gln	residue_mismatch	Expected L at position 196, but G2P has Q
+CCSBVarC000943	AGPAT2	O15120	Ala240Val	Asp	residue_mismatch	Expected A at position 240, but G2P has D
+CCSBVarC002292	SMARCB1	Q12824	Asn279Lys	Phe	residue_mismatch	Expected N at position 279, but G2P has F
+CCSBVarC002293	SMARCB1	Q12824	Asp360Val	Glu	residue_mismatch	Expected D at position 360, but G2P has E
+CCSBVarC000074	RPIA	P49247	Ala61Val	Ser	residue_mismatch	Expected A at position 61, but G2P has S
+CCSBVarC002709	FGFR2	P21802	Ser152Phe	Arg	residue_mismatch	Expected S at position 152, but G2P has R
+CCSBVarC002710	FGFR2	P21802	Tyr213Cys	His	residue_mismatch	Expected Y at position 213, but G2P has H
+CCSBVarC002711	FGFR2	P21802	Asn432His	Ala	residue_mismatch	Expected N at position 432, but G2P has A
+CCSBVarC002712	FGFR2	P21802	Arg561Gly	Tyr	residue_mismatch	Expected R at position 561, but G2P has Y
+CCSBVarC003271	FGFR2	P21802	Pro138Arg	Asp	residue_mismatch	Expected P at position 138, but G2P has D
+CCSBVarC003272	FGFR2	P21802	Ser152Pro	Arg	residue_mismatch	Expected S at position 152, but G2P has R
+CCSBVarC003273	FGFR2	P21802	Gln174Pro	Thr	residue_mismatch	Expected Q at position 174, but G2P has T
+CCSBVarC003274	FGFR2	P21802	Trp175Cys	Val	residue_mismatch	Expected W at position 175, but G2P has V
+CCSBVarC003275	FGFR2	P21802	Ala200Ser	Gln	residue_mismatch	Expected A at position 200, but G2P has Q
+CCSBVarC003278	FGFR2	P21802	Cys227Arg	Gly	residue_mismatch	Expected C at position 227, but G2P has G
+CCSBVarC003281	FGFR2	P21802	Ser232Cys	Val	residue_mismatch	Expected S at position 232, but G2P has V
+CCSBVarC003276	FGFR2	P21802	Asp206Ala	Gly	residue_mismatch	Expected D at position 206, but G2P has G
+CCSBVarC003277	FGFR2	P21802	Thr226Pro	Lys	residue_mismatch	Expected T at position 226, but G2P has K
+CCSBVarC003280	FGFR2	P21802	Cys227Trp	Gly	residue_mismatch	Expected C at position 227, but G2P has G
+CCSBVarC003279	FGFR2	P21802	Cys227Ser	Gly	residue_mismatch	Expected C at position 227, but G2P has G
+CCSBVarC003284	FGFR2	P21802	Met276Arg	Phe	residue_mismatch	Expected M at position 276, but G2P has F
+CCSBVarC003283	FGFR2	P21802	Tyr260Cys	Ala	residue_mismatch	Expected Y at position 260, but G2P has A
+CCSBVarC003285	FGFR2	P21802	Lys409Glu	Phe	residue_mismatch	Expected K at position 409, but G2P has F
+CCSBVarC003287	FGFR2	P21802	Ala531Thr	Leu	residue_mismatch	Expected A at position 531, but G2P has L
+CCSBVarC001973	SERPINA6	P08185	Ala246Ser	Ser	residue_mismatch	Expected A at position 246, but G2P has S
+CCSBVarC003460	CHAT	P28329	Leu92Pro	Pro	residue_mismatch	Expected L at position 92, but G2P has P
+CCSBVarC003461	CHAT	P28329	Ile187Thr	Gln	residue_mismatch	Expected I at position 187, but G2P has Q
+CCSBVarC003462	CHAT	P28329	Ile218Thr	Val	residue_mismatch	Expected I at position 218, but G2P has V
+CCSBVarC003463	CHAT	P28329	Arg364Gly	Ala	residue_mismatch	Expected R at position 364, but G2P has A
+CCSBVarC003464	CHAT	P28329	Arg442His	His	residue_mismatch	Expected R at position 442, but G2P has H
+CCSBVarC001374	ALAS2	P22557	Arg133His	Ile	residue_mismatch	Expected R at position 133, but G2P has I
+CCSBVarC001375	ALAS2	P22557	Ile252Thr	Ala	residue_mismatch	Expected I at position 252, but G2P has A
+CCSBVarC001377	ALAS2	P22557	Ile439Asn	Lys	residue_mismatch	Expected I at position 439, but G2P has K
+CCSBVarC003761	ALAS2	P22557	Asp122Asn	Gln	residue_mismatch	Expected D at position 122, but G2P has Q
+CCSBVarC003762	ALAS2	P22557	Phe128Leu	Lys	residue_mismatch	Expected F at position 128, but G2P has K
+CCSBVarC003763	ALAS2	P22557	Ala135Thr	Asn	residue_mismatch	Expected A at position 135, but G2P has N
+CCSBVarC003764	ALAS2	P22557	Asp153Val	Ile	residue_mismatch	Expected D at position 153, but G2P has I
+CCSBVarC003765	ALAS2	P22557	Gly254Ser	Leu	residue_mismatch	Expected G at position 254, but G2P has L
+CCSBVarC003766	ALAS2	P22557	Lys262Gln	Asn	residue_mismatch	Expected K at position 262, but G2P has N
+CCSBVarC003767	ALAS2	P22557	Thr351Ser	Gly	residue_mismatch	Expected T at position 351, but G2P has G
+CCSBVarC003768	ALAS2	P22557	Cys358Tyr	Glu	residue_mismatch	Expected C at position 358, but G2P has E
+CCSBVarC003769	ALAS2	P22557	Arg374Cys	Glu	residue_mismatch	Expected R at position 374, but G2P has E
+CCSBVarC003770	ALAS2	P22557	Arg415Cys	Ala	residue_mismatch	Expected R at position 415, but G2P has A
+CCSBVarC003772	ALAS2	P22557	Tyr549Phe	Asp	residue_mismatch	Expected Y at position 549, but G2P has D
+CCSBVarC003771	ALAS2	P22557	Ser531Gly	Asp	residue_mismatch	Expected S at position 531, but G2P has D
+CCSBVarC000784	AMT	P48728	Asn48Ile	Lys	residue_mismatch	Expected N at position 48, but G2P has K
+CCSBVarC000785	AMT	P48728	Val115Ala	Thr	residue_mismatch	Expected V at position 115, but G2P has T
+CCSBVarC000786	AMT	P48728	Gly172Asp	Leu	residue_mismatch	Expected G at position 172, but G2P has L
+CCSBVarC000787	AMT	P48728	Arg223His	Cys	residue_mismatch	Expected R at position 223, but G2P has C
+CCSBVarC005598	AMT	P48728	Tyr128Cys	Asp	residue_mismatch	Expected Y at position 128, but G2P has D
+CCSBVarC005599	AMT	P48728	Asp179His	Leu	residue_mismatch	Expected D at position 179, but G2P has L
+CCSBVarC006351	TMEM216	Q9P0N5	Arg12His	Gly	residue_mismatch	Expected R at position 12, but G2P has G
+CCSBVarC006352	TMEM216	Q9P0N5	Leu53Arg	Thr	residue_mismatch	Expected L at position 53, but G2P has T
+CCSBVarC000165	TMEM67	Q5HYA8	Pro120Arg	Asp	residue_mismatch	Expected P at position 120, but G2P has D
+CCSBVarC000166	TMEM67	Q5HYA8	Gln366Pro	Ala	residue_mismatch	Expected Q at position 366, but G2P has A
+CCSBVarC000167	TMEM67	Q5HYA8	Tyr503Cys	Gln	residue_mismatch	Expected Y at position 503, but G2P has Q
+CCSBVarC000168	TMEM67	Q5HYA8	Leu956Pro	Asn	residue_mismatch	Expected L at position 956, but G2P has N
+CCSBVarC002981	TMEM67	Q5HYA8	Tyr44Cys	Gln	residue_mismatch	Expected Y at position 44, but G2P has Q
+CCSBVarC004939	DDHD2	O94830	Asp334His	Phe	residue_mismatch	Expected D at position 334, but G2P has F
+CCSBVarC003745	LRIT3	Q3SXY7	Cys201Tyr	Asn	residue_mismatch	Expected C at position 201, but G2P has N
+CCSBVarC001745	SLC14A1	Q13336	Asn280Asp	Asp	residue_mismatch	Expected N at position 280, but G2P has D
+CCSBVarC002463	CYP11B1	P15538	Leu128Ser	Gly	residue_mismatch	Expected L at position 128, but G2P has G
+CCSBVarC002464	CYP11B1	P15538	His170Arg	Gln	residue_mismatch	Expected H at position 170, but G2P has Q
+CCSBVarC002465	CYP11B1	P15538	Thr389Pro	Asp	residue_mismatch	Expected T at position 389, but G2P has D
+CCSBVarC002466	CYP11B1	P15538	Arg519His		position_not_in_g2p	Position 519 not found in G2P data (protein length: 503)
+CCSBVarC003589	CYP11B1	P15538	Pro139Leu	Phe	residue_mismatch	Expected P at position 139, but G2P has F
+CCSBVarC003588	CYP11B1	P15538	Met133Ile	Asn	residue_mismatch	Expected M at position 133, but G2P has N
+CCSBVarC003591	CYP11B1	P15538	Arg214Trp	His	residue_mismatch	Expected R at position 214, but G2P has H
+CCSBVarC003590	CYP11B1	P15538	Asn204His	Leu	residue_mismatch	Expected N at position 204, but G2P has L
+CCSBVarC003593	CYP11B1	P15538	Ala377Val	Pro	residue_mismatch	Expected A at position 377, but G2P has P
+CCSBVarC003592	CYP11B1	P15538	Leu370Pro	Lys	residue_mismatch	Expected L at position 370, but G2P has K
+CCSBVarC003594	CYP11B1	P15538	Thr389Met	Asp	residue_mismatch	Expected T at position 389, but G2P has D
+CCSBVarC003596	CYP11B1	P15538	Ala439Asp	Tyr	residue_mismatch	Expected A at position 439, but G2P has Y
+CCSBVarC003597	CYP11B1	P15538	Arg445Gln	Phe	residue_mismatch	Expected R at position 445, but G2P has F
+CCSBVarC003595	CYP11B1	P15538	Thr390Met	Leu	residue_mismatch	Expected T at position 390, but G2P has L
+CCSBVarC006107	MSRB3	Q8IXL7	Cys82Gly	Gly	residue_mismatch	Expected C at position 82, but G2P has G
+CCSBVarC000345	NEUROD1	Q13562	Ala45Thr	Thr	residue_mismatch	Expected A at position 45, but G2P has T
+CCSBVarC004589	NFIX	Q14938	Leu59Pro	Glu	residue_mismatch	Expected L at position 59, but G2P has E
+CCSBVarC004590	NFIX	Q14938	Arg120Pro	Leu	residue_mismatch	Expected R at position 120, but G2P has L
+CCSBVarC007111	KCNH2	Q12809	Trp228Cys	Ala	residue_mismatch	Expected W at position 228, but G2P has A
+CCSBVarC001461	LDLRAP1	Q5SW96	Arg193Trp	Leu	residue_mismatch	Expected R at position 193, but G2P has L
+CCSBVarC000140	BBS10	Q8TAM1	Cys25Trp	Val	residue_mismatch	Expected C at position 25, but G2P has V
+CCSBVarC000141	BBS10	Q8TAM1	Val174Gly	Leu	residue_mismatch	Expected V at position 174, but G2P has L
+CCSBVarC000143	BBS10	Q8TAM1	Thr623Pro	Gln	residue_mismatch	Expected T at position 623, but G2P has Q
+CCSBVarC001441	EGLN1	Q9GZT9	Pro19Arg	Gln	residue_mismatch	Expected P at position 19, but G2P has Q
+CCSBVarC001442	EGLN1	Q9GZT9	Arg73His	Gln	residue_mismatch	Expected R at position 73, but G2P has Q
+CCSBVarC001443	EGLN1	Q9GZT9	His76Arg	Gly	residue_mismatch	Expected H at position 76, but G2P has G
+CCSBVarC000275	ZNF41	P51814	Pro111Leu	Gln	residue_mismatch	Expected P at position 111, but G2P has Q
+CCSBVarC002907	ZNF41	P51814	Ile125Arg	Glu	residue_mismatch	Expected I at position 125, but G2P has E
+CCSBVarC002909	ZNF41	P51814	Cys301Arg	Thr	residue_mismatch	Expected C at position 301, but G2P has T
+CCSBVarC002506	MERTK	Q12866	Arg668Cys	Met	residue_mismatch	Expected R at position 668, but G2P has M
+CCSBVarC002507	MERTK	Q12866	Arg733His	Asp	residue_mismatch	Expected R at position 733, but G2P has D
+CCSBVarC003216	EZH2	Q15910	Ala682Thr	Asn	residue_mismatch	Expected A at position 682, but G2P has N
+CCSBVarC003217	EZH2	Q15910	Arg684Cys	Ile	residue_mismatch	Expected R at position 684, but G2P has I
+CCSBVarC003218	EZH2	Q15910	His694Tyr	Asn	residue_mismatch	Expected H at position 694, but G2P has N
+CCSBVarC006324	DPM3	Q9P2X0	Leu115Ser		position_not_in_g2p	Position 115 not found in G2P data (protein length: 92)
+CCSBVarC006049	GH1	P01241	Cys64Ser	Lys	residue_mismatch	Expected C at position 64, but G2P has K
+CCSBVarC006050	GH1	P01241	Arg88Cys	Ser	residue_mismatch	Expected R at position 88, but G2P has S
+CCSBVarC006051	GH1	P01241	Asp123Gly	Phe	residue_mismatch	Expected D at position 123, but G2P has F
+CCSBVarC006052	GH1	P01241	Arg194His	Lys	residue_mismatch	Expected R at position 194, but G2P has K
+CCSBVarC001984	NINJ1	Q92982	Asp110Ala	Ala	residue_mismatch	Expected D at position 110, but G2P has A
+CCSBVarC002765	HFE	Q30201	Gln280Pro	Tyr	residue_mismatch	Expected Q at position 280, but G2P has Y
+CCSBVarC000193	TGIF1	Q15583	Ser28Cys	Phe	residue_mismatch	Expected S at position 28, but G2P has F
+CCSBVarC000194	TGIF1	Q15583	Pro63Arg	Ala	residue_mismatch	Expected P at position 63, but G2P has A
+CCSBVarC000195	TGIF1	Q15583	Arg90Cys	Gln	residue_mismatch	Expected R at position 90, but G2P has Q
+CCSBVarC002880	TGIF1	Q15583	Pro163Leu	Gly	residue_mismatch	Expected P at position 163, but G2P has G
+CCSBVarC002885	TGIF1	Q15583	Pro163Ser	Gly	residue_mismatch	Expected P at position 163, but G2P has G
+CCSBVarC000514	SQSTM1	Q13501	Ala297Val	Gly	residue_mismatch	Expected A at position 297, but G2P has G
+CCSBVarC000515	SQSTM1	Q13501	Pro303Leu	Ala	residue_mismatch	Expected P at position 303, but G2P has A
+CCSBVarC000516	SQSTM1	Q13501	Pro308Leu	Ala	residue_mismatch	Expected P at position 308, but G2P has A
+CCSBVarC000517	SQSTM1	Q13501	Ser315Pro	Ala	residue_mismatch	Expected S at position 315, but G2P has A
+CCSBVarC001985	AHSG	P02765	Thr248Met	Met	residue_mismatch	Expected T at position 248, but G2P has M
+CCSBVarC001986	AHSG	P02765	Thr256Ser	Ser	residue_mismatch	Expected T at position 256, but G2P has S
+CCSBVarC004830	SS18L1	O75177	Ile126Met	Gly	residue_mismatch	Expected I at position 126, but G2P has G
+CCSBVarC001887	CLCNKB	P51801	Arg310His	Ile	residue_mismatch	Expected R at position 310, but G2P has I
+CCSBVarC001888	CLCNKB	P51801	Thr353Ser	Ser	residue_mismatch	Expected T at position 353, but G2P has S
+CCSBVarC004371	CLCNKB	P51801	Ala221Asp	Leu	residue_mismatch	Expected A at position 221, but G2P has L
+CCSBVarC004372	CLCNKB	P51801	Tyr304His	Arg	residue_mismatch	Expected Y at position 304, but G2P has R
+CCSBVarC004256	RBPJ	Q06330	Glu48Gly	Val	residue_mismatch	Expected E at position 48, but G2P has V
+CCSBVarC001165	TBXAS1	P24557	Leu15Pro	Met	residue_mismatch	Expected L at position 15, but G2P has M
+CCSBVarC001166	TBXAS1	P24557	Lys190Glu	Val	residue_mismatch	Expected K at position 190, but G2P has V
+CCSBVarC001167	TBXAS1	P24557	Arg345Gln	Ile	residue_mismatch	Expected R at position 345, but G2P has I
+CCSBVarC001168	TBXAS1	P24557	Thr383Asn	Phe	residue_mismatch	Expected T at position 383, but G2P has F
+CCSBVarC003894	TBXAS1	P24557	Gly482Trp	Val	residue_mismatch	Expected G at position 482, but G2P has V
+CCSBVarC003895	TBXAS1	P24557	Leu488Pro	Glu	residue_mismatch	Expected L at position 488, but G2P has E
+CCSBVarC006113	CDIN1	Q9Y2V0	Leu80Gln	Gly	residue_mismatch	Expected L at position 80, but G2P has G
+CCSBVarC002871	HTR2C	P28335	Cys23Ser	Ser	residue_mismatch	Expected C at position 23, but G2P has S
+CCSBVarC001500	IL10RA	Q13651	Gly351Arg	Arg	residue_mismatch	Expected G at position 351, but G2P has R
+CCSBVarC001965	VHL	P40337	Leu157Arg	Thr	residue_mismatch	Expected L at position 157, but G2P has T
+CCSBVarC006541	VHL	P40337	Tyr115Cys	His	residue_mismatch	Expected Y at position 115, but G2P has H
+CCSBVarC006542	VHL	P40337	His150Asp	Asn	residue_mismatch	Expected H at position 150, but G2P has N
+CCSBVarC006543	VHL	P40337	Tyr134Cys	Glu	residue_mismatch	Expected Y at position 134, but G2P has E
+CCSBVarC006544	VHL	P40337	Val125Ala	His	residue_mismatch	Expected V at position 125, but G2P has H
+CCSBVarC006545	VHL	P40337	Leu122Pro	Ala	residue_mismatch	Expected L at position 122, but G2P has A
+CCSBVarC006546	VHL	P40337	Arg126Gly	Asp	residue_mismatch	Expected R at position 126, but G2P has D
+CCSBVarC006547	VHL	P40337	Arg126Trp	Asp	residue_mismatch	Expected R at position 126, but G2P has D
+CCSBVarC006548	VHL	P40337	Cys121Phe	Asp	residue_mismatch	Expected C at position 121, but G2P has D
+CCSBVarC006549	VHL	P40337	Gln123Arg	Gly	residue_mismatch	Expected Q at position 123, but G2P has G
+CCSBVarC006550	VHL	P40337	Glu145Lys	Gln	residue_mismatch	Expected E at position 145, but G2P has Q
+CCSBVarC006551	VHL	P40337	Leu147Val	Ile	residue_mismatch	Expected L at position 147, but G2P has I
+CCSBVarC006552	VHL	P40337	Arg159Trp	Lys	residue_mismatch	Expected R at position 159, but G2P has K
+CCSBVarC001429	COL2A1	P02458	Arg57Cys	Cys	residue_mismatch	Expected R at position 57, but G2P has C
+CCSBVarC001430	COL2A1	P02458	Tyr79Asn	Glu	residue_mismatch	Expected Y at position 79, but G2P has E
+CCSBVarC001431	COL2A1	P02458	Thr171Asn	Gly	residue_mismatch	Expected T at position 171, but G2P has G
+CCSBVarC001432	COL2A1	P02458	Thr229Pro	Glu	residue_mismatch	Expected T at position 229, but G2P has E
+CCSBVarC005736	COL2A1	P02458	Gly86Asp	Cys	residue_mismatch	Expected G at position 86, but G2P has C
+CCSBVarC005739	COL2A1	P02458	Thr220Met	Pro	residue_mismatch	Expected T at position 220, but G2P has P
+CCSBVarC005738	COL2A1	P02458	Tyr172Cys	Pro	residue_mismatch	Expected Y at position 172, but G2P has P
+CCSBVarC005737	COL2A1	P02458	Thr164Met	Pro	residue_mismatch	Expected T at position 164, but G2P has P
+CCSBVarC001931	SERPINC1	P01008	Asn232Lys	Asp	residue_mismatch	Expected N at position 232, but G2P has D
+CCSBVarC005775	SERPINC1	P01008	Ala209Thr	Glu	residue_mismatch	Expected A at position 209, but G2P has E
+CCSBVarC005782	SERPINC1	P01008	Arg220His	Lys	residue_mismatch	Expected R at position 220, but G2P has K
+CCSBVarC005780	SERPINC1	P01008	Arg220Cys	Lys	residue_mismatch	Expected R at position 220, but G2P has K
+CCSBVarC005785	SERPINC1	P01008	Pro234Leu	Ile	residue_mismatch	Expected P at position 234, but G2P has I
+CCSBVarC005781	SERPINC1	P01008	Arg220Pro	Lys	residue_mismatch	Expected R at position 220, but G2P has K
+CCSBVarC005783	SERPINC1	P01008	Ser221Leu	Trp	residue_mismatch	Expected S at position 221, but G2P has W
+CCSBVarC005784	SERPINC1	P01008	Ala231Thr	Thr	residue_mismatch	Expected A at position 231, but G2P has T
+CCSBVarC005779	SERPINC1	P01008	Gly219Asp	Asn	residue_mismatch	Expected G at position 219, but G2P has N
+CCSBVarC005786	SERPINC1	P01008	Pro256Leu	Leu	residue_mismatch	Expected P at position 256, but G2P has L
+CCSBVarC005778	SERPINC1	P01008	Ala214Val	Ser	residue_mismatch	Expected A at position 214, but G2P has S
+CCSBVarC004548	PHC1	P78364	Leu435Phe	Gln	residue_mismatch	Expected L at position 435, but G2P has Q
+CCSBVarC003022	AR	P10275	Arg603Lys	Thr	residue_mismatch	Expected R at position 603, but G2P has T
+CCSBVarC003024	AR	P10275	His684Pro	Gly	residue_mismatch	Expected H at position 684, but G2P has G
+CCSBVarC003023	AR	P10275	Ala640Asp	Leu	residue_mismatch	Expected A at position 640, but G2P has L
+CCSBVarC003027	AR	P10275	Arg835His	Tyr	residue_mismatch	Expected R at position 835, but G2P has Y
+CCSBVarC003026	AR	P10275	Arg835Cys	Tyr	residue_mismatch	Expected R at position 835, but G2P has Y
+CCSBVarC001271	BUB1B	O60566	Gln349Arg	Arg	residue_mismatch	Expected Q at position 349, but G2P has R
+CCSBVarC001454	NDUFS1	P28331	Gln50Lys	Leu	residue_mismatch	Expected Q at position 50, but G2P has L
+CCSBVarC001697	SMPD1	P17405	Asp49Val	Leu	residue_mismatch	Expected D at position 49, but G2P has L
+CCSBVarC005134	SMPD1	P17405	Cys157Arg	Glu	residue_mismatch	Expected C at position 157, but G2P has E
+CCSBVarC005135	SMPD1	P17405	Gly245Ser	Tyr	residue_mismatch	Expected G at position 245, but G2P has Y
+CCSBVarC005136	SMPD1	P17405	Asp251His	Lys	residue_mismatch	Expected D at position 251, but G2P has K
+CCSBVarC005138	SMPD1	P17405	Leu302Pro	Thr	residue_mismatch	Expected L at position 302, but G2P has T
+CCSBVarC001109	PITX2	Q99697	Leu107Gln	Asn	residue_mismatch	Expected L at position 107, but G2P has N
+CCSBVarC001110	PITX2	Q99697	Pro117Arg	Glu	residue_mismatch	Expected P at position 117, but G2P has E
+CCSBVarC001111	PITX2	Q99697	Val136Leu	Arg	residue_mismatch	Expected V at position 136, but G2P has R
+CCSBVarC001112	PITX2	Q99697	Gly190Val	Ser	residue_mismatch	Expected G at position 190, but G2P has S
+CCSBVarC005415	PITX2	Q99697	Thr121Pro	Trp	residue_mismatch	Expected T at position 121, but G2P has W
+CCSBVarC005416	PITX2	Q99697	Arg122His	Thr	residue_mismatch	Expected R at position 122, but G2P has T
+CCSBVarC005418	PITX2	Q99697	Lys141Glu	Arg	residue_mismatch	Expected K at position 141, but G2P has R
+CCSBVarC005419	PITX2	Q99697	Arg144Pro	Glu	residue_mismatch	Expected R at position 144, but G2P has E
+CCSBVarC002395	UGT2A3	Q6UWM9	Thr497Ala	Ala	residue_mismatch	Expected T at position 497, but G2P has A
+CCSBVarC002559	CHRNG	P07510	Arg187Cys	Gly	residue_mismatch	Expected R at position 187, but G2P has G
+CCSBVarC001329	NIPA1	Q7RTP0	Ala25Thr	Pro	residue_mismatch	Expected A at position 25, but G2P has P
+CCSBVarC003773	KCNQ1	P51787	Thr17Ala	Trp	residue_mismatch	Expected T at position 17, but G2P has W
+CCSBVarC003774	KCNQ1	P51787	Thr26Met	Gly	residue_mismatch	Expected T at position 26, but G2P has G
+CCSBVarC003775	KCNQ1	P51787	Val35Met	Pro	residue_mismatch	Expected V at position 35, but G2P has P
+CCSBVarC003776	KCNQ1	P51787	Tyr57His	Gly	residue_mismatch	Expected Y at position 57, but G2P has G
+CCSBVarC003777	KCNQ1	P51787	Arg68Trp	Ala	residue_mismatch	Expected R at position 68, but G2P has A
+CCSBVarC003778	KCNQ1	P51787	Leu76Pro	Ala	residue_mismatch	Expected L at position 76, but G2P has A
+CCSBVarC003780	KCNQ1	P51787	Trp121Arg	Lys	residue_mismatch	Expected W at position 121, but G2P has K
+CCSBVarC003779	KCNQ1	P51787	Asp115Tyr	Glu	residue_mismatch	Expected D at position 115, but G2P has E
+CCSBVarC003782	KCNQ1	P51787	Glu157Lys	Phe	residue_mismatch	Expected E at position 157, but G2P has F
+CCSBVarC003783	KCNQ1	P51787	Arg166Cys	Phe	residue_mismatch	Expected R at position 166, but G2P has F
+CCSBVarC003781	KCNQ1	P51787	Ile141Ser	Val	residue_mismatch	Expected I at position 141, but G2P has V
+CCSBVarC003784	KCNQ1	P51787	Ala175Glu	Leu	residue_mismatch	Expected A at position 175, but G2P has L
+CCSBVarC003785	KCNQ1	P51787	Pro216Ser	Gly	residue_mismatch	Expected P at position 216, but G2P has G
+CCSBVarC003786	KCNQ1	P51787	Pro216Leu	Gly	residue_mismatch	Expected P at position 216, but G2P has G
+CCSBVarC003787	KCNQ1	P51787	Arg239Trp	Leu	residue_mismatch	Expected R at position 239, but G2P has L
+CCSBVarC003788	KCNQ1	P51787	Lys430Glu	Gly	residue_mismatch	Expected K at position 430, but G2P has G
+CCSBVarC003789	KCNQ1	P51787	Arg456His	Phe	residue_mismatch	Expected R at position 456, but G2P has F
+CCSBVarC008360	USH1C	Q9Y6N9	Ala396Thr	Pro	residue_mismatch	Expected A at position 396, but G2P has P
+CCSBVarC008361	USH1C	Q9Y6N9	Gly402Ser	Pro	residue_mismatch	Expected G at position 402, but G2P has P
+CCSBVarC008364	USH1C	Q9Y6N9	Arg412Trp	Leu	residue_mismatch	Expected R at position 412, but G2P has L
+CCSBVarC008365	USH1C	Q9Y6N9	Lys413Glu	Glu	residue_mismatch	Expected K at position 413, but G2P has E
+CCSBVarC008366	USH1C	Q9Y6N9	Ala464Ser	Leu	residue_mismatch	Expected A at position 464, but G2P has L
+CCSBVarC008367	USH1C	Q9Y6N9	Thr495Asn	Gly	residue_mismatch	Expected T at position 495, but G2P has G
+CCSBVarC008368	USH1C	Q9Y6N9	Gly511Arg	Thr	residue_mismatch	Expected G at position 511, but G2P has T
+CCSBVarC008380	USH1C	Q9Y6N9	Glu297Gln	Phe	residue_mismatch	Expected E at position 297, but G2P has F
+CCSBVarC003919	USH1C	Q9Y6N9	Gly360Asp	Met	residue_mismatch	Expected G at position 360, but G2P has M
+CCSBVarC002624	ATP2B2	Q01814	Val586Met	Pro	residue_mismatch	Expected V at position 586, but G2P has P
+CCSBVarC000996	SDC3	O75056	Val136Ile	Leu	residue_mismatch	Expected V at position 136, but G2P has L
+CCSBVarC005102	SDC3	O75056	Thr257Ile	Arg	residue_mismatch	Expected T at position 257, but G2P has R
+CCSBVarC002914	SDC3	O75056	Asp231Asn	Ser	residue_mismatch	Expected D at position 231, but G2P has S
+CCSBVarC005841	TNNT3	P45378	Arg55His	Thr	residue_mismatch	Expected R at position 55, but G2P has T
+CCSBVarC005840	TNNT3	P45378	Arg55Cys	Thr	residue_mismatch	Expected R at position 55, but G2P has T
+CCSBVarC002669	TLR1	Q15399	Ile602Ser	Ser	residue_mismatch	Expected I at position 602, but G2P has S
+CCSBVarC007010	NKX2-1	P43699	Trp238Leu	Gly	residue_mismatch	Expected W at position 238, but G2P has G
+CCSBVarC007009	NKX2-1	P43699	Val235Phe	Gly	residue_mismatch	Expected V at position 235, but G2P has G
+CCSBVarC001260	SCN1B	Q07699	Arg52Cys	Glu	residue_mismatch	Expected R at position 52, but G2P has E
+CCSBVarC001261	SCN1B	Q07699	Arg52His	Glu	residue_mismatch	Expected R at position 52, but G2P has E
+CCSBVarC001262	SCN1B	Q07699	Glu54Gln	Phe	residue_mismatch	Expected E at position 54, but G2P has F
+CCSBVarC001263	SCN1B	Q07699	Cys88Trp	Gly	residue_mismatch	Expected C at position 88, but G2P has G
+CCSBVarC006106	SCN1B	Q07699	Asp120Asn	Glu	residue_mismatch	Expected D at position 120, but G2P has E
+CCSBVarC004583	GATA3	P23771	Trp275Arg	Arg	residue_mismatch	Expected W at position 275, but G2P has R
+CCSBVarC004584	GATA3	P23771	Cys342Tyr	Gly	residue_mismatch	Expected C at position 342, but G2P has G
+CCSBVarC001762	PHF8	Q9UPP1	Phe279Ser	Tyr	residue_mismatch	Expected F at position 279, but G2P has Y
+CCSBVarC002036	FABP2	P12104	Ala55Thr	Thr	residue_mismatch	Expected A at position 55, but G2P has T
+CCSBVarC002116	B3GNT3	Q9Y2A9	His328Arg	Arg	residue_mismatch	Expected H at position 328, but G2P has R
+CCSBVarC002739	RGS9	O75916	Trp247Arg	Leu	residue_mismatch	Expected W at position 247, but G2P has L
+CCSBVarC002393	NR1H4	Q96RI1	Trp80Arg	Leu	residue_mismatch	Expected W at position 80, but G2P has L
+CCSBVarC002394	NR1H4	Q96RI1	Met173Thr	Cys	residue_mismatch	Expected M at position 173, but G2P has C
+CCSBVarC003520	DIS3L2	Q8IYB7	Cys482Tyr	Gly	residue_mismatch	Expected C at position 482, but G2P has G
+CCSBVarC003624	LMNA	P02545	Arg571Cys	Ser	residue_mismatch	Expected R at position 571, but G2P has S
+CCSBVarC003624	LMNA	P02545	Arg571Cys	Ser	residue_mismatch	Expected R at position 571, but G2P has S
+CCSBVarC006047	TMEM165	Q9HC07	Arg7Cys	Gly	residue_mismatch	Expected R at position 7, but G2P has G
+CCSBVarC004313	ANKS6	Q68DC2	Gln41Arg	Ala	residue_mismatch	Expected Q at position 41, but G2P has A
+CCSBVarC006580	TGFBR1	P36897	Thr123Ile	Pro	residue_mismatch	Expected T at position 123, but G2P has P
+CCSBVarC006581	TGFBR1	P36897	Ser164Leu	Pro	residue_mismatch	Expected S at position 164, but G2P has P
+CCSBVarC006582	TGFBR1	P36897	Met241Arg	Ser	residue_mismatch	Expected M at position 241, but G2P has S
+CCSBVarC006583	TGFBR1	P36897	Arg410Pro	Glu	residue_mismatch	Expected R at position 410, but G2P has E
+CCSBVarC006584	TGFBR1	P36897	Arg410Gln	Glu	residue_mismatch	Expected R at position 410, but G2P has E
+CCSBVarC001420	D2HGDH	Q8N465	Asp74Tyr	Val	residue_mismatch	Expected D at position 74, but G2P has V
+CCSBVarC001421	D2HGDH	Q8N465	Gly135Val	Met	residue_mismatch	Expected G at position 135, but G2P has M
+CCSBVarC001422	D2HGDH	Q8N465	Asn138Asp	Gly	residue_mismatch	Expected N at position 138, but G2P has G
+CCSBVarC001423	D2HGDH	Q8N465	Val143Ala	Phe	residue_mismatch	Expected V at position 143, but G2P has F
+CCSBVarC005988	CCBE1	Q6UXH8	Gly136Arg	Asp	residue_mismatch	Expected G at position 136, but G2P has D
+CCSBVarC007697	CAPN3	P20807	Thr48Ala	Ser	residue_mismatch	Expected T at position 48, but G2P has S
+CCSBVarC001427	CAPN3	P20807	Thr194Lys	Ser	residue_mismatch	Expected T at position 194, but G2P has S
+CCSBVarC001428	CAPN3	P20807	Ala286Glu	Leu	residue_mismatch	Expected A at position 286, but G2P has L
+CCSBVarC005497	CAPN3	P20807	Arg60Gln	Thr	residue_mismatch	Expected R at position 60, but G2P has T
+CCSBVarC005495	CAPN3	P20807	Arg29Gln	Ser	residue_mismatch	Expected R at position 29, but G2P has S
+CCSBVarC005498	CAPN3	P20807	Arg236Gln	Ala	residue_mismatch	Expected R at position 236, but G2P has A
+CCSBVarC005499	CAPN3	P20807	Arg257Gln	Glu	residue_mismatch	Expected R at position 257, but G2P has E
+CCSBVarC005709	VWF	P04275	Asp84His	Leu	residue_mismatch	Expected D at position 84, but G2P has L
+CCSBVarC005710	VWF	P04275	Ser86Arg	Val	residue_mismatch	Expected S at position 86, but G2P has V
+CCSBVarC005708	VWF	P04275	Arg71Gly	Ser	residue_mismatch	Expected R at position 71, but G2P has S
+CCSBVarC005711	VWF	P04275	Ser122Pro	Thr	residue_mismatch	Expected S at position 122, but G2P has T
+CCSBVarC005713	VWF	P04275	Asp178Asn	Gly	residue_mismatch	Expected D at position 178, but G2P has G
+CCSBVarC005714	VWF	P04275	Asp178Tyr	Gly	residue_mismatch	Expected D at position 178, but G2P has G
+CCSBVarC005715	VWF	P04275	Asp178Gly	Gly	residue_mismatch	Expected D at position 178, but G2P has G
+CCSBVarC005717	VWF	P04275	Asn203Ile	Ala	residue_mismatch	Expected N at position 203, but G2P has A
+CCSBVarC005712	VWF	P04275	Leu166Met	Asn	residue_mismatch	Expected L at position 166, but G2P has N
+CCSBVarC005716	VWF	P04275	Leu187Pro	Phe	residue_mismatch	Expected L at position 187, but G2P has F
+CCSBVarC000354	RGR	P47804	Val136Leu	Trp	residue_mismatch	Expected V at position 136, but G2P has W
+CCSBVarC000355	RGR	P47804	His156Asn	Glu	residue_mismatch	Expected H at position 156, but G2P has E
+CCSBVarC000356	RGR	P47804	Ala238Thr	Asp	residue_mismatch	Expected A at position 238, but G2P has D
+CCSBVarC008386	RGR	P47804	Ser245Phe	Lys	residue_mismatch	Expected S at position 245, but G2P has K
+CCSBVarC001612	TRAK2	O60296	Ile142Val	Val	residue_mismatch	Expected I at position 142, but G2P has V
+CCSBVarC001187	GSTZ1	O43708	Gly42Arg	Arg	residue_mismatch	Expected G at position 42, but G2P has R
+CCSBVarC001022	LDB3	O75112	Asp117Asn	Leu	residue_mismatch	Expected D at position 117, but G2P has L
+CCSBVarC001023	LDB3	O75112	Lys136Met	Pro	residue_mismatch	Expected K at position 136, but G2P has P
+CCSBVarC001024	LDB3	O75112	Ala147Thr	Ser	residue_mismatch	Expected A at position 147, but G2P has S
+CCSBVarC001025	LDB3	O75112	Arg268Cys	Ser	residue_mismatch	Expected R at position 268, but G2P has S
+CCSBVarC001321	GPD2	P43304	His263Arg	Val	residue_mismatch	Expected H at position 263, but G2P has V
+CCSBVarC001913	LY96	Q9Y6Y9	Gly56Arg	Arg	residue_mismatch	Expected G at position 56, but G2P has R
+CCSBVarC008373	CEP290	O15078	Ile3Val	Pro	residue_mismatch	Expected I at position 3, but G2P has P
+CCSBVarC002147	CRP	P02741	Leu6Leu	Cys	residue_mismatch	Expected L at position 6, but G2P has C
+CCSBVarC000401	PRKCSH	P14314	Arg10His	Pro	residue_mismatch	Expected R at position 10, but G2P has P
+CCSBVarC000402	PRKCSH	P14314	Lys26Arg	Thr	residue_mismatch	Expected K at position 26, but G2P has T
+CCSBVarC001480	MITF	O75030	Asn204Lys	Arg	residue_mismatch	Expected N at position 204, but G2P has R
+CCSBVarC001481	MITF	O75030	Arg211Ile	Gly	residue_mismatch	Expected R at position 211, but G2P has G
+CCSBVarC001482	MITF	O75030	Ser244Pro	Leu	residue_mismatch	Expected S at position 244, but G2P has L
+CCSBVarC001483	MITF	O75030	Ser292Pro	Leu	residue_mismatch	Expected S at position 292, but G2P has L
+CCSBVarC004767	MITF	O75030	Glu312Lys	Lys	residue_mismatch	Expected E at position 312, but G2P has K
+CCSBVarC001457	CLCN2	P51788	Arg101Gln	Met	residue_mismatch	Expected R at position 101, but G2P has M
+CCSBVarC001458	CLCN2	P51788	Gly239Glu	Met	residue_mismatch	Expected G at position 239, but G2P has M
+CCSBVarC001459	CLCN2	P51788	Arg249Trp	Gly	residue_mismatch	Expected R at position 249, but G2P has G
+CCSBVarC004931	CLCN2	P51788	Ala24Val	Gly	residue_mismatch	Expected A at position 24, but G2P has G
+CCSBVarC006372	NR3C2	P08235	Ser693Leu	Gln	residue_mismatch	Expected S at position 693, but G2P has Q
+CCSBVarC006373	NR3C2	P08235	Leu807Pro	Met	residue_mismatch	Expected L at position 807, but G2P has M
+CCSBVarC003247	POMT1	Q9Y6A1	Thr392Met	Pro	residue_mismatch	Expected T at position 392, but G2P has P
+CCSBVarC003248	POMT1	Q9Y6A1	Ser515Arg	Tyr	residue_mismatch	Expected S at position 515, but G2P has Y
+CCSBVarC003249	POMT1	Q9Y6A1	Trp560Cys	Asp	residue_mismatch	Expected W at position 560, but G2P has D
+CCSBVarC003250	POMT1	Q9Y6A1	Gln568His	Ser	residue_mismatch	Expected Q at position 568, but G2P has S
+CCSBVarC003251	POMT1	Q9Y6A1	Ala647Thr	Trp	residue_mismatch	Expected A at position 647, but G2P has W
+CCSBVarC002436	NELL1	Q92832	Gln82Arg	Arg	residue_mismatch	Expected Q at position 82, but G2P has R
+CCSBVarC000015	HYLS1	Q96M11	Asp198Gly	Pro	residue_mismatch	Expected D at position 198, but G2P has P
+CCSBVarC006766	CDKN2A	P42771	Asp33Ala	Glu	residue_mismatch	Expected D at position 33, but G2P has E
+CCSBVarC006768	CDKN2A	P42771	Met2Ile	Glu	residue_mismatch	Expected M at position 2, but G2P has E
+CCSBVarC001856	CABP4	P57796	Arg19Cys	Gln	residue_mismatch	Expected R at position 19, but G2P has Q
+CCSBVarC001610	SORBS1	Q9BX66	Thr196Ala	Ala	residue_mismatch	Expected T at position 196, but G2P has A
+CCSBVarC005401	STAC3	Q96MF2	Trp245Ser	Gly	residue_mismatch	Expected W at position 245, but G2P has G
+CCSBVarC005351	CREB1	P16220	Asp116Gly	Arg	residue_mismatch	Expected D at position 116, but G2P has R
+CCSBVarC000789	VCP	P55072	Thr44Ala	Pro	residue_mismatch	Expected T at position 44, but G2P has P
+CCSBVarC000790	VCP	P55072	Ala221Ser	Glu	residue_mismatch	Expected A at position 221, but G2P has E
+CCSBVarC000107	PCCA	P05165	Ala50Pro	Asn	residue_mismatch	Expected A at position 50, but G2P has N
+CCSBVarC000109	PCCA	P05165	Leu392Trp	Asn	residue_mismatch	Expected L at position 392, but G2P has N
+CCSBVarC000110	PCCA	P05165	Met641Lys	Arg	residue_mismatch	Expected M at position 641, but G2P has R
+CCSBVarC003290	PCCA	P05165	Ile139Thr	Val	residue_mismatch	Expected I at position 139, but G2P has V
+CCSBVarC003291	PCCA	P05165	Arg263Gly	Phe	residue_mismatch	Expected R at position 263, but G2P has F
+CCSBVarC003292	PCCA	P05165	Met348Lys	Leu	residue_mismatch	Expected M at position 348, but G2P has L
+CCSBVarC003293	PCCA	P05165	Ile450Val	Ser	residue_mismatch	Expected I at position 450, but G2P has S
+CCSBVarC007998	PKP2	Q99959	Leu835Arg	Lys	residue_mismatch	Expected L at position 835, but G2P has K
+CCSBVarC007999	PKP2	Q99959	His810Tyr	Ala	residue_mismatch	Expected H at position 810, but G2P has A
+CCSBVarC008000	PKP2	Q99959	Thr807Met	Tyr	residue_mismatch	Expected T at position 807, but G2P has Y
+CCSBVarC008001	PKP2	Q99959	Val798Ile	Thr	residue_mismatch	Expected V at position 798, but G2P has T
+CCSBVarC008002	PKP2	Q99959	Asp768Asn	Lys	residue_mismatch	Expected D at position 768, but G2P has K
+CCSBVarC008003	PKP2	Q99959	Cys752Arg	Leu	residue_mismatch	Expected C at position 752, but G2P has L
+CCSBVarC008005	PKP2	Q99959	Leu743Arg	Pro	residue_mismatch	Expected L at position 743, but G2P has P
+CCSBVarC008006	PKP2	Q99959	Lys724Thr	Val	residue_mismatch	Expected K at position 724, but G2P has V
+CCSBVarC008007	PKP2	Q99959	Thr666Met	Glu	residue_mismatch	Expected T at position 666, but G2P has E
+CCSBVarC008008	PKP2	Q99959	Leu662Pro	Val	residue_mismatch	Expected L at position 662, but G2P has V
+CCSBVarC008010	PKP2	Q99959	Asn598Lys	Gln	residue_mismatch	Expected N at position 598, but G2P has Q
+CCSBVarC008011	PKP2	Q99959	Tyr582Asn	Leu	residue_mismatch	Expected Y at position 582, but G2P has L
+CCSBVarC008012	PKP2	Q99959	Ser571Thr	Asp	residue_mismatch	Expected S at position 571, but G2P has D
+CCSBVarC008013	PKP2	Q99959	Ile566Val	Ser	residue_mismatch	Expected I at position 566, but G2P has S
+CCSBVarC008014	PKP2	Q99959	Ile550Val	Leu	residue_mismatch	Expected I at position 550, but G2P has L
+CCSBVarC008015	PKP2	Q99959	Val543Ile	Tyr	residue_mismatch	Expected V at position 543, but G2P has Y
+CCSBVarC008016	PKP2	Q99959	Ala526Thr	Thr	residue_mismatch	Expected A at position 526, but G2P has T
+CCSBVarC008017	PKP2	Q99959	Val514Ile	Lys	residue_mismatch	Expected V at position 514, but G2P has K
+CCSBVarC008018	PKP2	Q99959	Asn513Asp	Asp	residue_mismatch	Expected N at position 513, but G2P has D
+CCSBVarC008019	PKP2	Q99959	Pro495Ala	Gly	residue_mismatch	Expected P at position 495, but G2P has G
+CCSBVarC003108	PKP2	Q99959	Ile487Ser	Gln	residue_mismatch	Expected I at position 487, but G2P has Q
+CCSBVarC003108	PKP2	Q99959	Ile487Ser	Gln	residue_mismatch	Expected I at position 487, but G2P has Q
+CCSBVarC008020	PKP2	Q99959	Leu483Pro	Thr	residue_mismatch	Expected L at position 483, but G2P has T
+CCSBVarC003107	PKP2	Q99959	Thr482Met	Ser	residue_mismatch	Expected T at position 482, but G2P has S
+CCSBVarC003107	PKP2	Q99959	Thr482Met	Ser	residue_mismatch	Expected T at position 482, but G2P has S
+CCSBVarC008021	PKP2	Q99959	Thr482Ala	Ser	residue_mismatch	Expected T at position 482, but G2P has S
+CCSBVarC008022	PKP2	Q99959	Leu481Arg	Pro	residue_mismatch	Expected L at position 481, but G2P has P
+CCSBVarC008023	PKP2	Q99959	Lys472Arg	Pro	residue_mismatch	Expected K at position 472, but G2P has P
+CCSBVarC002341	PKP2	Q99959	Lys610Gln	Ile	residue_mismatch	Expected K at position 610, but G2P has I
+CCSBVarC003108	PKP2	Q99959	Ile487Ser	Gln	residue_mismatch	Expected I at position 487, but G2P has Q
+CCSBVarC003108	PKP2	Q99959	Ile487Ser	Gln	residue_mismatch	Expected I at position 487, but G2P has Q
+CCSBVarC003107	PKP2	Q99959	Thr482Met	Ser	residue_mismatch	Expected T at position 482, but G2P has S
+CCSBVarC003107	PKP2	Q99959	Thr482Met	Ser	residue_mismatch	Expected T at position 482, but G2P has S
+CCSBVarC003893	KRT4	P19013	Glu449Lys	Arg	residue_mismatch	Expected E at position 449, but G2P has R
+CCSBVarC003551	IL17RD	Q8NFM7	Tyr235Cys	Lys	residue_mismatch	Expected Y at position 235, but G2P has K
+CCSBVarC003552	IL17RD	Q8NFM7	Ser324Leu	Lys	residue_mismatch	Expected S at position 324, but G2P has K
+CCSBVarC003553	IL17RD	Q8NFM7	Pro433Gln	Lys	residue_mismatch	Expected P at position 433, but G2P has K
+CCSBVarC003554	IL17RD	Q8NFM7	Ala591Val	Val	residue_mismatch	Expected A at position 591, but G2P has V
+CCSBVarC001755	PEMT	Q9UBM1	Val212Met		position_not_in_g2p	Position 212 not found in G2P data (protein length: 199)
+CCSBVarC006950	SPAST	Q9UBP0	Ile312Lys	Lys	residue_mismatch	Expected I at position 312, but G2P has K
+CCSBVarC006951	SPAST	Q9UBP0	Ser330Cys	Asn	residue_mismatch	Expected S at position 330, but G2P has N
+CCSBVarC006952	SPAST	Q9UBP0	Ile374Val	Pro	residue_mismatch	Expected I at position 374, but G2P has P
+CCSBVarC006953	SPAST	Q9UBP0	Asp438Val	Ile	residue_mismatch	Expected D at position 438, but G2P has I
+CCSBVarC006955	SPAST	Q9UBP0	Cys416Tyr	Val	residue_mismatch	Expected C at position 416, but G2P has V
+CCSBVarC006956	SPAST	Q9UBP0	Arg530Gly	Thr	residue_mismatch	Expected R at position 530, but G2P has T
+CCSBVarC001450	PANK2	Q9BZ23	Asp11Asn	Val	residue_mismatch	Expected D at position 11, but G2P has V
+CCSBVarC001451	PANK2	Q9BZ23	Ser35Asn	Pro	residue_mismatch	Expected S at position 35, but G2P has P
+CCSBVarC001452	PANK2	Q9BZ23	Gly85Arg	Asn	residue_mismatch	Expected G at position 85, but G2P has N
+CCSBVarC001453	PANK2	Q9BZ23	Phe114Leu	Leu	residue_mismatch	Expected F at position 114, but G2P has L
+CCSBVarC002875	TK2	O00142	Thr15Met	Arg	residue_mismatch	Expected T at position 15, but G2P has R
+CCSBVarC002876	TK2	O00142	His72Asn	Asn	residue_mismatch	Expected H at position 72, but G2P has N
+CCSBVarC002877	TK2	O00142	Arg143Lys	Phe	residue_mismatch	Expected R at position 143, but G2P has F
+CCSBVarC002878	TK2	O00142	Leu166Pro	Asp	residue_mismatch	Expected L at position 166, but G2P has D
+CCSBVarC005966	TK2	O00142	Ile4Met	Trp	residue_mismatch	Expected I at position 4, but G2P has W
+CCSBVarC005968	TK2	O00142	Cys17Trp	Phe	residue_mismatch	Expected C at position 17, but G2P has F
+CCSBVarC005967	TK2	O00142	Asn9Ser	Trp	residue_mismatch	Expected N at position 9, but G2P has W
+CCSBVarC005970	TK2	O00142	Asn44Ser	Glu	residue_mismatch	Expected N at position 44, but G2P has E
+CCSBVarC005969	TK2	O00142	Arg41Cys	Pro	residue_mismatch	Expected R at position 41, but G2P has P
+CCSBVarC005971	TK2	O00142	Thr59Met	Ile	residue_mismatch	Expected T at position 59, but G2P has I
+CCSBVarC005972	TK2	O00142	Tyr63Asn	Lys	residue_mismatch	Expected Y at position 63, but G2P has K
+CCSBVarC005975	TK2	O00142	Ala90Val	Arg	residue_mismatch	Expected A at position 90, but G2P has R
+CCSBVarC005973	TK2	O00142	Arg81Trp	Glu	residue_mismatch	Expected R at position 81, but G2P has E
+CCSBVarC005974	TK2	O00142	Arg81Gln	Glu	residue_mismatch	Expected R at position 81, but G2P has E
+CCSBVarC005978	TK2	O00142	Thr139Ala	Ala	residue_mismatch	Expected T at position 139, but G2P has A
+CCSBVarC005979	TK2	O00142	Ile163Asn	Glu	residue_mismatch	Expected I at position 163, but G2P has E
+CCSBVarC000528	ZNF24	P17028	Ser220Asn	Asn	residue_mismatch	Expected S at position 220, but G2P has N
+CCSBVarC002575	TMPRSS5	Q9H3S3	Ala285Ser	Pro	residue_mismatch	Expected A at position 285, but G2P has P
+CCSBVarC006435	CYP21A2	P08686	Pro102Ser	Ser	residue_mismatch	Expected P at position 102, but G2P has S
+CCSBVarC002738	OCRL	Q01968	Ala853Thr	Asn	residue_mismatch	Expected A at position 853, but G2P has N
+CCSBVarC003054	OCRL	Q01968	Leu883Arg	Asp	residue_mismatch	Expected L at position 883, but G2P has D
+CCSBVarC002311	CASK	O14936	Asp687Gly	Met	residue_mismatch	Expected D at position 687, but G2P has M
+CCSBVarC002358	UTS2	O95399	Ser44Asn	Pro	residue_mismatch	Expected S at position 44, but G2P has P
+CCSBVarC002094	DCTN1	Q14203	Met437Thr	Glu	residue_mismatch	Expected M at position 437, but G2P has E
+CCSBVarC002095	DCTN1	Q14203	Arg651Trp	Ser	residue_mismatch	Expected R at position 651, but G2P has S
+CCSBVarC002096	DCTN1	Q14203	Arg863Trp	Val	residue_mismatch	Expected R at position 863, but G2P has V
+CCSBVarC002097	DCTN1	Q14203	Thr1110Ile	Glu	residue_mismatch	Expected T at position 1110, but G2P has E
+CCSBVarC004036	LOXHD1	Q8IVV2	Glu43Lys	Arg	residue_mismatch	Expected E at position 43, but G2P has R
+CCSBVarC002363	SERPINB11	Q96P15	Trp74Arg	Ser	residue_mismatch	Expected W at position 74, but G2P has S
+CCSBVarC002364	SERPINB11	Q96P15	Ser189Pro	Gln	residue_mismatch	Expected S at position 189, but G2P has Q
+CCSBVarC004273	CTSA	P10619	Trp64Arg	Tyr	residue_mismatch	Expected W at position 64, but G2P has Y
+CCSBVarC004274	CTSA	P10619	Val131Met	Gly	residue_mismatch	Expected V at position 131, but G2P has G
+CCSBVarC004275	CTSA	P10619	Tyr248Asn	Phe	residue_mismatch	Expected Y at position 248, but G2P has F
+CCSBVarC004276	CTSA	P10619	Tyr394Cys	Leu	residue_mismatch	Expected Y at position 394, but G2P has L
+CCSBVarC004277	CTSA	P10619	Met405Thr	Phe	residue_mismatch	Expected M at position 405, but G2P has F
+CCSBVarC004278	CTSA	P10619	Lys452Glu	Ile	residue_mismatch	Expected K at position 452, but G2P has I
+CCSBVarC002377	CLCN5	P51795	Gly88Asp	Asn	residue_mismatch	Expected G at position 88, but G2P has N
+CCSBVarC002378	CLCN5	P51795	Leu200Arg	Asp	residue_mismatch	Expected L at position 200, but G2P has D
+CCSBVarC002379	CLCN5	P51795	Arg516Trp	Phe	residue_mismatch	Expected R at position 516, but G2P has F
+CCSBVarC002380	CLCN5	P51795	Lys725Glu	Val	residue_mismatch	Expected K at position 725, but G2P has V
+CCSBVarC008238	RUNX1	Q01196	Glu474Asp		position_not_in_g2p	Position 474 not found in G2P data (protein length: 453)
+CCSBVarC008239	RUNX1	Q01196	Glu422Asp	Gln	residue_mismatch	Expected E at position 422, but G2P has Q
+CCSBVarC008240	RUNX1	Q01196	Met418Arg	Ser	residue_mismatch	Expected M at position 418, but G2P has S
+CCSBVarC008241	RUNX1	Q01196	Met418Val	Ser	residue_mismatch	Expected M at position 418, but G2P has S
+CCSBVarC008242	RUNX1	Q01196	Pro395Arg	Glu	residue_mismatch	Expected P at position 395, but G2P has E
+CCSBVarC008243	RUNX1	Q01196	Gln335His	Ser	residue_mismatch	Expected Q at position 335, but G2P has S
+CCSBVarC008244	RUNX1	Q01196	Ser318Ala	Pro	residue_mismatch	Expected S at position 318, but G2P has P
+CCSBVarC008245	RUNX1	Q01196	Leu313Arg	Pro	residue_mismatch	Expected L at position 313, but G2P has P
+CCSBVarC008246	RUNX1	Q01196	Thr300Met	Leu	residue_mismatch	Expected T at position 300, but G2P has L
+CCSBVarC008247	RUNX1	Q01196	Pro278Ser	Gly	residue_mismatch	Expected P at position 278, but G2P has G
+CCSBVarC008248	RUNX1	Q01196	Asp269His	Val	residue_mismatch	Expected D at position 269, but G2P has V
+CCSBVarC008249	RUNX1	Q01196	Met267Ile	Pro	residue_mismatch	Expected M at position 267, but G2P has P
+CCSBVarC008250	RUNX1	Q01196	Arg250His	Pro	residue_mismatch	Expected R at position 250, but G2P has P
+CCSBVarC008251	RUNX1	Q01196	Thr246Met	Ile	residue_mismatch	Expected T at position 246, but G2P has I
+CCSBVarC008252	RUNX1	Q01196	Met236Ile	Pro	residue_mismatch	Expected M at position 236, but G2P has P
+CCSBVarC008253	RUNX1	Q01196	Arg233His	Asn	residue_mismatch	Expected R at position 233, but G2P has N
+CCSBVarC008254	RUNX1	Q01196	Arg233Cys	Asn	residue_mismatch	Expected R at position 233, but G2P has N
+CCSBVarC008255	RUNX1	Q01196	Glu223Lys	Arg	residue_mismatch	Expected E at position 223, but G2P has R
+CCSBVarC008256	RUNX1	Q01196	Thr214Ile	His	residue_mismatch	Expected T at position 214, but G2P has H
+CCSBVarC008257	RUNX1	Q01196	Arg201Gln	Leu	residue_mismatch	Expected R at position 201, but G2P has L
+CCSBVarC008258	RUNX1	Q01196	Val186Asp	Gln	residue_mismatch	Expected V at position 186, but G2P has Q
+CCSBVarC008259	RUNX1	Q01196	Arg166Gln	Ile	residue_mismatch	Expected R at position 166, but G2P has I
+CCSBVarC008260	RUNX1	Q01196	Arg162Ser	Tyr	residue_mismatch	Expected R at position 162, but G2P has Y
+CCSBVarC008261	RUNX1	Q01196	Arg162Lys	Tyr	residue_mismatch	Expected R at position 162, but G2P has Y
+CCSBVarC008262	RUNX1	Q01196	Arg162Gly	Tyr	residue_mismatch	Expected R at position 162, but G2P has Y
+CCSBVarC006942	RUNX1	Q01196	Ala156Glu	Pro	residue_mismatch	Expected A at position 156, but G2P has P
+CCSBVarC006942	RUNX1	Q01196	Ala156Glu	Pro	residue_mismatch	Expected A at position 156, but G2P has P
+CCSBVarC008263	RUNX1	Q01196	Ala134Pro	Leu	residue_mismatch	Expected A at position 134, but G2P has L
+CCSBVarC008264	RUNX1	Q01196	Asp123His	Ala	residue_mismatch	Expected D at position 123, but G2P has A
+CCSBVarC008265	RUNX1	Q01196	Met78Leu	His	residue_mismatch	Expected M at position 78, but G2P has H
+CCSBVarC008266	RUNX1	Q01196	Asp4Gly	Pro	residue_mismatch	Expected D at position 4, but G2P has P
+CCSBVarC006942	RUNX1	Q01196	Ala156Glu	Pro	residue_mismatch	Expected A at position 156, but G2P has P
+CCSBVarC006942	RUNX1	Q01196	Ala156Glu	Pro	residue_mismatch	Expected A at position 156, but G2P has P
+CCSBVarC002425	GPR68	Q15743	Arg63Gln	Leu	residue_mismatch	Expected R at position 63, but G2P has L
+CCSBVarC002671	HSD17B1	P14061	Ser313Gly	Gly	residue_mismatch	Expected S at position 313, but G2P has G
+CCSBVarC001861	SERPINB5	P36952	Pro176Ser	Ser	residue_mismatch	Expected P at position 176, but G2P has S
+CCSBVarC000239	KRT8	P05787	Arg137Cys	Asp	residue_mismatch	Expected R at position 137, but G2P has D
+CCSBVarC000240	KRT8	P05787	Arg137His	Asp	residue_mismatch	Expected R at position 137, but G2P has D
+CCSBVarC000241	KRT8	P05787	Val176Ile	Lys	residue_mismatch	Expected V at position 176, but G2P has K
+CCSBVarC000242	KRT8	P05787	Lys260Asn	Ile	residue_mismatch	Expected K at position 260, but G2P has I
+CCSBVarC001252	FUCA1	P04066	Gly60Asp	Val	residue_mismatch	Expected G at position 60, but G2P has V
+CCSBVarC001253	FUCA1	P04066	Ser63Leu	His	residue_mismatch	Expected S at position 63, but G2P has H
+CCSBVarC001254	FUCA1	P04066	Asn329Tyr	Val	residue_mismatch	Expected N at position 329, but G2P has V
+CCSBVarC001255	FUCA1	P04066	Leu405Arg	Asn	residue_mismatch	Expected L at position 405, but G2P has N
+CCSBVarC001255	FUCA1	P04066	Leu405Arg	Asn	residue_mismatch	Expected L at position 405, but G2P has N
+CCSBVarC001255	FUCA1	P04066	Leu405Arg	Asn	residue_mismatch	Expected L at position 405, but G2P has N
+CCSBVarC001255	FUCA1	P04066	Leu405Arg	Asn	residue_mismatch	Expected L at position 405, but G2P has N
+CCSBVarC002840	GP6	Q9HCN6	Ser219Pro	Pro	residue_mismatch	Expected S at position 219, but G2P has P
+CCSBVarC001408	F8	P00451	Arg47Pro	Ala	residue_mismatch	Expected R at position 47, but G2P has A
+CCSBVarC001409	F8	P00451	Glu65Asp	Tyr	residue_mismatch	Expected E at position 65, but G2P has Y
+CCSBVarC001410	F8	P00451	Trp113Cys	His	residue_mismatch	Expected W at position 113, but G2P has H
+CCSBVarC001411	F8	P00451	Arg191Gln	Leu	residue_mismatch	Expected R at position 191, but G2P has L
+CCSBVarC005953	F8	P00451	Arg47Cys	Ala	residue_mismatch	Expected R at position 47, but G2P has A
+CCSBVarC005955	F8	P00451	Leu50Ser	Pro	residue_mismatch	Expected L at position 50, but G2P has P
+CCSBVarC005947	F8	P00451	Arg34His	Asp	residue_mismatch	Expected R at position 34, but G2P has D
+CCSBVarC005950	F8	P00451	Arg43Cys	Leu	residue_mismatch	Expected R at position 43, but G2P has L
+CCSBVarC005949	F8	P00451	Thr38Ile	Ser	residue_mismatch	Expected T at position 38, but G2P has S
+CCSBVarC005954	F8	P00451	Arg47His	Ala	residue_mismatch	Expected R at position 47, but G2P has A
+CCSBVarC005948	F8	P00451	Pro37Gln	Gln	residue_mismatch	Expected P at position 37, but G2P has Q
+CCSBVarC005951	F8	P00451	Arg43His	Leu	residue_mismatch	Expected R at position 43, but G2P has L
+CCSBVarC005952	F8	P00451	Arg43Leu	Leu	residue_mismatch	Expected R at position 43, but G2P has L
+CCSBVarC005957	F8	P00451	Arg93Gly	Pro	residue_mismatch	Expected R at position 93, but G2P has P
+CCSBVarC005958	F8	P00451	Arg93Gln	Pro	residue_mismatch	Expected R at position 93, but G2P has P
+CCSBVarC005956	F8	P00451	Ala76Pro	His	residue_mismatch	Expected A at position 76, but G2P has H
+CCSBVarC005959	F8	P00451	Met122Val	Val	residue_mismatch	Expected M at position 122, but G2P has V
+CCSBVarC005960	F8	P00451	Gln130Arg	Gly	residue_mismatch	Expected Q at position 130, but G2P has G
+CCSBVarC005965	F8	P00451	Arg191Leu	Leu	residue_mismatch	Expected R at position 191, but G2P has L
+CCSBVarC005962	F8	P00451	Pro184Leu	Val	residue_mismatch	Expected P at position 184, but G2P has V
+CCSBVarC005961	F8	P00451	Pro184Ser	Val	residue_mismatch	Expected P at position 184, but G2P has V
+CCSBVarC005963	F8	P00451	Arg188Cys	Asn	residue_mismatch	Expected R at position 188, but G2P has N
+CCSBVarC005964	F8	P00451	Arg188His	Asn	residue_mismatch	Expected R at position 188, but G2P has N
+CCSBVarC002706	PYY	P10082	Arg72Thr	Thr	residue_mismatch	Expected R at position 72, but G2P has T
+CCSBVarC002244	NAGS	Q8N159	Ala113Pro	Cys	residue_mismatch	Expected A at position 113, but G2P has C
+CCSBVarC002245	NAGS	Q8N159	Ala352Thr	Thr	residue_mismatch	Expected A at position 352, but G2P has T
+CCSBVarC005104	NAGS	Q8N159	Leu264Pro	Thr	residue_mismatch	Expected L at position 264, but G2P has T
+CCSBVarC005105	NAGS	Q8N159	Glu267Asp	Arg	residue_mismatch	Expected E at position 267, but G2P has R
+CCSBVarC005106	NAGS	Q8N159	Trp318Arg	Leu	residue_mismatch	Expected W at position 318, but G2P has L
+CCSBVarC005718	GALNT12	Q8IXK2	Thr182Met	His	residue_mismatch	Expected T at position 182, but G2P has H
+CCSBVarC002327	FOXP2	O15409	Arg461His	Pro	residue_mismatch	Expected R at position 461, but G2P has P
+CCSBVarC003112	KIF7	Q2M1P5	Pro119Leu	Ile	residue_mismatch	Expected P at position 119, but G2P has I
+CCSBVarC003113	KIF7	Q2M1P5	His602Gln	Arg	residue_mismatch	Expected H at position 602, but G2P has R
+CCSBVarC000656	NMB	P08949	Met120Ile	Gln	residue_mismatch	Expected M at position 120, but G2P has Q
+CCSBVarC001867	HJV	Q6ZVN8	Asp23His	Leu	residue_mismatch	Expected D at position 23, but G2P has L
+CCSBVarC001868	HJV	Q6ZVN8	Gly24Val	Thr	residue_mismatch	Expected G at position 24, but G2P has T
+CCSBVarC001869	HJV	Q6ZVN8	Ile55Thr	Gly	residue_mismatch	Expected I at position 55, but G2P has G
+CCSBVarC001870	HJV	Q6ZVN8	Arg62Trp	Leu	residue_mismatch	Expected R at position 62, but G2P has L
+CCSBVarC006055	HJV	Q6ZVN8	Gly94Val	Ala	residue_mismatch	Expected G at position 94, but G2P has A
+CCSBVarC000312	PPARG	P37231	Pro85Gln	Arg	residue_mismatch	Expected P at position 85, but G2P has R
+CCSBVarC000313	PPARG	P37231	Cys162Trp	Phe	residue_mismatch	Expected C at position 162, but G2P has F
+CCSBVarC000314	PPARG	P37231	Val290Met	Ile	residue_mismatch	Expected V at position 290, but G2P has I
+CCSBVarC000315	PPARG	P37231	Asp396Asn	Phe	residue_mismatch	Expected D at position 396, but G2P has F
+CCSBVarC000189	KIF6	Q6ZMV9	Trp170Arg	Pro	residue_mismatch	Expected W at position 170, but G2P has P
+CCSBVarC001906	SGCD	Q92629	Ala131Pro	Val	residue_mismatch	Expected A at position 131, but G2P has V
+CCSBVarC001907	SGCD	Q92629	Asn211Tyr	Ala	residue_mismatch	Expected N at position 211, but G2P has A
+CCSBVarC001908	SGCD	Q92629	Glu262Lys	Ile	residue_mismatch	Expected E at position 262, but G2P has I
+CCSBVarC005586	SGCD	Q92629	Ser151Ala	Ala	residue_mismatch	Expected S at position 151, but G2P has A
+CCSBVarC002319	SYN3	O14994	Ser469Asn	Leu	residue_mismatch	Expected S at position 469, but G2P has L
+CCSBVarC002184	CCN6	O95389	Cys96Arg	Lys	residue_mismatch	Expected C at position 96, but G2P has K
+CCSBVarC002185	CCN6	O95389	Cys132Tyr	Gly	residue_mismatch	Expected C at position 132, but G2P has G
+CCSBVarC002186	CCN6	O95389	Cys163Tyr	Ser	residue_mismatch	Expected C at position 163, but G2P has S
+CCSBVarC002187	CCN6	O95389	Ser352Pro	Lys	residue_mismatch	Expected S at position 352, but G2P has K
+CCSBVarC001460	KIF1B	O60333	Ser290Asn	Asn	residue_mismatch	Expected S at position 290, but G2P has N
+CCSBVarC006932	CEP41	Q9BYV8	Arg288Cys	Ser	residue_mismatch	Expected R at position 288, but G2P has S
+CCSBVarC002556	TEAD1	P28347	Tyr352His	Arg	residue_mismatch	Expected Y at position 352, but G2P has R
+CCSBVarC001515	TWNK	Q96RR1	Arg125Trp	Phe	residue_mismatch	Expected R at position 125, but G2P has F
+CCSBVarC001516	TWNK	Q96RR1	Arg125Gln	Phe	residue_mismatch	Expected R at position 125, but G2P has F
+CCSBVarC001517	TWNK	Q96RR1	Trp137Leu	Arg	residue_mismatch	Expected W at position 137, but G2P has R
+CCSBVarC001518	TWNK	Q96RR1	Glu301Lys	Phe	residue_mismatch	Expected E at position 301, but G2P has F
+CCSBVarC004120	TWNK	Q96RR1	Arg176Pro	Ala	residue_mismatch	Expected R at position 176, but G2P has A
+CCSBVarC004122	TWNK	Q96RR1	Leu203Pro	Ser	residue_mismatch	Expected L at position 203, but G2P has S
+CCSBVarC004121	TWNK	Q96RR1	Ser191Tyr	Lys	residue_mismatch	Expected S at position 191, but G2P has K
+CCSBVarC004118	TWNK	Q96RR1	Lys141Glu	Leu	residue_mismatch	Expected K at position 141, but G2P has L
+CCSBVarC004123	TWNK	Q96RR1	Ala297Pro	Tyr	residue_mismatch	Expected A at position 297, but G2P has Y
+CCSBVarC000618	ACSM3	Q53FZ2	Lys359Asn	Asp	residue_mismatch	Expected K at position 359, but G2P has D
+CCSBVarC001852	HPD	P32754	Ala33Thr	Thr	residue_mismatch	Expected A at position 33, but G2P has T
+CCSBVarC002846	TAS2R38	P59533	Val262Ala	Ala	residue_mismatch	Expected V at position 262, but G2P has A
+CCSBVarC001576	TULP1	O00294	Phe329Ser	Asp	residue_mismatch	Expected F at position 329, but G2P has D
+CCSBVarC001577	TULP1	O00294	Arg367Pro	Ile	residue_mismatch	Expected R at position 367, but G2P has I
+CCSBVarC001578	TULP1	O00294	Arg429Trp	Ser	residue_mismatch	Expected R at position 429, but G2P has S
+CCSBVarC001579	TULP1	O00294	Ala443Thr	Ser	residue_mismatch	Expected A at position 443, but G2P has S
+CCSBVarC004235	TULP1	O00294	Arg127His	Asp	residue_mismatch	Expected R at position 127, but G2P has D
+CCSBVarC004237	TULP1	O00294	Arg347Trp	Thr	residue_mismatch	Expected R at position 347, but G2P has T
+CCSBVarC004238	TULP1	O00294	Ile406Lys	Val	residue_mismatch	Expected I at position 406, but G2P has V
+CCSBVarC004239	TULP1	O00294	Lys436Arg	Pro	residue_mismatch	Expected K at position 436, but G2P has P
+CCSBVarC002123	BRCA1	P38398	Arg391Met	Glu	residue_mismatch	Expected R at position 391, but G2P has E
+CCSBVarC002124	BRCA1	P38398	Thr669Ser	Met	residue_mismatch	Expected T at position 669, but G2P has M
+CCSBVarC003299	BRCA1	P38398	Pro387Ala	Ser	residue_mismatch	Expected P at position 387, but G2P has S
+CCSBVarC003300	BRCA1	P38398	Tyr418Cys	Glu	residue_mismatch	Expected Y at position 418, but G2P has E
+CCSBVarC003301	BRCA1	P38398	Lys502Glu	Leu	residue_mismatch	Expected K at position 502, but G2P has L
+CCSBVarC003303	BRCA1	P38398	Thr581Ile	Lys	residue_mismatch	Expected T at position 581, but G2P has K
+CCSBVarC003302	BRCA1	P38398	Tyr562His	Ile	residue_mismatch	Expected Y at position 562, but G2P has I
+CCSBVarC003304	BRCA1	P38398	Thr587Arg	Ile	residue_mismatch	Expected T at position 587, but G2P has I
+CCSBVarC003305	BRCA1	P38398	Phe591Leu	Ile	residue_mismatch	Expected F at position 591, but G2P has I
+CCSBVarC003306	BRCA1	P38398	Arg595Gln	Glu	residue_mismatch	Expected R at position 595, but G2P has E
+CCSBVarC003308	BRCA1	P38398	Ala648Pro	Glu	residue_mismatch	Expected A at position 648, but G2P has E
+CCSBVarC003307	BRCA1	P38398	Glu631Lys	Leu	residue_mismatch	Expected E at position 631, but G2P has L
+CCSBVarC003309	BRCA1	P38398	Leu660Pro	Val	residue_mismatch	Expected L at position 660, but G2P has V
+CCSBVarC002123	BRCA1	P38398	Arg391Met	Glu	residue_mismatch	Expected R at position 391, but G2P has E
+CCSBVarC003301	BRCA1	P38398	Lys502Glu	Leu	residue_mismatch	Expected K at position 502, but G2P has L
+CCSBVarC003303	BRCA1	P38398	Thr581Ile	Lys	residue_mismatch	Expected T at position 581, but G2P has K
+CCSBVarC003304	BRCA1	P38398	Thr587Arg	Ile	residue_mismatch	Expected T at position 587, but G2P has I
+CCSBVarC003305	BRCA1	P38398	Phe591Leu	Ile	residue_mismatch	Expected F at position 591, but G2P has I
+CCSBVarC003306	BRCA1	P38398	Arg595Gln	Glu	residue_mismatch	Expected R at position 595, but G2P has E
+CCSBVarC003307	BRCA1	P38398	Glu631Lys	Leu	residue_mismatch	Expected E at position 631, but G2P has L
+CCSBVarC003309	BRCA1	P38398	Leu660Pro	Val	residue_mismatch	Expected L at position 660, but G2P has V
+CCSBVarC011797	BRCA1	P38398	Ser408Ile	Lys	residue_mismatch	Expected S at position 408, but G2P has K
+CCSBVarC011806	BRCA1	P38398	His299Tyr	Val	residue_mismatch	Expected H at position 299, but G2P has V
+CCSBVarC011818	BRCA1	P38398	Gly666Val	Leu	residue_mismatch	Expected G at position 666, but G2P has L
+CCSBVarC011835	BRCA1	P38398	Ser611Arg	Leu	residue_mismatch	Expected S at position 611, but G2P has L
+CCSBVarC011843	BRCA1	P38398	Thr581Ala	Lys	residue_mismatch	Expected T at position 581, but G2P has K
+CCSBVarC011847	BRCA1	P38398	Ser611Arg	Leu	residue_mismatch	Expected S at position 611, but G2P has L
+CCSBVarC011853	BRCA1	P38398	Val632Ala	Ser	residue_mismatch	Expected V at position 632, but G2P has S
+CCSBVarC011868	BRCA1	P38398	Glu455Lys	Asn	residue_mismatch	Expected E at position 455, but G2P has N
+CCSBVarC011871	BRCA1	P38398	Met671Lys	Gly	residue_mismatch	Expected M at position 671, but G2P has G
+CCSBVarC013021	BRCA1	P38398	Phe558Ser	Lys	residue_mismatch	Expected F at position 558, but G2P has K
+CCSBVarC013043	BRCA1	P38398	Pro533Leu	Asn	residue_mismatch	Expected P at position 533, but G2P has N
+CCSBVarC013069	BRCA1	P38398	Met548Ile	Ile	residue_mismatch	Expected M at position 548, but G2P has I
+CCSBVarC013078	BRCA1	P38398	Val275Ile	Gly	residue_mismatch	Expected V at position 275, but G2P has G
+CCSBVarC013096	BRCA1	P38398	Gly602Ala	Asn	residue_mismatch	Expected G at position 602, but G2P has N
+CCSBVarC013098	BRCA1	P38398	Pro510Ser	Ser	residue_mismatch	Expected P at position 510, but G2P has S
+CCSBVarC013122	BRCA1	P38398	Leu460Pro	Ile	residue_mismatch	Expected L at position 460, but G2P has I
+CCSBVarC013127	BRCA1	P38398	Thr616Ala	Ser	residue_mismatch	Expected T at position 616, but G2P has S
+CCSBVarC002357	SLC30A8	Q8IWU4	Arg276Trp	Glu	residue_mismatch	Expected R at position 276, but G2P has E
+CCSBVarC002904	SLC30A8	Q8IWU4	Arg276Gln	Glu	residue_mismatch	Expected R at position 276, but G2P has E
+CCSBVarC001662	SLC5A11	Q8WWX8	Val118Ala	Pro	residue_mismatch	Expected V at position 118, but G2P has P
+CCSBVarC002493	TLR6	Q9Y2C9	Pro249Ser	Ser	residue_mismatch	Expected P at position 249, but G2P has S
+CCSBVarC001779	STOX1	Q6ZVD7	Leu24Phe	Ala	residue_mismatch	Expected L at position 24, but G2P has A
+CCSBVarC001780	STOX1	Q6ZVD7	Glu50Asp	Asn	residue_mismatch	Expected E at position 50, but G2P has N
+CCSBVarC001781	STOX1	Q6ZVD7	Asn267Ile	Lys	residue_mismatch	Expected N at position 267, but G2P has K
+CCSBVarC001543	EGR2	P11161	Arg404His	Gly	residue_mismatch	Expected R at position 404, but G2P has G
+CCSBVarC001544	EGR2	P11161	Glu435Lys	Val	residue_mismatch	Expected E at position 435, but G2P has V
+CCSBVarC004155	EGR2	P11161	Asp406Tyr	Lys	residue_mismatch	Expected D at position 406, but G2P has K
+CCSBVarC000129	PRKAG2	Q9UGJ0	Thr159Asn	Leu	residue_mismatch	Expected T at position 159, but G2P has L
+CCSBVarC000130	PRKAG2	Q9UGJ0	Tyr246His	Leu	residue_mismatch	Expected Y at position 246, but G2P has L
+CCSBVarC000131	PRKAG2	Q9UGJ0	Arg290Gln	Lys	residue_mismatch	Expected R at position 290, but G2P has K
+CCSBVarC003967	PRKAG2	Q9UGJ0	His339Arg	Tyr	residue_mismatch	Expected H at position 339, but G2P has Y
+CCSBVarC003968	PRKAG2	Q9UGJ0	Asn444Ile	Pro	residue_mismatch	Expected N at position 444, but G2P has P
+CCSBVarC003969	PRKAG2	Q9UGJ0	Glu462Gln	Val	residue_mismatch	Expected E at position 462, but G2P has V
+CCSBVarC003971	PRKAG2	Q9UGJ0	Ser504Pro	Tyr	residue_mismatch	Expected S at position 504, but G2P has Y
+CCSBVarC003970	PRKAG2	Q9UGJ0	His486Arg	Thr	residue_mismatch	Expected H at position 486, but G2P has T
+CCSBVarC001320	CIDEA	O60543	Val149Phe	Ala	residue_mismatch	Expected V at position 149, but G2P has A
+CCSBVarC000292	TFAP2A	P05549	Arg248Trp	Leu	residue_mismatch	Expected R at position 248, but G2P has L
+CCSBVarC000293	TFAP2A	P05549	Arg249Gly	Leu	residue_mismatch	Expected R at position 249, but G2P has L
+CCSBVarC000294	TFAP2A	P05549	Gly256Glu	Ala	residue_mismatch	Expected G at position 256, but G2P has A
+CCSBVarC000283	GDAP1	Q8TB36	Met48Thr	Ala	residue_mismatch	Expected M at position 48, but G2P has A
+CCSBVarC000284	GDAP1	Q8TB36	Arg93His	Ile	residue_mismatch	Expected R at position 93, but G2P has I
+CCSBVarC000286	GDAP1	Q8TB36	Arg242Gln	Glu	residue_mismatch	Expected R at position 242, but G2P has E
+CCSBVarC005587	GDAP1	Q8TB36	Arg52Trp	Glu	residue_mismatch	Expected R at position 52, but G2P has E
+CCSBVarC005590	GDAP1	Q8TB36	Thr89Pro	Glu	residue_mismatch	Expected T at position 89, but G2P has E
+CCSBVarC005588	GDAP1	Q8TB36	His55Arg	Asp	residue_mismatch	Expected H at position 55, but G2P has D
+CCSBVarC005589	GDAP1	Q8TB36	Ala88Gly	Cys	residue_mismatch	Expected A at position 88, but G2P has C
+CCSBVarC005591	GDAP1	Q8TB36	Gln150Glu	Ser	residue_mismatch	Expected Q at position 150, but G2P has S
+CCSBVarC005593	GDAP1	Q8TB36	Pro163Leu	Gln	residue_mismatch	Expected P at position 163, but G2P has Q
+CCSBVarC005592	GDAP1	Q8TB36	Arg158Ser	Thr	residue_mismatch	Expected R at position 158, but G2P has T
+CCSBVarC005596	GDAP1	Q8TB36	Arg214Cys	Lys	residue_mismatch	Expected R at position 214, but G2P has K
+CCSBVarC005594	GDAP1	Q8TB36	Cys172Tyr	Lys	residue_mismatch	Expected C at position 172, but G2P has K
+CCSBVarC005597	GDAP1	Q8TB36	Gly259Asp	Lys	residue_mismatch	Expected G at position 259, but G2P has K
+CCSBVarC005595	GDAP1	Q8TB36	Pro206Leu	Lys	residue_mismatch	Expected P at position 206, but G2P has K
+CCSBVarC005691	FA2H	Q7L5A8	Arg62Cys	Leu	residue_mismatch	Expected R at position 62, but G2P has L
+CCSBVarC005692	FA2H	Q7L5A8	Arg143Cys	Glu	residue_mismatch	Expected R at position 143, but G2P has E
+CCSBVarC005693	FA2H	Q7L5A8	Phe144Ser	Trp	residue_mismatch	Expected F at position 144, but G2P has W
+CCSBVarC001805	SMARCA2	P51531	Asp75Glu	Lys	residue_mismatch	Expected D at position 75, but G2P has K
+CCSBVarC007100	LIPI	Q6XZB0	Cys76Tyr	Thr	residue_mismatch	Expected C at position 76, but G2P has T
+CCSBVarC002564	TPH2	Q8IWU9	Pro212Ser	Tyr	residue_mismatch	Expected P at position 212, but G2P has Y
+CCSBVarC002565	TPH2	Q8IWU9	Arg309Trp	Leu	residue_mismatch	Expected R at position 309, but G2P has L
+CCSBVarC002566	TPH2	Q8IWU9	Pro318Pro	His	residue_mismatch	Expected P at position 318, but G2P has H
+CCSBVarC002567	TPH2	Q8IWU9	Arg447His	Phe	residue_mismatch	Expected R at position 447, but G2P has F
+CCSBVarC002059	PTCH1	Q13635	Leu40Arg	Arg	residue_mismatch	Expected L at position 40, but G2P has R
+CCSBVarC002060	PTCH1	Q13635	Gly44Arg	Ala	residue_mismatch	Expected G at position 44, but G2P has A
+CCSBVarC002061	PTCH1	Q13635	Thr164Pro	Glu	residue_mismatch	Expected T at position 164, but G2P has E
+CCSBVarC001687	PLA2G7	Q13093	Ala379Val	Val	residue_mismatch	Expected A at position 379, but G2P has V
+CCSBVarC001258	PORCN	Q9H237	His336Leu	Ala	residue_mismatch	Expected H at position 336, but G2P has A
+CCSBVarC001259	PORCN	Q9H237	Trp434Arg	Tyr	residue_mismatch	Expected W at position 434, but G2P has Y
+CCSBVarC004471	PORCN	Q9H237	Arg360Gln	Val	residue_mismatch	Expected R at position 360, but G2P has V
+CCSBVarC001336	AKR7A3	O95154	Asp215Asn	Asn	residue_mismatch	Expected D at position 215, but G2P has N
+CCSBVarC002042	CLDN16	Q9Y5I7	Met71Arg	His	residue_mismatch	Expected M at position 71, but G2P has H
+CCSBVarC002044	CLDN16	Q9Y5I7	Arg216Cys	Lys	residue_mismatch	Expected R at position 216, but G2P has K
+CCSBVarC002045	CLDN16	Q9Y5I7	Ser235Tyr	Val	residue_mismatch	Expected S at position 235, but G2P has V
+CCSBVarC005523	CLDN16	Q9Y5I7	Leu145Pro	Glu	residue_mismatch	Expected L at position 145, but G2P has E
+CCSBVarC005526	CLDN16	Q9Y5I7	Leu167Pro	Trp	residue_mismatch	Expected L at position 167, but G2P has W
+CCSBVarC005527	CLDN16	Q9Y5I7	Gly191Arg	Lys	residue_mismatch	Expected G at position 191, but G2P has K
+CCSBVarC005528	CLDN16	Q9Y5I7	Gly198Asp	Asn	residue_mismatch	Expected G at position 198, but G2P has N
+CCSBVarC005529	CLDN16	Q9Y5I7	Phe232Cys	Asp	residue_mismatch	Expected F at position 232, but G2P has D
+CCSBVarC005530	CLDN16	Q9Y5I7	Gly233Asp	Thr	residue_mismatch	Expected G at position 233, but G2P has T
+CCSBVarC005531	CLDN16	Q9Y5I7	Ser235Phe	Val	residue_mismatch	Expected S at position 235, but G2P has V
+CCSBVarC005532	CLDN16	Q9Y5I7	Gly239Arg		position_not_in_g2p	Position 239 not found in G2P data (protein length: 235)
+CCSBVarC005533	CLDN16	Q9Y5I7	Thr303Arg		position_not_in_g2p	Position 303 not found in G2P data (protein length: 235)
+CCSBVarC002343	AMPD3	Q01432	Asn319Lys	His	residue_mismatch	Expected N at position 319, but G2P has H
+CCSBVarC002344	AMPD3	Q01432	Ala329Val	Leu	residue_mismatch	Expected A at position 329, but G2P has L
+CCSBVarC002345	AMPD3	Q01432	Trp459Arg	Gln	residue_mismatch	Expected W at position 459, but G2P has Q
+CCSBVarC002346	AMPD3	Q01432	Pro594Leu	Thr	residue_mismatch	Expected P at position 594, but G2P has T
+CCSBVarC008280	TH	P07101	Val468Met	Phe	residue_mismatch	Expected V at position 468, but G2P has F
+CCSBVarC008281	TH	P07101	Thr463Met	Phe	residue_mismatch	Expected T at position 463, but G2P has F
+CCSBVarC008282	TH	P07101	Pro454His	Gln	residue_mismatch	Expected P at position 454, but G2P has Q
+CCSBVarC008283	TH	P07101	Thr368Met	Pro	residue_mismatch	Expected T at position 368, but G2P has P
+CCSBVarC008284	TH	P07101	Gly357Arg	Pro	residue_mismatch	Expected G at position 357, but G2P has P
+CCSBVarC002843	TH	P07101	Cys328Phe	Arg	residue_mismatch	Expected C at position 328, but G2P has R
+CCSBVarC002843	TH	P07101	Cys328Phe	Arg	residue_mismatch	Expected C at position 328, but G2P has R
+CCSBVarC008285	TH	P07101	Arg306His	Val	residue_mismatch	Expected R at position 306, but G2P has V
+CCSBVarC008286	TH	P07101	Thr283Met	Leu	residue_mismatch	Expected T at position 283, but G2P has L
+CCSBVarC008287	TH	P07101	Asp267His	Tyr	residue_mismatch	Expected D at position 267, but G2P has Y
+CCSBVarC008288	TH	P07101	Glu250Gln	Ile	residue_mismatch	Expected E at position 250, but G2P has I
+CCSBVarC002842	TH	P07101	Thr245Pro	Arg	residue_mismatch	Expected T at position 245, but G2P has R
+CCSBVarC002842	TH	P07101	Thr245Pro	Arg	residue_mismatch	Expected T at position 245, but G2P has R
+CCSBVarC008289	TH	P07101	Ala226Thr	Ser	residue_mismatch	Expected A at position 226, but G2P has S
+CCSBVarC008290	TH	P07101	Arg221Leu	Asp	residue_mismatch	Expected R at position 221, but G2P has D
+CCSBVarC008291	TH	P07101	Ile219Thr	Asp	residue_mismatch	Expected I at position 219, but G2P has D
+CCSBVarC008292	TH	P07101	Pro218Leu	Leu	residue_mismatch	Expected P at position 218, but G2P has L
+CCSBVarC008293	TH	P07101	Ile209Met	His	residue_mismatch	Expected I at position 209, but G2P has H
+CCSBVarC008294	TH	P07101	Leu205Pro	Asp	residue_mismatch	Expected L at position 205, but G2P has D
+CCSBVarC008295	TH	P07101	Arg202His	Ser	residue_mismatch	Expected R at position 202, but G2P has S
+CCSBVarC008296	TH	P07101	Arg200His	Lys	residue_mismatch	Expected R at position 200, but G2P has K
+CCSBVarC008297	TH	P07101	Val136Met	Thr	residue_mismatch	Expected V at position 136, but G2P has T
+CCSBVarC008298	TH	P07101	Arg133His	Val	residue_mismatch	Expected R at position 133, but G2P has V
+CCSBVarC008299	TH	P07101	Pro121Leu	Ala	residue_mismatch	Expected P at position 121, but G2P has A
+CCSBVarC008300	TH	P07101	Arg89Arg	Ala	residue_mismatch	Expected R at position 89, but G2P has A
+CCSBVarC008301	TH	P07101	Pro88Leu	Ala	residue_mismatch	Expected P at position 88, but G2P has A
+CCSBVarC008302	TH	P07101	Gln39Glu	Pro	residue_mismatch	Expected Q at position 39, but G2P has P
+CCSBVarC002841	TH	P07101	His215Tyr	Asp	residue_mismatch	Expected H at position 215, but G2P has D
+CCSBVarC002842	TH	P07101	Thr245Pro	Arg	residue_mismatch	Expected T at position 245, but G2P has R
+CCSBVarC002842	TH	P07101	Thr245Pro	Arg	residue_mismatch	Expected T at position 245, but G2P has R
+CCSBVarC002843	TH	P07101	Cys328Phe	Arg	residue_mismatch	Expected C at position 328, but G2P has R
+CCSBVarC002843	TH	P07101	Cys328Phe	Arg	residue_mismatch	Expected C at position 328, but G2P has R
+CCSBVarC002844	TH	P07101	Gln381Lys	Asp	residue_mismatch	Expected Q at position 381, but G2P has D
+CCSBVarC000271	BEST1	O76090	Tyr25His	Arg	residue_mismatch	Expected Y at position 25, but G2P has R
+CCSBVarC000272	BEST1	O76090	Arg32Cys	Leu	residue_mismatch	Expected R at position 32, but G2P has L
+CCSBVarC000273	BEST1	O76090	Arg158Gly	Val	residue_mismatch	Expected R at position 158, but G2P has V
+CCSBVarC000274	BEST1	O76090	Leu480Phe	Pro	residue_mismatch	Expected L at position 480, but G2P has P
+CCSBVarC004158	BEST1	O76090	Ile13Leu	Arg	residue_mismatch	Expected I at position 13, but G2P has R
+CCSBVarC004162	BEST1	O76090	Asn39Lys	Phe	residue_mismatch	Expected N at position 39, but G2P has F
+CCSBVarC004170	BEST1	O76090	Arg81His	Val	residue_mismatch	Expected R at position 81, but G2P has V
+CCSBVarC004164	BEST1	O76090	Pro41Thr	Leu	residue_mismatch	Expected P at position 41, but G2P has L
+CCSBVarC004168	BEST1	O76090	Leu80Val	Phe	residue_mismatch	Expected L at position 80, but G2P has F
+CCSBVarC004169	BEST1	O76090	Arg81Ser	Val	residue_mismatch	Expected R at position 81, but G2P has V
+CCSBVarC004160	BEST1	O76090	Trp33Cys	Tyr	residue_mismatch	Expected W at position 33, but G2P has Y
+CCSBVarC004165	BEST1	O76090	Asp44Glu	Tyr	residue_mismatch	Expected D at position 44, but G2P has Y
+CCSBVarC004161	BEST1	O76090	Gln36His	Phe	residue_mismatch	Expected Q at position 36, but G2P has F
+CCSBVarC004167	BEST1	O76090	Gly75Ser	Leu	residue_mismatch	Expected G at position 75, but G2P has L
+CCSBVarC004166	BEST1	O76090	Glu59Gln	Gln	residue_mismatch	Expected E at position 59, but G2P has Q
+CCSBVarC004172	BEST1	O76090	Ser149Asn	Lys	residue_mismatch	Expected S at position 149, but G2P has K
+CCSBVarC004171	BEST1	O76090	Ile141Thr	Arg	residue_mismatch	Expected I at position 141, but G2P has R
+CCSBVarC004178	BEST1	O76090	Ser171Arg	Leu	residue_mismatch	Expected S at position 171, but G2P has L
+CCSBVarC004181	BEST1	O76090	Thr177Arg	Pro	residue_mismatch	Expected T at position 177, but G2P has P
+CCSBVarC004175	BEST1	O76090	Leu164Met	Thr	residue_mismatch	Expected L at position 164, but G2P has T
+CCSBVarC004174	BEST1	O76090	Arg158His	Val	residue_mismatch	Expected R at position 158, but G2P has V
+CCSBVarC004176	BEST1	O76090	Leu164Pro	Thr	residue_mismatch	Expected L at position 164, but G2P has T
+CCSBVarC004179	BEST1	O76090	Val175Leu	Ser	residue_mismatch	Expected V at position 175, but G2P has S
+CCSBVarC004180	BEST1	O76090	Val175Ala	Ser	residue_mismatch	Expected V at position 175, but G2P has S
+CCSBVarC004177	BEST1	O76090	Asp168Asn	His	residue_mismatch	Expected D at position 168, but G2P has H
+CCSBVarC004173	BEST1	O76090	Arg158Ser	Val	residue_mismatch	Expected R at position 158, but G2P has V
+CCSBVarC004183	BEST1	O76090	Val215Ile	Asn	residue_mismatch	Expected V at position 215, but G2P has N
+CCSBVarC004184	BEST1	O76090	Phe216Leu	Thr	residue_mismatch	Expected F at position 216, but G2P has T
+CCSBVarC004182	BEST1	O76090	Val179Met	Asn	residue_mismatch	Expected V at position 179, but G2P has N
+CCSBVarC004185	BEST1	O76090	Tyr224Cys	Leu	residue_mismatch	Expected Y at position 224, but G2P has L
+CCSBVarC004186	BEST1	O76090	Val230Met	Ile	residue_mismatch	Expected V at position 230, but G2P has I
+CCSBVarC001975	SLC2A2	P11168	Val24Ile	Phe	residue_mismatch	Expected V at position 24, but G2P has F
+CCSBVarC001976	SLC2A2	P11168	Gly145Arg	Ser	residue_mismatch	Expected G at position 145, but G2P has S
+CCSBVarC001977	SLC2A2	P11168	Val250Glu	Leu	residue_mismatch	Expected V at position 250, but G2P has L
+CCSBVarC001978	SLC2A2	P11168	Trp271Arg	Lys	residue_mismatch	Expected W at position 271, but G2P has K
+CCSBVarC005273	SLC2A2	P11168	Leu216Pro	Asp	residue_mismatch	Expected L at position 216, but G2P has D
+CCSBVarC005274	SLC2A2	P11168	Pro244Leu	Arg	residue_mismatch	Expected P at position 244, but G2P has R
+CCSBVarC003361	KIF2A	O00139	His294Asp	Ala	residue_mismatch	Expected H at position 294, but G2P has A
+CCSBVarC003360	KIF2A	O00139	Ser290Asn	Tyr	residue_mismatch	Expected S at position 290, but G2P has Y
+CCSBVarC000755	PLTP	P55058	Arg183Trp	Gln	residue_mismatch	Expected R at position 183, but G2P has Q
+CCSBVarC000756	PLTP	P55058	Arg424Gln	Pro	residue_mismatch	Expected R at position 424, but G2P has P
+CCSBVarC006522	UMOD	P07911	Val244Phe	Ser	residue_mismatch	Expected V at position 244, but G2P has S
+CCSBVarC006523	UMOD	P07911	Cys271Gly	Tyr	residue_mismatch	Expected C at position 271, but G2P has Y
+CCSBVarC006524	UMOD	P07911	Cys286Tyr	Tyr	residue_mismatch	Expected C at position 286, but G2P has Y
+CCSBVarC007048	ALDH7A1	P49419	Ala171Val	Ser	residue_mismatch	Expected A at position 171, but G2P has S
+CCSBVarC007049	ALDH7A1	P49419	Asn273Ile	Thr	residue_mismatch	Expected N at position 273, but G2P has T
+CCSBVarC002482	MAPT	P10636	Gly214Val	Ser	residue_mismatch	Expected G at position 214, but G2P has S
+CCSBVarC002483	MAPT	P10636	Gly331Arg	Pro	residue_mismatch	Expected G at position 331, but G2P has P
+CCSBVarC000757	MMACHC	Q9Y4U1	Leu59Pro	Phe	residue_mismatch	Expected L at position 59, but G2P has F
+CCSBVarC000758	MMACHC	Q9Y4U1	His65Arg	Pro	residue_mismatch	Expected H at position 65, but G2P has P
+CCSBVarC000759	MMACHC	Q9Y4U1	Leu136Pro	Glu	residue_mismatch	Expected L at position 136, but G2P has E
+CCSBVarC000760	MMACHC	Q9Y4U1	Arg149Pro	Cys	residue_mismatch	Expected R at position 149, but G2P has C
+CCSBVarC005915	MMACHC	Q9Y4U1	Arg104Gln	Asp	residue_mismatch	Expected R at position 104, but G2P has D
+CCSBVarC005914	MMACHC	Q9Y4U1	Gly98Glu	Gln	residue_mismatch	Expected G at position 98, but G2P has Q
+CCSBVarC002651	FGF8	P55075	Pro168Arg	Tyr	residue_mismatch	Expected P at position 168, but G2P has Y
+CCSBVarC006048	FGF8	P55075	Thr189Met	Glu	residue_mismatch	Expected T at position 189, but G2P has E
+CCSBVarC005874	SLC27A4	Q6P1M0	Arg177His	Leu	residue_mismatch	Expected R at position 177, but G2P has L
+CCSBVarC000708	TPTEP2-CSNK1E		Ser408Asn		gene_missing_g2p	No G2P protein features file found for this gene
+CCSBVarC005868	CCDC103		His154Pro		gene_missing_g2p	No G2P protein features file found for this gene

@@ -49,6 +49,17 @@ def three_letter_to_one_letter(three_letter: str) -> str:
     return aa_map.get(three_letter, '')
 
 
+def one_letter_to_three_letter(one_letter: str) -> str:
+    """Convert one-letter amino acid code to three-letter code."""
+    aa_map = {
+        'A': 'Ala', 'R': 'Arg', 'N': 'Asn', 'D': 'Asp', 'C': 'Cys',
+        'Q': 'Gln', 'E': 'Glu', 'G': 'Gly', 'H': 'His', 'I': 'Ile',
+        'L': 'Leu', 'K': 'Lys', 'M': 'Met', 'F': 'Phe', 'P': 'Pro',
+        'S': 'Ser', 'T': 'Thr', 'W': 'Trp', 'Y': 'Tyr', 'V': 'Val'
+    }
+    return aa_map.get(one_letter, '')
+
+
 def parse_aa_change(aa_change: str) -> Tuple[str, int, str]:
     """Parse amino acid change string like 'Leu359Pro' into (ref_aa, position, alt_aa)."""
     if pd.isna(aa_change) or not aa_change:
@@ -165,15 +176,17 @@ def find_or_download_g2p_features(gene_name: str, g2p_dir: str) -> str:
 
 
 def load_g2p_protein_features_with_autodownload(g2p_features_dir: str,
-                                                 genes_needed: List[str]) -> Tuple[Dict[str, pd.DataFrame], List[str]]:
+                                                 genes_needed: List[str]) -> Tuple[Dict[str, pd.DataFrame], List[str], Dict[str, str]]:
     """
     Load G2P protein features, automatically downloading missing genes.
 
     Returns:
         - Dictionary mapping gene symbol to protein features DataFrame
         - List of all feature column names (with g2p_ prefix)
+        - Dictionary mapping gene symbol to UniProt ID used
     """
     g2p_data = {}
+    gene_to_uniprot = {}
     all_feature_cols = set()
     features_dir = Path(g2p_features_dir)
     features_dir.mkdir(parents=True, exist_ok=True)
@@ -192,6 +205,12 @@ def load_g2p_protein_features_with_autodownload(g2p_features_dir: str,
         if not protein_file:
             failed_download += 1
             continue
+
+        # Extract UniProt ID from filename: G2P_{gene_name}_{uniprot_id}_protein_features.tsv
+        filename = Path(protein_file).name
+        match = re.match(rf'G2P_{re.escape(gene)}_([A-Z0-9]+)_protein_features\.tsv', filename)
+        if match:
+            gene_to_uniprot[gene] = match.group(1)
 
         # Check if this was newly downloaded
         if "downloaded" in protein_file or time.time() - Path(protein_file).stat().st_mtime < 3600:
@@ -234,12 +253,13 @@ def load_g2p_protein_features_with_autodownload(g2p_features_dir: str,
     print(f"  Total loaded: {len(g2p_data)} genes")
     print(f"  Feature columns: {len(feature_columns)}")
 
-    return g2p_data, feature_columns
+    return g2p_data, feature_columns, gene_to_uniprot
 
 
 def map_g2p_features_with_tracking(variants_df: pd.DataFrame,
                                    g2p_data: Dict[str, pd.DataFrame],
-                                   feature_columns: List[str]) -> Tuple[pd.DataFrame, pd.DataFrame]:
+                                   feature_columns: List[str],
+                                   gene_to_uniprot: Dict[str, str]) -> Tuple[pd.DataFrame, pd.DataFrame]:
     """
     Map G2P protein features to variants with comprehensive failure tracking.
 
@@ -297,7 +317,7 @@ def map_g2p_features_with_tracking(variants_df: pd.DataFrame,
 
         # Process each variant for this gene
         for idx in gene_indices:
-            variant_id = variants_df.at[idx, 'mut_id'] if 'mut_id' in variants_df.columns else idx
+            variant_id = variants_df.at[idx, 'ccsb_mutation_id'] if 'ccsb_mutation_id' in variants_df.columns else idx
             aa_change = variants_df.at[idx, 'aa_change']
             ref_aa = variants_df.at[idx, 'ref_aa_1letter']
             position = variants_df.at[idx, 'position']
@@ -305,9 +325,11 @@ def map_g2p_features_with_tracking(variants_df: pd.DataFrame,
             # Skip if parsing failed
             if not ref_aa or position == 0:
                 failure_records.append({
-                    'variant_id': variant_id,
+                    'ccsb_mutation_id': variant_id,
                     'gene': gene,
+                    'uniprot_id': gene_to_uniprot.get(gene, ''),
                     'aa_change': aa_change,
+                    'G2P_ref_aa': '',
                     'failure_reason': 'unparseable_aa_change',
                     'details': f'Could not parse aa_change: {aa_change}'
                 })
@@ -319,9 +341,11 @@ def map_g2p_features_with_tracking(variants_df: pd.DataFrame,
             # Check if position exists in G2P data
             if position not in g2p_df.index:
                 failure_records.append({
-                    'variant_id': variant_id,
+                    'ccsb_mutation_id': variant_id,
                     'gene': gene,
+                    'uniprot_id': gene_to_uniprot.get(gene, ''),
                     'aa_change': aa_change,
+                    'G2P_ref_aa': '',
                     'failure_reason': 'position_not_in_g2p',
                     'details': f'Position {position} not found in G2P data (protein length: {g2p_df.index.max()})'
                 })
@@ -334,10 +358,14 @@ def map_g2p_features_with_tracking(variants_df: pd.DataFrame,
             # Validate amino acid matches
             protein_aa = residue_row.get('AA', '')
             if protein_aa != ref_aa:
+                # Convert G2P's one-letter AA to three-letter code
+                g2p_ref_aa_3letter = one_letter_to_three_letter(protein_aa)
                 failure_records.append({
-                    'variant_id': variant_id,
+                    'ccsb_mutation_id': variant_id,
                     'gene': gene,
+                    'uniprot_id': gene_to_uniprot.get(gene, ''),
                     'aa_change': aa_change,
+                    'G2P_ref_aa': g2p_ref_aa_3letter,
                     'failure_reason': 'residue_mismatch',
                     'details': f'Expected {ref_aa} at position {position}, but G2P has {protein_aa}'
                 })
@@ -362,11 +390,13 @@ def map_g2p_features_with_tracking(variants_df: pd.DataFrame,
     for gene in genes_missing_g2p:
         gene_variants = variants_df[variants_df['symbol'] == gene]
         for idx, row in gene_variants.iterrows():
-            variant_id = row['mut_id'] if 'mut_id' in variants_df.columns else idx
+            variant_id = row['ccsb_mutation_id'] if 'ccsb_mutation_id' in variants_df.columns else idx
             failure_records.append({
-                'variant_id': variant_id,
+                'ccsb_mutation_id': variant_id,
                 'gene': gene,
+                'uniprot_id': '',
                 'aa_change': row['aa_change'],
+                'G2P_ref_aa': '',
                 'failure_reason': 'gene_missing_g2p',
                 'details': 'No G2P protein features file found for this gene'
             })
@@ -407,7 +437,7 @@ def main():
     print(f"Unique genes: {len(genes_needed)}")
 
     # Load/download G2P protein features
-    g2p_data, feature_columns = load_g2p_protein_features_with_autodownload(
+    g2p_data, feature_columns, gene_to_uniprot = load_g2p_protein_features_with_autodownload(
         G2P_FEATURES_DIR,
         genes_needed
     )
@@ -420,7 +450,8 @@ def main():
     enhanced_df, failures_df = map_g2p_features_with_tracking(
         variants_df,
         g2p_data,
-        feature_columns
+        feature_columns,
+        gene_to_uniprot
     )
 
     # Count variants with features
