@@ -1,0 +1,76 @@
+    Residue     Atom   Residue     Atom  Type     Dist
+  ARG     253    NE  GLU     296   OE1   hb      3.429
+  ARG     253    CD  MET     300    CG   vdw     4.746
+  LYS     256    NZ  GLU     289     O   sb      5.483
+  LYS     256    NZ  LEU     292     O   sb      5.001
+  LYS     256    CE  VAL     293    CB   vdw     4.919
+  LYS     256    NZ  GLU     296   OE2   hb      2.649
+  PHE     257   CD1  GLU     274    CG   vdw     4.046
+  PHE     257   CE1  VAL     293    CB   vdw     4.920
+  PHE     257   CE2  GLU     296    CB   vdw     4.214
+  PHE     257   CD1  LEU     297   CD2   vdw     4.548
+  PHE     257    CB  MET     300    CE   vdw     4.706
+  GLU     259     O  SER     267     N   sb      5.017
+  GLU     259     O  ALA     270     N   sb      5.346
+  ILE     260     N  SER     267     O   sb      5.360
+  ILE     260    CA  ALA     270    CB   vdw     3.978
+  ILE     260    CB  ILE     271   CG1   vdw     4.549
+  ILE     260   CG1  GLU     274    CB   vdw     4.980
+  ILE     260   CD1  LEU     297   CD2   vdw     3.506
+  ILE     260    CB  MET     300    CE   vdw     4.835
+  ILE     260     O  HIS     304   NE2   sb      4.940
+  VAL     261     N  SER     267    OG   sb      4.690
+  PRO     263     N  PRO     263     O   sb      5.470
+  PRO     263     O  LEU     264     N   sb      4.710
+  PRO     263    CB  THR     266    CA   vdw     4.883
+  PRO     263     C  SER     267    CB   vdw     4.821
+  LEU     264     N  PRO     263     O   sb      4.719
+  LEU     264   CD1  LEU     264   CD1   vdw     4.894
+  LEU     264     N  SER     267    OG   sb      4.376
+  LEU     264    CB  HIS     304   CE1   vdw     4.590
+  THR     266    CA  PRO     263    CB   vdw     4.873
+  SER     267     N  GLU     259     O   sb      5.018
+  SER     267     N  ILE     260     O   sb      5.040
+  SER     267    OG  VAL     261     N   sb      4.687
+  SER     267    CA  PRO     263    CB   vdw     4.263
+  SER     267    OG  LEU     264     N   sb      4.350
+  ALA     270     N  GLU     259     O   sb      5.350
+  ALA     270    CA  ILE     260   CG1   vdw     4.273
+  ILE     271    CA  ILE     260   CG1   vdw     4.169
+  GLU     274    CG  PHE     257   CD1   vdw     4.041
+  GLU     274    CB  ILE     260   CG1   vdw     4.989
+  GLU     289     O  LYS     256    NZ   sb      5.475
+  LEU     292     O  LYS     256    NZ   sb      5.018
+  VAL     293    CB  LYS     256    CE   vdw     4.920
+  VAL     293    CA  PHE     257    CZ   vdw     4.679
+  GLU     296   OE1  ARG     253    NE   hb      3.452
+  GLU     296   OE2  LYS     256    NZ   hb      2.648
+  GLU     296    CB  PHE     257   CE2   vdw     4.208
+  LEU     297    CG  PHE     257   CE1   vdw     4.782
+  LEU     297   CD2  ILE     260   CD1   vdw     3.516
+  MET     300    CG  ARG     253    CD   vdw     4.755
+  MET     300    CE  PHE     257    CB   vdw     4.696
+  MET     300    CB  ILE     260   CG2   vdw     4.939
+  MET     300    CA  ALA     307    CA   vdw     4.629
+  HIS     303     O  HIS     303   ND1   sb      4.547
+  HIS     303     O  HIS     304     N   sb      5.414
+  HIS     303   ND1  ASN     306     O   sb      5.110
+  HIS     303    CB  ALA     307    CA   vdw     4.005
+  HIS     304   NE2  ILE     260     O   sb      4.949
+  HIS     304   CE1  LEU     264    CB   vdw     4.588
+  HIS     304     N  HIS     303     O   sb      5.406
+  HIS     304   CE1  ALA     307    CB   vdw     3.620
+  ASN     306     O  HIS     303   ND1   sb      5.099
+  ALA     307    CA  MET     300    CA   vdw     4.627
+  ALA     307    CA  HIS     303    CB   vdw     3.996
+  ALA     307    CB  HIS     304   CE1   vdw     3.617
+  ASP     316   OD2  ARG     323   NH1   hb      2.820
+  GLN     320   NE2  GLN     320   OE1   sb      4.000
+  ARG     323   NH1  ASP     316   OD2   hb      2.835
+
+Number of potential clashes:           0
+Number of disulfide bridges:           0
+Number of hydrogen bonds:              6
+Number of salt bridges:               25
+Number of vdw interactions:           37
+Total number of interactions:         68

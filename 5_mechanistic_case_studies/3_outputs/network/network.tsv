@@ -1,0 +1,5 @@
+	Variant1	Variant2	Phenotype	n_obs	count_normalized
+0	His20Pro	Ala334Thr	MKD atypic	3	0.75
+1	His20Pro	Val250Ile	MKD atypic	1	1.0
+2	His20Pro	Val377Ile	MKD-HIDS	7	1.0
+3	His20Pro	Ala334Thr	MKD-MA	1	0.25
