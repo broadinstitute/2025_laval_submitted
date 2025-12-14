@@ -12,6 +12,7 @@ from tqdm.contrib.concurrent import thread_map
 import scipy.stats as ss
 warnings.filterwarnings('ignore')
 
+IMG_PHENO_VAR_REF_SC_PROFILE_PQ = "/home/shenrunx/igvf/varchamp/2025_varchamp_snakemake/2.snakemake_pipeline/outputs/oneperc_img_pheno_var_ref_gfp_sc_cp_profiles.parquet"
 
 def plot_top_n_important_feat(df, feat_cols, n=10, ax=None, title=""):
     # Calculate mean and standard deviation for each column
