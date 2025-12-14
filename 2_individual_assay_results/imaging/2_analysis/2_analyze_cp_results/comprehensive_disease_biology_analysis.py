@@ -38,11 +38,6 @@ import warnings
 warnings.filterwarnings('ignore')
 import argparse
 
-# Import disease module analyzer
-import sys
-sys.path.append('.')
-from disease_module_annot import FinalDiseaseModuleAnalyzer
-
 # ============================================================================
 # ARGUMENT PARSING
 # ============================================================================
@@ -82,72 +77,65 @@ print(f"  - Extracted feature matrix: {feature_matrix.shape[0]} variants x {feat
 feature_corr = feature_matrix.corr()
 print(f"  - Computed feature correlation matrix: {feature_corr.shape[0]} x {feature_corr.shape[1]}")
 
-# Disease modules
-disease_modules = pd.read_csv(
-    '../1_snakemake_pipeline/2025_varchamp_snakemake/3.downstream_analyses/inputs/disease_modules.csv'
-)
-print(f"  - Loaded disease annotations for {len(disease_modules)} variants")
+# Disease module information is already in clustering_df under Metadata_disease_modules
+print(f"  - Using disease module annotations from clustering file")
 
 # ============================================================================
-# PART 2: DISEASE MODULE CLASSIFICATION
+# PART 2: EXTRACT DISEASE MODULE INFORMATION
 # ============================================================================
-print("\n[2/6] Classifying disease modules...")
-
-analyzer = FinalDiseaseModuleAnalyzer()
+print("\n[2/6] Extracting disease modules from clustering data...")
 
 # Create gene_allele column
 clustering_df['gene_allele'] = clustering_df.index
 
-# Merge with disease modules (drop duplicates to prevent row explosion)
-disease_modules_dedup = disease_modules[['gene_allele', 'OMIM_disease_names', 'OMIM_IDs']].drop_duplicates(
-    subset='gene_allele', keep='first'
-)
-merged_df = clustering_df.merge(
-    disease_modules_dedup,
-    on='gene_allele',
-    how='left',
-    suffixes=('', '_disease_db')
-)
-
-# Verify merge didn't create duplicates
-assert len(merged_df) == len(clustering_df), f"Merge error: {len(merged_df)} != {len(clustering_df)}"
-
-# Use the OMIM_disease_names from disease database, fallback to clustering metadata
-merged_df['diseases_to_classify'] = merged_df['OMIM_disease_names'].fillna(
-    merged_df['Metadata_OMIM_disease_names']
-)
-
-# Classify disease modules
-# Detect column naming convention (AUROC vs misloc_score)
-if 'Metadata_AUROC_Mean_GFP_ADJ' in merged_df.columns:
+# Detect column naming convention (AUROC vs misloc_score vs img_pheno_score)
+if 'Metadata_AUROC_Mean_GFP_ADJ' in clustering_df.columns:
     score_col = 'Metadata_AUROC_Mean_GFP_ADJ'
     hit_col = 'Metadata_Altered_95th_perc_both_batches_GFP_ADJ'
     score_name = 'AUROC'
-elif 'Metadata_img_misloc_score' in merged_df.columns:
+elif 'Metadata_img_misloc_score' in clustering_df.columns:
     score_col = 'Metadata_img_misloc_score'
     hit_col = 'Metadata_img_misloc_hit'
-    score_name = 'score'
+    score_name = 'misloc_score'
+elif 'Metadata_img_pheno_score' in clustering_df.columns:
+    score_col = 'Metadata_img_pheno_score'
+    hit_col = 'Metadata_img_pheno_hit'
+    score_name = 'pheno_score'
 else:
     score_col = None
     hit_col = None
     score_name = 'score'
 
+# Parse disease modules from clustering data
 results = []
-for idx, row in merged_df.iterrows():
-    diseases = analyzer.clean_disease_names(row.get('diseases_to_classify', ''))
-    classifications = analyzer.classify_disease_modules(diseases)
+for idx, row in clustering_df.iterrows():
+    # Parse disease modules (semicolon-separated)
+    disease_modules_str = row.get('Metadata_disease_modules', '')
+    if pd.notna(disease_modules_str) and disease_modules_str != '':
+        disease_modules_list = [dm.strip() for dm in str(disease_modules_str).split(';') if dm.strip()]
+        primary_module = disease_modules_list[0] if disease_modules_list else 'Unclassified'
+        disease_count = len(disease_modules_list)
+        all_modules = '; '.join(disease_modules_list)
+    else:
+        primary_module = 'Unclassified'
+        disease_count = 0
+        all_modules = ''
 
-    primary_module = classifications[0][0] if classifications else 'Unclassified'
-    primary_confidence = classifications[0][1] if classifications else 0.0
+    # Parse OMIM disease names
+    omim_diseases = row.get('Metadata_OMIM_disease_names', '')
+    if pd.notna(omim_diseases) and omim_diseases != '':
+        cleaned_diseases = str(omim_diseases)
+    else:
+        cleaned_diseases = ''
 
     result = {
         'gene_allele': row['gene_allele'],
         'gene': row['gene_allele'].split('_')[0],
         'cluster': row['Metadata_cluster'],
         'primary_disease_module': primary_module,
-        'primary_module_confidence': primary_confidence,
-        'cleaned_diseases': '; '.join(diseases),
-        'disease_count': len(diseases)
+        'all_disease_modules': all_modules,
+        'cleaned_diseases': cleaned_diseases,
+        'disease_count': disease_count
     }
     if score_col:
         result['score'] = row[score_col]
@@ -157,7 +145,8 @@ for idx, row in merged_df.iterrows():
     results.append(result)
 
 classified_df = pd.DataFrame(results)
-print(f"  - Classified {len(classified_df)} variants into disease modules")
+print(f"  - Extracted disease module information for {len(classified_df)} variants")
+print(f"  - Found {len(classified_df[classified_df['primary_disease_module'] != 'Unclassified'])} variants with disease modules")
 
 # ============================================================================
 # PART 3: FEATURE CORRELATION CLUSTERING
