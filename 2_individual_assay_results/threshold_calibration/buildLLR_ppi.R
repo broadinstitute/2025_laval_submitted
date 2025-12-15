@@ -188,6 +188,7 @@ drawDensityLLR <- function(scores, llrFun, posDens, negDens, posScores, negScore
   opar <- par(mfrow=c(2,1))
   # xlim <- range(scores,na.rm=TRUE,finite=TRUE)
   xlim <- c(-1.25, 1.25)
+  # xlim <- c(-5, 10)
   ymax <- max(c(
     posDens(seq(xlim[[1]],xlim[[2]],length.out = 100)),
     negDens(seq(xlim[[1]],xlim[[2]],length.out = 100))
