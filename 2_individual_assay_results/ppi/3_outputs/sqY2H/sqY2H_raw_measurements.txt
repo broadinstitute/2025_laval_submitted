@@ -1,0 +1,15 @@
+scoring_pla: (str) Plate name
+scoring_pos: (str) Well name
+large_plate_name: (str) Large plate name
+retest_batch: (str) Batch name
+condition: (str) Media Condition ID
+condition_name: (str) Media Condition name
+assay_id: (float) Assay ID
+media_control: (bool) Media control
+ad_orf_id: (float) Internal interactor ID
+db_orf_id: (float) Internal disease gene ID
+db_mut_id: (float) Internal variant ID
+per_well_integrated_intensity_gray: (float) Automated yeast growth score
+manual_score_growth: (float) Manual yeast growth score
+total_colony_area: (int) Automated yeast detected colony area
+Children_reExpandedColonies_Count: (int) Automated yeast detected colony count

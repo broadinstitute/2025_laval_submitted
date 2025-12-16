@@ -1,0 +1,12 @@
+symbol: (str) HGMD Gene Symbol
+orf_id: (int) Internal ORF id
+aa_change: (str) Amino Acid change
+mut_id: (int) Internal variant id
+avg_gfp: (float) Single cells Mean GFP Fluorescence value per well
+avg_mcherry: (float) Single cells Mean mCherry Fluorescence value per well
+avg_GFP_mCherry_ratio: (float) Ratio of avg_gfp/avg_mCherry
+wt_GFP_mCherry_ratio: (float) Ratio of avg_gfp/avg_mCherry of related wild-type measurement
+allele_wt_ratio: (float) Ratio of avg_GFP_mCherry_ratio/wt_GFP_mCherry_ratio
+dualipa_abun_score: (float) Log2 Z-score of allele_wt_ratio: (log2(allele_wt_ratio) - log2(wt_mean)) / log2(wt_std)
+dualipa_abun_change: (str) (Y/N/Uncertain) Significative change of abundance determined by thresholds derived from the log likelihood ratio method (Y/N/Uncertain)
+dualipa_abun_chg_dir: (str) (Decrease/Increase) Direction of the abundance change, derived from dualipa_abun_score 
