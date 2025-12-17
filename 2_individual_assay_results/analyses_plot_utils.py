@@ -223,9 +223,9 @@ def plot_assay_hit_by_category_perc(df, hit_col, cat_cols, title="", ax=None):
     y_positions = range(len(plot_df))
 
     # background bars (full 100% - gray)
-    ax.barh(y_positions, [100] * len(plot_df), color='#1f77b4', label="Non-hit")
+    ax.barh(y_positions, [100] * len(plot_df), color='#00A3A3', label="Non-hit")
     # hit bars (foreground - red)
-    ax.barh(y_positions, plot_df["hit_perc"], color='#d62728', label="Hit")
+    ax.barh(y_positions, plot_df["hit_perc"], color='#E67300', label="Hit")
 
     # set labels
     ax.set_yticks(y_positions)
