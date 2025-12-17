@@ -306,14 +306,24 @@ with PdfPages(pdf_path) as pdf:
 
     # Create custom color palette with grey for Unclassified
     modules = module_cluster_pct.index.tolist()
-    base_colors = plt.cm.tab10.colors
+
+    # Count non-Unclassified modules to determine color palette size
+    n_non_unclassified = sum(1 for m in modules if m != 'Unclassified')
+
+    # Use tab20 for up to 20 colors, then fall back to husl for more
+    if n_non_unclassified <= 20:
+        base_colors = list(plt.cm.tab20.colors)
+    else:
+        # Generate unique colors using seaborn's husl palette
+        base_colors = sns.color_palette("husl", n_colors=n_non_unclassified)
+
     custom_colors = []
     color_idx = 0
     for module in modules:
         if module == 'Unclassified':
             custom_colors.append('#808080')  # Grey for Unclassified
         else:
-            custom_colors.append(base_colors[color_idx % len(base_colors)])
+            custom_colors.append(base_colors[color_idx])
             color_idx += 1
 
     module_cluster_pct.T.plot(kind='bar', stacked=True, ax=ax3, color=custom_colors)
