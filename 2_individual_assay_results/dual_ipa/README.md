@@ -18,8 +18,6 @@ mamba activate dual-ipa
 
 Python notebooks and scripts are numbered in the order that they should be run to reproduce all of the output files. Python scripts without numeric prefixes contain functions that are imported by the numbered files. Each notebook starts with a description of the analysis tasks that it performs, and contains extensive comments throughoupt.
 
-
-
 ## Files in 3_outputs
 The analysis scripts create four files:
 
