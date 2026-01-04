@@ -12,6 +12,7 @@
 
 ## Downloading the AI-predicted scores for nsSNPs from the https://www.dbnsfp.org/download database
 ## It is located on G-drive in the below link: (gdown could be installed using conda/pip)
+## The readme file is located @1_allele_collection/1_inputs/dbNSFP5.0a.readme.txt
 # gdown --fuzzy https://drive.google.com/file/d/1QoVE-o8YBiXyp2wQjrmIvplBEdC5QYUE/view?usp=sharing
 
 
