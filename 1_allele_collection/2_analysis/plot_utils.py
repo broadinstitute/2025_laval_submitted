@@ -8,8 +8,8 @@ clinvar_palette_clinvar[1], clinvar_palette_clinvar[4], clinvar_palette_clinvar[
     clinvar_palette_clinvar[2], clinvar_palette_clinvar[0], clinvar_palette_clinvar[7], clinvar_palette_clinvar[5]
 
 clinvar_order_dict = {
-    "original": ['Pathogenic', 'Likely pathogenic', 'Benign', 'Likely benign', 'Conflicting', 'VUS', 'Others'],
-    "bio_descending": ['Pathogenic', 'Likely pathogenic', 'Conflicting', 'VUS', 'Likely benign', 'Benign', 'Others']
+    "original": ['Pathogenic', 'Likely pathogenic', 'PLP', 'Benign', 'Likely benign', 'BLB', 'Conflicting', 'VUS', 'Others'],
+    "bio_descending": ['Pathogenic', 'Likely pathogenic', "PLP", 'Conflicting', 'VUS', 'Likely benign', 'Benign', 'BLB', 'Others'],
 }
 
 palette_dict = {
@@ -18,7 +18,9 @@ palette_dict = {
     ),
     "clinvar_clnsig_clean": {
         'Pathogenic': "#CA7682",
+        'PLP': "#CA7682",
         'Benign': "#1D7AAB",
+        'BLB': "#1D7AAB",
         'Conflicting': "#505050", #"grey", or lighter red "#E6B1B8"
         'VUS': "#A0A0A0", ## Pillar default
         'Others': "#E0E0E0"
