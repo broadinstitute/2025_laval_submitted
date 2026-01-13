@@ -1,0 +1,29 @@
+# Column Descriptions for ppi_level_scores_minimal_dacc.csv
+# sqY2H (semi-quantitative Yeast Two-Hybrid) PPI-level scores
+# Generated from VarChAMP variant effect mapping pipeline
+
+Column Name          | Description
+---------------------|----------------------------------------------------------------------------
+symbol               | Gene symbol (HGNC gene name) of the disease gene (DB/bait)
+db_orf_id            | Database ORF identifier for the disease gene (bait)
+aa_change            | Amino acid change notation (e.g., "Arg292Cys"), or NaN for wild-type reference
+db_mut_id            | Mutation identifier (0 for wild-type, unique integer ID for variants)
+ad_symbol            | Activation domain gene symbol - the interacting partner (AD/prey)
+ad_orf_id            | Activation domain ORF identifier for the interacting partner
+clinvar_clnsig_clean | Simplified ClinVar clinical significance classification:
+                     |   - Pathogenic: ClinVar Pathogenic or Likely pathogenic
+                     |   - Benign: ClinVar Benign or Likely benign
+                     |   - VUS: Variant of Uncertain Significance
+                     |   - Conflicting: Conflicting interpretations
+                     |   - Others: Other classifications or missing
+consensus_score      | Consensus growth score for the variant PPI (arbitrary units, 0-800 range)
+                     |   - Calculated from replicate colony measurements after QC filtering
+                     |   - Outlier correction applied using manual scores when needed
+                     |   - Higher values indicate stronger protein-protein interaction
+wt_consensus_score   | Consensus growth score for the corresponding wild-type PPI (reference)
+                     |   - Same scale as consensus_score
+                     |   - Used as baseline for fold-change calculations
+log2fc               | Log2 fold change: log2((variant_score + 1) / (wt_score + 1))
+                     |   - Negative values indicate reduced/disrupted interaction
+                     |   - Positive values indicate enhanced interaction
+                     |   - Values near 0 indicate no change from wild-type

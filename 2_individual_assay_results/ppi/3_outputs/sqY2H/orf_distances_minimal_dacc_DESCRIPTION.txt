@@ -1,0 +1,23 @@
+# Column Descriptions for orf_distances_minimal_dacc.csv
+# sqY2H (semi-quantitative Yeast Two-Hybrid) variant-level perturbation scores
+# Aggregated across all tested interactors for each variant
+# Generated from VarChAMP variant effect mapping pipeline
+
+Column Name          | Description
+---------------------|----------------------------------------------------------------------------
+symbol               | Gene symbol (HGNC gene name) of the disease gene
+db_orf_id            | Database ORF identifier for the disease gene
+aa_change            | Amino acid change notation (e.g., "Arg292Cys")
+db_mut_id            | Mutation identifier (unique integer ID for each variant)
+gene_variant         | Combined gene and variant identifier (e.g., "BRCA1_Arg292Cys")
+clinvar_clnsig_clean | Simplified ClinVar clinical significance classification:
+                     |   - Pathogenic: ClinVar Pathogenic or Likely pathogenic
+                     |   - Benign: ClinVar Benign or Likely benign
+                     |   - VUS: Variant of Uncertain Significance
+                     |   - Conflicting: Conflicting interpretations
+                     |   - Others: Other classifications or missing
+norm_dist_rms        | Normalized RMS Euclidean distance (primary PPI perturbation score)
+                     |   - Measures overall disruption of the interaction profile vs wild-type
+                     |   - Calculated as: sqrt(mean((variant - wt)^2)) across all interactors
+                     |   - Normalized by sqrt(number of edges) for cross-gene comparability
+                     |   - Higher values indicate greater disruption of protein interactions

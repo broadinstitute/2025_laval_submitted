@@ -1,0 +1,46 @@
+# Column Descriptions for sqY2H_raw_measurements_assay_X_CONDITION.csv
+# Raw sqY2H colony measurements before consensus score calculation
+# Split by assay batch (1, 2, 3) and media condition (LW, LWH1, LWH10, LWH25)
+# Generated from VarChAMP variant effect mapping pipeline
+
+Column Name                      | Description
+---------------------------------|----------------------------------------------------------------------------
+scoring_pla                      | Scoring plate identifier for image tracking
+scoring_pos                      | Well position on the scoring plate (1-384 for 384-well format)
+retest_batch                     | Batch identifier (e.g., "VUSAPWT1B1" = Assay 1, Batch 1)
+condition_name                   | Growth media condition:
+                                 |   - LW: Leucine/Tryptophan dropout (mating control, no selection)
+                                 |   - LWH1: LW + 1mM 3-AT (low stringency selection)
+                                 |   - LWH10: LW + 10mM 3-AT (medium stringency selection)
+                                 |   - LWH25: LW + 25mM 3-AT (high stringency selection)
+media_control                    | Boolean flag for media-only control wells (True/False)
+assay_id                         | Assay identifier extracted from retest_batch (1, 2, or 3)
+db_orf_id                        | Database ORF identifier for the disease gene (bait)
+db_mut_id                        | Mutation identifier (0 = wild-type, >0 = variant)
+ad_orf_id                        | Activation domain ORF identifier (interactor/prey)
+per_well_integrated_intensity_gray | Automated colony intensity score from image analysis
+                                 |   - Integrated pixel intensity of the colony
+                                 |   - Higher values = larger/denser colonies = stronger interaction
+                                 |   - Range typically 0-800, values >800 flagged as outliers
+total_colony_area                | Total colony area in pixels from image segmentation
+                                 |   - Used for size-based quality control
+                                 |   - Values >1200 flagged as potential imaging artifacts
+manual_score_growth              | Manual visual scoring of colony growth (0-4 scale):
+                                 |   - 0: No visible growth
+                                 |   - 1: Weak/barely visible growth
+                                 |   - 2: Moderate growth
+                                 |   - 3: Good growth
+                                 |   - 4: Strong/maximal growth
+                                 |   - NaN: Contaminated well (excluded from analysis)
+
+
+# File Naming Convention:
+# sqY2H_raw_measurements_assay_{ASSAY}_{CONDITION}.csv
+# - ASSAY: 1, 2, or 3 (experimental batch)
+# - CONDITION: LW, LWH1, LWH10, or LWH25 (media stringency)
+
+# Notes:
+# - Each file contains raw replicate measurements (typically 4 replicates per PPI)
+# - Consensus scores are calculated from these measurements after QC filtering
+# - LW condition serves as mating efficiency control (should show growth for valid matings)
+# - LWH conditions provide interaction strength readout at different stringencies
