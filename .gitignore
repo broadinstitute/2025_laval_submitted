@@ -196,3 +196,7 @@ dualipa_raw_scores_sample.csv
 *no_seq*
 2_consensus_before_qaqc.tsv
 auto_scores_post_consensus.csv
+12_af3_structures.ipynb
+2_individual_assay_results/ppi/2_analysis/15_4_panels_plots.ipynb
+2_individual_assay_results/ppi/2_analysis/19_disease_modules.ipynb
+2_individual_assay_results/ppi/2_analysis/tmp
