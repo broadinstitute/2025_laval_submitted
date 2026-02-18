@@ -450,7 +450,7 @@ def plot_assay_scores(df, assay, category, ax=None, type="box", pairs=None, orde
     ax.set_xlabel("")
     ax.set_xlim(-.5, 1.5)
     plt.tight_layout()
-    plt.show()
+    # plt.show()
     
     return ax
 
